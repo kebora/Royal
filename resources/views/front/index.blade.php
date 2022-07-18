@@ -297,56 +297,7 @@
 	</section>
 	<!--End Sponsors Section-->
 
-	<!-- Process Section -->
-    <section class="process-section">
-		<div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-11.jpg')}}')"></div>
-		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/background/pattern-12.jpg')}}')"></div>
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<div class="title">Mission . Vision . Strategy</div>
-				<h2>Driving Client Results Utilizing New <br> Innovation </h2>
-			</div>
-			<div class="row clearfix">
 
-				<!-- Process Block -->
-				<div class="process-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="number-box">01</div>
-						<h4><a href="#">Mission</a></h4>
-						<div class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</div>
-						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
-					</div>
-				</div>
-
-				<!-- Process Block -->
-				<div class="process-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="number-box">02</div>
-						<h4><a href="#">Vision</a></h4>
-						<div class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</div>
-						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
-					</div>
-				</div>
-
-				<!-- Process Block -->
-				<div class="process-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="number-box">03</div>
-						<h4><a href="#">Strategy</a></h4>
-						<div class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</div>
-						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
-					</div>
-				</div>
-
-			</div>
-            <div class="btn-box text-center">
-                <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
-            </div>
-		</div>
-	</section>
-	<!-- End Process Section -->
 
 	<!-- Technology Section -->
 	<section class="technology-section style-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
@@ -354,68 +305,47 @@
 		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/background/pattern-6.png')}}')"></div>
 		<div class="auto-container">
 			<!-- Sec Title -->
-			<div class="sec-title light centered">
-				<div class="title">TECHNOLOGY INDEX</div>
-				<h2>Real Time Monitoring Your Infrstracture <br> Branded Degital Solutions</h2>
+			<div class="sec-title centered">
+				<div class="title">Mission . Vision . Strategy</div>
+				<h2 style="color:#ffffff">Driving Client Results Utilizing New <br> Innovation </h2>
 			</div>
 			<div class="row clearfix">
 
-				<!-- Technology Block -->
-				<div class="technology-block">
-					<div class="inner-box">
-						<a href="#" class="overlay-link"></a>
-						<div class="icon-box">
-							<span class="flaticon-dashboard"></span>
-						</div>
-						<h6>Data Analytics</h6>
+				<!-- Process Block -->
+				<div class="process-block col-lg-4 col-md-6 col-sm-12 text-center ">
+					<div class="inner-box wow fadeInLeft process-block-block" data-wow-delay="0ms" data-wow-duration="1500ms">
+
+						<h4><a href="#">Mission</a></h4>
+						<p class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</p>
+						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
 
-				<!-- Technology Block -->
-				<div class="technology-block">
-					<div class="inner-box">
-						<a href="#" class="overlay-link"></a>
-						<div class="icon-box">
-							<span class="flaticon-coding-3"></span>
-						</div>
-						<h6>Web Develpment</h6>
+				<!-- Process Block -->
+				<div class="process-block col-lg-4 col-md-6 col-sm-12 text-center ">
+					<div class="inner-box wow fadeInUp process-block-block" data-wow-delay="0ms" data-wow-duration="1500ms">
+
+						<h4><a href="#">Vision</a></h4>
+						<p class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</p>
+						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
 
-				<!-- Technology Block -->
-				<div class="technology-block">
-					<div class="inner-box">
-						<a href="#" class="overlay-link"></a>
-						<div class="icon-box">
-							<span class="flaticon-design"></span>
-						</div>
-						<h6>Ul/UX Design</h6>
-					</div>
-				</div>
+				<!-- Process Block -->
+				<div class="process-block col-lg-4 col-md-6 col-sm-12 text-center">
+					<div class="inner-box wow fadeInRight process-block-block" data-wow-delay="0ms" data-wow-duration="1500ms">
 
-				<!-- Technology Block -->
-				<div class="technology-block">
-					<div class="inner-box">
-						<a href="#" class="overlay-link"></a>
-						<div class="icon-box">
-							<span class="flaticon-web-browser"></span>
-						</div>
-						<h6>QA & Testing</h6>
-					</div>
-				</div>
-
-				<!-- Technology Block -->
-				<div class="technology-block">
-					<div class="inner-box">
-						<a href="#" class="overlay-link"></a>
-						<div class="icon-box">
-							<span class="flaticon-network-1"></span>
-						</div>
-						<h6>Dedicated Team</h6>
+						<h4><a href="#">Strategy</a></h4>
+						<p class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</p>
+						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
 
 			</div>
+            {{-- <div class="btn-box text-center">
+                <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
+            </div> --}}
 		</div>
 	</section>
 	<!-- End Technology Section -->
