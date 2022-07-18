@@ -16,7 +16,8 @@
 						<div class="image-column col-lg-6 col-md-12 col-sm-12">
 							<div class="inner-column">
 								<div class="image">
-									<img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" />
+									<img src="#" alt="Kigens Image 566 by 766 PNG" />
+                                    {{-- <img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" /> --}}
 								</div>
 							</div>
 						</div>
@@ -24,12 +25,12 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-6 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<div class="title">For Over 10 Years. For Millions of Users</div>
-								<h1>Enterprise Apps <br> Design & Development</h1>
-								<div class="text">We are 100+ professional software engineers with more than <br> 10 years of experience in delivering superior products.</div>
+
+								<h1>Best Computers <br> & Laptops in Nairobi</h1>
+								<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div>
 								<div class="play-box">
 									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
-									VIDEO SHOWCASE
+									Virtual Tour
 								</div>
 							</div>
 						</div>
@@ -38,65 +39,7 @@
 				</div>
 			</div>
 
-			<div class="slide">
-				<div class="auto-container">
-					<div class="row clearfix">
 
-						<!-- Image Column -->
-						<div class="image-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="image">
-									<img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Content Column -->
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="title">For Over 10 Years. For Millions of Users</div>
-								<h1>Enterprise Apps <br> Design & Development</h1>
-								<div class="text">We are 100+ professional software engineers with more than <br> 10 years of experience in delivering superior products.</div>
-								<div class="play-box">
-									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
-									VIDEO SHOWCASE
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="slide">
-				<div class="auto-container">
-					<div class="row clearfix">
-
-						<!-- Image Column -->
-						<div class="image-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="image">
-									<img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Content Column -->
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="title">For Over 10 Years. For Millions of Users</div>
-								<h1>Enterprise Apps <br> Design & Development</h1>
-								<div class="text">We are 100+ professional software engineers with more than <br> 10 years of experience in delivering superior products.</div>
-								<div class="play-box">
-									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
-									VIDEO SHOWCASE
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
 
 		</div>
 	</section>
@@ -119,11 +62,11 @@
 
 					<!-- Tab Btns-->
 					<ul class="tab-btns tab-buttons clearfix">
-						<li data-tab="#prod-html" class="tab-btn"><span class="icon flaticon-html"></span>HTML</li>
-						<li data-tab="#prod-bootstrap" class="tab-btn"><span class="icon flaticon-bootstrap"></span>Bootstrap</li>
-						<li data-tab="#prod-css" class="tab-btn active-btn"><span class="icon flaticon-css"></span>CSS</li>
-						<li data-tab="#prod-php" class="tab-btn"><span class="icon flaticon-php"></span>Php</li>
-						<li data-tab="#prod-java" class="tab-btn"><span class="icon flaticon-java"></span>JavaScript</li>
+						<li data-tab="#" class="tab-btn"><span class="icon fa fa-laptop"></span>Laptops</li>
+						<li data-tab="#" class="tab-btn"><span class="icon flaticon-computer"></span>Desktops</li>
+						<li data-tab="#prod-css" class="tab-btn active-btn"><span class="icon flaticon-network"></span>Networking</li>
+						<li data-tab="#" class="tab-btn"><span class="icon flaticon-headphones"></span>Accessories</li>
+						<li data-tab="#" class="tab-btn"><span class="icon fa fa-wrench"></span>IT Services</li>
 					</ul>
 
 					<!--Tabs Container-->
@@ -132,10 +75,12 @@
 						<!--Tab / Active Tab-->
 						<div class="tab" id="prod-html">
 							<div class="content">
-								<h4>HTML Website Development Services</h4>
-								<div class="text">Globex is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses <br> elevate their value through custom software development, product design, QA and consultancy services.</div>
-								<div class="btn-box text-center">
-									<a href="services-detail.html" class="theme-btn btn-style-three"><span class="txt">Learn More</span></a>
+								<h4>Royal Tech Computers Limited</h4>
+								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
+								<br><br>
+                                <div class="btn-box text-center">
+									<a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                                    <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>
 						</div>
@@ -143,10 +88,12 @@
 						<!-- Tab -->
 						<div class="tab" id="prod-bootstrap">
 							<div class="content">
-								<h4>Bootstrap Website Development Services</h4>
-								<div class="text">Globex is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses <br> elevate their value through custom software development, product design, QA and consultancy services.</div>
-								<div class="btn-box text-center">
-									<a href="services-detail.html" class="theme-btn btn-style-three"><span class="txt">Learn More</span></a>
+								<h4>Royal Tech Computers Limited</h4>
+								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
+								<br><br>
+                                <div class="btn-box text-center">
+									<a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                                    <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>
 						</div>
@@ -154,10 +101,12 @@
 						<!-- Tab -->
 						<div class="tab active-tab" id="prod-css">
 							<div class="content">
-								<h4>CSS Website Development Services</h4>
-								<div class="text">Globex is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses <br> elevate their value through custom software development, product design, QA and consultancy services.</div>
-								<div class="btn-box text-center">
-									<a href="services-detail.html" class="theme-btn btn-style-three"><span class="txt">Learn More</span></a>
+								<h4>Royal Tech Computers Limited</h4>
+								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
+								<br><br>
+                                <div class="btn-box text-center">
+									<a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                                    <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>
 						</div>
@@ -165,10 +114,12 @@
 						<!-- Tab -->
 						<div class="tab" id="prod-php">
 							<div class="content">
-								<h4>Php Website Development Services</h4>
-								<div class="text">Globex is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses <br> elevate their value through custom software development, product design, QA and consultancy services.</div>
-								<div class="btn-box text-center">
-									<a href="services-detail.html" class="theme-btn btn-style-three"><span class="txt">Learn More</span></a>
+								<h4>Royal Tech Computers Limited</h4>
+								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
+								<br><br>
+                                <div class="btn-box text-center">
+									<a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                                    <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>
 						</div>
@@ -176,16 +127,20 @@
 						<!-- Tab -->
 						<div class="tab" id="prod-java">
 							<div class="content">
-								<h4>JavaScript Website Development Services</h4>
-								<div class="text">Globex is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses <br> elevate their value through custom software development, product design, QA and consultancy services.</div>
-								<div class="btn-box text-center">
-									<a href="services-detail.html" class="theme-btn btn-style-three"><span class="txt">Learn More</span></a>
+								<h4>Royal Tech Computers Limited</h4>
+								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
+								<br><br>
+                                <div class="btn-box text-center">
+									<a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                                    <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>
 						</div>
 
 					</div>
 				</div>
+
+
 
 			</div>
 		</div>
@@ -201,47 +156,36 @@
 					<div class="row clearfix">
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
 							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 								<div class="content">
 									<div class="count-outer count-box">
-										<span class="count-text" data-speed="3000" data-stop="330">0</span>+
+										<span class="count-text" data-speed="3000" data-stop="3330">0</span>+
 									</div>
-									<h4 class="counter-title">ACTIVE CLIENTS</h4>
+									<h4 class="counter-title">Sales</h4>
 								</div>
 							</div>
 						</div>
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
 							<div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 								<div class="content">
 									<div class="count-outer count-box alternate">
 										<span class="count-text" data-speed="5000" data-stop="850">0</span>+
 									</div>
-									<h4 class="counter-title">PROJECTS DONE</h4>
+									<h4 class="counter-title">Support Clients</h4>
 								</div>
 							</div>
 						</div>
 
-						<!-- Column -->
-						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-							<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="2000" data-stop="25">0</span>+
-									</div>
-									<h4 class="counter-title">TEAM ADVISORS</h4>
-								</div>
-							</div>
-						</div>
 
 						<!-- Column -->
-						<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
 							<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
 								<div class="content">
 									<div class="count-outer count-box">
-										<span class="count-text" data-speed="3500" data-stop="10">0</span>+
+										<span class="count-text" data-speed="3500" data-stop="8">0</span>+
 									</div>
 									<h4 class="counter-title">GLORIOUS YEARS</h4>
 								</div>
@@ -256,7 +200,7 @@
 	<!-- End Counter Section -->
 
 	<!-- About Section Two -->
-	<section class="about-section-two" style="background-image: url('{{asset('corporate/images/background/3.jpg')}}')">
+	<section class="about-section-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
 		<div class="auto-container">
 			<div class="row clearfix">
 
@@ -265,7 +209,7 @@
 					<div class="inner-column">
 						<div class="circle-layer" style="background-image: url('{{asset('corporate/images/background/pattern-10.png')}}')"></div>
 						<div class="image">
-							<img src="{{asset('corporate/images/resource/about-5.jpg')}}" alt="" />
+							<img src="{{asset('corporate/images/portrait.jpg')}}" alt="" />
 						</div>
 					</div>
 				</div>
@@ -277,7 +221,7 @@
 						<!-- Sec Title -->
 						<div class="sec-title light">
 							<div class="title">About Royal Tech Computers Limited</div>
-							<h2>Transform Your Business With The Leading IT Solution rovider.</h2>
+							<h2>Transform Your Business With The Leading IT Solution Provider.</h2>
 							<div class="text">We listen. We advise. We design, together. Happy customers and ongoing relationships are what we strive for. Success is measured by results, the most important being how our clients feel about their experience with us.</div>
 						</div>
 
@@ -319,9 +263,9 @@
 
 						</div>
 
-						<a href="contact.html" class="theme-btn btn-style-two"><span class="txt"><span class="icon fa fa-info"></span> The Company </span></a>
+						<a href="#" class="theme-btn btn-style-two"><span class="txt"><span class="icon fa fa-info"></span> The Company </span></a>
                         &nbsp;
-                        <a href="contact.html" class="theme-btn btn-style-two"><span class="txt"><span class="icon fa fa-shopping-cart"></span>  Shop Online</span></a>
+                        <a href="#" class="theme-btn btn-style-two"><span class="txt"><span class="icon fa fa-shopping-cart"></span>  Shop Online</span></a>
 
 					</div>
 				</div>
@@ -360,8 +304,8 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<div class="title">OUR PROCESS</div>
-				<h2>Driving Client Results Utilizing New <br> Innovation Points of view</h2>
+				<div class="title">Mission . Vision . Strategy</div>
+				<h2>Driving Client Results Utilizing New <br> Innovation </h2>
 			</div>
 			<div class="row clearfix">
 
@@ -369,9 +313,9 @@
 				<div class="process-block col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="number-box">01</div>
-						<h4><a href="services-detail.html">End to End Solutions and Services Guaranteed</a></h4>
+						<h4><a href="#">Mission</a></h4>
 						<div class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</div>
-						<a class="read-more" href="services-detail.html"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a>
+						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
 
@@ -379,9 +323,9 @@
 				<div class="process-block col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="number-box">02</div>
-						<h4><a href="services-detail.html">Ahead of The Curve We Future-proof Your IT</a></h4>
+						<h4><a href="#">Vision</a></h4>
 						<div class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</div>
-						<a class="read-more" href="services-detail.html"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a>
+						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
 
@@ -389,19 +333,23 @@
 				<div class="process-block col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="number-box">03</div>
-						<h4><a href="services-detail.html">Experience Certainty Every Project Executed Successful</a></h4>
+						<h4><a href="#">Strategy</a></h4>
 						<div class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</div>
-						<a class="read-more" href="services-detail.html"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a>
+						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
 
 			</div>
+            <div class="btn-box text-center">
+                <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                <a href="#" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
+            </div>
 		</div>
 	</section>
 	<!-- End Process Section -->
 
 	<!-- Technology Section -->
-	<section class="technology-section style-two" style="background-image: url('{{asset('corporate/images/background/1.jpg')}}')">
+	<section class="technology-section style-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
 		<div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-5.png')}}')"></div>
 		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/background/pattern-6.png')}}')"></div>
 		<div class="auto-container">
@@ -415,7 +363,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="#" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-dashboard"></span>
 						</div>
@@ -426,7 +374,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="#" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-coding-3"></span>
 						</div>
@@ -437,7 +385,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="#" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-design"></span>
 						</div>
@@ -448,7 +396,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="#" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-web-browser"></span>
 						</div>
@@ -459,7 +407,7 @@
 				<!-- Technology Block -->
 				<div class="technology-block">
 					<div class="inner-box">
-						<a href="services-detail.html" class="overlay-link"></a>
+						<a href="#" class="overlay-link"></a>
 						<div class="icon-box">
 							<span class="flaticon-network-1"></span>
 						</div>
@@ -480,7 +428,7 @@
 				<div class="clearfix">
 					<div class="pull-left">
 						<div class="title">OUR DEDICATED TEAM</div>
-						<h2>We have Large No <br> of Expert Team Member</h2>
+						<h2>We have a good team <br> of Expert </h2>
 					</div>
 					<div class="pull-right">
 						<div class="text">Our goal is to help our companies maintain or achieve best- in-class <br> positions in their respective industries and our team works.</div>
@@ -580,7 +528,7 @@
 
 	<!-- Appointment Section -->
 	<section class="appointment-section">
-		<div class="image-layer" style="background-image: url('{{asset('corporate/images/background/4.jpg')}}')"></div>
+		<div class="image-layer" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')"></div>
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title light centered">
@@ -594,7 +542,7 @@
 					<div class="image-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="image">
-								<img src="{{asset('corporate/images/resource/appointment.jpg')}}" alt="" />
+								<img src="{{asset('corporate/images/portrait.jpg')}}" alt="" />
 							</div>
 						</div>
 					</div>
@@ -607,24 +555,24 @@
 							<div class="appointment-form">
 								<form method="post" action="https://expert-themes.com/html/globex/appointment.html">
 									<div class="row clearfix">
-										<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
 											<input type="text" name="username" placeholder="Name" required="">
 											<span class="icon fa fa-user"></span>
 										</div>
 
-										<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
 											<input type="email" name="email" placeholder="Email" required="">
 											<span class="icon fa fa-envelope"></span>
 										</div>
 
-										<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
 											<input type="tel" name="phone" placeholder="Phone No" required="">
 											<span class="icon fa fa-phone"></span>
 										</div>
 
-										<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-											<input type="text" name="department" placeholder="Department" required="">
-											<span class="icon fa fa-home"></span>
+                                        <div class="col-lg-12 col-md-6 col-sm-12 form-group">
+											<input type="text" name="subject" placeholder="Subject" required="">
+											<span class="icon fa fa-info"></span>
 										</div>
 
 										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -671,7 +619,7 @@
 											<li><span class="icon flaticon-comment"></span>3 comments</li>
 											<li><span class="icon flaticon-user"></span>Admin</li>
 										</ul>
-										<a href="contact.html" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
+										<a href="#" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
 									</div>
 								</div>
 								<!-- Image Column -->
@@ -700,7 +648,7 @@
 											<li><span class="icon flaticon-comment"></span>3 comments</li>
 											<li><span class="icon flaticon-user"></span>Admin</li>
 										</ul>
-										<a href="contact.html" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
+										<a href="#" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
 									</div>
 								</div>
 								<!-- Image Column -->
@@ -729,7 +677,7 @@
 											<li><span class="icon flaticon-comment"></span>3 comments</li>
 											<li><span class="icon flaticon-user"></span>Admin</li>
 										</ul>
-										<a href="contact.html" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
+										<a href="#" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
 									</div>
 								</div>
 								<!-- Image Column -->

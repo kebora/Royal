@@ -10,4 +10,11 @@ class HomeController extends Controller
     {
         return view('front.index');
     }
+    public function center_of_excellence(){
+        return view('front.center_of_excellence');
+    }
+    public function contact_us(){
+        return view('front.contact_us');
+    }
+
 }

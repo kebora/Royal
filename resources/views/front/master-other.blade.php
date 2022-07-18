@@ -33,7 +33,7 @@
     <div class="preloader"></div>
 
  	<!-- Main Header-->
-    <header class="main-header header-style-two">
+    <header class="main-header header-style-one">
 
 		<!-- Header Top Two -->
         <div class="header-top-two">
@@ -373,8 +373,7 @@
 										<li>
 											<span class="icon flaticon-placeholder-2"></span>
 											<strong>Address</strong>
-											Tembo Co-op House
-                                Moi Ave Nairobi-Room 201
+											Tembo Co-op House Moi Ave Nairobi-Room 201
 										</li>
 										<li>
 											<span class="icon flaticon-phone-call"></span>
@@ -452,6 +451,7 @@
 <script src="{{asset('corporate/js/jquery.paroller.min.js')}}"></script>
 <script src="{{asset('corporate/js/owl.js')}}"></script>
 <script src="{{asset('corporate/js/wow.js')}}"></script>
+<script src="{{asset('corporate/js/validate.js')}}"></script>
 <script src="{{asset('corporate/js/nav-tool.js')}}"></script>
 <script src="{{asset('corporate/js/jquery-ui.js')}}"></script>
 <script src="{{asset('corporate/js/script.js')}}"></script>

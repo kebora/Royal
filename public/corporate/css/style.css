@@ -1,4 +1,4 @@
-/* Globex HTML Template */
+/* Royal Tech HTML Template , Originally Purchased as Globex Digi Template, Customised/Added By Designekta Studios */
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -42,7 +42,7 @@
 
 **********************************************/
 
-/* 
+/*
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Nunito Sans', sans-serif;
 */
@@ -58,14 +58,14 @@
 @import url('jquery.bootstrap-touchspin.css');
 @import url('jquery.mCustomScrollbar.min.css');
 
-/*** 
+/***
 
 ====================================================================
 	Reset
 ====================================================================
 
  ***/
- 
+
 * {
 	margin:0px;
 	padding:0px;
@@ -73,7 +73,7 @@
 	outline:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -118,7 +118,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 input,button,select,textarea{
-	
+
 }
 
 textarea{
@@ -127,7 +127,7 @@ textarea{
 
 p{
 	position:relative;
-	line-height:1.8em;	
+	line-height:1.8em;
 }
 
 /* Typography */
@@ -177,7 +177,7 @@ h6{
 ul,li{
 	list-style:none;
 	padding:0px;
-	margin:0px;	
+	margin:0px;
 }
 
 img{
@@ -196,7 +196,7 @@ img{
 }
 
 .centered{
-	text-align:center;	
+	text-align:center;
 }
 
 /***
@@ -507,10 +507,10 @@ img{
 img{
 	display:inline-block;
 	max-width:100%;
-	height:auto;	
+	height:auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Section Title
@@ -559,7 +559,7 @@ img{
 	text-align: center !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Header style
@@ -766,7 +766,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-header .header-upper{
@@ -907,7 +907,7 @@ img{
 }
 
 .main-header .cart-box .cart-box-btn:hover{
-	
+
 }
 
 .main-header .cart-product{
@@ -1087,7 +1087,7 @@ img{
 	top:49px !important;
 	right:0px;
 	padding:0px;
-	width:280px;	
+	width:280px;
 	left: auto !important;
 	border-radius:0px;
 	border-top:3px solid #0060ff;
@@ -1250,7 +1250,7 @@ img{
 	-moz-animation-iteration-count: 1;
 	-op-animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;	
+	animation-iteration-count: 1;
 }
 
 .main-menu .navigation > li > a{
@@ -1317,7 +1317,7 @@ img{
 
 .sticky-header .main-menu .navigation > li:before,
 .sticky-header .main-menu .navigation > li:after{
-	
+
 }
 
 .main-menu .navigation > li:hover > a,
@@ -1348,7 +1348,7 @@ img{
 
 .main-menu .navigation > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -1422,7 +1422,7 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 }
 
 .rtl .main-menu .navigation > li > ul > li.dropdown > a:after{
@@ -1453,7 +1453,7 @@ img{
 
 .main-menu .navigation > li > ul > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li > ul > li{
@@ -1463,7 +1463,7 @@ img{
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -1535,7 +1535,7 @@ img{
 	-moz-transition:all 300ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;	
+	-o-transition:all 300ms ease;
 }
 
 .main-menu .navbar-collapse > ul li.dropdown .dropdown-btn{
@@ -1563,7 +1563,7 @@ img{
 
 .main-header .search-box .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 }
 
 .main-header .search-box .form-group input[type="text"],
@@ -1805,7 +1805,7 @@ img{
 }
 
 .main-header .header-top-three .info-list li a:hover{
-	
+
 }
 
 .main-header .header-top-three .top-right{
@@ -2046,7 +2046,7 @@ img{
 }
 
 .header-top-four .top-right .cart-box .cart-box-btn:hover{
-	
+
 }
 
 .header-style-six{
@@ -2087,7 +2087,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Hidden Sidebar style
@@ -2110,7 +2110,7 @@ img{
 }
 
 .hidden-bar .mCSB_inside > .mCSB_container{
-	margin-right:0px;	
+	margin-right:0px;
 }
 
 .hidden-bar.right-align {
@@ -2118,7 +2118,7 @@ img{
 }
 
 .hidden-bar.right-align.visible-sidebar{
-	right:0px;	
+	right:0px;
 }
 
 .hidden-bar.left-align {
@@ -2199,7 +2199,7 @@ img{
 
 .hidden-bar .logo img{
 	display:inline-block;
-	max-width:100%;	
+	max-width:100%;
 }
 
 .hidden-bar .side-menu {
@@ -2276,12 +2276,12 @@ img{
 
 .shop-section .items-sorting{
 	position:relative;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .shop-section .items-sorting .results-column,
 .shop-section .items-sorting .select-column{
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .shop-section .items-sorting .results-column h6{
@@ -2293,7 +2293,7 @@ img{
 }
 
 .shop-section .items-sorting .form-group{
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 .shop-section .items-sorting select{
@@ -2315,11 +2315,11 @@ img{
 	transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;	
+	-o-transition:all 500ms ease;
 }
 
 .shop-section .items-sorting select option{
-	text-indent:15px;	
+	text-indent:15px;
 }
 
 /*Shop Item*/
@@ -2340,7 +2340,7 @@ img{
 	border:4px solid #0060ff;
 }
 .single-product-item .img-holder::before {
-    background: rgba(255, 255, 255, 0.20);    
+    background: rgba(255, 255, 255, 0.20);
     top: 0px;
     left: 0px;
     bottom: 0px;
@@ -2357,10 +2357,10 @@ img{
 .single-product-item .img-holder img{
     transform: scale(1);
     transition: all 0.7s ease 0s;
-    width: 100%;   
+    width: 100%;
 }
 .single-product-item:hover .img-holder img{
-    transform: scale(1.1);   
+    transform: scale(1.1);
 }
 
 .single-product-item .title-holder {
@@ -2377,7 +2377,7 @@ img{
 }
 .single-product-item .title-holder .static-content{
     position: relative;
-    display: block;    
+    display: block;
 }
 .single-product-item .title-holder .title {
     position: relative;
@@ -2432,7 +2432,7 @@ img{
 }
 .single-product-item:hover .title-holder .overlay-content ul{
     transform: scale(1);
-    transition: all 700ms ease 600ms;    
+    transition: all 700ms ease 600ms;
 }
 .single-product-item .title-holder .overlay-content ul li{
     position: relative;
@@ -2503,7 +2503,7 @@ img{
     margin: 0;
 }
 .single-product-item .title-holder .overlay-content ul li a:hover .toltip-content{
-    top: -40px; 
+    top: -40px;
     visibility: visible;
     opacity: 1;
 }
@@ -2565,12 +2565,12 @@ img{
 
 .product-details .image-column .owl-dots,
 .product-details .image-column .owl-nav{
-	display:none;	
+	display:none;
 }
 
 .product-details .basic-details .details-header{
 	position:relative;
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 .product-details .basic-details .details-header h2{
@@ -2582,7 +2582,7 @@ img{
 }
 
 .product-details .basic-details .details-header h2 a{
-	color:#333333;	
+	color:#333333;
 }
 
 .product-details .basic-details .details-header .rating{
@@ -2597,7 +2597,7 @@ img{
 
 .product-details .basic-details .details-header .rating .fa{
 	display:inline-block;
-	margin-right:1px;	
+	margin-right:1px;
 }
 
 .product-details .basic-details .details-header .rating .fa.light{
@@ -2660,18 +2660,18 @@ img{
 	line-height:24px;
 	padding:10px 15px !important;
 	height:54px !important;
-	box-shadow:none !important;	
+	box-shadow:none !important;
 }
 
 .product-details .basic-details .bootstrap-touchspin .input-group-btn-vertical > .btn,
 .cart-section .bootstrap-touchspin .input-group-btn-vertical > .btn{
 	padding:13px 10px;
-	background:#f4f5f6;	
+	background:#f4f5f6;
 }
 
 .product-details .bootstrap-touchspin .input-group-btn-vertical i,
 .cart-section .bootstrap-touchspin .input-group-btn-vertical i{
-	top:1px;	
+	top:1px;
 }
 
 .shop-list{
@@ -2703,7 +2703,7 @@ img{
 	text-transform:uppercase;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Product Tabs Style
@@ -2712,7 +2712,7 @@ img{
 ***/
 
 .shop-page .prod-tabs{
-	position:relative;	
+	position:relative;
 }
 
 .shop-page .prod-tabs .tab-btns{
@@ -2747,7 +2747,7 @@ img{
 }
 
 .shop-page .prod-tabs .tabs-content{
-	position:relative;	
+	position:relative;
 }
 
 .shop-page .prod-tabs .tabs-content .tab{
@@ -2756,7 +2756,7 @@ img{
 }
 
 .shop-page .prod-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .shop-page .prod-tabs .tabs-content .tab p{
@@ -2774,7 +2774,7 @@ img{
 .shop-page .prod-tabs .tabs-content .tab h4,
 .shop-page .prod-tabs .tabs-content .tab h5,
 .shop-page .prod-tabs .tabs-content .tab h6{
-	margin-bottom:15px;	
+	margin-bottom:15px;
 }
 
 .shop-page .prod-tabs .tabs-content .tab h4{
@@ -2786,7 +2786,7 @@ img{
 
 .shop-page .prod-tabs .reviews-container{
 	position:relative;
-	padding-bottom:1px;	
+	padding-bottom:1px;
 }
 
 .shop-page .prod-tabs .reviews-container .review-box{
@@ -2843,7 +2843,7 @@ img{
 
 .shop-page .prod-tabs .reviews-container .rev-content{
 	position:relative;
-	background:#ffffff;	
+	background:#ffffff;
 }
 
 .shop-page .prod-tabs .reviews-container .rev-header{
@@ -2856,7 +2856,7 @@ img{
 	color:#222222;
 	text-transform:uppercase;
 	font-weight:700;
-	margin-bottom:10px;	
+	margin-bottom:10px;
 }
 
 .shop-page .prod-tabs .reviews-container .rev-header .rating{
@@ -2889,7 +2889,7 @@ img{
 .shop-page .prod-tabs .reviews-container .rev-option a{
 	font-size:14px;
 	text-transform:uppercase;
-	font-weight:700;	
+	font-weight:700;
 }
 
 .shop-page .prod-tabs .reviews-container .rev-text{
@@ -2913,7 +2913,7 @@ img{
 
 .shop-page .prod-tabs .add-review .rating{
 	position:relative;
-	padding-top:8px;	
+	padding-top:8px;
 }
 
 .shop-page .prod-tabs .add-review .rating .rate-box{
@@ -2921,7 +2921,7 @@ img{
 	display:inline-block;
 	margin-right:10px;
 	font-size:14px;
-	color:#555555;	
+	color:#555555;
 }
 
 .shop-page .prod-tabs .add-review .rating .rate-box:hover,
@@ -2936,16 +2936,16 @@ img{
 	font-size:14px;
 	margin-bottom:5px;
 	font-weight:400;
-	color:#303030;	
+	color:#303030;
 }
 
 .shop-page .prod-tabs .add-review h3{
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .shop-page .prod-tabs .add-review .form-group{
 	position:relative;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .shop-page .prod-tabs .add-review .form-group input[type="text"],
@@ -2988,7 +2988,7 @@ img{
 	padding:8px 35px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Cart Section style
@@ -3004,7 +3004,7 @@ img{
 }
 
 .cart-section .cart-outer{
-	position:relative;	
+	position:relative;
 }
 
 .cart-section .table-outer{
@@ -3045,7 +3045,7 @@ img{
 
 .cart-table thead tr th.prod-column{
 	text-align:left;
-	padding-left:40px;	
+	padding-left:40px;
 }
 
 .cart-table tbody tr td{
@@ -3061,7 +3061,7 @@ img{
 }
 
 .cart-table tbody tr .qty .quantity-spinner{
-	background:#f5f5f5;	
+	background:#f5f5f5;
 }
 
 .cart-table tbody tr .prod-column .column-box{
@@ -3075,14 +3075,14 @@ img{
 
 .column.default-column .cart-table tbody tr .qty{
 	width:110px;
-	padding-right:20px;	
+	padding-right:20px;
 }
 
 .cart-table tbody tr .prod-column .column-box .prod-thumb{
 	position:absolute;
 	width:100px;
 	left:0px;
-	top:0px;	
+	top:0px;
 }
 
 .cart-table tbody tr .prod-column .column-box .prod-thumb img{
@@ -3093,12 +3093,12 @@ img{
 .cart-table tbody tr .prod-column .column-box h6{
 	color:#222222;
 	font-weight:500;
-	margin-bottom:5px;	
+	margin-bottom:5px;
 }
 
 .cart-table tbody tr .sub-total{
 	font-weight:400;
-	color:#222222;	
+	color:#222222;
 	font-size:18px;
 	padding-left:20px;
 }
@@ -3131,11 +3131,11 @@ img{
 }
 
 .cart-table tbody tr .remove{
-	
+
 }
 
 .cart-table tbody tr .remove-btn:hover{
-	
+
 }
 
 .cart-table tbody tr .remove-btn:hover .fa{
@@ -3144,7 +3144,7 @@ img{
 }
 
 .cart-table tbody tr td{
-	vertical-align:middle;	
+	vertical-align:middle;
 }
 
 .cart-table tbody tr td.price{
@@ -3208,7 +3208,7 @@ img{
 .cart-section .apply-coupon .form-group{
 	position:relative;
 	float:left;
-	margin-right:20px;	
+	margin-right:20px;
 }
 
 .cart-section .apply-coupon .form-group .coupon-btn{
@@ -3244,7 +3244,7 @@ img{
 
 .cart-section .estimate-form .row{
 	margin-left:-7px;
-	margin-right:-7px;	
+	margin-right:-7px;
 }
 
 .cart-section .estimate-form .row .form-group{
@@ -3267,17 +3267,17 @@ img{
 	position:relative;
 	line-height:46px;
 	height:46px;
-	background:#f4f4f4;	
+	background:#f4f4f4;
 }
 
 .bootstrap-touchspin .input-group-btn-vertical > .btn{
 	height:24px;
-	background:#e9e9e9;	
+	background:#e9e9e9;
 }
 
 .bootstrap-touchspin .input-group-btn-vertical i{
 	left:6px;
-	top:6px;	
+	top:6px;
 }
 
 .cart-total-box{
@@ -3343,7 +3343,7 @@ img{
 
 .checkout-page .default-links{
 	position:relative;
-	margin-bottom:40px;	
+	margin-bottom:40px;
 }
 
 .checkout-page .default-links li{
@@ -3373,11 +3373,11 @@ img{
 
 .shop-form .form-group{
 	position:relative;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .billing-details .shop-form .sec-title{
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .billing-details .shop-form .form-group.sec-title{
@@ -3390,7 +3390,7 @@ img{
 	display:block;
 	line-height:24px;
 	margin-bottom:8px;
-	color:#797979;	
+	color:#797979;
 	font-size:15px;
 	font-weight:500;
 	text-transform:capitalize;
@@ -3399,7 +3399,7 @@ img{
 .shop-form .form-group .field-label sup{
 	position:relative;
 	top:0px;
-	color:#797979;	
+	color:#797979;
 	font-size:16px;
 }
 
@@ -3446,19 +3446,19 @@ img{
 }
 
 .shop-form select option{
-	text-indent:15px;	
+	text-indent:15px;
 }
 
 .shop-form textarea{
 	resize:none;
 	height:100px !important;
-	overflow:hidden;	
+	overflow:hidden;
 }
 
 .shop-form input:focus,
 .shop-form select:focus,
 .shop-form textarea:focus{
-	border-color:#0060ff;	
+	border-color:#0060ff;
 }
 
 /* Shop Order Box */
@@ -3504,16 +3504,16 @@ img{
 .payment-options{
 	position:relative;
 	margin-top:20px;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .checkout-page .payment-options li{
 	position:relative;
-	margin-bottom:15px;	
+	margin-bottom:15px;
 }
 
 .checkout-page .payment-options li .radio-option{
-	position:relative;		
+	position:relative;
 }
 
 .checkout-page .payment-options li .radio-option label{
@@ -3538,7 +3538,7 @@ img{
 .checkout-page .payment-options li .radio-option input[type="radio"]{
 	position:absolute;
 	left:0px;
-	top:3px;	
+	top:3px;
 }
 
 .checkout-page .payment-options li .radio-option #payment-3{
@@ -3588,17 +3588,17 @@ img{
 	top:-3px;
 	display:inline-block;
 	max-width:100%;
-	padding-left:30px;	
+	padding-left:30px;
 }
 
 .checkout-page .payment-options li .radio-option label img{
 	position:relative;
 	display:inline-block;
 	max-width:100%;
-	padding-left:30px;	
+	padding-left:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Login / Register Section
@@ -3614,12 +3614,12 @@ img{
 }
 
 .register-section .form-column{
-	margin-bottom:40px;	
+	margin-bottom:40px;
 }
 
 .register-section .form-column .sec-title{
 	position:relative;
-	margin-bottom:30px;	
+	margin-bottom:30px;
 }
 
 .register-section .form-column .sec-title h2{
@@ -3627,7 +3627,7 @@ img{
 }
 
 .styled-form{
-	position:relative;	
+	position:relative;
 }
 
 .styled-form .submit-text{
@@ -3646,7 +3646,7 @@ img{
 
 .checkout-section .styled-form .form-group{
 	position:relative;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .styled-form .form-group .check-box{
@@ -3721,7 +3721,7 @@ img{
 .checkout-section .styled-form input[type="password"],
 .checkout-section .styled-form select{
 	line-height:26px;
-	height:44px;	
+	height:44px;
 }
 
 .styled-form select{
@@ -3734,12 +3734,12 @@ img{
 }
 
 .styled-form select option{
-	text-indent:20px;	
+	text-indent:20px;
 }
 
 .styled-form textarea{
 	resize:none;
-	height:110px;	
+	height:110px;
 }
 
 .styled-form input:focus,
@@ -3751,7 +3751,7 @@ img{
 .styled-form .form-group .theme-btn{
 	min-width:150px;
 	text-align:center;
-	padding:11px 34px;	
+	padding:11px 34px;
 	border-radius:0px;
 	cursor: pointer;
 }
@@ -3786,22 +3786,22 @@ img{
 }
 
 .social-links-two .facebook{
-	background:#3b5998;	
+	background:#3b5998;
 }
 
 .social-links-two .twitter{
-	background:#33ccfe;	
+	background:#33ccfe;
 }
 
 .social-links-two .google-plus{
-	background:#dd4b39;	
+	background:#dd4b39;
 }
 
 .box-version.option-box{
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 			Mobile Menu
@@ -3835,7 +3835,7 @@ img{
 .mobile-menu .nav-logo{
 	position:relative;
 	padding:20px 20px;
-	text-align:left;	
+	text-align:left;
 }
 
 .mobile-menu .nav-logo img{
@@ -3973,7 +3973,7 @@ img{
 
 .mobile-menu .navigation li:hover > a,
 .mobile-menu .navigation li.current > a{
-	color:#000000;	
+	color:#000000;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -4009,7 +4009,7 @@ img{
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Search Popup
@@ -4133,7 +4133,7 @@ img{
 
 .search-popup .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 	overflow: hidden;
 }
 
@@ -4261,7 +4261,7 @@ img{
 	text-transform:capitalize;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Hidden Sidebar style
@@ -4283,7 +4283,7 @@ img{
 
 .sidebar-info-contents .content-inner .logo img{
 	display:inline-block;
-	max-width:100%;	
+	max-width:100%;
 }
 
 .sidebar-info-contents .content-inner .content-box{
@@ -4375,7 +4375,7 @@ img{
 	margin-left:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Scroll To Top style
@@ -4402,7 +4402,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;		
+	transition:all 300ms ease;
 }
 
 .scroll-to-toped:hover{
@@ -4426,7 +4426,7 @@ img{
   text-align: center;
   background-color: white; }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -4469,7 +4469,7 @@ img{
     background-position: center bottom;
     background-repeat: no-repeat;
 	background-size:cover;
-	
+
 	transition: all 900ms ease;
     -moz-transition: all 900ms ease;
     -webkit-transition: all 900ms ease;
@@ -4491,7 +4491,7 @@ img{
 	z-index:2;
     background-position: right top;
     background-repeat: no-repeat;
-	
+
 	transform: translateX(500px);
 	transition: all 900ms ease;
     -moz-transition: all 900ms ease;
@@ -4716,7 +4716,7 @@ img{
 	background-color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section
@@ -4879,7 +4879,7 @@ img{
 	box-shadow:0px 0px 20px rgba(0,0,0,0.10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section
@@ -4947,7 +4947,7 @@ img{
 	line-height:1.8em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -5106,7 +5106,7 @@ img{
 	color:#0060ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section Two
@@ -5317,7 +5317,7 @@ img{
 	color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Call To Action Section
@@ -5359,7 +5359,7 @@ img{
 	padding-top:20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Cases Section
@@ -5398,7 +5398,7 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	
+
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
 	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
@@ -5521,7 +5521,7 @@ img{
 	margin-bottom:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Section
@@ -5680,7 +5680,7 @@ img{
 	margin-top:40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -5815,7 +5815,7 @@ img{
 	font-weight:500;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Technology Section
@@ -5958,7 +5958,7 @@ img{
 	text-transform:capitalize;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Section
@@ -6085,7 +6085,7 @@ img{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section
@@ -6232,7 +6232,7 @@ img{
 	color:#0060ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Footer
@@ -6399,7 +6399,7 @@ img{
 }
 
 .list-link li a:hover{
-	
+
 	text-decoration:line-through;
 }
 
@@ -6469,7 +6469,7 @@ img{
 }
 
 .main-footer .news-widget .post h6 a:hover{
-	
+
 }
 
 .main-footer .news-widget .post .date{
@@ -6575,7 +6575,7 @@ img{
 
 .main-footer.style-two .news-widget .post h6 a:hover,
 .main-footer.style-two .list-link li a:hover{
-	
+
 }
 
 .main-footer.style-three{
@@ -6588,7 +6588,7 @@ img{
 	background-color:#0060ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section Two
@@ -6766,7 +6766,7 @@ img{
 	margin-bottom:25px;
 	font-weight:600;
 	text-transform:capitalize;
-	
+
 	opacity: 0;
 	transform: scaleY(0);
 	transform-origin: top;
@@ -6794,7 +6794,7 @@ img{
 	font-weight:800;
 	line-height:1.3em;
 	font-family: 'Montserrat', sans-serif;
-	
+
 	opacity: 0;
 	transform: scaleY(0);
 	transform-origin: top;
@@ -6823,7 +6823,7 @@ img{
 	font-size:18px;
 	margin-top:25px;
 	margin-bottom:35px;
-	
+
 	opacity: 0;
 	transform: scaleY(0);
 	transform-origin: top;
@@ -7002,7 +7002,7 @@ img{
 	background-color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Experiance Section
@@ -7118,7 +7118,7 @@ img{
 }
 
 .experiance-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .experiance-tabs .tabs-content h4{
@@ -7130,14 +7130,14 @@ img{
 
 .experiance-tabs .tabs-content .text{
 	position:relative;
-	color:#222222;
+	color:#000000;
 	font-weight:600;
 	font-size:16px;
 	line-height:1.9em;
 	margin-bottom:45px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -7230,7 +7230,7 @@ img{
 	color:#0060ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section Two
@@ -7383,7 +7383,7 @@ img{
 	text-transform:uppercase;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Process Section
@@ -7448,7 +7448,7 @@ img{
 	position:relative;
 	width:70px;
 	height:70px;
-	
+
 	color:#ffffff;
 	text-align:center;
 	border-radius:50px;
@@ -7544,7 +7544,7 @@ img{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Section Two
@@ -7676,7 +7676,7 @@ img{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Appointment Section Two
@@ -7780,7 +7780,7 @@ img{
 
 .appointment-form .form-group{
 	position:relative;
-	margin-bottom:25px;	
+	margin-bottom:25px;
 }
 
 .ui-selectmenu-button.ui-button,
@@ -8013,7 +8013,7 @@ img{
 	margin-right:8px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section Three
@@ -8253,7 +8253,7 @@ img{
 	background-color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section Three
@@ -8374,7 +8374,7 @@ img{
 	color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section One
@@ -8400,7 +8400,7 @@ img{
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .fluid-section-one .image-column:before{
@@ -8418,7 +8418,7 @@ img{
 
 .fluid-section-one .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-one .image-column .image-box img{
@@ -8510,7 +8510,7 @@ img{
 	font-size:16px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section Three
@@ -8698,7 +8698,7 @@ img{
 	padding-bottom:25px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Call To Action Section
@@ -8752,7 +8752,7 @@ img{
 	top:55px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Cases Section Two
@@ -8939,7 +8939,7 @@ img{
 	font-weight:500;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing Section
@@ -9078,7 +9078,7 @@ img{
 	padding:14px 15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section Four
@@ -9227,7 +9227,7 @@ img{
 	margin-bottom:18px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Info Section
@@ -9359,7 +9359,7 @@ img{
 	font-family: 'Montserrat', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title
@@ -9448,7 +9448,7 @@ img{
 	color:#0060ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq's Page Section
@@ -9535,7 +9535,7 @@ img{
 	padding: 25px 20px 25px;
 }
 
-.accordion-box .block .acc-content.current{ 
+.accordion-box .block .acc-content.current{
 	display: block;
 }
 
@@ -9546,7 +9546,7 @@ img{
 	color: #555555;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Form Section
@@ -9564,7 +9564,7 @@ img{
 	margin:0 auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Form
@@ -9651,7 +9651,7 @@ img{
 	text-transform: capitalize;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Page Section
@@ -9664,7 +9664,7 @@ img{
 	padding:110px 0px 70px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Coming Soon
@@ -9824,7 +9824,7 @@ img{
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .coming-soon .emailed-form .form-group input:focus,
@@ -9848,7 +9848,7 @@ img{
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .coming-soon .emailed-form .form-group input[type="submit"]:hover,
@@ -10055,7 +10055,7 @@ img{
     border-radius: 50%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Page Section
@@ -10068,7 +10068,7 @@ img{
 	padding:110px 0px 70px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -10109,7 +10109,7 @@ img{
 
 .sidebar .service-list li{
 	position:relative;
-	line-height:24px;	
+	line-height:24px;
 	margin-bottom:3px;
 }
 
@@ -10420,7 +10420,7 @@ img{
 
 .services-detail .inner-box p{
 	position:relative;
-	color:#555555;
+	color:#000000;
 	font-size:16px;
 	line-height:1.8em;
 	font-weight:500;
@@ -10433,7 +10433,7 @@ img{
 	margin-bottom:18px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section
@@ -10486,7 +10486,7 @@ img{
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Detail Section
@@ -10614,7 +10614,7 @@ img{
 	margin-top:40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Info Section
@@ -10816,7 +10816,7 @@ img{
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#0060ff !important;	
+	border-color:#0060ff !important;
 }
 
 .contact-form label.error{
@@ -10827,7 +10827,7 @@ img{
 	text-transform:uppercase;
 	font-size:12px;
 	color:#0060ff;
-	font-weight:500;	
+	font-weight:500;
 }
 
 /***
@@ -10847,7 +10847,7 @@ img{
 	margin-top:50px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -11551,7 +11551,7 @@ img{
 	color:#0060ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -11601,7 +11601,7 @@ img{
 }
 
 .sidebar-page-container .comments-area .reply-comment{
-	margin-left:60px;	
+	margin-left:60px;
 }
 
 .sidebar-page-container .comments-area .comment-box .author-thumb{
@@ -11669,7 +11669,7 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -11679,7 +11679,7 @@ img{
 
 .comment-form .group-title h4{
 	position:relative;
-	margin-bottom:50px;	
+	margin-bottom:50px;
 }
 
 .comment-form .form-group{
@@ -11754,7 +11754,7 @@ img{
 .news-more-section .new-post .post-inner{
 	position:relative;
 	padding:50px 0px;
-	
+
 }
 
 .news-more-section .new-post:first-child{
@@ -12476,7 +12476,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 		Banner Section Two
@@ -12661,7 +12661,7 @@ img{
 }
 
 .rtl .header-style-four .header-lower .outer-box .advisor-box {
-    float: left;   
+    float: left;
 }
 
 .rtl .header-top-four .top-left .links li:first-child {
