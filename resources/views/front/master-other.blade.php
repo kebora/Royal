@@ -62,7 +62,7 @@
 							<li><a href="#" class="fa fa-facebook-f"></a></li>
 							<li><a href="#" class="fa fa-twitter"></a></li>
 							<li><a href="#" class="fa fa-instagram"></a></li>
-							<li><a href="#" class="fa fa-whatsapp"></a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 						</ul>
                     </div>
 
@@ -80,7 +80,7 @@
 
 				<!-- Search Box -->
 				<div class="search-box">
-					<form method="post" action="https://expert-themes.com/html/globex/contact.html">
+					<form method="post" action="#">
 						<div class="form-group">
 							<input type="search" name="search-field" value="" placeholder="Explore" required>
 							<button type="submit"><span class="icon fa fa-search"></span></button>
@@ -276,7 +276,7 @@
 								<li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
 								<li class="linkedin"><a href="#" class="fa fa-linkedin"></a></li>
 								<li class="instagram"><a href="#" class="fa fa-instagram"></a></li>
-                                <li class="whatsapp"><a href="#" class="fa fa-whatsapp"></a></li>
+                                <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -317,7 +317,7 @@
 										<li><a href="#" class="fa fa-twitter"></a></li>
 										<li><a href="#" class="fa fa-instagram"></a></li>
                                         <li><a href="#" class="fa fa-youtube"></a></li>
-                                        <li><a href="#" class="fa fa-whatsapp"></a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 									</ul>
 								</div>
 							</div>

@@ -409,47 +409,6 @@
 					</div>
 				</div>
 
-				<!-- Team Block -->
-				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="#"><img src="{{asset('corporate/images/resource/team-3.jpg')}}" alt="" /></a>
-						</div>
-						<div class="lower-box">
-							<!-- Social Box -->
-							<ul class="social-box">
-								<li><a href="#" class="fa fa-facebook-f"></a></li>
-								<li><a href="#" class="fa fa-instagram"></a></li>
-                                <li><a href="#" class="fa fa-linkedin"></a></li>
-							</ul>
-							<div class="content">
-								<h5><a href="#">Jassica Ethan</a></h5>
-								<div class="designation">Project Manager</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="#"><img src="{{asset('corporate/images/resource/team-4.jpg')}}" alt="" /></a>
-						</div>
-						<div class="lower-box">
-							<!-- Social Box -->
-							<ul class="social-box">
-								<li><a href="#" class="fa fa-facebook-f"></a></li>
-								<li><a href="#" class="fa fa-instagram"></a></li>
-                                <li><a href="#" class="fa fa-linkedin"></a></li>
-							</ul>
-							<div class="content">
-								<h5><a href="#">Adaim Mrala</a></h5>
-								<div class="designation">IT Service Officer</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 			</div>
 		</div>
