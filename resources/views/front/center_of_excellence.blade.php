@@ -1,15 +1,18 @@
 @extends('front.master-other')
 
 @section('content')
+@foreach ($Service as $service)
+
+
 	<!--Page Title-->
     <section class="page-title">
 		<div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-16.png')}}')"></div>
     	<div class="auto-container">
-			<h2>Excellence Title</h2>
+			<h2>{{$service->title}}</h2>
 			<ul class="page-breadcrumb">
 				<li><a href="{{url('/')}}">home</a></li>
 				<li>Center of Excellence</li>
-                <li>Excellence Title</li>
+                <li>{{$service->title}}</li>
 			</ul>
         </div>
     </section>
@@ -27,11 +30,14 @@
 						<!-- Services -->
                         <div class="sidebar-widget">
                             <ul class="service-list">
-                                <li class="current"><a href="{{url('/')}}/center-of-excellence/category"><span class="arrow fa fa-angle-double-right"></span> Laptops and Desktops</a></li>
-                                <li><a href="{{url('/')}}/center-of-excellence/category"><span class="arrow fa fa-angle-double-right"></span> Networking Systems</a></li>
-                                <li><a href="{{url('/')}}/center-of-excellence/category"><span class="arrow fa fa-angle-double-right"></span> Intercom Systems</a></li>
-                                <li><a href="{{url('/')}}/center-of-excellence/category"><span class="arrow fa fa-angle-double-right"></span> Computer Accessories</a></li>
-                                <li><a href="{{url('/')}}/center-of-excellence/category"><span class="arrow fa fa-angle-double-right"></span> Support and Maintenance</a></li>
+                                <?php $Servicess = DB::table('services')->get(); ?>
+                                @foreach ($Servicess as $Ser)
+                                @if($Ser->id == $service->id)
+                                   <li class="current"><a href="{{url('/')}}/center-of-excellence/{{$Ser->slung}}"><span class="arrow fa fa-angle-double-right"></span> {{$Ser->title}}</a></li>
+                                @else
+                                   <li><a href="{{url('/')}}/center-of-excellence/{{$Ser->slung}}"><span class="arrow fa fa-angle-double-right"></span> {{$Ser->title}}</a></li>
+                                @endif
+                                @endforeach
                             </ul>
                         </div>
 
@@ -57,23 +63,21 @@
                 	<div class="services-detail">
 						<div class="inner-box">
 							<h2>
-                                EXCELLENCE TITLE</h2>
+                                {{$service->title}}
+                            </h2>
 							<div class="image">
-								<img src="images/resource/service-1.jpg" alt="" />
+								<img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/services/{{$service->image}}" alt="{{$service->title}}" />
 							</div>
-							<p>This Sample Text Says That We help transform the world’s most important businesses into vigorous organizations that anticipate the agile unpredictable, adapt rapidly to disruption and outcompete opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
-							<p>We help transform the world’s most important businesses into vigorous organizations opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition. We go deep to unlock insight and have courage to act. We bring the right people together to challenge established thinking and drive transformation. We work with our clients to build the capabilities that enable organizations to achieve sustainable advantage.</p>
-							<h3>Cyber Security</h3>
-							<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ulac laboris aliquip ex ea commodo consequat duis aute irure.dolor in repre henderit in voluptate velit esse cillum fugiat nulla paria tur excepteur sint cupidatat non proident.</p>
+							{!! html_entity_decode($service->content, ENT_QUOTES, 'UTF-8') !!}
+
 							<div class="image-two">
-								<img src="images/resource/service-2.jpg" alt="" />
+								<img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/services/{{$service->image}}" alt="{{$service->title}}" />
 								<div class="play-box">
 									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
 								</div>
 							</div>
-							<h3>Analyzing IT services</h3>
-							<p>We help transform the world’s most important businesses into vigorous organizations that anticipate the agile unpredictable, adapt rapidly to disruption and outcompete opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
-							<p>We help transform the world’s most important businesses into vigorous organizations opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
+							<h3>{{$service->title}}</h3>
+                            {!! html_entity_decode($service->content_one, ENT_QUOTES, 'UTF-8') !!}
 						</div>
 					</div>
 				</div>
@@ -82,5 +86,5 @@
 		</div>
 	</div>
 
-
+    @endforeach
 @endsection

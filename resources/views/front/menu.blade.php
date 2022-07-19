@@ -8,12 +8,10 @@
 
     <li class="dropdown"><a href="#">Center of Exellence</a>
         <ul>
-            <li><a href="{{url('/')}}/center-of-excellence/category">Laptops for Hire</a></li>
-            <li><a href="{{url('/')}}/center-of-excellence/category">Computers Sale</a></li>
-            <li><a href="{{url('/')}}/center-of-excellence/category">Cabling</a></li>
-            <li><a href="{{url('/')}}/center-of-excellence/category">Office Stationery</a></li>
-            <li><a href="{{url('/')}}/center-of-excellence/category">Computer Parts</a></li>
-            <li><a href="{{url('/')}}/center-of-excellence/category">Softwares</a></li>
+            <?php $Services = DB::table('services')->get(); ?>
+            @foreach ($Services as $Ser)
+            <li><a href="{{url('/')}}/center-of-excellence/{{$Ser->slung}}">{{$Ser->title}}</a></li>
+            @endforeach
         </ul>
     </li>
 
