@@ -1635,6 +1635,7 @@ img{
 .main-header.header-style-two .outer-box .cart-box .cart-box-btn .total-cart{
 	background-color:#ffffff;
 	color:#222222;
+    text-shadow: 1px 1px #ffffff;
 }
 
 .main-header.header-style-three .nav-outer{

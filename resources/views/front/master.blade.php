@@ -14,7 +14,7 @@
 
 <link href="{{asset('fonts.googleapis.com/css26778.css?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Nunito+Sans:wght@300;600;700;800;900&amp;display=swap')}}" rel="stylesheet">
 
-
+@include('favicon')
 <!-- Color Themes -->
 <link id="theme-color-file" href="{{asset('corporate/css/color-themes/default-theme.css')}}" rel="stylesheet">
 
@@ -44,7 +44,7 @@
 					<div class="top-left clearfix">
 						<!-- Info List -->
 						<ul class="info-list">
-							<li>We are creative, ambitious and ready for challenges!<strong><a href="#">Hire Us</a></strong></li>
+							<li>We are creative, ambitious and ready for challenges!</li>
 							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Tembo Co-op House
                                 Moi Ave Nairobi-Room 201</a></li>
 						</ul>
