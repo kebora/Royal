@@ -5,6 +5,7 @@
     <li><a href="#"><span class="fa fa-info"></span> The Company</a>
 
     </li>
+
     <li class="dropdown"><a href="#">Center of Exellence</a>
         <ul>
             <li><a href="{{url('/')}}/center-of-excellence/category">Laptops and Desktops</a></li>
@@ -26,6 +27,9 @@
         </ul>
     </li>
     <li><a href="#">Blog</a>
+
+    </li>
+    <li><a href="#"><span class="fa fa-laptop"></span> Hire </a>
 
     </li>
     <li><a href="{{url('/')}}/contact-us"><span class="fa fa-phone"></span> Contact us</a></li>

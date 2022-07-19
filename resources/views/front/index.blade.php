@@ -16,8 +16,8 @@
 						<div class="image-column col-lg-6 col-md-12 col-sm-12">
 							<div class="inner-column">
 								<div class="image">
-									<img src="#" alt="Kigens Image 566 by 766 PNG" />
-                                    {{-- <img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" /> --}}
+									{{-- <img src="#" alt="Kigens Image 566 by 766 PNG" /> --}}
+                                    <img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" />
 								</div>
 							</div>
 						</div>
@@ -26,7 +26,7 @@
 						<div class="content-column col-lg-6 col-md-12 col-sm-12">
 							<div class="inner-column">
 
-								<h1>Best Computers <br> & Laptops in Nairobi</h1>
+								<h1>Laptops for Hire</h1>
 								<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div>
 								<div class="play-box">
 									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>

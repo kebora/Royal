@@ -14,7 +14,7 @@ a,
 .main-menu .navigation > li > ul > li > a:before,
 .banner-section-four .slide-item .title,
 .banner-section-four .content-box .video-link a,
-.main-menu .navigation > li.current > a,
+.main-menu .navigation > li.currents > a,
 .main-header .cart-box .cart-box-btn,
 .main-header .cart-product .inner h3 a:hover,
 .feature-block .inner-box .icon,
@@ -87,12 +87,12 @@ a,
 .shop-page .prod-tabs .add-review .rating .rate-box:active,
 .news-detail .inner-box .upper-box .post-meta li,
 .news-detail .post-share-options .social-box li a:hover{
-	color:#0060ff;
+	color:#1d335c;
 }
 
 .sticky-header .main-menu .navigation > li:hover > a,
 .sticky-header .main-menu .navigation > li.current > a{
-	color:#0060ff !important;
+	color:#1d335c !important;
 }
 
 /* Background Color */
@@ -151,28 +151,28 @@ a,
 .sidebar-page-container .comments-area .comment-box .theme-btn,
 .main-header .sticky-header .outer-box .cart-box .cart-box-btn .total-cart,
 .main-menu .navigation > li:before{
-	background-color:#0060ff;
+	background-color:#1d335c;
 }
 
 .experiance-tabs .tab-btns .tab-btn:before{
-	background: -webkit-radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
-    background: radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
+	background: -webkit-radial-gradient(circle farthest-corner at center center, #1d335c 0%, #131E3C 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #1d335c 0%, #131E3C 100%);
+    background: radial-gradient(circle farthest-corner at center center, #1d335c 0%, #131E3C 100%);
 }
 
 .main-footer{
-	background: -webkit-radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
-    background: radial-gradient(circle farthest-corner at center center, #0060ff 0%, #131E3C 100%);
+	background: -webkit-radial-gradient(circle farthest-corner at center center, #1d335c 0%, #131E3C 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #1d335c 0%, #131E3C 100%);
+    background: radial-gradient(circle farthest-corner at center center, #1d335c 0%, #131E3C 100%);
 }
 
 .service-block .inner-box:before{
-    background-image: -ms-linear-gradient(top, #131E39 0%, #0060ff 100%);
-    background-image: -moz-linear-gradient(top, #131E39 0%, #0060ff 100%);
-    background-image: -o-linear-gradient(top, #131E39 0%, #0060ff 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #131E39), color-stop(100, #0060ff));
-    background-image: -webkit-linear-gradient(top, #131E39 0%, #0060ff 100%);
-    background-image: linear-gradient(to bottom, #131E39 0%, #0060ff 100%);
+    background-image: -ms-linear-gradient(top, #131E39 0%, #1d335c 100%);
+    background-image: -moz-linear-gradient(top, #131E39 0%, #1d335c 100%);
+    background-image: -o-linear-gradient(top, #131E39 0%, #1d335c 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #131E39), color-stop(100, #1d335c));
+    background-image: -webkit-linear-gradient(top, #131E39 0%, #1d335c 100%);
+    background-image: linear-gradient(to bottom, #131E39 0%, #1d335c 100%);
 }
 
 .about-section-two:before,
@@ -219,15 +219,15 @@ a,
 .contact-form .form-group input[type="tel"]:focus,
 .contact-form .form-group input[type="email"]:focus,
 .contact-form .form-group textarea:focus{
-	border-color:#0060ff;
+	border-color:#1d335c;
 }
 
 @media only screen and (max-width: 767px){
-	
+
 	.main-menu .navbar-header .navbar-toggle{
-		
+
 	}
-	
+
 	.main-menu .navbar-header .navbar-toggle,
 	.main-menu .navbar-collapse > .navigation,
 	.main-menu .navbar-collapse > .navigation > li > ul,
@@ -244,7 +244,7 @@ a,
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a,
 	.header-style-two.inner-header .main-menu .navigation > li > a{
-		
+
 	}
-	
+
 }

@@ -75,7 +75,7 @@
         	<div class="outer-container clearfix">
 
 				<div class="pull-left logo-box">
-					<div class="logo"><a href="#"><img src="{{asset('corporate/images/logo-2.png')}}" alt="" title=""></a></div>
+					<div class="logo"><a href="#"><img src="#" alt="" title=""></a></div>
 				</div>
 
 				<!-- Search Box -->
@@ -164,7 +164,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{{url('/')}}" title=""><img src="{{asset('corporate/images/logo-small.png')}}" alt="" title=""></a>
+                    <a href="{{url('/')}}" title=""><img src="#" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -274,7 +274,11 @@
 							<ul class="social-box">
 								<li class="facebook"><a href="#" class="fa fa-facebook-f"></a></li>
 								<li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
-								<li class="linkedin"><a href="#" class="fa fa-linkedin"></a></li>
+								<li class="linkedin">
+                                    <a href="#" class="fa fa-linkedin">
+
+                                    </a>
+                                </li>
 								<li class="instagram"><a href="#" class="fa fa-instagram"></a></li>
                                 <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 							</ul>
@@ -307,7 +311,7 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="{{url('/')}}"><img src="{{asset('corporate/images/logo-2.png')}}" alt="" /></a>
+										<a href="{{url('/')}}"><img src="#" alt="Logo" /></a>
 									</div>
 									<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 10 years of experience and 1000+ of innovative achievements.</div>
 									<!-- Social Box -->

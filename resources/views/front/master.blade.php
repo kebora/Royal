@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Royal Tech Template | IT Solutions in Nairobi</title>
+<title>Royal Tech Template | Laptops For Hire | IT Solutions in Nairobi</title>
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -75,7 +75,9 @@
         	<div class="outer-container clearfix">
 
 				<div class="pull-left logo-box">
-					<div class="logo"><a href="#"><img src="{{asset('corporate/images/logo-2.png')}}" alt="" title=""></a></div>
+					<div class="logo">
+						<a href="#"><img style="max-height:100px"  src="{{url('/')}}/uploads/RoyalTechComputersLogow-05.png" alt="Royal Tech Computers Limited" title=""></a> &nbsp; &nbsp;
+					</div>
 				</div>
 
 				<!-- Search Box -->
@@ -164,7 +166,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{{url('/')}}" title=""><img src="{{asset('corporate/images/logo-small.png')}}" alt="" title=""></a>
+                    <a href="{{url('/')}}" title=""><img Style="max-height:70px"  src="{{url('/')}}/uploads/logo-theme.png" alt="Royal Tech Computers Limited" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -228,7 +230,7 @@
             <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="{{url('/')}}"><img src="{{asset('corporate/images/logo.png')}}" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="{{url('/')}}"><img src="#" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div><!-- End Mobile Menu -->
@@ -252,7 +254,7 @@
 					<div class="sidebar-info-contents">
 						<div class="content-inner">
 							<div class="logo">
-								<a href="{{url('/')}}"><img src="#" alt="Royal Tech Computers Logo" /></a>
+								<a href="{{url('/')}}"><img src="{{url('/')}}/uploads/RoyalTechComputersLogow-05.png" alt="Royal Tech Computers Logo" /></a>
 							</div>
 							<div class="content-box">
 								<h2>About Us</h2>
@@ -307,7 +309,7 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="{{url('/')}}"><img src="{{asset('corporate/images/logo-2.png')}}" alt="" /></a>
+										<a href="{{url('/')}}"><img src="#" alt="" /></a>
 									</div>
 									<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 10 years of experience and 1000+ of innovative achievements.</div>
 									<!-- Social Box -->
