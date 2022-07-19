@@ -18,8 +18,7 @@
 <!-- Color Themes -->
 <link id="theme-color-file" href="{{asset('corporate/css/color-themes/default-theme.css')}}" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png')}}" type="image/x-icon">
-<link rel="icon" href="images/favicon.png')}}" type="image/x-icon">
+@include('favicon')
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="{{asset('corporate/js/respond.js')}}"></script><![endif]-->
@@ -74,8 +73,8 @@
         <div class="header-upper">
         	<div class="outer-container clearfix">
 
-				<div class="pull-left logo-box">
-					<div class="logo"><a href="#"><img src="#" alt="" title=""></a></div>
+				<div class="pull-left logo-box" style="margin:10px !important">
+					<div class="logo"><a href="#"><img style="max-height:70px"  src="{{url('/')}}/uploads/logo-theme.png" alt="" title=""></a></div>
 				</div>
 
 				<!-- Search Box -->
@@ -164,7 +163,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{{url('/')}}" title=""><img src="#" alt="" title=""></a>
+                    <a href="{{url('/')}}" title=""><img style="max-height:70px"  src="{{url('/')}}/uploads/logo-theme.png" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -311,9 +310,9 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="{{url('/')}}"><img src="#" alt="Logo" /></a>
+										<a href="{{url('/')}}"><img src="{{url('/')}}/uploads/RoyalTechComputersLogow-05.png" alt="Royal Tech Computers Limited" /></a>
 									</div>
-									<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 10 years of experience and 1000+ of innovative achievements.</div>
+									{{-- <div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 10 years of experience and 1000+ of innovative achievements.</div> --}}
 									<!-- Social Box -->
 									<ul class="social-box">
 										<li><a href="#" class="fa fa-facebook-f"></a></li>
@@ -351,7 +350,7 @@
 							<!-- Footer Column -->
 							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 								<div class="footer-widget news-widget">
-									<h5>Resent Post</h5>
+									<h5>Recent Post</h5>
 									<!-- Footer Column -->
 									<div class="widget-content">
 										<div class="post">
@@ -377,7 +376,8 @@
 										<li>
 											<span class="icon flaticon-placeholder-2"></span>
 											<strong>Address</strong>
-											Tembo Co-op House Moi Ave Nairobi-Room 201
+											Tembo Co-op House
+                                Moi Ave Nairobi-Room 201
 										</li>
 										<li>
 											<span class="icon flaticon-phone-call"></span>

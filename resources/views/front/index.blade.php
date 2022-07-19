@@ -17,7 +17,7 @@
 							<div class="inner-column">
 								<div class="image">
 									{{-- <img src="#" alt="Kigens Image 566 by 766 PNG" /> --}}
-                                    <img src="{{asset('corporate/images/main-slider/content-image-1.png')}}" alt="" />
+                                    <img src="{{url('/')}}/uploads/kigen.png" alt="" />
 								</div>
 							</div>
 						</div>
@@ -306,7 +306,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<div class="title">Mission . Vision . Strategy</div>
+				<div class="title" style="text-shadow:1px 1px #ffffff">Mission . Vision . Strategy</div>
 				<h2 style="color:#ffffff">Driving Client Results Utilizing New <br> Innovation </h2>
 			</div>
 			<div class="row clearfix">
@@ -316,7 +316,7 @@
 					<div class="inner-box wow fadeInLeft process-block-block" data-wow-delay="0ms" data-wow-duration="1500ms">
 
 						<h4><a href="#">Mission</a></h4>
-						<p class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</p>
+						<p class="text">To Bring In technology  closer to Communities &amp; Businesses  so that they transform the World.</p>
 						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
@@ -326,7 +326,7 @@
 					<div class="inner-box wow fadeInUp process-block-block" data-wow-delay="0ms" data-wow-duration="1500ms">
 
 						<h4><a href="#">Vision</a></h4>
-						<p class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</p>
+						<p class="text">To Be a global Technology  Retailing Power house with world Class Products and Services.</p>
 						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
@@ -335,8 +335,8 @@
 				<div class="process-block col-lg-4 col-md-6 col-sm-12 text-center">
 					<div class="inner-box wow fadeInRight process-block-block" data-wow-delay="0ms" data-wow-duration="1500ms">
 
-						<h4><a href="#">Strategy</a></h4>
-						<p class="text">Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. per inceptos himenaeos.</p>
+						<h4><a href="#">Overview</a></h4>
+						<p class="text">We are a locally registered private limited company which deals in delivery of  technology Solutions.</p>
 						{{-- <a class="read-more" href="#"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Read More</a> --}}
 					</div>
 				</div>
@@ -371,7 +371,7 @@
 				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<div class="image">
-							<a href="#"><img src="{{asset('corporate/images/resource/team-4.jpg')}}" alt="" /></a>
+							<a href="#"><img src="{{url('/')}}/uploads/kigen.png" alt="" /></a>
 						</div>
 						<div class="lower-box">
 							<!-- Social Box -->
@@ -382,32 +382,13 @@
 							</ul>
 							<div class="content">
 								<h5><a href="#">Kennedy Kigen</a></h5>
-								<div class="designation">Consultant Officer</div>
+								<div class="designation">Chief Consultant</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Team Block -->
-				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="image">
-							<a href="#"><img src="{{asset('corporate/images/resource/team-2.jpg')}}" alt="" /></a>
-						</div>
-						<div class="lower-box">
-							<!-- Social Box -->
-							<ul class="social-box">
-								<li><a href="#" class="fa fa-facebook-f"></a></li>
-								<li><a href="#" class="fa fa-instagram"></a></li>
-                                <li><a href="#" class="fa fa-linkedin"></a></li>
-							</ul>
-							<div class="content">
-								<h5><a href="#">Robert Liam</a></h5>
-								<div class="designation">Network Administrator</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
 
 
 			</div>
