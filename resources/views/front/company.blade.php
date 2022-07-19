@@ -38,10 +38,20 @@
                         <!-- Feature Block -->
                         <div class="feature-block">
                             <div class="inner-box">
-                                <div class="icon flaticon-binoculars"></div>
+                                <div class="icon fa fa-binoculars"></div>
                                 <h6>OUR VISION</h6>
                                 <div class="feature-text">To Be A Global Center For Technology Machines And Computer Retailing Power House With
                                     World Class Excellence In Providing Technological And Connectivity Services.</div>
+                            </div>
+                        </div>
+
+                        <div class="feature-block">
+                            <div class="inner-box">
+                                <div class="icon flaticon-award-1"></div>
+                                <h6>OUR MISSION</h6>
+                                <div class="feature-text">Our Mission Is To Put Everything Into Play And Bring The World Into Attention Of Technology.
+                                    We Do This By Bringing In Technology And Computers Closer To Communities, Businesses And
+                                    Individuals, So That They Transform The World.</div>
                             </div>
                         </div>
 
@@ -68,20 +78,20 @@
                     <div class="pattern-layer" style="background-image: url('{{asset('corporate/images/background/pattern-1.png')}}')"></div>
                     <div class="images-outer parallax-scene-1">
                         <div class="image" data-depth="0.10">
-                            <img src="images/resource/about-1.jpg" alt="" />
+                            <img style="border-radius:20%" src="{{asset('corporate/images/portraits.jpg')}}" alt="" />
                         </div>
                         <div class="image-two" data-depth="0.30">
-                            <img src="images/resource/about-2.jpg" alt="" />
+                            <img style="border-radius:20%" src="{{asset('corporate/images/resource/pexels-ketut-subiyanto-4560153.jpg')}}" alt="" />
                         </div>
                         <div class="image-three" data-depth="0.20">
-                            <img src="images/resource/about-3.jpg" alt="" />
+                            <img style="border-radius:20%" src="{{asset('corporate/images/resource/pexels-rfstudio-3825582.jpg')}}" alt="" />
                         </div>
                         <div class="image-four" data-depth="0.30">
-                            <img src="images/resource/about-4.jpg" alt="" />
+                            <img src="{{asset('corporate/images/resource/s-pdpxl.png')}}" alt="" />
                         </div>
                     </div>
                 </div>
-                <a href="about.html" class="learn"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Learn More About Company</a>
+                <a href="#story" class="learn"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Learn More About Our Story</a>
 
 
             </div>
@@ -90,4 +100,38 @@
     </div>
 </section>
 <!-- End About Section -->
+
+	<!-- Technology Section -->
+	<section id="story" class="technology-section style-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
+		<div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-5.png')}}')"></div>
+		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/background/pattern-6.png')}}')"></div>
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title light centered">
+				<div class="title">Our Story</div>
+				{{-- <h2>Tech Solutions Tailored <br> Just for You</h2> --}}
+			</div>
+			<div class="row clearfix">
+
+                <p style="max-width:800px; color:#ffffff; margin:0 auto; font-size:15px">
+                    Royaltech computers was first registered as a business on 6th Aug, 2019 operating in Nairobi
+                    CBD Tembo House Building. It was then incorporated into a limited liability company on 16th
+                    June 2021 and has since moved its location to Old Nation House where it continues to offer
+                    top notch Tech services and solutions.<br> The Company has highly qualified and experienced
+                    personnel dedicated to providing quality IT goods and services to the clients.<br>
+                    The Business was founded by KENNEDY KIGEN who is the ensures smooth running of the
+                    day to day business. Various technical departments are headed by qualified personnel. Our
+                    personnel or rather work force is well experienced in sourcing, procuring and delivering of
+                    required items within or less than the stipulated time.
+                    Quality is our top priority in meeting our clients changing needs and emerging modern
+                    trends. Our staff is our greatest asset comprising permanent employees and several
+                    associates always available at short notice.... Well, We are still writing our story <span class="fa fa-smile-o"></span>
+                    Be part of <a style="font-weight: 800; color:#ffffff;" href="{{url('/')}}/contact-us">the story</a>
+                </p>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Technology Section -->
+    @include('front.news')
 @endsection
