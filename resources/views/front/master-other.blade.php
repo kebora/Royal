@@ -74,7 +74,7 @@
         	<div class="outer-container clearfix">
 
 				<div class="pull-left logo-box" style="margin:10px !important">
-					<div class="logo"><a href="#"><img style="max-height:70px"  src="{{url('/')}}/uploads/Royaltech-Original-1.png" alt="" title=""></a></div>
+					<div class="logo"><a href="{{url('/')}}"><img style="max-height:70px"  src="{{url('/')}}/uploads/Royaltech-Original-1.png" alt="" title=""></a></div>
 				</div>
 
 				<!-- Search Box -->
