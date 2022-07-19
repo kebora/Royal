@@ -73,7 +73,7 @@
 
 				<div class="pull-left logo-box">
 					<div class="logo">
-						<a href="#"><img style="max-height:100px"  src="{{url('/')}}/uploads/RoyalTechComputersLogow-05.png" alt="Royal Tech Computers Limited" title=""></a> &nbsp; &nbsp;
+						<a href="{{url('/')}}"><img style="max-height:100px"  src="{{url('/')}}/uploads/Royaltech-Original-White-1.png" alt="Royal Tech Computers Limited" title=""></a> &nbsp; &nbsp;
 					</div>
 				</div>
 
