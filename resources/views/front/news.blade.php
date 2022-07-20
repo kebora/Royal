@@ -10,6 +10,8 @@
 
 				<div class="single-item-carousel owl-carousel owl-theme">
 
+                    <?php $Blog = DB::table('blogs')->limit(3)->get(); ?>
+                    @foreach ($Blog as $blog)
 					<!-- News Block Two -->
 					<div class="news-block-two">
 						<div class="inner-box">
@@ -17,13 +19,13 @@
 								<!-- Content Column -->
 								<div class="content-column col-lg-5 col-md-12 col-sm-12">
 									<div class="inner-column">
-										<h4><a href="https://news.royaltech.co.ke">Define World Best IT Solution Technology</a></h4>
-										<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</div>
+										<h4><a href="{{url('/')}}/blogs/{{$blog->slung}}">{{$blog->title}}</a></h4>
+										<div class="text">{!! html_entity_decode($blog->meta, ENT_QUOTES, 'UTF-8') !!}</div>
 										<ul class="post-meta">
 											<li><span class="icon flaticon-comment"></span>3 comments</li>
 											<li><span class="icon flaticon-user"></span>Admin</li>
 										</ul>
-										<a href="#" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
+										<a href="{{url('/')}}/blogs/{{$blog->slung}}" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
 									</div>
 								</div>
 								<!-- Image Column -->
@@ -31,71 +33,15 @@
 									<div class="inner-column">
 										<div class="post-date">22 <span>DEC</span></div>
 										<div class="image">
-											<a href="https://news.royaltech.co.ke"><img src="{{asset('corporate/images/resource/news-4.jpg')}}" alt="" /></a>
+											<a href="{{url('/')}}/blogs/{{$blog->slung}}"><img src="{{url('/')}}/uploads/blog/{{$blog->image}}" alt="{{$blog->title}}" /></a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+                    @endforeach
 
-					<!-- News Block Two -->
-					<div class="news-block-two">
-						<div class="inner-box">
-							<div class="row clearfix">
-								<!-- Content Column -->
-								<div class="content-column col-lg-5 col-md-12 col-sm-12">
-									<div class="inner-column">
-										<h4><a href="https://news.royaltech.co.ke">Define World Best IT Solution Technology</a></h4>
-										<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</div>
-										<ul class="post-meta">
-											<li><span class="icon flaticon-comment"></span>3 comments</li>
-											<li><span class="icon flaticon-user"></span>Admin</li>
-										</ul>
-										<a href="#" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
-									</div>
-								</div>
-								<!-- Image Column -->
-								<div class="image-column col-lg-7 col-md-12 col-sm-12">
-									<div class="inner-column">
-										<div class="post-date">22 <span>DEC</span></div>
-										<div class="image">
-											<a href="https://news.royaltech.co.ke"><img src="{{asset('corporate/images/resource/news-4.jpg')}}" alt="" /></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- News Block Two -->
-					<div class="news-block-two">
-						<div class="inner-box">
-							<div class="row clearfix">
-								<!-- Content Column -->
-								<div class="content-column col-lg-5 col-md-12 col-sm-12">
-									<div class="inner-column">
-										<h4><a href="https://news.royaltech.co.ke">Define World Best IT Solution Technology</a></h4>
-										<div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</div>
-										<ul class="post-meta">
-											<li><span class="icon flaticon-comment"></span>3 comments</li>
-											<li><span class="icon flaticon-user"></span>Admin</li>
-										</ul>
-										<a href="#" class="theme-btn btn-style-three"><span class="txt">Read More</span></a>
-									</div>
-								</div>
-								<!-- Image Column -->
-								<div class="image-column col-lg-7 col-md-12 col-sm-12">
-									<div class="inner-column">
-										<div class="post-date">22 <span>DEC</span></div>
-										<div class="image">
-											<a href="https://news.royaltech.co.ke"><img src="{{asset('corporate/images/resource/news-4.jpg')}}" alt="" /></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 
 				</div>
 

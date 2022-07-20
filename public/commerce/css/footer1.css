@@ -3,15 +3,15 @@
 *	Author: Magentech
 *	Author URI: http://www.magentech.com
 *	Version: 1.0.0
-*	Description: This is html5 Sass template 
+*	Description: This is html5 Sass template
 *******************************************/
 /*===============================================
 	[SASS DIRECTORY ]
-	
+
     [1] Minxin Link
     [2] Minxin Buton
     [3] Minxin Triangle
-   
+
 ==============================================*/
 .no-margin {
   margin: 0 !important; }
@@ -58,7 +58,7 @@
 	  Footer Wrapper
 **************************************************************/
 .footer-container {
-  background-color: #dddddd;
+    background-color: #141d38;
   padding: 34px 0 0; }
 
 .footer-top .footer-lines {

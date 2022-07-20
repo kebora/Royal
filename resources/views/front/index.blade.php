@@ -282,14 +282,10 @@
 			<div class="carousel-outer">
                 <!--Sponsors Slider-->
                 <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/1.png')}}" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/2.png')}}" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/3.png')}}" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/4.png')}}" alt=""></a></div></li>
-					<li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/1.png')}}" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/2.png')}}" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/3.png')}}" alt=""></a></div></li>
-                    <li><div class="image-box"><a href="#"><img src="{{asset('corporate/images/clients/4.png')}}" alt=""></a></div></li>
+                    <?php $Brands = DB::table('brands')->get(); ?>
+                    @foreach ($Brands as $brands)
+                    <li><div class="image-box"><a href="#"><img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/brands/{{$brands->image}}" alt="{{$brands->title}}"></a></div></li>
+                    @endforeach
                 </ul>
             </div>
 

@@ -26,6 +26,6 @@ Route::get('/center-of-excellence/{slung}', [App\Http\Controllers\HomeController
 
 // Ecommerce
 Route::group(['prefix'=>'e-commerce'], function(){
-
+    Route::get('/', [App\Http\Controllers\ShopController::class, 'index'])->name('home');
 });
 

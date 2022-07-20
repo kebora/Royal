@@ -251,7 +251,7 @@
 					<div class="sidebar-info-contents">
 						<div class="content-inner">
 							<div class="logo">
-								<a href="{{url('/')}}"><img src="#" alt="Royal Tech Computers Logo" /></a>
+								<a href="{{url('/')}}"><img src="{{url('/')}}/uploads/RoyalTechComputersLogow-05.png" alt="Royal Tech Computers Logo" /></a>
 							</div>
 							<div class="content-box">
 								<h2>About Us</h2>
