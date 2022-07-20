@@ -10773,6 +10773,8 @@ img{
 
 .contact-form .form-group input[type="text"],
 .contact-form .form-group input[type="tel"],
+.contact-form .form-group input[type="number"],
+.contact-form .form-group input[type="date"],
 .contact-form .form-group input[type="email"],
 .contact-form .form-group select{
 	position:relative;

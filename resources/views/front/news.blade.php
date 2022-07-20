@@ -4,7 +4,7 @@
 			<!-- Sec Title -->
 			<div class="sec-title">
 				<div class="title">Our Blog</div>
-				<h2>Click Out Our <br> Latest News & Artical</h2>
+				<h2>Click Out Our <br> Latest News & Articles</h2>
 			</div>
 			<div class="inner-container">
 
@@ -31,7 +31,7 @@
 								<!-- Image Column -->
 								<div class="image-column col-lg-7 col-md-12 col-sm-12">
 									<div class="inner-column">
-										<div class="post-date">22 <span>DEC</span></div>
+										<div class="post-date">{{date('d', $blog->created_at)}} <span>{{date('M', $blog->created_at)}}</span></div>
 										<div class="image">
 											<a href="{{url('/')}}/blogs/{{$blog->slung}}"><img src="{{url('/')}}/uploads/blog/{{$blog->image}}" alt="{{$blog->title}}" /></a>
 										</div>

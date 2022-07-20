@@ -27,7 +27,7 @@
     <li><a href="#">Blog</a>
 
     </li>
-    <li><a href="#"><span class="fa fa-laptop"></span> Hire </a>
+    <li><a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire </a>
 
     </li>
     <li><a href="{{url('/')}}/contact-us"><span class="fa fa-phone"></span> Contact us</a></li>

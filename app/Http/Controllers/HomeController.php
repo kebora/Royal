@@ -22,5 +22,32 @@ class HomeController extends Controller
         return view('front.company');
     }
 
+    public function laptops_for_hire(){
+        return view('front.laptops-for-hire');
+    }
+
+    public function terms_and_conditions(){
+        $Terms = DB::table('terms')->get();
+        return view('front.terms-and-conditions', compact('Terms'));
+    }
+
+    public function copyright(){
+        return view('front.copyright');
+    }
+
+    public function privacy_policy(){
+        $Terms = DB::table('privacy')->get();
+        return view('front.privacy-policy', compact('Terms'));
+    }
+
+    public function blogs($slung){
+        $Blog = DB::table('blogs')->where('slung',$slung)->get();
+        return view('front.blogs' ,compact('Blog'));
+    }
+
+
 
 }
+
+
+
