@@ -42,7 +42,7 @@ class HomeController extends Controller
 
     public function blogs($slung){
         $Blog = DB::table('blogs')->where('slung',$slung)->get();
-        return view('front.blogs' ,compact('Blog'));
+        return view('front.blog' ,compact('Blog'));
     }
 
 
