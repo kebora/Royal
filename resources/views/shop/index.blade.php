@@ -17,160 +17,24 @@
                    <div class="col-sm-4"><img src="{{asset('commerce/image/demo/shop/category/smartphone-tablets.jpg')}}" alt="Apple Cinema 30&quot;"></div>
                    <div class="col-sm-8">
                       <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis sit voluptatem accusantium doloremque laudantium. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. </p>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipisMauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in,auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. </p>
                    </div>
                 </div>
              </div>
              <!--Content Top -->
-             <div class="module latest-product titleLine">
-                <h3 class="modtitle">Filter </h3>
-                <div class="modcontent ">
-                   <form class="type_2">
-                      <div class="table_layout filter-row">
-                         <div class="table_row">
-                            <!-- - - - - - - - - - - - - - Category filter - - - - - - - - - - - - - - - - -->
-                            <div class="table_cell" style="z-index: 103;">
-                               <legend>Search</legend>
-                               <input class="form-control" type="text" value="" size="30" autocomplete="off" placeholder="Search" name="search">
-                            </div>
-                            <!--/ .table_cell -->
-                            <!-- - - - - - - - - - - - - - End of category filter - - - - - - - - - - - - - - - - -->
-                            <!-- - - - - - - - - - - - - - SUB CATEGORY - - - - - - - - - - - - - - - - -->
-                            <div class="table_cell">
-                               <fieldset>
-                                  <legend>Sub Category</legend>
-                                  <ul class="checkboxes_list">
-                                     <li>
-                                        <input type="checkbox" checked="" name="category" id="category_1">
-                                        <label for="category_1">Smartphone & Tablets</label>
-                                     </li>
-                                     <li>
-                                        <input type="checkbox" name="category" id="category_2">
-                                        <label for="category_2">Electronics</label>
-                                     </li>
-                                     <li>
-                                        <input type="checkbox" name="category" id="category_3">
-                                        <label for="category_3">Shoes</label>
-                                     </li>
-                                     <li>
-                                        <input type="checkbox" name="category" id="category_4">
-                                        <label for="category_4">Watches</label>
-                                     </li>
-                                  </ul>
-                               </fieldset>
-                            </div>
-                            <!--/ .table_cell -->
-                            <!-- - - - - - - - - - - - - - End SUB CATEGORY - - - - - - - - - - - - - - - - -->
-                            <!-- - - - - - - - - - - - - - Manufacturer - - - - - - - - - - - - - - - - -->
-                            <div class="table_cell">
-                               <fieldset>
-                                  <legend>Manufacturer</legend>
-                                  <ul class="checkboxes_list">
-                                     <li>
-                                        <input type="checkbox" checked="" name="manufacturer" id="manufacturer_1">
-                                        <label for="manufacturer_1">Manufacturer 1</label>
-                                     </li>
-                                     <li>
-                                        <input type="checkbox" name="manufacturer" id="manufacturer_2">
-                                        <label for="manufacturer_2">Manufacturer 2</label>
-                                     </li>
-                                     <li>
-                                        <input type="checkbox" name="manufacturer" id="manufacturer_3">
-                                        <label for="manufacturer_3">Manufacturer 3</label>
-                                     </li>
-                                  </ul>
-                               </fieldset>
-                            </div>
-                            <!--/ .table_cell -->
-                            <!-- - - - - - - - - - - - - - End manufacturer - - - - - - - - - - - - - - - - -->
-                            <!-- - - - - - - - - - - - - - Price - - - - - - - - - - - - - - - - -->
-                            <div class="table_cell">
-                               <fieldset>
-                                  <legend>Price</legend>
-                                  <div class="range">
-                                     Range :
-                                     <span class="min_val">$188.73</span> -
-                                     <span class="max_val">$335.15</span>
-                                     <input type="hidden" name="" class="min_value" value="188.73">
-                                     <input type="hidden" name="" class="max_value" value="335.15">
-                                  </div>
-                                  <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-                                     <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
-                                     <span class="ui-slider-handle ui-state-default ui-corner-all" ></span>
-                                     <span class="ui-slider-handle ui-state-default ui-corner-all" ></span>
-                                  </div>
-                               </fieldset>
-                            </div>
-                            <!--/ .table_cell -->
-                            <!-- - - - - - - - - - - - - - End price - - - - - - - - - - - - - - - - -->
-                            <!-- - - - - - - - - - - - - - Price - - - - - - - - - - - - - - - - -->
-                            <div class="table_cell">
-                               <fieldset>
-                                  <legend>Color</legend>
-                                  <div class="row">
-                                     <div class="col-sm-6">
-                                        <ul class="simple_vertical_list">
-                                           <li>
-                                              <input type="checkbox" name="" id="color_btn_1">
-                                              <label for="color_btn_1" class="color_btn green">Green</label>
-                                           </li>
-                                           <li>
-                                              <input type="checkbox" name="" id="color_btn_2">
-                                              <label for="color_btn_2" class="color_btn yellow">Yellow</label>
-                                           </li>
-                                           <li>
-                                              <input type="checkbox" name="" id="color_btn_3">
-                                              <label for="color_btn_3" class="color_btn red">Red</label>
-                                           </li>
-                                        </ul>
-                                     </div>
-                                     <div class="col-sm-6">
-                                        <ul class="simple_vertical_list">
-                                           <li>
-                                              <input type="checkbox" name="" id="color_btn_4">
-                                              <label for="color_btn_4" class="color_btn blue">Blue</label>
-                                           </li>
-                                           <li>
-                                              <input type="checkbox" name="" id="color_btn_5">
-                                              <label for="color_btn_5" class="color_btn grey">Grey</label>
-                                           </li>
-                                           <li>
-                                              <input type="checkbox" name="" id="color_btn_6">
-                                              <label for="color_btn_6" class="color_btn orange">Orange</label>
-                                           </li>
-                                        </ul>
-                                     </div>
-                                  </div>
-                               </fieldset>
-                            </div>
-                            <!--/ .table_cell -->
-                            <!-- - - - - - - - - - - - - - End price - - - - - - - - - - - - - - - - -->
-                         </div>
-                         <!--/ .table_row -->
-                         <footer class="bottom_box">
-                            <div class="buttons_row">
-                               <button type="submit" class="button_grey button_submit">Search</button>
-                               <button type="reset" class="button_grey ">Reset</button>
-                            </div>
-                         </footer>
-                      </div>
-                      <!--/ .table_layout -->
-                   </form>
-                </div>
-             </div>
+             {{-- @include('shop.filter') --}}
              <!--Content Top End -->
              <!-- Filters -->
              <div class="product-filter filters-panel">
                 <div class="row">
-                   <div class="col-md-2 visible-lg">
+                   <div class="visible-lg col-md-4 col-sm-6 col-xs-6">
                       <div class="view-mode">
                          <div class="list-view">
-                            <button class="btn btn-default grid " data-view="grid" data-toggle="tooltip"  data-original-title="Grid"><i class="fa fa-th"></i></button>
-                            <button class="btn btn-default list active" data-view="list" data-toggle="tooltip" data-original-title="List"><i class="fa fa-th-list"></i></button>
+                            <button class="btn btn-default grid active" data-view="grid" data-toggle="tooltip"  data-original-title="Grid"><i class="fa fa-th"></i></button>
+                            <button class="btn btn-default list " data-view="list" data-toggle="tooltip" data-original-title="List"><i class="fa fa-th-list"></i></button>
                          </div>
                       </div>
                    </div>
-                   <div class="short-by-show form-inline text-right col-md-7 col-sm-8 col-xs-12">
+                   <div class="short-by-show form-inline text-right col-md-8 col-sm-6 col-xs-6">
                       <div class="form-group short-by">
                          <label class="control-label" for="input-sort">Sort By:</label>
                          <select id="input-sort" class="form-control"
@@ -197,20 +61,13 @@
                          </select>
                       </div>
                    </div>
-                   <div class="box-pagination col-md-3 col-sm-4 col-xs-12 text-right">
-                      <ul class="pagination">
-                         <li class="active"><span>1</span></li>
-                         <li><a href="#">2</a></li>
-                         <li><a href="#">&gt;</a></li>
-                         <li><a href="#">&gt;|</a></li>
-                      </ul>
-                   </div>
+
                 </div>
              </div>
              <!-- //end Filters -->
              <!--changed listings-->
              <div class="products-list row list">
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -253,7 +110,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -296,7 +153,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -339,7 +196,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -382,7 +239,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -425,7 +282,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -466,7 +323,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -507,7 +364,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-12 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">

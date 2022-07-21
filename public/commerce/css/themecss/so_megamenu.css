@@ -35,7 +35,7 @@
 }
 
 .megamenu-pattern {
-   
+
 }
 
 ul.megamenu {
@@ -89,7 +89,7 @@ ul.megamenu > li > a {
     color: #fff;
     font-size: 14px;
     padding: 15px 18px ;
-    
+
 }
 
 ul.megamenu > li > a strong {
@@ -100,9 +100,9 @@ ul.megamenu > li > a:hover,
 ul.megamenu > li.active > a,
 ul.megamenu > li.home > a,
 ul.megamenu > li:hover > a {
-    background-color: #898989; /* Old browsers */
+    background-color: #1d335c; /* Old browsers */
 	color: white;
-   
+
 }
 
 ul.megamenu > li > a > .icon-home {
@@ -172,7 +172,7 @@ ul.megamenu .sub-menu .content {
     box-shadow:            0px 0px 25px rgba(0, 0, 0, 0.15);
     -moz-box-shadow:       0px 0px 25px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow:    0px 0px 25px rgba(0, 0, 0, 0.15);
-   
+
 }
 
 ul.megamenu .sub-menu .content > .row {
@@ -232,7 +232,7 @@ ul.manufacturer li a {
     font-size: 14px;
     padding: 2px 8px;
     border: 1px solid #e6e6e6;
-    
+
 }
 
 /* Static Menu */
@@ -323,8 +323,8 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
 }
 
 .megamenuToogle-wrapper {
-  
-    background: #444;
+
+    background: #1d335c;
 }
 
 
@@ -381,7 +381,7 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
 .vertical span.more-view {
     cursor: pointer;
     font-size: 14px;
-  
+
 }
 .vertical .megamenuToogle-wrapper {
     z-index: 3; cursor: pointer;
@@ -586,7 +586,7 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
     }
 
     .responsive ul.megamenu > li > a {
-      
+
         text-shadow: none;
 		color:#666 !important;
 		padding:10px;
@@ -623,7 +623,7 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
         top: 0;
         right: 1px;
         margin:0;
-        
+
         padding: 10px 14px ;
         background: #f6f6f6;
         text-align: center;
@@ -722,7 +722,7 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
 
 	 border: 1px solid #e6e6e6;
 	}
-	
+
 	.vertical-wrapper {
     position: fixed;
     top: 0px;
@@ -739,10 +739,10 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
     transform: translate3d(-280px, 0, 0);
     -webkit-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
-	
+
 	 border: 1px solid #e6e6e6;
 	}
-	
+
 	.vertical  #menuHeading{
 		display:none;
 	}
@@ -753,7 +753,7 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  
+
    #remove-megamenu {
     padding: 10px;
     z-index: 10;
@@ -763,17 +763,17 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
     text-align: right;
 	display:none;
   }
-  
+
   .so-megamenu-active #remove-megamenu {
     visibility: visible; display:block;
   }
-  
+
     .so-vertical-active {
     visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  
+
    #remove-verticalmenu {
     padding: 10px;
     z-index: 10;
@@ -782,12 +782,12 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
 	font-size:20px;
     text-align: right;
   }
-  
+
   .so-vertical-active #remove-verticalmenu {
     display: block;
   }
- 
-  
+
+
   .navbar-header .navbar-toggle{float:none;}
   .subcategory li{
 	list-style-type: none;

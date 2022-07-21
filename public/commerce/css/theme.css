@@ -1430,7 +1430,7 @@ STRUCTURE
   padding: 35px 0; }
 
 .header-bottom {
-  background: #666666;
+  background: #1d335c;
   min-height: 45px;
   margin-bottom: 15px; }
 
@@ -3342,8 +3342,10 @@ h2.title-category {
   .products-list.grid .product-layout .product-item-container, div.tab-slider .ltabs-items-container .grid.ltabs-items .product-layout .product-item-container {
     margin: 15px 0;
     padding: 15px;
-    border: 1px solid #dddddd;
-    overflow: hidden; }
+    border: 3px solid #1d335c;
+    overflow: hidden;
+    border-radius:10px;
+    }
     .products-list.grid .product-layout .product-item-container .left-block, div.tab-slider .ltabs-items-container .grid.ltabs-items .product-layout .product-item-container .left-block {
       position: relative;
       float: left;
@@ -4147,7 +4149,7 @@ h2.title-category {
   font-size: 1.1rem;
   /* [8] */ }
   .type_footer1 .footer-directory-title .label-link {
-    color: #333333;
+    color: #ffffff;
     font-weight: bold;
     padding-bottom: 10px;
     /* [4] */

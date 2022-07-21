@@ -17,7 +17,7 @@
 
     <li class="dropdown"><a href="#"><span class="fa fa-shopping-cart"></span> E-commerce</a>
         <ul>
-            <li><a href="#">Desktops</a></li>
+            <li><a href="{{url('/')}}/e-commerce">Desktops</a></li>
             <li><a href="#">Laptops</a></li>
             <li><a href="#">Accessories</a></li>
             <li><a href="#">Checkout</a></li>
