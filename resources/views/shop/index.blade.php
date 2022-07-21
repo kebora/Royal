@@ -5,18 +5,18 @@
 <div class="main-container container">
     <ul class="breadcrumb">
        <li><a href="#"><i class="fa fa-home"></i></a></li>
-       <li><a href="#">Smartphone & Tablets</a></li>
+       <li><a href="#">Smartphone & Tablets(Sample Category)</a></li>
     </ul>
     <div class="row">
        <!--Middle Part Start-->
        <div id="content" class="col-md-12 col-sm-12">
-          <h3 class="offset_title">Featured Products</h3>
+          <h3 class="offset_title">Smartphone & Tablets(Sample Category)</h3>
           <div class="products-category">
              <div class="category-derc form-group">
                 <div class="row">
                    <div class="col-sm-4"><img src="{{asset('commerce/image/demo/shop/category/smartphone-tablets.jpg')}}" alt="Apple Cinema 30&quot;"></div>
                    <div class="col-sm-8">
-                      <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis sit voluptatem accusantium doloremque laudantium. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. </p>
+                      <p>Dummy Text To Represent Sample Categories Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis sit voluptatem accusantium doloremque laudantium. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. </p>
                    </div>
                 </div>
              </div>
@@ -405,6 +405,344 @@
                       <!-- right block -->
                    </div>
                 </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                       <div class="left-block">
+                          <div class="product-image-container lazy second_img ">
+                             <img data-src="{{asset('commerce/image/demo/shop/product/e11.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                             <img data-src="{{asset('commerce/image/demo/shop/product/e12.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                          </div>
+                          <!--Sale Label-->
+                          <span class="label label-sale">Sale</span>
+                          <!--full quick view block-->
+                          <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                          <!--end full quick view block-->
+                       </div>
+                       <div class="right-block">
+                          <div class="caption">
+                             <h4><a href="product.html">Apple Cinema 30&quot;</a></h4>
+                             <div class="ratings">
+                                <div class="rating-box">
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                             </div>
+                             <div class="price">
+                                <span class="price-new">$74.00</span>
+                                <span class="price-old">$122.00</span>
+                                <span class="label label-percent">-40%</span>
+                             </div>
+                             <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                             </div>
+                          </div>
+                          <div class="button-group">
+                             <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                             <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                             <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                          </div>
+                       </div>
+                       <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/11.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/10.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--Sale Label-->
+                            <span class="label label-sale">Sale</span>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">Canon EOS 5D</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$60.00</span>
+                                <span class="price-old">$145.00</span>
+                                <span class="label label-percent">-20%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/35.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/34.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--Sale Label-->
+                            <span class="label label-new">New</span>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">Filet Mign</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$58.00</span>
+                                <span class="price-old">$172.00</span>
+                                <span class="label label-percent">-40%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/14.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/15.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--Sale Label-->
+                            <span class="label label-sale">Sale</span>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">Lorem Cow</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$74.00</span>
+                                <span class="price-old">$122.00</span>
+                                <span class="label label-percent">-40%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/18.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/1.png')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--Sale Label-->
+                            <span class="label label-sale">Sale</span>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">MacBook</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$75.00</span>
+                                <span class="price-old">$145.00</span>
+                                <span class="label label-percent">-20%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/141.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/11.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">Nikon D300</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$89.00</span>
+                                <span class="price-old">$122.00</span>
+                                <span class="label label-percent">-40%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/141.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/11.jpg')}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">Nikon D300</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$89.00</span>
+                                <span class="price-old">$122.00</span>
+                                <span class="label label-percent">-40%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="product-item-container">
+                        <div class="left-block">
+                            <div class="product-image-container lazy second_img ">
+                                <img data-src="{{asset('commerce/image/demo/shop/product/141.jpg')}}" src="data:{{asset('commerce/image/demo/shop/product/141.jpg')}}"  alt="Apple Cinema 30&quot;" class="img-responsive" />
+                                <img data-src="{{asset('commerce/image/demo/shop/product/11.jpg')}}" src="data:{{asset('commerce/image/demo/shop/product/141.jpg')}}"  alt="Apple Cinema 30&quot;" class="img_0 img-responsive" />
+                            </div>
+                            <!--full quick view block-->
+                            <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                            <!--end full quick view block-->
+                        </div>
+                        <div class="right-block">
+                            <div class="caption">
+                                <h4><a href="product.html">Nikon D300</a></h4>
+                                <div class="ratings">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                    <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                                </div>
+                                <div class="price">
+                                <span class="price-new">$89.00</span>
+                                <span class="price-old">$122.00</span>
+                                <span class="label label-percent">-40%</span>
+                                </div>
+                                <div class="description item-desc hidden">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est . </p>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button class="addToCart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('42', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></button>
+                                <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                                <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                            </div>
+                        </div>
+                        <!-- right block -->
+                    </div>
+                </div>
              </div>
              <!--// End Changed listings-->
              <!-- Filters -->
@@ -412,17 +750,10 @@
                 <div class="row">
                    <div class="col-md-2 hidden-sm hidden-xs">
                    </div>
-                   <div class="short-by-show text-center col-md-7 col-sm-8 col-xs-12">
+                   <div class="short-by-show text-center col-md-12 col-sm-12 col-xs-12">
                       <div class="form-group" style="margin: 7px 10px">Showing 1 to 9 of 10 (2 Pages)</div>
                    </div>
-                   <div class="box-pagination col-md-3 col-sm-4 text-right">
-                      <ul class="pagination">
-                         <li class="active"><span>1</span></li>
-                         <li><a href="http://localhost/ytc_templates/opencart/so_market/{{url('/')}}?route=product/category&amp;path=33&amp;page=2">2</a></li>
-                         <li><a href="http://localhost/ytc_templates/opencart/so_market/{{url('/')}}?route=product/category&amp;path=33&amp;page=2">&gt;</a></li>
-                         <li><a href="http://localhost/ytc_templates/opencart/so_market/{{url('/')}}?route=product/category&amp;path=33&amp;page=2">&gt;|</a></li>
-                      </ul>
-                   </div>
+
                 </div>
              </div>
              <!-- //end Filters -->
