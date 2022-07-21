@@ -106,10 +106,12 @@
                         <form method="GET" action="#">
                            <div id="search0" class="search input-group">
                               <div class="select_category filter_type icon-select">
+                                <?php $Categories = DB::table('categories')->get(); ?>
                                  <select class="no-border" name="category_id">
                                     <option value="0">All Categories</option>
-                                    <option value="78">Desktop</option>
-
+                                    @foreach ($Categories as $cat)
+                                    <option value="{{$cat->id}}">{{$cat->title}}</option>
+                                    @endforeach
                                  </select>
                               </div>
                               <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Search" name="search">
@@ -138,11 +140,11 @@
                                     <tbody>
                                        <tr>
                                           <td class="text-center" style="width:70px">
-                                             <a href="product.html"> <img src="image/demo/shop/product/35.jpg" style="width:70px" alt="Filet Mign" title="Filet Mign" class="preview"> </a>
+                                             <a href="product.html"> <img src="{{asset('commerce/image/demo/shop/product/35.jpg')}}" style="width:70px" alt="Filet Mign" title="Filet Mign" class="preview"> </a>
                                           </td>
                                           <td class="text-left"> <a class="cart_product_name" href="product.html">Filet Mign</a> </td>
                                           <td class="text-center"> x1 </td>
-                                          <td class="text-center"> $1,202.00 </td>
+                                          <td class="text-center">  1,202.00 </td>
                                           <td class="text-right">
                                              <a href="product.html" class="fa fa-edit"></a>
                                           </td>
@@ -152,11 +154,11 @@
                                        </tr>
                                        <tr>
                                           <td class="text-center" style="width:70px">
-                                             <a href="product.html"> <img src="image/demo/shop/product/141.jpg" style="width:70px" alt="Canon EOS 5D" title="Canon EOS 5D" class="preview"> </a>
+                                             <a href="product.html"> <img src="{{asset('commerce/image/demo/shop/product/141.jpg')}}" style="width:70px" alt="Canon EOS 5D" title="Canon EOS 5D" class="preview"> </a>
                                           </td>
                                           <td class="text-left"> <a class="cart_product_name" href="product.html">Canon EOS 5D</a> </td>
                                           <td class="text-center"> x1 </td>
-                                          <td class="text-center"> $60.00 </td>
+                                          <td class="text-center">  60.00 </td>
                                           <td class="text-right">
                                              <a href="product.html" class="fa fa-edit"></a>
                                           </td>
@@ -174,22 +176,13 @@
                                           <tr>
                                              <td class="text-left"><strong>Sub-Total</strong>
                                              </td>
-                                             <td class="text-right">$1,060.00</td>
+                                             <td class="text-right">kes 1,060.00</td>
                                           </tr>
-                                          <tr>
-                                             <td class="text-left"><strong>Eco Tax (-2.00)</strong>
-                                             </td>
-                                             <td class="text-right">$2.00</td>
-                                          </tr>
-                                          <tr>
-                                             <td class="text-left"><strong>VAT (20%)</strong>
-                                             </td>
-                                             <td class="text-right">$200.00</td>
-                                          </tr>
+
                                           <tr>
                                              <td class="text-left"><strong>Total</strong>
                                              </td>
-                                             <td class="text-right">$1,262.00</td>
+                                             <td class="text-right">kes 1,262.00</td>
                                           </tr>
                                        </tbody>
                                     </table>
@@ -239,77 +232,18 @@
                                           <div class="container">
                                              <ul class="megamenu">
 
-                                                <li class="item-vertical">
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/10.png" alt="icon">
-                                                   <span>Electronic</span>
-                                                   </a>
-                                                </li>
 
+                                                @foreach ($Categories as $item)
                                                 <li class="item-vertical">
                                                    <p class="close-menu"></p>
                                                    <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/11.png" alt="icon">
-                                                   <span>Flashlights &amp; Lamps</span>
+                                                   <img width="30" src="{{url('/')}}/uploads/categories/{{$item->image}}" alt="{{$item->title}}">
+                                                   <span>{{$item->title}}</span>
                                                    </a>
                                                 </li>
-                                                <li class="item-vertical">
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/4.png" alt="icon">
-                                                   <span>Camera &amp; Photo</span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical">
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/5.png" alt="icon">
-                                                   <span>Smartphone &amp; Tablets</span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical" >
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/7.png" alt="icon">
-                                                   <span>Outdoor &amp; Traveling Supplies</span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical" style="display: none;">
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/6.png" alt="icon">
-                                                   <span>Health &amp; Beauty</span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical" >
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/8.png" alt="icon">
-                                                   <span>Toys &amp; Hobbies </span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical" >
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/12.png" alt="icon">
-                                                   <span>Jewelry &amp; Watches</span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical" >
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/13.png" alt="icon">
-                                                   <span>Bags, Holiday Supplies</span>
-                                                   </a>
-                                                </li>
-                                                <li class="item-vertical" >
-                                                   <p class="close-menu"></p>
-                                                   <a href="#" class="clearfix">
-                                                   <img src="image/theme/icons/13.png" alt="icon">
-                                                   <span>More Car Accessories</span>
-                                                   </a>
-                                                </li>
+                                                @endforeach
+
+
                                                 <li class="loadmore">
                                                    <i class="fa fa-plus-square-o"></i>
                                                    <span class="more-view">More Categories</span>
