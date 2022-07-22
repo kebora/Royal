@@ -22,7 +22,7 @@
                     <div class="inner">
                         <div class="cross-icon"><span class="icon fa fa-remove"></span></div>
                         <div class="image"><img src="{{url('/')}}/uploads/products/{{ $cartitems->attributes->image }}" alt="" /></div>
-                        <h3><a href="{{url('/')}}/e-commerce/product/{{$products->slung}}">Flying Ninja</a></h3>
+                        <h3><a href="{{url('/')}}/e-commerce/product/{{$products->slung}}"><small>{{$products->name}}</small></a></h3>
                         <div class="quantity-text">Quantity x{{$cartitems->quantity}}</div>
                         <div class="price">KES {{$products->price}}</div>
                     </div>
