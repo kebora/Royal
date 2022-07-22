@@ -46,7 +46,36 @@
 
 	var wishlist = {
 		'add': function(product_id) {
-			addProductNotice('Product added to Wishlist', '<img src="image/demo/shop/product/e11.jpg" alt="">', '<h3>You must <a href="#">login</a>  to save <a href="#">Apple Cinema 30"</a> to your <a href="#">wish list</a>!</h3>', 'success');
+            $(".add-to-wishlist").click(function(e){
+                e.preventDefault();
+                var url = $(this).data('product');
+                $(".spinner-border", this).css("display","flex");
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    async: true,
+                    dataType: 'json',
+                    cache: false,
+                })
+                .done(function(data){
+                    var image = data['image'];
+                    var name = data['name'];
+                    var slung = data['slung'];
+                    var host = window.location.host;
+                    var image_url = "/uploads/products/"+image
+                    var cart = "/e-commerce/shopping-cart/"
+                    var url = "/e-commerce/product/"+slung
+
+                    addProductNotice('Product added to Wishlist', '<img src="' +image_url+'">', '<h3>You must <a href="#">login</a>  to save <a href="#">'+name+'</a> to your <a href="#">wish list</a>!</h3>', 'success');
+                })
+                .fail(function(){
+                    alert('Error Occured')
+                });
+                //Prevent Firing Twice
+                e.stopImmediatePropagation();
+                return false;
+            });
+
 		}
 	}
 	var compare = {
