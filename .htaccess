@@ -5,8 +5,7 @@
     </ifmodule>
 
     RewriteEngine On
-    RewriteCond %{HTTP_HOST} !^royal.designekta.com$
-    RewriteRule ^(.*)$ https://royal.designekta.com/$1 [R=301,L]
+
 
     RewriteCond %{REQUEST_FILENAME} -d [OR]
     RewriteCond %{REQUEST_FILENAME} -f
