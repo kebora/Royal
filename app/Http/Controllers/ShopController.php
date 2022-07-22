@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Models\Product;
+// use Wishlistable;
+use App\Models\User;
 
 class ShopController extends Controller
 {
@@ -12,6 +14,12 @@ class ShopController extends Controller
     {
         $Products = Product::all();
         return view('shop.index', compact('Products'));
+    }
+
+    public function product($slung)
+    {
+        $Products = DB::table('products')->where('slung',$slung)->get();
+        return view('shop.product', compact('Products'));
     }
 
     public function brand($slung)
@@ -26,7 +34,6 @@ class ShopController extends Controller
         foreach($Category as $Cat){
             $Products = DB::table('products')->where('category',$Cat->id)->get();
         }
-
         return view('shop.index', compact('Products'));
     }
 
@@ -40,15 +47,25 @@ class ShopController extends Controller
     public function cart()
     {
         $cartItems = \Cart::getContent();
-
-       return view('shop.cart', compact('cartItems'));
+        if($cartItems->isEmpty()){
+            $Products = Product::all();
+            return view('shop.index', compact('Products'));
+        }else{
+            return view('shop.cart', compact('cartItems'));
+        }
     }
 
     public function checkout()
     {
         $cartItems = \Cart::getContent();
+        if($cartItems->isEmpty()){
+            $Products = Product::all();
+            return view('shop.index', compact('Products'));
+        }else{
+            return view('shop.checkout', compact('cartItems'));
+        }
 
-       return view('shop.checkout', compact('cartItems'));
+
     }
 
 

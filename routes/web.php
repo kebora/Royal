@@ -43,7 +43,7 @@ Route::group(['prefix'=>'e-commerce'], function(){
 
 
     Route::group(['prefix'=>'shopping-cart'], function(){
-        Route::get('/', [App\Http\Controllers\ShopController::class, 'cart'])->name('cart');
+        Route::get('/', [App\Http\Controllers\ShopController::class, 'cart'])->name('cart.list');
         Route::get('/checkout', [App\Http\Controllers\ShopController::class, 'checkout'])->name('checkout');
         Route::get('/remove/{id}', [App\Http\Controllers\ShopController::class, 'removeCart'])->name('removeCart');
         Route::get('/add-to-cart/{slung}', [App\Http\Controllers\ShopController::class, 'add_to_cart'])->name('add-to-cart');

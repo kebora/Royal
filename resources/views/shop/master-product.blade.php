@@ -26,6 +26,7 @@
       <link href="{{asset('commerce/js/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
       <link href="{{asset('commerce/css/themecss/lib.css')}}" rel="stylesheet">
       <link href="{{asset('commerce/js/jquery-ui/jquery-ui.min.css')}}" rel="stylesheet">
+      <link href="{{asset('commerce/js/lightslider/lightslider.css')}}" rel="stylesheet">
       <!-- Theme CSS
          ============================================ -->
       <link href="{{asset('commerce/css/themecss/so_megamenu.css')}}" rel="stylesheet">
@@ -35,6 +36,31 @@
       <link href="{{asset('commerce/css/header1.css')}}" rel="stylesheet">
       <link id="color_scheme" href="{{asset('commerce/css/theme.css')}}" rel="stylesheet">
       <link href="{{asset('commerce/css/responsive.css')}}" rel="stylesheet">
+
+
+        <!-- Include Libs & Plugins
+         ============================================ -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="{{asset('commerce/js/jquery-2.2.4.min.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/bootstrap.min.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/owl-carousel/owl.carousel.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/themejs/libs.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/unveil/jquery.unveil.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/countdown/jquery.countdown.min.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/datetimepicker/moment.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/jquery-ui/jquery-ui.min.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/lightslider/lightslider.js')}}"></script>
+
+
+      <!-- Theme files
+         ============================================ -->
+      <script type="text/javascript" src="{{asset('commerce/js/themejs/so_megamenu.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/themejs/addtocart.js')}}"></script>
+      <script type="text/javascript" src="{{asset('commerce/js/themejs/application.js')}}"></script>
+
+      {{--  --}}
    </head>
    <body class="res layout-subpage">
       <div id="wrapper" class="wrapper-full ">
@@ -182,36 +208,7 @@
 	<!-- //end Footer Container -->
          {{--  --}}
       </div>
-      <!-- Include Libs & Plugins
-         ============================================ -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script type="text/javascript" src="{{asset('commerce/js/jquery-2.2.4.min.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/bootstrap.min.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/owl-carousel/owl.carousel.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/themejs/libs.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/unveil/jquery.unveil.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/countdown/jquery.countdown.min.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/datetimepicker/moment.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/jquery-ui/jquery-ui.min.js')}}"></script>
-      {{-- <script type="text/javascript" src="{{asset('commerce/js/lightslider/lightslider.js')}}"></script> --}}
 
 
-      <!-- Theme files
-         ============================================ -->
-      <script type="text/javascript" src="{{asset('commerce/js/themejs/so_megamenu.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/themejs/addtocart.js')}}"></script>
-      <script type="text/javascript" src="{{asset('commerce/js/themejs/application.js')}}"></script>
-      <script type="text/javascript"><!--
-         // Check if Cookie exists
-         	if($.cookie('display')){
-         		view = $.cookie('display');
-         	}else{
-         		view = 'list';
-         	}
-         	if(view) display(view);
-         //-->
-      </script>
    </body>
 </html>
