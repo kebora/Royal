@@ -77,15 +77,7 @@
 					</div>
 				</div>
 
-				<!-- Search Box -->
-				<div class="search-box">
-					<form method="post" action="https://expert-themes.com/html/globex/contact.html">
-						<div class="form-group">
-							<input type="search" name="search-field" value="" placeholder="Explore" required>
-							<button type="submit"><span class="icon fa fa-search"></span></button>
-						</div>
-					</form>
-				</div>
+
 
 				<div class="nav-outer clearfix">
 					<!--Mobile Navigation Toggler-->

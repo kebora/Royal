@@ -17,6 +17,7 @@
 
     <li class="dropdown"><a href="#"><span class="fa fa-shopping-cart"></span> E-commerce</a>
         <ul>
+            <li><a href="{{url('/')}}/e-commerce/product/tags/laptops">Laptops</a></li>
             <?php $Category = DB::table('categories')->limit(5)->get(); ?>
             @foreach ($Category as $cat)
             <li><a href="{{url('/')}}/e-commerce/product/tags/{{$cat->slung}}">{{$cat->title}}</a></li>
