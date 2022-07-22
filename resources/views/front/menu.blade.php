@@ -17,11 +17,11 @@
 
     <li class="dropdown"><a href="#"><span class="fa fa-shopping-cart"></span> E-commerce</a>
         <ul>
-            <li><a href="{{url('/')}}/e-commerce">Desktops</a></li>
-            <li><a href="#">Laptops</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Checkout</a></li>
-            <li><a href="#">Account</a></li>
+            <?php $Category = DB::table('categories')->limit(5)->get(); ?>
+            @foreach ($Category as $cat)
+            <li><a href="{{url('/')}}/e-commerce/product/tags/{{$cat->slung}}">{{$cat->title}}</a></li>
+            @endforeach
+
         </ul>
     </li>
     <li><a href="#">Blog</a>

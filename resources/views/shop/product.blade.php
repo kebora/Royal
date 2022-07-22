@@ -10,7 +10,7 @@
         <li><a href="#"><i class="fa fa-home"></i></a></li>
         <?php $Category = DB::table('categories')->where('id',$Pro->category)->get(); ?>
         @foreach ($Category as $cat)
-        <li><a href="{{url('/')}}/e-commerce/product/tags/{{$Pro->slung}}">{{$cat->title}}</a></li>
+        <li><a href="{{url('/')}}/e-commerce/product/tags/{{$cat->slung}}">{{$cat->title}}</a></li>
         @endforeach
         <li><a href="#">{{$Pro->name}}</a></li>
     </ul>
