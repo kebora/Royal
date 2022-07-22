@@ -75,7 +75,7 @@
 						<!--Tab / Active Tab-->
 						<div class="tab" id="prod-html">
 							<div class="content">
-								<h4>Royal Tech Computers Limited</h4>
+								<h4>Royaltech Computers Limited</h4>
 								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
 								<br><br>
                                 <div class="btn-box text-center">
@@ -88,7 +88,7 @@
 						<!-- Tab -->
 						<div class="tab" id="prod-bootstrap">
 							<div class="content">
-								<h4>Royal Tech Computers Limited</h4>
+								<h4>Royaltech Computers Limited</h4>
 								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
 								<br><br>
                                 <div class="btn-box text-center">
@@ -101,7 +101,7 @@
 						<!-- Tab -->
 						<div class="tab active-tab" id="prod-css">
 							<div class="content">
-								<h4>Royal Tech Computers Limited</h4>
+								<h4>Royaltech Computers Limited</h4>
 								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
 								<br><br>
                                 <div class="btn-box text-center">
@@ -114,7 +114,7 @@
 						<!-- Tab -->
 						<div class="tab" id="prod-php">
 							<div class="content">
-								<h4>Royal Tech Computers Limited</h4>
+								<h4>Royaltech Computers Limited</h4>
 								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
 								<br><br>
                                 <div class="btn-box text-center">
@@ -127,7 +127,7 @@
 						<!-- Tab -->
 						<div class="tab" id="prod-java">
 							<div class="content">
-								<h4>Royal Tech Computers Limited</h4>
+								<h4>Royaltech Computers Limited</h4>
 								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
 								<br><br>
                                 <div class="btn-box text-center">
