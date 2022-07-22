@@ -77,15 +77,7 @@
 					<div class="logo"><a href="{{url('/')}}"><img style="max-height:70px"  src="{{url('/')}}/uploads/Royaltech-Original-1.png" alt="" title=""></a></div>
 				</div>
 
-				<!-- Search Box -->
-				<div class="search-box">
-					<form method="post" action="#">
-						<div class="form-group">
-							<input type="search" name="search-field" value="" placeholder="Explore" required>
-							<button type="submit"><span class="icon fa fa-search"></span></button>
-						</div>
-					</form>
-				</div>
+
 
 				<div class="nav-outer clearfix">
 					<!--Mobile Navigation Toggler-->
