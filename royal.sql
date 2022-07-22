@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 21, 2022 at 05:52 PM
+-- Generation Time: Jul 22, 2022 at 10:03 AM
 -- Server version: 8.0.29-0ubuntu0.21.10.2
 -- PHP Version: 7.4.30
 
@@ -138,7 +138,27 @@ INSERT INTO `activity_log` (`id`, `log_name`, `description`, `subject_type`, `su
 (47, 'default', 'Evoked add Category Operation', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-21 12:51:07', '2022-07-21 12:51:07'),
 (48, 'default', 'Accessed Add Category Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-21 12:51:07', '2022-07-21 12:51:07'),
 (49, 'default', 'Accessed All Categories', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-21 12:51:18', '2022-07-21 12:51:18'),
-(50, 'default', 'Access Edit Category ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-21 12:51:20', '2022-07-21 12:51:20');
+(50, 'default', 'Access Edit Category ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-21 12:51:20', '2022-07-21 12:51:20'),
+(51, 'default', 'Accessed Add Product Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-21 15:45:11', '2022-07-21 15:45:11'),
+(52, 'default', 'Accessed Add Product Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:21:39', '2022-07-22 02:21:39'),
+(53, 'default', 'Accessed Add Product Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:23:52', '2022-07-22 02:23:52'),
+(54, 'default', 'Accessed Add Product Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:25:51', '2022-07-22 02:25:51'),
+(55, 'default', 'Accessed Add Product Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:26:03', '2022-07-22 02:26:03'),
+(56, 'default', 'Evoked add Product Operation', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:34:56', '2022-07-22 02:34:56'),
+(57, 'default', 'Evoked add Product Operation', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:36:36', '2022-07-22 02:36:36'),
+(58, 'default', 'Accessed Add Product Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:36:36', '2022-07-22 02:36:36'),
+(59, 'default', 'Accessed All Products', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:36:43', '2022-07-22 02:36:43'),
+(60, 'default', 'Accessed All Products', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:37:31', '2022-07-22 02:37:31'),
+(61, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:37:33', '2022-07-22 02:37:33'),
+(62, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:38:14', '2022-07-22 02:38:14'),
+(63, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:39:14', '2022-07-22 02:39:14'),
+(64, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:39:56', '2022-07-22 02:39:56'),
+(65, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:40:12', '2022-07-22 02:40:12'),
+(66, 'default', 'Evoked Edit Product For Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:40:18', '2022-07-22 02:40:18'),
+(67, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:40:18', '2022-07-22 02:40:18'),
+(68, 'default', 'Evoked Edit Product For Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:40:57', '2022-07-22 02:40:57'),
+(69, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:40:58', '2022-07-22 02:40:58'),
+(70, 'default', 'Access Edit Product ID number 1 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-22 02:41:26', '2022-07-22 02:41:26');
 
 -- --------------------------------------------------------
 
@@ -1070,6 +1090,7 @@ CREATE TABLE `products` (
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `pro_condition` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'New',
   `slung` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `brand` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `video` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `category` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `featured` tinyint NOT NULL DEFAULT '0',
@@ -1088,6 +1109,13 @@ CREATE TABLE `products` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `pro_condition`, `slung`, `brand`, `video`, `category`, `featured`, `trending`, `banner_position`, `sku`, `stock`, `price_raw`, `price`, `meta`, `content`, `image_one`, `image_two`, `image_three`, `image_four`, `created_at`, `updated_at`) VALUES
+(1, 'HP Notebook 250 G7 Core i3 10th gen 4GB 1TB Hard', 'New', 'hp-notebook-250-g7-core-i3-10th-gen-4gb-1tb-hard', 'hp.png', NULL, '2', 0, 1, NULL, 'HPN-22653898', 'In Stock', '45000', '43800', 'Intel Core i3 10th gen, 4GB RAM DDR-4, 1TB Hard Disk, 15.6 Inch High Definition Display, FreeDOS 2.0, DVD-Writer, LED- Backlit.', '<ul>\r\n	<li>Display: 15.6 inch HD</li>\r\n	<li>Processor: Intel Core i3</li>\r\n	<li>series: 10th Generation</li>\r\n	<li>Storage: 1TB HDD</li>\r\n	<li>Memory: 4GB RAM</li>\r\n	<li>OS: Windows 10</li>\r\n	<li>Bluetooth, WiFi, Webcam</li>\r\n</ul>', '1_062eeb89-ffbf-474a-8443-1285ea8a9b41.jpg', '1_r6vc3jj.jpg', 'Hp-250-G7-4.jpg', 'Untitled-design-4.jpg', '2022-07-22 02:36:36', '2022-07-22 02:36:36');
 
 -- --------------------------------------------------------
 
@@ -1661,7 +1689,7 @@ ALTER TABLE `_site_settings`
 -- AUTO_INCREMENT for table `activity_log`
 --
 ALTER TABLE `activity_log`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `blogs`
@@ -1706,6 +1734,12 @@ ALTER TABLE `privacy`
   MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
@@ -1727,7 +1761,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `_site_settings`
 --
 ALTER TABLE `_site_settings`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

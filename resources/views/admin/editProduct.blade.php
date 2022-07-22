@@ -18,7 +18,7 @@
         @include('admin.sidebar')
 
         <!--== BODY INNER CONTAINER ==-->
-        
+
         <div class="sb2-2">
             <div class="sb2-2-2">
                 <ul>
@@ -29,7 +29,7 @@
                     <li class="page-back"><a href="{{url('/')}}/admin/products"><i class="fa fa-backward" aria-hidden="true"></i> All Products</a>
                     </li>
                 </ul>
-               
+
             </div>
             <div class="sb2-2-add-blog sb2-2-1">
                 <div class="box-inn-sp">
@@ -39,7 +39,7 @@
                             @if(Session::has('message'))
                                           <div class="alert alert-success">{{ Session::get('message') }}</div>
                            @endif
-           
+
                            @if(Session::has('messageError'))
                                           <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
                            @endif
@@ -62,16 +62,16 @@
                                     <label for="list-title">SKU</label>
                                 </div>
 
-                                
+
                             </div>
                             <div class="row">
-                             
+
                                 {{--  --}}
                                 <div class="input-field col s12">
                                     <select required name="category" class="icons" id="mydiv">
                                         <?php $CategorySelected = DB::table('categories')->where('id',$Product->category)->get() ?>
                                         @foreach ($CategorySelected as $CatSel)
-                                        <option value="{{$CatSel->id}}" selected>{{$CatSel->title}}</option>                                        
+                                        <option value="{{$CatSel->id}}" selected>{{$CatSel->title}}</option>
                                         @endforeach
                                         @foreach ($Category as $Categories)
                                         <option value="{{$Categories->id}}" data-icon="{{url('/')}}/uploads/categories/{{$Categories->image}}" class="circle">{{$Categories->title}}</option>
@@ -79,7 +79,27 @@
                                     </select>
                                     <label>Choose Category</label>
                                 </div>
-                                
+
+                                <div class="section-space col s12"></div>
+                            </div>
+
+                            <div class="row">
+
+                                {{--  --}}
+                                <div class="input-field col s12">
+                                    <select required name="brand" class="icons" id="mydiv">
+                                        <?php $CategorySelected = DB::table('brands')->where('title',$Product->brand)->get() ?>
+                                        @foreach ($CategorySelected as $CatSel)
+                                        <option value="{{$CatSel->title}}" selected>{{$CatSel->title}}</option>
+                                        @endforeach
+                                        <?php $Brand = DB::table('brands')->get(); ?>
+                                        @foreach ($Brand as $brands)
+                                        <option value="{{$brands->title}}" data-icon="{{url('/')}}/uploads/brands/{{$brands->image}}" class="circle">{{$brands->title}}</option>
+                                        @endforeach
+                                    </select>
+                                    <label>Choose Category</label>
+                                </div>
+
                                 <div class="section-space col s12"></div>
                             </div>
                             {{-- Stock --}}
@@ -98,7 +118,7 @@
                                                 <span class="lever"></span> On
                                             </label>
                                         </div>
-                                        @else 
+                                        @else
                                         <!-- Switch -->
                                         <div class="switch mar-bot-20">
                                             <label>
@@ -123,13 +143,13 @@
                                     <textarea required id="article-ckeditor" name="content" class="materialilze-textarea" placeholder="content">{{$Product->content}}</textarea>
                                 </div>
                             </div><br><br>
-                         
+
                             <script src="{{ asset('ckeditor/ckeditor.js')}}"></script>
                             <script>CKEDITOR.replace('article-ckeditor');</script>
-                                                    
-                         
 
-                           
+
+
+
                            {{-- Images --}}
                             <style>
                                 .btn-file {
@@ -169,7 +189,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-btn">
                                                     <span class="btn btn-default btn-file">
-                                                       <small> One: Size 277 by 377  Browse… </small><input name="image_one" type="file" id="imgInp">
+                                                       <small> One: Size 600 by 600  Browse… </small><input name="image_one" type="file" id="imgInp">
                                                     </span>
                                                 </span>
                                                 <input type="text" class="form-control" readonly>
@@ -184,7 +204,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-btn">
                                                     <span class="btn btn-default btn-file">
-                                                        <small>Two: Size 277 by 377 Browse… </small>
+                                                        <small>Two: Size 600 by 600 Browse… </small>
                                                         <input name="image_two" type="file" id="imgInp">
                                                     </span>
                                                 </span>
@@ -200,7 +220,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-btn">
                                                     <span class="btn btn-default btn-file">
-                                                        <small> Three: Size 277 by 377  Browse… </small><input name="image_three" type="file" id="imgInp">
+                                                        <small> Three: Size 600 by 600  Browse… </small><input name="image_three" type="file" id="imgInp">
                                                     </span>
                                                 </span>
                                                 <input type="text" class="form-control" readonly>
@@ -215,7 +235,7 @@
                                             <div class="input-group">
                                                 <span class="input-group-btn">
                                                     <span class="btn btn-default btn-file">
-                                                        <small> Four: Size 277 by 377  Browse… </small><input name="image_four" type="file" id="imgInp">
+                                                        <small> Four: Size 600 by 600  Browse… </small><input name="image_four" type="file" id="imgInp">
                                                     </span>
                                                 </span>
                                                 <input type="text" class="form-control" readonly>
@@ -232,7 +252,7 @@
                             <input type="hidden" name="image_two_cheat" value="{{$Product->image_two}}">
                             <input type="hidden" name="image_three_cheat" value="{{$Product->image_three}}">
                             <input type="hidden" name="image_four_cheat" value="{{$Product->image_four}}">
-                            
+
                             <div class="row">
                                 <div class="input-field col s12">
                                     <input  type="submit" class="waves-effect waves-light btn-large" value="Save Changes">

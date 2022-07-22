@@ -67,7 +67,63 @@
              <!-- //end Filters -->
              <!--changed listings-->
              <div class="products-list row list">
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                @foreach ($Products as $item)
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 "  >
+                    <div class="product-item-container">
+                       <div class="left-block">
+                          <div class="product-image-container lazy second_img ">
+                             <img data-src="{{url('/')}}/uploads/products/{{$item->image_one}}" src="{{url('/')}}/uploads/products/{{$item->image_one}}"  alt="{{$item->name}}" class="img-responsive" />
+                             <img data-src="{{url('/')}}/uploads/products/{{$item->image_two}}" src="{{url('/')}}/uploads/products/{{$item->image_two}}"  alt="{{$item->name}}" class="img_0 img-responsive" />
+                          </div>
+                          <!--Sale Label-->
+                          <span class="label label-sale">Ex-Uk</span>
+                          <!--full quick view block-->
+                          <a class="quickview iframe-link visible-lg" data-fancybox-type="iframe"  href="quickview.html">  Quickview</a>
+                          <!--end full quick view block-->
+                       </div>
+                       <div class="right-block">
+                          <div class="caption">
+                             <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">{{$item->name}}</a></h4>
+                             <div class="ratings">
+                                <div class="rating-box">
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                   <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                </div>
+                             </div>
+                             <div class="price">
+                                @if($item->price_raw == $item->price)
+                                    <span class="price-new">KES {{$item->price_raw}}</span>
+
+                                @else
+                                    <?php
+                                       $Origianal = $item->price_raw;
+                                       $Offer = $item->price;
+                                       $Diff = $Origianal-$Offer;
+                                       $Per = ($Diff*100)/$Origianal;
+                                    ?>
+                                    <span class="price-new">KES {{$item->price}}</span>
+                                    <span class="price-old">KES {{$item->price_raw}}</span>
+                                    <span class="label label-percent">-{{ceil($Per)}}%</span>
+                                @endif
+                             </div>
+                             <div class="description item-desc hidden">
+                                <p>{{$item->meta}} </p>
+                             </div>
+                          </div>
+                          <div class="button-group">
+                             <a href="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" data-url="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" class="addToCart add-to-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('{{$item->id}}', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></a>
+                             <button class="wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');"><i class="fa fa-heart"></i></button>
+                             <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                          </div>
+                       </div>
+                       <!-- right block -->
+                    </div>
+                 </div>
+                @endforeach
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -82,7 +138,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Apple Cinema 30&quot;</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Apple Cinema 30&quot;</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -110,7 +166,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -125,7 +181,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Canon EOS 5D</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Canon EOS 5D</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -153,7 +209,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -168,7 +224,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Filet Mign</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Filet Mign</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -196,7 +252,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -211,7 +267,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Lorem Cow</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Lorem Cow</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -239,7 +295,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -254,7 +310,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">MacBook</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">MacBook</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -282,7 +338,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -295,7 +351,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Nikon D300</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Nikon D300</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -323,7 +379,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -336,7 +392,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Nikon D300</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Nikon D300</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -364,7 +420,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                    <div class="product-item-container">
                       <div class="left-block">
                          <div class="product-image-container lazy second_img ">
@@ -377,7 +433,7 @@
                       </div>
                       <div class="right-block">
                          <div class="caption">
-                            <h4><a href="product.html">Nikon D300</a></h4>
+                            <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Nikon D300</a></h4>
                             <div class="ratings">
                                <div class="rating-box">
                                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -405,7 +461,7 @@
                       <!-- right block -->
                    </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                        <div class="left-block">
                           <div class="product-image-container lazy second_img ">
@@ -420,7 +476,7 @@
                        </div>
                        <div class="right-block">
                           <div class="caption">
-                             <h4><a href="product.html">Apple Cinema 30&quot;</a></h4>
+                             <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Apple Cinema 30&quot;</a></h4>
                              <div class="ratings">
                                 <div class="rating-box">
                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -448,7 +504,7 @@
                        <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -463,7 +519,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">Canon EOS 5D</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Canon EOS 5D</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -491,7 +547,7 @@
                         <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -506,7 +562,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">Filet Mign</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Filet Mign</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -534,7 +590,7 @@
                         <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -549,7 +605,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">Lorem Cow</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Lorem Cow</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -577,7 +633,7 @@
                         <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -592,7 +648,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">MacBook</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">MacBook</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -620,7 +676,7 @@
                         <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -633,7 +689,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">Nikon D300</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Nikon D300</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -661,7 +717,7 @@
                         <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -674,7 +730,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">Nikon D300</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Nikon D300</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
@@ -702,7 +758,7 @@
                         <!-- right block -->
                     </div>
                 </div>
-                <div class="product-layout col-md-3 col-sm-4 col-xs-6 ">
+                <div class="product-layout col-md-3 col-sm-4 col-xs-6 " >
                     <div class="product-item-container">
                         <div class="left-block">
                             <div class="product-image-container lazy second_img ">
@@ -715,7 +771,7 @@
                         </div>
                         <div class="right-block">
                             <div class="caption">
-                                <h4><a href="product.html">Nikon D300</a></h4>
+                                <h4><a href="{{url('/')}}/e-commerce/product/{{$item->slung}}">Nikon D300</a></h4>
                                 <div class="ratings">
                                 <div class="rating-box">
                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>

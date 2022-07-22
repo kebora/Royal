@@ -35,6 +35,15 @@ Route::get('/blogs/{slung}', [App\Http\Controllers\HomeController::class, 'blogs
 // Ecommerce
 Route::group(['prefix'=>'e-commerce'], function(){
     Route::get('/', [App\Http\Controllers\ShopController::class, 'index'])->name('home');
+    Route::get('/quick-view/{slung}', [App\Http\Controllers\ShopController::class, 'quick_view'])->name('quick-view');
+    Route::get('/product/{slung}', [App\Http\Controllers\ShopController::class, 'product'])->name('product');
+
+    Route::group(['prefix'=>'shopping-cart'], function(){
+        Route::get('/', [App\Http\Controllers\ShopController::class, 'cart'])->name('cart');
+        Route::get('/checkout', [App\Http\Controllers\ShopController::class, 'checkout'])->name('checkout');
+        Route::get('/remove/{id}', [App\Http\Controllers\ShopController::class, 'removeCart'])->name('removeCart');
+        Route::get('/add-to-cart/{slung}', [App\Http\Controllers\ShopController::class, 'add_to_cart'])->name('add-to-cart');
+    });
 });
 
 
