@@ -1,7 +1,7 @@
 <ul class="navigation clearfix">
-    <li class="current"><a href="{{url('/')}}"><span class="fa fa-home"></span> Home</a>
+    {{-- <li class="current"><a href="{{url('/')}}"><span class="fa fa-home"></span> Home</a>
 
-    </li>
+    </li> --}}
     <li><a href="{{url('/')}}/the-company"><span class="fa fa-info"></span> The Company</a>
 
     </li>
