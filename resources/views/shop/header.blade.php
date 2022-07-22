@@ -122,7 +122,7 @@
                                             <td class="text-center" style="width:70px">
                                                 <a href="{{url('/')}}/e-commerce/product/{{$products->slung}}"> <img src="{{url('/')}}/uploads/products/{{ $cartitems->attributes->image }}" style="width:70px" alt="Filet Mign" title="Filet Mign" class="preview"> </a>
                                             </td>
-                                            <td class="text-left"> <a class="cart_product_name" href="product.html">{{$products->name}}</a> </td>
+                                            <td class="text-left"> <a class="cart_product_name" href="{{url('/')}}/e-commerce/product/{{$products->slung}}">{{$products->name}}</a> </td>
                                             <td class="text-center"> x{{$cartitems->quantity}} </td>
                                             <td class="text-center">  {{$products->price}} </td>
                                             <td class="text-right">

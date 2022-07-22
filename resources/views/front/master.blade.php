@@ -102,38 +102,7 @@
 					<div class="outer-box clearfix">
 
 						<!-- Cart Box -->
-						<div class="cart-box">
-							<div class="dropdown">
-								<button class="cart-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-shopping-bag-1"></span><span class="total-cart">2</span></button>
-								<div class="dropdown-menu pull-right cart-panel" aria-labelledby="dropdownMenu3">
-
-									<div class="cart-product">
-										<div class="inner">
-											<div class="cross-icon"><span class="icon fa fa-remove"></span></div>
-											<div class="image"><img src="{{asset('corporate/images/resource/post-thumb-1.jpg')}}" alt="" /></div>
-											<h3><a href="shop-single.html">Flying Ninja</a></h3>
-											<div class="quantity-text">Quantity 1</div>
-											<div class="price">$99.00</div>
-										</div>
-									</div>
-									<div class="cart-product">
-										<div class="inner">
-											<div class="cross-icon"><span class="icon fa fa-remove"></span></div>
-											<div class="image"><img src="{{asset('corporate/images/resource/post-thumb-2.jpg')}}" alt="" /></div>
-											<h3><a href="shop-single.html">Patient Ninja</a></h3>
-											<div class="quantity-text">Quantity 1</div>
-											<div class="price">$99.00</div>
-										</div>
-									</div>
-									<div class="cart-total">Sub Total: <span>$198</span></div>
-									<ul class="btns-boxed">
-										<li><a href="shoping-cart.html">View Cart</a></li>
-										<li><a href="checkout.html">CheckOut</a></li>
-									</ul>
-
-								</div>
-							</div>
-						</div>
+						@include('front.carts')
 
 						<!-- Nav Btn -->
 						<div class="nav-btn navSidebar-button"><span class="icon flaticon-menu-2"></span></div>
@@ -168,38 +137,7 @@
 					<div class="outer-box clearfix">
 
 						<!-- Cart Box -->
-						<div class="cart-box">
-							<div class="dropdown">
-								<button class="cart-box-btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-shopping-bag-1"></span><span class="total-cart">2</span></button>
-								<div class="dropdown-menu pull-right cart-panel" aria-labelledby="dropdownMenu">
-
-									<div class="cart-product">
-										<div class="inner">
-											<div class="cross-icon"><span class="icon fa fa-remove"></span></div>
-											<div class="image"><img src="{{asset('corporate/images/resource/post-thumb-1.jpg')}}" alt="" /></div>
-											<h3><a href="shop-single.html">Flying Ninja</a></h3>
-											<div class="quantity-text">Quantity 1</div>
-											<div class="price">$99.00</div>
-										</div>
-									</div>
-									<div class="cart-product">
-										<div class="inner">
-											<div class="cross-icon"><span class="icon fa fa-remove"></span></div>
-											<div class="image"><img src="{{asset('corporate/images/resource/post-thumb-2.jpg')}}" alt="" /></div>
-											<h3><a href="shop-single.html">Patient Ninja</a></h3>
-											<div class="quantity-text">Quantity 1</div>
-											<div class="price">$99.00</div>
-										</div>
-									</div>
-									<div class="cart-total">Sub Total: <span>$198</span></div>
-									<ul class="btns-boxed">
-										<li><a href="shoping-cart.html">View Cart</a></li>
-										<li><a href="checkout.html">CheckOut</a></li>
-									</ul>
-
-								</div>
-							</div>
-						</div>
+						@include('front.carts')
 
 						<!-- Search Btn -->
 						<div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
