@@ -31,6 +31,8 @@
                     var cart = "/e-commerce/shopping-cart/"
                     var url = "/e-commerce/product/"+slung
 
+                    $("#cart").load(" #cart");
+
                     addProductNotice('Product added to Cart', '<img src="' +image_url+'">', '<h3><a href="#">'+name+'</a> added to <a href="'+cart+'">shopping cart</a>!</h3>', 'success');
                 })
                 .fail(function(){

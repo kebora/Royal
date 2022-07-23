@@ -102,6 +102,26 @@
 
                                 <div class="section-space col s12"></div>
                             </div>
+
+                            {{--  --}}
+                            <div class="row">
+
+                                {{--  --}}
+                                <div class="input-field col s12">
+                                    <select required name="condition" class="icons" id="mydiv">
+                                        <option value="{{$Product->pro_condition}}" selected>{{$Product->pro_condition}}</option>
+
+                                        <option value="Ex-UK"  class="circle">Ex-UK</option>
+                                        <option value="New"  class="circle">New</option>
+
+                                    </select>
+                                    <label>Product Condition</label>
+                                </div>
+
+                                {{--  --}}
+                                <div class="section-space col s12"></div>
+                            </div>
+                            {{--  --}}
                             {{-- Stock --}}
                             <div class="input-field col s6">
                                 <div class="box-inn-sp box-second-inn">

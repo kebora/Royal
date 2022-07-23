@@ -208,7 +208,7 @@
          	if($.cookie('display')){
          		view = $.cookie('display');
          	}else{
-         		view = 'list';
+         		view = 'grid';
          	}
          	if(view) display(view);
          //-->

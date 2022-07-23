@@ -635,6 +635,8 @@ class AdminsController extends Controller
         $Product->slung = Str::slug($request->title);
         $Product->meta = $request->meta;
         $Product->category = $request->category;
+        $Product->pro_condition = $request->condition;
+
         $Product->brand = $request->brand;
         $Product->stock = $request->stock;
         $Product->price_raw = $request->price;
@@ -706,6 +708,7 @@ class AdminsController extends Controller
             'slung' => Str::slug($request->title),
             'content'=>$request->content,
             'meta'=>$request->meta,
+            'pro_condition'=>$request->condition,
             'stock'=>$new_stock,
             'price'=>$request->price,
             'category'=>$request->category,

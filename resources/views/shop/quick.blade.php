@@ -21,16 +21,16 @@
 
 								 <div id="thumb-slider" class="owl-theme owl-loaded owl-drag full_slider">
 									 <a data-index="0" class="img thumbnail " data-image="{{url('/')}}/uploads/products/{{$item->image_one}}" title="{{$item->name}}">
-										 <img src="{{url('/')}}/uploads/products/{{$item->image_one}}" title="Bint Beef" alt="Bint Beef" />
+										 <img src="{{url('/')}}/uploads/products/{{$item->image_one}}" title="{{$item->name}}" alt="{{$item->name}}" />
 									 </a>
-									 <a data-index="1" class="img thumbnail" data-image="{{url('/')}}/uploads/products/{{$item->image_two}}" title="Bint Beef">
-										 <img src="{{url('/')}}/uploads/products/{{$item->image_two}}" title="Bint Beef" alt="Bint Beef" />
+									 <a data-index="1" class="img thumbnail" data-image="{{url('/')}}/uploads/products/{{$item->image_two}}" title="{{$item->name}}">
+										 <img src="{{url('/')}}/uploads/products/{{$item->image_two}}" title="{{$item->name}}" alt="{{$item->name}}" />
 									 </a>
-									 <a data-index="2" class="img thumbnail" data-image="{{url('/')}}/uploads/products/{{$item->image_three}}" title="Bint Beef">
-										 <img src="{{url('/')}}/uploads/products/{{$item->image_three}}" title="Bint Beef" alt="Bint Beef" />
+									 <a data-index="2" class="img thumbnail" data-image="{{url('/')}}/uploads/products/{{$item->image_three}}" title="{{$item->name}}">
+										 <img src="{{url('/')}}/uploads/products/{{$item->image_three}}" title="{{$item->name}}" alt="{{$item->name}}" />
 									 </a>
-									 <a data-index="3" class="img thumbnail" data-image="{{url('/')}}/uploads/products/{{$item->image_four}}" title="Bint Beef">
-										 <img src="{{url('/')}}/uploads/products/{{$item->image_four}}" title="Bint Beef" alt="Bint Beef" />
+									 <a data-index="3" class="img thumbnail" data-image="{{url('/')}}/uploads/products/{{$item->image_four}}" title="{{$item->name}}">
+										 <img src="{{url('/')}}/uploads/products/{{$item->image_four}}" title="{{$item->name}}" alt="{{$item->name}}" />
 									 </a>
 								 </div>
 

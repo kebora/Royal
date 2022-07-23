@@ -88,7 +88,7 @@
                     $cartItems = \Cart::getContent();
                 ?>
                 <!--cart-->
-                <div id="cart" class=" btn-group btn-shopping-cart">
+                <div id="cart" class="btn-group btn-shopping-cart">
                     @if($cartItems->isEmpty())
                         <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
                             <div class="shopcart">
@@ -99,7 +99,7 @@
                         </a>
                     @else
                         <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
-                            <div class="shopcart">
+                            <div class="shopcart" id="shopcart">
                                 <span class="handle pull-left"></span>
                                 <span class="title">My cart</span>
                                 <p class="text-shopping-cart cart-total-full">{{$cartItems->count()}} item(s) - {{Cart::getTotal();}} </p>
