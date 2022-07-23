@@ -1,33 +1,20 @@
-<header id="header" class=" variantleft type_1">
+<header id="header" class=" variantleft type_1" style="background-image: url('{{asset('corporate/images/background/pattern-8.png')}}');  background-repeat: repeat;">
     <!-- Header Top -->
     <div class="header-top">
        <div class="container">
           <div class="row">
              <div class="header-top-left form-inline col-sm-6 col-xs-12 compact-hidden">
-                <div class="form-group languages-block ">
-                   <form action="#" method="post" enctype="multipart/form-data" id="bt-language">
-                      <a class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
-                      <img src="{{asset('commerce/image/demo/flags/gb.png')}}" alt="English" title="English">
-                      <span class="">English</span>
-                      <span class="fa fa-angle-down"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                         <li><a href="#"><img class="image_flag" src="{{asset('commerce/image/demo/flags/gb.png')}}" alt="English" title="English" /> English </a></li>
-                      </ul>
-                   </form>
-                </div>
+
+
                 <div class="form-group currencies-block">
-                   <form action="#" method="post" enctype="multipart/form-data" id="currency">
-                      <a class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
-                      <span class="icon icon-credit "></span> KES <span class="fa fa-angle-down"></span>
-                      </a>
-                      <ul class="dropdown-menu btn-xs">
-                         <li> <a href="#">(KES)&nbsp;Kenya Shillings</a></li>
-                         <li> <a href="#">(€)&nbsp;Euro</a></li>
-                         <li> <a href="#">(£)&nbsp;Pounds	</a></li>
-                         <li> <a href="#">($)&nbsp;US Dollar	</a></li>
-                      </ul>
-                   </form>
+                    <span>&nbsp; <a href="tel:254724404935"><span class="fa fa-phone"> +254724404935</a></span>
+
+                    <span> | <a href="mailto:support@royaltech.co.ke"><span class="fa fa-envelope"> support@royaltech.co.ke</a></span>
+
+                    <span class="hide-desktop"> | <a href="https://g.page/royaltech-computers-ltd?share"><span class="fa fa-map-marker"> Find Us Now</a></span>
+
+                    <span class="hide-mobile"> | <a target="new" href="https://g.page/royaltech-computers-ltd?share"><span class="fa fa-map-marker"> Tembo Co-op House Moi Ave Nairobi-Room 201</a></span>
+
                 </div>
              </div>
              <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-12 compact-hidden">
@@ -35,15 +22,21 @@
                 <div class="tabBlock" id="TabBlock-1">
                    <ul class="top-link list-inline">
                       <li class="account" id="my_account">
-                         <a href="#" title="My Account" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> <span >My Account</span> <span class="fa fa-angle-down"></span></a>
-                         <ul class="dropdown-menu ">
-                            <li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
-                            <li><a href="login.html"><i class="fa fa-pencil-square-o"></i> Login</a></li>
-                         </ul>
+                        @if(Auth::User())
+                        <a href="#" title="My Account" class="btn btn-xs dropdown-toggle"> <span>{{Auth::User()->name}}</span> </a>
+                        @else
+                        <a href="#" title="My Account" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> <span >My Account</span> <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu ">
+                           <li><a href="{{route('register')}}"><i class="fa fa-user"></i> Register</a></li>
+                           <li><a href="{{route('login')}}"><i class="fa fa-pencil-square-o"></i> Login</a></li>
+                        </ul>
+                        @endif
                       </li>
-                      <li class="wishlist"><a href="wishlist.html" id="wishlist-total" class="top-link-wishlist" title="Wish List (2)"><span>Wish List (2)</span></a></li>
-                      <li class="checkout"><a href="checkout.html" class="top-link-checkout" title="Checkout"><span >Checkout</span></a></li>
-                      <li class="login"><a href="cart.html" title="Shopping Cart"><span >Shopping Cart</span></a></li>
+                      @if(Auth::User())
+                       <li title="Logout" onclick="location='{{url('/')}}/logout'"><span href="{{url('/')}}/logout"><span class="fa fa-power-off"></span></span></li>
+                      @endif
+                      <li class="checkout"><a href="{{url('/')}}/e-commerce/shopping-cart/checkout" class="top-link-checkout" title="Checkout"><span >Checkout</span></a></li>
+                      <li class="login"><a href="{{url('/')}}/e-commerce/shopping-cart" title="Shopping Cart"><span >Shopping Cart</span></a></li>
                    </ul>
                 </div>
              </div>

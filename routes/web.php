@@ -14,7 +14,7 @@ use App\Http\Controllers\AdminsController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
@@ -51,6 +51,9 @@ Route::group(['prefix'=>'e-commerce'], function(){
 
     });
 });
+
+Route::get('/home', [App\Http\Controllers\ShopController::class, 'checkout'])->name('home');
+
 
 
 Auth::routes();
