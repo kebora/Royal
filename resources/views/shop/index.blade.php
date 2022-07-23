@@ -5,21 +5,21 @@
 <div class="main-container container">
     <ul class="breadcrumb">
        <li><a href="#"><i class="fa fa-home"></i></a></li>
-       <li><a href="#">Smartphone & Tablets(Sample Category)</a></li>
+       <li><a href="#">{{$title}}</a></li>
     </ul>
     <div class="row">
        <!--Middle Part Start-->
        <div id="content" class="col-md-12 col-sm-12">
-          <h3 class="offset_title">Smartphone & Tablets(Sample Category)</h3>
+          <h3 class="offset_title">{{$title}}</h3>
           <div class="products-category">
-             <div class="category-derc form-group">
+             {{-- <div class="category-derc form-group">
                 <div class="row">
                    <div class="col-sm-4"><img src="{{asset('commerce/image/demo/shop/category/smartphone-tablets.jpg')}}" alt="Apple Cinema 30&quot;"></div>
                    <div class="col-sm-8">
                       <p>Dummy Text To Represent Sample Categories Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis sit voluptatem accusantium doloremque laudantium. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. </p>
                    </div>
                 </div>
-             </div>
+             </div> --}}
              <!--Content Top -->
              {{-- @include('shop.filter') --}}
              <!--Content Top End -->

@@ -13,7 +13,8 @@ class ShopController extends Controller
     public function index()
     {
         $Products = Product::all();
-        return view('shop.index', compact('Products'));
+        $title = "All Products";
+        return view('shop.index', compact('Products','title'));
     }
 
     public function product($slung)
@@ -25,7 +26,8 @@ class ShopController extends Controller
     public function brand($slung)
     {
         $Products = DB::table('products')->where('brand',$slung)->get();
-        return view('shop.index', compact('Products'));
+        $title = $slung;
+        return view('shop.index', compact('Products','title'));
     }
 
     public function tags($slung)
@@ -33,8 +35,9 @@ class ShopController extends Controller
         $Category =DB::table('categories')->where('slung',$slung)->get();
         foreach($Category as $Cat){
             $Products = DB::table('products')->where('category',$Cat->id)->get();
+            $title = $Cat->title;
         }
-        return view('shop.index', compact('Products'));
+        return view('shop.index', compact('Products','title'));
     }
 
 
