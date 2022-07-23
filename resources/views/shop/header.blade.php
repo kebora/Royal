@@ -283,6 +283,9 @@
                                         </div>
                                      </li>
                                      <li>
+                                        <a href="{{url('/')}}/e-commerce"><span class="fa fa-shopping-cart"></span> Shop Online</a>
+                                     </li>
+                                     <li>
                                         <a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire a Laptop</a>
                                      </li>
                                      <li>
