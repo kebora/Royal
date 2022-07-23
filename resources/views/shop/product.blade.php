@@ -327,10 +327,10 @@
                     });
                     $('.large-image').magnificPopup({
                         items: [
-                            {src: 'image/demo/shop/product/J9.jpg' },
-                            {src: 'image/demo/shop/product/J6.jpg' },
-                            {src: 'image/demo/shop/product/J5.jpg' },
-                            {src: 'image/demo/shop/product/J4.jpg' },
+                            {src: '{{url('/')}}/uploads/products/{{$Pro->image_one}}'},
+                            {src: '{{url('/')}}/uploads/products/{{$Pro->image_two}}'},
+                            {src: '{{url('/')}}/uploads/products/{{$Pro->image_three}}'},
+                            {src: '{{url('/')}}/uploads/products/{{$Pro->image_four}}'},
                         ],
                         gallery: { enabled: true, preload: [0,2] },
                         type: 'image',
