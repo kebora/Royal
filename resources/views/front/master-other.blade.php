@@ -19,6 +19,7 @@
 <link id="theme-color-file" href="{{asset('corporate/css/color-themes/default-theme.css')}}" rel="stylesheet">
 
 @include('favicon')
+@include('tawkto')
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="{{asset('corporate/js/respond.js')}}"></script><![endif]-->

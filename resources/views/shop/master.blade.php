@@ -15,6 +15,7 @@
       <!-- Favicon
          ============================================ -->
       @include('favicon')
+      @include('tawkto')
       <!-- Google web fonts
          ============================================ -->
       <link href='{{asset('commerce/fonts.googleapis.com/css2d0f.css?family=Open+Sans:400,700,300')}}' rel='stylesheet' type='text/css'>
