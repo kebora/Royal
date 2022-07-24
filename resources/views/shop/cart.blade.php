@@ -27,10 +27,11 @@
             <tbody>
 
             @foreach ($cartItems as $cartitems)
-
+              <?php $Product = DB::table('products')->where('id',$cartitems->id)->get(); ?>
+              @foreach ($Product as $item)
               <tr>
-                <td class="text-center"><a href="product.html"><img width="70px" src="{{url('/')}}/uploads/products/{{ $cartitems->attributes->image }}" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
-                <td class="text-left"><a href="product.html">{{$cartitems->name}}</a><br />
+                <td class="text-center"><a target="new" href="{{url('/')}}/e-commerce/product/{{$item->slung}}"><img width="70px" src="{{url('/')}}/uploads/products/{{ $cartitems->attributes->image }}" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
+                <td class="text-left"><a target="new" href="{{url('/')}}/e-commerce/product/{{$item->slung}}">{{$cartitems->name}}</a><br />
                  </td>
                 {{-- <td class="text-left">Pt 001</td> --}}
                 <td class="text-left" width="200px"><div class="input-group btn-block quantity">
@@ -42,6 +43,8 @@
                 <td class="text-right">KES {{$cartitems->price}}</td>
                 <td class="text-right">KES <?php $prices = $cartitems->price; $qty = $cartitems->quantity; echo $total = $qty*$prices ?></td>
               </tr>
+              @endforeach
+
             @endforeach
 
             </tbody>
