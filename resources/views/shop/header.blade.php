@@ -23,7 +23,7 @@
                    <ul class="top-link list-inline">
                       <li class="account" id="my_account">
                         @if(Auth::User())
-                        <a href="#" title="My Account" class="btn btn-xs dropdown-toggle"> <span>{{Auth::User()->name}}</span> </a>
+                        <a href="{{url('/')}}/dashboard" title="My Account" class="btn btn-xs dropdown-toggle"> <span>{{Auth::User()->name}}</span> </a>
                         @else
                         <a href="#" title="My Account" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> <span >My Account</span> <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu ">

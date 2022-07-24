@@ -19,10 +19,11 @@
                     <h3 class="modtitle">Customer Service</h3>
                     <div class="modcontent">
                         <ul class="menu">
+                            <li><a href="{{url('/')}}/">Home</a></li>
                             <li><a href="{{url('/')}}/contact-us">Contact Us</a></li>
-                            <li><a href="{{url('/')}}/terms-and-conditions">Terms and Conditions</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="{{url('/')}}/privacy-policy">My Account</a></li>
+                            <li><a href="{{url('/')}}/the-company">About Us</a></li>
+                            <li><a href="{{url('/')}}//e-commerce">Shop Online</a></li>
+                            <li><a href="{{url('/')}}/dashboard">My Account</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,13 +31,13 @@
 
             <div class="col-sm-6 col-md-3 box-account">
                 <div class="module clearfix">
-                    <h3 class="modtitle">My Account</h3>
+                    <h3 class="modtitle">We Excell In</h3>
                     <div class="modcontent">
                         <ul class="menu">
-                            <li><a href="{{url('/')}}/dashboard">My Account</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Orders</a></li>
-                            <li><a href="{{url('/')}}/copyright">Copyright</a></li>
+                            <?php $Services = DB::table('services')->inRandomOrder()->limit('5')->get(); ?>
+                            @foreach ($Services as $Ser)
+                            <li><a target="new" href="{{url('/')}}/center-of-excellence/{{$Ser->slung}}">{{$Ser->title}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -167,15 +168,15 @@
                         <div class="row clearfix">
                             <!-- Column -->
                             <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="copyright">Copyright &copy; 2022 by RoyalTech Computers Limited | All Rights Reserved.</div>
+                                <div class="copyright">Copyright &copy; {{date('Y')}} by RoyalTech Computers Limited | All Rights Reserved.</div>
                             </div>
                             <!-- Column -->
                             <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <ul class="footer-nav">
 
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Copyright Statement</a></li>
+                                    <li><a href="{{url('/')}}/privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="{{url('/')}}/terms-and-conditions">Terms and Conditions</a></li>
+                                    <li><a href="{{url('/')}}/copyright">Copyright Statement</a></li>
                                 </ul>
                             </div>
                         </div>
