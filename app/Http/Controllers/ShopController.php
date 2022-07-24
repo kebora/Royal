@@ -67,6 +67,7 @@ class ShopController extends Controller
             $title = "All Products";
             return view('shop.index', compact('Products','title'));
         }else{
+            $title = "All Products";
             return view('shop.checkout', compact('cartItems'));
         }
 
