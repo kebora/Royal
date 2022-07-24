@@ -30,7 +30,7 @@
             <div class="content-column col-lg-6 col-md-12 col-sm-12">
                 <div class="inner-column">
                     <div class="text">
-                        Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.
+                        RoyalTech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.
 
                      </div>
                     <div class="blocks-outer">

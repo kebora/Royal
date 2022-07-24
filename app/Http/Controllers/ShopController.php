@@ -52,7 +52,8 @@ class ShopController extends Controller
         $cartItems = \Cart::getContent();
         if($cartItems->isEmpty()){
             $Products = Product::all();
-            return view('shop.index', compact('Products'));
+            $title = "All Products";
+            return view('shop.index', compact('Products','title'));
         }else{
             return view('shop.cart', compact('cartItems'));
         }
@@ -63,7 +64,8 @@ class ShopController extends Controller
         $cartItems = \Cart::getContent();
         if($cartItems->isEmpty()){
             $Products = Product::all();
-            return view('shop.index', compact('Products'));
+            $title = "All Products";
+            return view('shop.index', compact('Products','title'));
         }else{
             return view('shop.checkout', compact('cartItems'));
         }
