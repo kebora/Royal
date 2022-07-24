@@ -36,6 +36,9 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
+                            @if($errors->any())
+                                {{ implode('', $errors->all(':message')) }}
+                            @endif
                         </div>
                     </div>
 
@@ -54,7 +57,7 @@
                     <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-telephone">Mobile</label>
                         <div class="col-sm-10">
-                            <input type="tel" name="telephone" value="" placeholder="Mobile" id="input-telephone" class="form-control">
+                            <input type="tel" name="mobile" value="" placeholder="Mobile" id="input-telephone" class="form-control" required>
                         </div>
                     </div>
 
@@ -64,60 +67,33 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label" for="input-company">Company</label>
                         <div class="col-sm-10">
-                            <input type="text" name="company" value="" placeholder="Company" id="input-company" class="form-control">
+                            <input type="text" name="company" value="" placeholder="Company" id="input-company" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label class="col-sm-2 control-label" for="input-address-1">Address 1</label>
+                        <label class="col-sm-2 control-label" for="input-address-1">Address</label>
                         <div class="col-sm-10">
-                            <input type="text" name="address_1" value="" placeholder="Address 1" id="input-address-1" class="form-control">
+                            <input type="text" name="address" value="" placeholder="e.g Moi Avenue, BIHI Towers" id="input-address-1" class="form-control" required>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label" for="input-address-2">Address 2</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="address_2" value="" placeholder="Address 2" id="input-address-2" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group required">
-                        <label class="col-sm-2 control-label" for="input-city">City</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="city" value="" placeholder="City" id="input-city" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group required">
-                        <label class="col-sm-2 control-label" for="input-postcode">Post Code</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="postcode" value="" placeholder="Post Code" id="input-postcode" class="form-control">
-                        </div>
-                    </div>
+
+
+
                     <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-country">Country</label>
                         <div class="col-sm-10">
-                            <select name="country_id" id="input-country" class="form-control">
+                            <select name="country" id="input-country" class="form-control" required>
                                 <option value=""> --- Please Select --- </option>
-                                <option value="244">Kenya</option>
-                                <option value="1">Uganda</option>
-                                <option value="2">Tanzania</option>
-                                <option value="3">Ethiopia</option>
-                                <option value="4">Sudan</option>
-                                <option value="5">Somalia</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Somalia">Somalia</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form-group required">
-                        <label class="col-sm-2 control-label" for="input-zone">Region / State</label>
-                        <div class="col-sm-10">
-                            <select name="zone_id" id="input-zone" class="form-control">
-                                <option value=""> --- Please Select --- </option>
-                                <option value="3513">Aberdeen</option>
-                                <option value="3514">Aberdeenshire</option>
-                                <option value="3515">Anglesey</option>
-                                <option value="3516">Angus</option>
 
-                            </select>
-                        </div>
-                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Your Password</legend>

@@ -15,7 +15,7 @@
           <h2 class="title">Checkout</h2>
           <div class="so-onepagecheckout ">
             <div class="col-left col-sm-3">
-
+            <form>
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title"><i class="fa fa-user"></i> Your Personal Details</h4>
@@ -55,8 +55,8 @@
                           </div>
 
                           <div class="form-group required">
-                            <label for="input-payment-city" class="control-label">City</label>
-                            <input type="text" class="form-control" id="input-payment-city" placeholder="City" value="{{Auth::User()->city}}" name="city">
+                            <label for="input-payment-city" class="control-label">Country</label>
+                            <input type="text" class="form-control" id="input-payment-city" placeholder="City" value="{{Auth::User()->country}}" name="country">
                           </div>
 
                           <div class="checkbox">
@@ -65,8 +65,15 @@
                               My delivery and billing addresses are the same.</label>
                           </div>
                         </fieldset>
+                        <div class="buttons">
+                            <div class="pull-right">
+                              <button type="submit" class="btn btn-primary" id="button-confirm" value="">Update Details <img class="loading" width="30" src="{{url('/')}}/uploads/icon/loading.gif" alt="royaltech loading"/></button>
+                            </div>
+                          </div>
                       </div>
               </div>
+
+            </form>
             </div>
             <div class="col-right col-sm-9">
               <div class="row">
@@ -169,7 +176,7 @@
                         <br>
                         <label class="control-label" for="confirm_agree">
                           <input type="checkbox" checked="checked" value="1" required="" class="validate required" id="confirm_agree" name="confirm agree">
-                          <span>I have read and agree to the <a class="agree" href="#"><b>Terms &amp; Conditions</b></a></span> </label>
+                          <span>I have read and agree to the <a class="agree" href="{{url('/')}}/terms-and-conditions"><b>Terms &amp; Conditions</b></a></span> </label>
                         <div class="buttons">
                           <div class="pull-right">
                             <input type="button" class="btn btn-primary" id="button-confirm" value="Confirm Order">

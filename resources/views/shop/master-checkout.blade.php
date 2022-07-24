@@ -79,6 +79,11 @@
          	}
          	if(view) display(view);
          //-->
+         $(document).ready(function(){
+            $(".loading").hide();
+            // Processs Update Details Ajax
+         });
       </script>
+
    </body>
 </html>
