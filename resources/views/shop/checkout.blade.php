@@ -24,16 +24,16 @@
                         <fieldset id="account">
                           <div class="form-group required">
                             <label for="input-payment-firstname" class="control-label">Full Name</label>
-                            <input type="text" class="form-control" id="input-payment-firstname" placeholder="First Name" value="" name="firstname">
+                            <input type="text" class="form-control" id="input-payment-firstname" placeholder="Full Name" value="{{Auth::User()->name}}" name="name">
                           </div>
 
                           <div class="form-group required">
                             <label for="input-payment-email" class="control-label">E-Mail</label>
-                            <input type="text" class="form-control" id="input-payment-email" placeholder="E-Mail" value="" name="email">
+                            <input type="text" class="form-control" id="input-payment-email" placeholder="E-Mail" value="{{Auth::User()->email}}" name="email">
                           </div>
                           <div class="form-group required">
                             <label for="input-payment-telephone" class="control-label">Mobile</label>
-                            <input type="text" class="form-control" id="input-payment-telephone" placeholder="Telephone" value="" name="telephone">
+                            <input type="text" class="form-control" id="input-payment-telephone" placeholder="Telephone" value="{{Auth::User()->mobile}}" name="mobile">
                           </div>
 
                         </fieldset>
@@ -47,67 +47,18 @@
                         <fieldset id="address" class="required">
                           <div class="form-group">
                             <label for="input-payment-company" class="control-label">Company</label>
-                            <input type="text" class="form-control" id="input-payment-company" placeholder="Company" value="" name="company">
+                            <input type="text" class="form-control" id="input-payment-company" placeholder="Company" value="{{Auth::User()->company}}" name="company">
                           </div>
                           <div class="form-group required">
                             <label for="input-payment-address-1" class="control-label">Address 1</label>
-                            <input type="text" class="form-control" id="input-payment-address-1" placeholder="Address 1" value="" name="address_1">
+                            <input type="text" class="form-control" id="input-payment-address-1" placeholder="Address 1" value="{{Auth::User()->address}}" name="address">
                           </div>
-                          <div class="form-group">
-                            <label for="input-payment-address-2" class="control-label">Address 2</label>
-                            <input type="text" class="form-control" id="input-payment-address-2" placeholder="Address 2" value="" name="address_2">
-                          </div>
+
                           <div class="form-group required">
                             <label for="input-payment-city" class="control-label">City</label>
-                            <input type="text" class="form-control" id="input-payment-city" placeholder="City" value="" name="city">
+                            <input type="text" class="form-control" id="input-payment-city" placeholder="City" value="{{Auth::User()->city}}" name="city">
                           </div>
-                          <div class="form-group required">
-                            <label for="input-payment-postcode" class="control-label">Post Code</label>
-                            <input type="text" class="form-control" id="input-payment-postcode" placeholder="Post Code" value="" name="postcode">
-                          </div>
-                          <div class="form-group required">
-                            <label for="input-payment-country" class="control-label">Country</label>
-                            <select class="form-control" id="input-payment-country" name="country_id">
-                              <option value=""> --- Please Select --- </option>
-                              <option value="244">Aaland Islands</option>
-                              <option value="1">Afghanistan</option>
-                              <option value="2">Albania</option>
-                              <option value="3">Algeria</option>
-                              <option value="4">American Samoa</option>
-                              <option value="5">Andorra</option>
-                              <option value="6">Angola</option>
-                              <option value="7">Anguilla</option>
-                              <option value="8">Antarctica</option>
-                              <option value="9">Antigua and Barbuda</option>
-                              <option value="10">Argentina</option>
-                              <option value="11">Armenia</option>
-                              <option value="12">Aruba</option>
-                              <option value="252">Ascension Island (British)</option>
-                              <option value="13">Australia</option>
-                              <option value="14">Austria</option>
-                              <option value="15">Azerbaijan</option>
-                              <option value="16">Bahamas</option>
-                              <option value="17">Bahrain</option>
 
-                            </select>
-                          </div>
-                          <div class="form-group required">
-                            <label for="input-payment-zone" class="control-label">Region / State</label>
-                            <select class="form-control" id="input-payment-zone" name="zone_id">
-                              <option value=""> --- Please Select --- </option>
-                              <option value="3513">Aberdeen</option>
-                              <option value="3514">Aberdeenshire</option>
-                              <option value="3515">Anglesey</option>
-                              <option value="3516">Angus</option>
-                              <option value="3517">Argyll and Bute</option>
-                              <option value="3518">Bedfordshire</option>
-                              <option value="3519">Berkshire</option>
-                              <option value="3520">Blaenau Gwent</option>
-                              <option value="3521">Bridgend</option>
-                              <option value="3522">Bristol</option>
-
-                            </select>
-                          </div>
                           <div class="checkbox">
                             <label>
                               <input type="checkbox" checked="checked" value="1" name="shipping_address">
@@ -149,21 +100,23 @@
                             </thead>
                             <tbody>
                                 @foreach ($cartItems as $cartitems)
-
-                                <tr>
-                                  <td class="text-center"><a href="product.html"><img width="70px" src="{{url('/')}}/uploads/products/{{ $cartitems->attributes->image }}" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
-                                  <td class="text-left"><a href="product.html">{{$cartitems->name}}</a><br />
-                                   </td>
-                                  {{-- <td class="text-left">Pt 001</td> --}}
-                                  <td class="text-left" width="200px"><div class="input-group btn-block quantity">
-                                      <input type="text" name="quantity" value="{{$cartitems->quantity}}" size="1" class="form-control" />
-                                      <span class="input-group-btn">
-                                      <button type="submit" data-toggle="tooltip" title="Update" class="btn btn-primary"><i class="fa fa-clone"></i></button>
-                                      <a href="{{ url('e-commerce/shopping-cart') }}/remove/{{$cartitems->id}}" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick=""><i class="fa fa-times-circle"></i></a>
-                                      </span></div></td>
-                                  <td class="text-right">KES {{$cartitems->price}}</td>
-                                  <td class="text-right">KES <?php $prices = $cartitems->price; $qty = $cartitems->quantity; echo $total = $qty*$prices ?></td>
-                                </tr>
+                                <?php $Product = DB::table('products')->where('id',$cartitems->id)->get(); ?>
+                                @foreach ($Product as $item)
+                                    <tr>
+                                    <td class="text-center"><a target="new" href="{{url('/')}}/e-commerce/product/{{$item->slung}}"><img width="70px" src="{{url('/')}}/uploads/products/{{ $cartitems->attributes->image }}" alt="Aspire Ultrabook Laptop" title="Aspire Ultrabook Laptop" class="img-thumbnail" /></a></td>
+                                    <td class="text-left"><a target="new" href="{{url('/')}}/e-commerce/product/{{$item->slung}}">{{$cartitems->name}}</a><br />
+                                    </td>
+                                    {{-- <td class="text-left">Pt 001</td> --}}
+                                    <td class="text-left" width="200px"><div class="input-group btn-block quantity">
+                                        <input type="text" name="quantity" value="{{$cartitems->quantity}}" size="1" class="form-control" />
+                                        <span class="input-group-btn">
+                                        <button type="submit" data-toggle="tooltip" title="Update" class="btn btn-primary"><i class="fa fa-clone"></i></button>
+                                        <a onclick="return confirm('Delete {{$item->name}} From Cart?')" href="{{ url('e-commerce/shopping-cart') }}/remove/{{$cartitems->id}}" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick=""><i class="fa fa-times-circle"></i></a>
+                                        </span></div></td>
+                                    <td class="text-right">KES {{$cartitems->price}}</td>
+                                    <td class="text-right">KES <?php $prices = $cartitems->price; $qty = $cartitems->quantity; echo $total = $qty*$prices ?></td>
+                                    </tr>
+                                @endforeach
                               @endforeach
                             </tbody>
                             <tfoot>

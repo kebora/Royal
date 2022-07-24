@@ -7,6 +7,7 @@ use DB;
 use App\Models\Product;
 // use Wishlistable;
 use App\Models\User;
+use Auth;
 
 class ShopController extends Controller
 {
@@ -61,17 +62,20 @@ class ShopController extends Controller
 
     public function checkout()
     {
-        $cartItems = \Cart::getContent();
-        if($cartItems->isEmpty()){
-            $Products = Product::all();
-            $title = "All Products";
-            return view('shop.index', compact('Products','title'));
+        // GuardIt
+        if(Auth::User()){
+            $cartItems = \Cart::getContent();
+            if($cartItems->isEmpty()){
+                $Products = Product::all();
+                $title = "All Products";
+                return view('shop.index', compact('Products','title'));
+            }else{
+                $title = "All Products";
+                return view('shop.checkout', compact('cartItems'));
+            }
         }else{
-            $title = "All Products";
-            return view('shop.checkout', compact('cartItems'));
+            return redirect()->route('login');
         }
-
-
     }
 
 

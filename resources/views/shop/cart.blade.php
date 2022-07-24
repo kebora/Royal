@@ -38,7 +38,7 @@
                     <input type="text" name="quantity" value="{{$cartitems->quantity}}" size="1" class="form-control" />
                     <span class="input-group-btn">
                     <button type="submit" data-toggle="tooltip" title="Update" class="btn btn-primary"><i class="fa fa-clone"></i></button>
-                    <a href="{{ url('e-commerce/shopping-cart') }}/remove/{{$cartitems->id}}" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick=""><i class="fa fa-times-circle"></i></a>
+                    <a onclick="return confirm('Delete {{$item->name}} From Cart?')" href="{{ url('e-commerce/shopping-cart') }}/remove/{{$cartitems->id}}" data-toggle="tooltip" title="Remove" class="btn btn-danger" onClick=""><i class="fa fa-times-circle"></i></a>
                     </span></div></td>
                 <td class="text-right">KES {{$cartitems->price}}</td>
                 <td class="text-right">KES <?php $prices = $cartitems->price; $qty = $cartitems->quantity; echo $total = $qty*$prices ?></td>
