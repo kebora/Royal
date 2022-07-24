@@ -54,6 +54,13 @@ Route::group(['prefix'=>'e-commerce'], function(){
 
 Route::get('/home', [App\Http\Controllers\ShopController::class, 'checkout'])->name('home');
 
+Route::group(['prefix'=>'dashboard'], function(){
+    Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/order-history', [App\Http\Controllers\DashboardController::class, 'history'])->name('history');
+    Route::get('/order-history/{order}', [App\Http\Controllers\DashboardController::class, 'history_expand'])->name('history-with-order-number');
+    Route::get('/transaction-history', [App\Http\Controllers\DashboardController::class, 'transaction'])->name('transaction');
+});
+
 
 
 Auth::routes();
