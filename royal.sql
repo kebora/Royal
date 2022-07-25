@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 23, 2022 at 01:27 PM
+-- Generation Time: Jul 25, 2022 at 10:41 AM
 -- Server version: 8.0.29-0ubuntu0.21.10.2
 -- PHP Version: 7.4.30
 
@@ -309,7 +309,10 @@ INSERT INTO `activity_log` (`id`, `log_name`, `description`, `subject_type`, `su
 (218, 'default', 'Accessed All Products', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-23 08:21:35', '2022-07-23 08:21:35'),
 (219, 'default', 'Access Edit Product ID number 20 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-23 08:21:43', '2022-07-23 08:21:43'),
 (220, 'default', 'Evoked Edit Product For Product ID number 20 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-23 08:22:03', '2022-07-23 08:22:03'),
-(221, 'default', 'Access Edit Product ID number 20 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-23 08:22:04', '2022-07-23 08:22:04');
+(221, 'default', 'Access Edit Product ID number 20 ', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-23 08:22:04', '2022-07-23 08:22:04'),
+(222, 'default', 'User Accessed Site Settings Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-24 07:38:55', '2022-07-24 07:38:55'),
+(223, 'default', 'Evoked an update Settings Request', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-24 07:39:26', '2022-07-24 07:39:26'),
+(224, 'default', 'User Accessed Site Settings Page', NULL, NULL, 'App\\Models\\User', 1, '[]', '2022-07-24 07:39:29', '2022-07-24 07:39:29');
 
 -- --------------------------------------------------------
 
@@ -1009,7 +1012,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (6, '2022_07_20_151015_create_blogs_table', 2),
 (7, '2022_07_20_155125_create_brands_table', 3),
 (12, '2014_10_12_000000_create_users_table', 4),
-(13, '2022_07_22_093311_create_wishlist_table', 5);
+(13, '2022_07_22_093311_create_wishlist_table', 5),
+(14, '2022_07_08_164549_create_payments_table', 6);
 
 -- --------------------------------------------------------
 
@@ -1058,7 +1062,28 @@ INSERT INTO `notifications` (`id`, `title`, `type`, `status`, `content`, `create
 (24, NULL, 'Order', 0, 'You have a new Order', '2022-06-08 10:37:18', '2022-06-08 10:37:18'),
 (25, NULL, 'Order', 0, 'You have a new Order', '2022-06-08 10:38:47', '2022-06-08 10:38:47'),
 (26, NULL, 'Order', 0, 'You have a new Order', '2022-06-10 13:15:38', '2022-06-10 13:15:38'),
-(27, NULL, 'Order', 0, 'You have a new Order', '2022-06-11 10:42:42', '2022-06-11 10:42:42');
+(27, NULL, 'Order', 0, 'You have a new Order', '2022-06-11 10:42:42', '2022-06-11 10:42:42'),
+(28, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:04:28', '2022-07-25 04:04:28'),
+(29, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:05:57', '2022-07-25 04:05:57'),
+(30, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:05:58', '2022-07-25 04:05:58'),
+(31, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:06:26', '2022-07-25 04:06:26'),
+(32, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:34:31', '2022-07-25 04:34:31'),
+(33, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:34:32', '2022-07-25 04:34:32'),
+(34, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:38:02', '2022-07-25 04:38:02'),
+(35, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:38:03', '2022-07-25 04:38:03'),
+(36, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:42:27', '2022-07-25 04:42:27'),
+(37, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:42:27', '2022-07-25 04:42:27'),
+(38, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:49:28', '2022-07-25 04:49:28'),
+(39, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:49:29', '2022-07-25 04:49:29'),
+(40, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:52:32', '2022-07-25 04:52:32'),
+(41, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:52:32', '2022-07-25 04:52:32'),
+(42, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:56:13', '2022-07-25 04:56:13'),
+(43, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 04:56:13', '2022-07-25 04:56:13'),
+(44, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 05:00:46', '2022-07-25 05:00:46'),
+(45, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 05:26:30', '2022-07-25 05:26:30'),
+(46, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 05:26:30', '2022-07-25 05:26:30'),
+(47, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 05:29:13', '2022-07-25 05:29:13'),
+(48, NULL, 'Order', 0, 'You have a new Order', '2022-07-25 05:29:14', '2022-07-25 05:29:14');
 
 -- --------------------------------------------------------
 
@@ -1071,6 +1096,7 @@ CREATE TABLE `orders` (
   `user_id` int NOT NULL,
   `status` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `total` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` datetime DEFAULT CURRENT_TIMESTAMP,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1079,9 +1105,9 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `user_id`, `status`, `total`, `created_at`, `updated_at`) VALUES
-(1, 7, 'pending', '8600', '2022-06-10 13:15:38', '2022-06-10 13:15:38'),
-(2, 7, 'pending', '176', '2022-06-11 10:42:42', '2022-06-11 10:42:42');
+INSERT INTO `orders` (`id`, `user_id`, `status`, `total`, `date`, `created_at`, `updated_at`) VALUES
+(1, 6, 'pending', '43800', '2022-07-25 11:29:12', '2022-07-25 05:29:12', '2022-07-25 05:29:12'),
+(2, 6, 'pending', '43800', '2022-07-25 11:29:13', '2022-07-25 05:29:13', '2022-07-25 05:29:13');
 
 -- --------------------------------------------------------
 
@@ -1105,8 +1131,8 @@ CREATE TABLE `orders_product` (
 --
 
 INSERT INTO `orders_product` (`id`, `tax`, `total`, `product_id`, `orders_id`, `qty`, `created_at`, `updated_at`) VALUES
-(1, NULL, '8600', 29, 1, NULL, '2022-06-10 13:15:38', '2022-06-10 13:15:38'),
-(2, NULL, '176', 4, 2, NULL, '2022-06-11 10:42:42', '2022-06-11 10:42:42');
+(1, '0', '43800', 1, 1, 1, '2022-07-25 08:29:12', '2022-07-25 08:29:12'),
+(2, '0', '43800', 1, 2, 1, '2022-07-25 08:29:13', '2022-07-25 08:29:13');
 
 -- --------------------------------------------------------
 
@@ -1145,6 +1171,34 @@ CREATE TABLE `payment` (
 --
 
 CREATE TABLE `payments` (
+  `id` bigint UNSIGNED NOT NULL,
+  `businessid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` int NOT NULL,
+  `order_id` int NOT NULL,
+  `transactionid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `trackingid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `currency` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `amount` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `payments`
+--
+
+INSERT INTO `payments` (`id`, `businessid`, `user_id`, `order_id`, `transactionid`, `trackingid`, `status`, `currency`, `amount`, `created_at`, `updated_at`) VALUES
+(1, '1', 6, 1, 'PESAPALUNY0QRC64HKFKPE', NULL, 'NEW', 'KES', '1', '2022-07-25 05:29:13', '2022-07-25 05:29:13'),
+(2, '1', 6, 2, 'PESAPAL0XBSLI1JGXFHNP8', NULL, 'NEW', 'KES', '1', '2022-07-25 05:29:14', '2022-07-25 05:29:14');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `paymentss`
+--
+
+CREATE TABLE `paymentss` (
   `id` int NOT NULL,
   `txid` varchar(256) NOT NULL,
   `addr` varchar(256) NOT NULL,
@@ -1596,6 +1650,8 @@ CREATE TABLE `users` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `mobile` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `notes` text COLLATE utf8mb4_unicode_ci,
   `status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `country` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -1612,9 +1668,13 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `mobile`, `address`, `status`, `country`, `email`, `image`, `email_verified_at`, `is_admin`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', NULL, NULL, NULL, NULL, 'admin@royaltech.co.ke', NULL, NULL, 1, '$2y$10$qHgKViPYXbUZpC72cIsFduvDO3OHwAhGzRo3Lng78AZKXUZC2bv.q', NULL, '2022-07-21 11:23:11', '2022-07-21 11:23:11'),
-(2, 'User', NULL, NULL, NULL, NULL, 'user@royaltech.co.ke', NULL, NULL, 0, '$2y$10$e60EvLQbvc83eHcpF/YHIuya01Q.vkZXruOpxHKGL.dSGjxndRw92', NULL, '2022-07-21 11:23:11', '2022-07-21 11:23:11');
+INSERT INTO `users` (`id`, `name`, `mobile`, `address`, `company`, `notes`, `status`, `country`, `email`, `image`, `email_verified_at`, `is_admin`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', NULL, NULL, NULL, NULL, NULL, NULL, 'admin@royaltech.co.ke', NULL, NULL, 1, '$2y$10$qHgKViPYXbUZpC72cIsFduvDO3OHwAhGzRo3Lng78AZKXUZC2bv.q', NULL, '2022-07-21 11:23:11', '2022-07-21 11:23:11'),
+(2, 'User', NULL, NULL, NULL, NULL, NULL, NULL, 'user@royaltech.co.ke', NULL, NULL, 0, '$2y$10$e60EvLQbvc83eHcpF/YHIuya01Q.vkZXruOpxHKGL.dSGjxndRw92', NULL, '2022-07-21 11:23:11', '2022-07-21 11:23:11'),
+(3, 'Albert  Muhatia', NULL, NULL, NULL, NULL, NULL, NULL, 'albertmuhatia58@gmail.com', NULL, NULL, NULL, '$2y$10$kyh1b41yRelLX2UsiGUNluFClmM/nhBdVMIFrZeuf4yWqGo0N35Sm', NULL, '2022-07-23 12:23:14', '2022-07-23 12:23:14'),
+(4, 'Albert  Muhatia', NULL, NULL, NULL, NULL, NULL, NULL, 'albertmttuhatia58@gmail.com', NULL, NULL, NULL, '$2y$10$K7JSCIeooBXZ..kzuIeptODjySWbl1yibofvc9QoNQYQHA.l0TZuC', NULL, '2022-07-24 08:41:45', '2022-07-24 08:41:45'),
+(5, 'Albert  Muhatia', '0723014032', '80', 'Designekta Studios', NULL, NULL, 'Kenya', 'albertmuhatiaa@gmail.com', NULL, NULL, NULL, '$2y$10$Vk2T23TuiLf1jJdxzln64eD2XPysGcpSU6q2J2304GAfGzy.8iJXG', NULL, '2022-07-24 08:44:19', '2022-07-24 08:44:19'),
+(6, 'Albert  Muhatia', '0723014032', '80', 'Designekta Studios', 'Last update', NULL, 'Kenya', 'albertmuhatia@gmail.com', NULL, NULL, NULL, '$2y$10$JaqA7PamAPY8niupAAmpL.7ldipS5XhlbMIic41a4h8XTPBYIwIja', NULL, '2022-07-25 01:47:44', '2022-07-25 01:47:44');
 
 -- --------------------------------------------------------
 
@@ -1724,7 +1784,7 @@ CREATE TABLE `_site_settings` (
 --
 
 INSERT INTO `_site_settings` (`id`, `sitename`, `logo`, `logo_footer`, `logo_two`, `favicon`, `email`, `email_one`, `mobile_one`, `mobile_two`, `mpesa`, `paypal`, `tagline`, `url`, `location`, `map`, `address`, `facebook`, `whatsapp`, `telegram`, `twitter`, `linkedin`, `instagram`, `youtube`, `google`, `risks`, `welcome`, `tawkTo`, `tawkToStatus`, `whatsAppStatus`, `created_at`, `updated_at`) VALUES
-(1, 'RoyalTech Computers Limited', 'Royaltech-Original-1.png', 'Royaltech-Original-White-1.png', 'RoyalTech Computers Logo. #1d335c-06 (1).png', NULL, 'info@aste.co.ke', 'info@aste.co.ke', '+254740646411', '+254740646411', NULL, NULL, NULL, 'https://www.aste.co.ke', NULL, 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.278993654827!2d36.8226812!3d-1.2819167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x142d695dd96dcf02!2sRoyaltech%20Computers%20Limited!5e0!3m2!1sen!2ske!4v1658415407617!5m2!1sen!2ske', NULL, 'https://www.facebook.com/asteapparel/', NULL, NULL, NULL, 'https://www.linkedin.com/company/aste-apparel', 'https://www.instagram.com/aste.co.ke/', NULL, NULL, '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'Maxime veniam non nisi maiores quam. Quas, impedit ipsa aliquam, perspiciatis sapiente laudantium recusandae quis iste rem quia suscipit deserunt. Obcaecati voluptate consequuntur sed quia ab a magni, minus possimus facere, alias, itaque cum.', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.277444357953!2d36.8222756!3d-1.2821653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb39310a139138d6!2sDesignekta%20Studios!5e0!3m2!1sen!2ske!4v1617719690195!5m2!1sen!2ske', 1, 1, NULL, NULL);
+(1, 'RoyalTech Computers Limited', 'Royaltech-Original-1.png', 'Royaltech-Original-White-1.png', 'RoyalTech Computers Logo. #1d335c-06 (1).png', NULL, 'info@royaltech.co.ke', 'info@royaltech.co.ke', '+254740646411', '+254740646411', NULL, NULL, NULL, 'https://www.royaltech.co.ke', NULL, 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.278993654827!2d36.8226812!3d-1.2819167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x142d695dd96dcf02!2sRoyaltech%20Computers%20Limited!5e0!3m2!1sen!2ske!4v1658415407617!5m2!1sen!2ske', NULL, 'https://www.facebook.com/asteapparel/', NULL, NULL, NULL, 'https://www.linkedin.com/company/aste-apparel', 'https://www.instagram.com/aste.co.ke/', NULL, NULL, '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', '<p>Maxime veniam non nisi maiores quam. Quas, impedit ipsa aliquam, perspiciatis sapiente laudantium recusandae quis iste rem quia suscipit deserunt. Obcaecati voluptate consequuntur sed quia ab a magni, minus possimus facere, alias, itaque cum.</p>', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.277444357953!2d36.8222756!3d-1.2821653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb39310a139138d6!2sDesignekta%20Studios!5e0!3m2!1sen!2ske!4v1617719690195!5m2!1sen!2ske', 1, 1, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -1790,6 +1850,12 @@ ALTER TABLE `orders_product`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- Indexes for table `payments`
+--
+ALTER TABLE `payments`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `personal_access_tokens`
@@ -1862,7 +1928,7 @@ ALTER TABLE `_site_settings`
 -- AUTO_INCREMENT for table `activity_log`
 --
 ALTER TABLE `activity_log`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=222;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
 
 --
 -- AUTO_INCREMENT for table `blogs`
@@ -1892,7 +1958,31 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `notifications`
+--
+ALTER TABLE `notifications`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `orders_product`
+--
+ALTER TABLE `orders_product`
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `payments`
+--
+ALTER TABLE `payments`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -1928,7 +2018,7 @@ ALTER TABLE `terms`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
