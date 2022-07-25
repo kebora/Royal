@@ -131,6 +131,10 @@ class ComposerStaticInitfe944b54e2c8c07203b3d1f73989e8e3
             'Laravel\\Sail\\' => 13,
             'LamaLama\\Wishlist\\' => 18,
         ),
+        'K' => 
+        array (
+            'Knox\\Pesapal\\' => 13,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -421,6 +425,10 @@ class ComposerStaticInitfe944b54e2c8c07203b3d1f73989e8e3
         array (
             0 => __DIR__ . '/..' . '/lamalama/laravel-wishlist/src',
         ),
+        'Knox\\Pesapal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knox/pesapal/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -557,7 +565,9 @@ class ComposerStaticInitfe944b54e2c8c07203b3d1f73989e8e3
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/DashboardController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\PaymentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PaymentsController.php',
         'App\\Http\\Controllers\\ShopController' => __DIR__ . '/../..' . '/app/Http/Controllers/ShopController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -590,6 +600,7 @@ class ComposerStaticInitfe944b54e2c8c07203b3d1f73989e8e3
         'App\\Models\\Notification' => __DIR__ . '/../..' . '/app/Models/Notification.php',
         'App\\Models\\Notifications' => __DIR__ . '/../..' . '/app/Models/Notifications.php',
         'App\\Models\\Order' => __DIR__ . '/../..' . '/app/Models/Order.php',
+        'App\\Models\\Payment' => __DIR__ . '/../..' . '/app/Models/Payment.php',
         'App\\Models\\PostView' => __DIR__ . '/../..' . '/app/Models/PostView.php',
         'App\\Models\\Privacy' => __DIR__ . '/../..' . '/app/Models/Privacy.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
@@ -2782,6 +2793,23 @@ class ComposerStaticInitfe944b54e2c8c07203b3d1f73989e8e3
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Knox\\Pesapal\\Contracts\\PesapalContract' => __DIR__ . '/..' . '/knox/pesapal/src/Contracts/PesapalContract.php',
+        'Knox\\Pesapal\\Exceptions\\PesapalException' => __DIR__ . '/..' . '/knox/pesapal/src/Exceptions/PesapalException.php',
+        'Knox\\Pesapal\\Facades\\Pesapal' => __DIR__ . '/..' . '/knox/pesapal/src/Facades/Pesapal.php',
+        'Knox\\Pesapal\\OAuth\\Exceptions\\OAuthException' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/Exceptions/OAuthException.php',
+        'Knox\\Pesapal\\OAuth\\OAuthConsumer' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthConsumer.php',
+        'Knox\\Pesapal\\OAuth\\OAuthDataStore' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthDataStore.php',
+        'Knox\\Pesapal\\OAuth\\OAuthRequest' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthRequest.php',
+        'Knox\\Pesapal\\OAuth\\OAuthServer' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthServer.php',
+        'Knox\\Pesapal\\OAuth\\OAuthSignatureMethod' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthSignatureMethod.php',
+        'Knox\\Pesapal\\OAuth\\OAuthSignatureMethod_HMAC_SHA1' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthSignatureMethod_HMAC_SHA1.php',
+        'Knox\\Pesapal\\OAuth\\OAuthSignatureMethod_PLAINTEXT' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthSignatureMethod_PLAINTEXT.php',
+        'Knox\\Pesapal\\OAuth\\OAuthSignatureMethod_RSA_SHA1' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthSignatureMethod_RSA_SHA1.php',
+        'Knox\\Pesapal\\OAuth\\OAuthToken' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthToken.php',
+        'Knox\\Pesapal\\OAuth\\OAuthUtil' => __DIR__ . '/..' . '/knox/pesapal/src/OAuth/OAuthUtil.php',
+        'Knox\\Pesapal\\Pesapal' => __DIR__ . '/..' . '/knox/pesapal/src/Pesapal.php',
+        'Knox\\Pesapal\\PesapalAPIController' => __DIR__ . '/..' . '/knox/pesapal/src/PesapalAPIController.php',
+        'Knox\\Pesapal\\PesapalServiceProvider' => __DIR__ . '/..' . '/knox/pesapal/src/PesapalServiceProvider.php',
         'LamaLama\\Wishlist\\HasWishlists' => __DIR__ . '/..' . '/lamalama/laravel-wishlist/src/HasWishlists.php',
         'LamaLama\\Wishlist\\Wishlist' => __DIR__ . '/..' . '/lamalama/laravel-wishlist/src/Wishlist.php',
         'LamaLama\\Wishlist\\WishlistFacade' => __DIR__ . '/..' . '/lamalama/laravel-wishlist/src/WishlistFacade.php',

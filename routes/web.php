@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\PaymentsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +50,10 @@ Route::group(['prefix'=>'e-commerce'], function(){
         Route::get('/remove/{id}', [App\Http\Controllers\ShopController::class, 'removeCart'])->name('removeCart');
         Route::get('/add-to-cart/{slung}', [App\Http\Controllers\ShopController::class, 'add_to_cart'])->name('add-to-cart');
         Route::get('/add-to-wishlist/{slung}', [App\Http\Controllers\ShopController::class, 'add_to_wishlist'])->name('add-to-wishlist');
+        Route::post('/checkout/update-data', [App\Http\Controllers\ShopController::class, 'update'])->name('checkout'); //Updates Data
+        Route::get('/checkout/make-payment', [App\Http\Controllers\ShopController::class, 'make_payments'])->name('payment'); //Updates Data
+        Route::post('/checkout/make-payments', [App\Http\Controllers\ShopController::class, 'make_payment'])->name('checkout');
+
 
     });
 });
@@ -59,6 +65,7 @@ Route::group(['prefix'=>'dashboard'], function(){
     Route::get('/order-history', [App\Http\Controllers\DashboardController::class, 'history'])->name('history');
     Route::get('/order-history/{order}', [App\Http\Controllers\DashboardController::class, 'history_expand'])->name('history-with-order-number');
     Route::get('/transaction-history', [App\Http\Controllers\DashboardController::class, 'transaction'])->name('transaction');
+    Route::post('/update-info', [App\Http\Controllers\DashboardController::class, 'update'])->name('update');
 });
 
 
@@ -277,3 +284,12 @@ Route::post('admin/deleteCoursesAjax', [AdminsController::class, 'deleteCoursesA
 Route::post('admin/deleteTopicsAjax', [AdminsController::class, 'deleteTopicsAjax'])->middleware('is_admin');
 Route::post('admin/deleteSignalsAjax', [AdminsController::class, 'deleteSignalsAjax'])->middleware('is_admin');
 Route::post('admin/deleteProductAjax', [AdminsController::class, 'deleteProductAjax'])->middleware('is_admin');
+
+
+
+Route::post('/make-payment','PaymentsController@payment');
+Route::group(['prefix' => '/webhooks'], function () {
+    //PESAPAL
+    Route::get('donepayment', [App\Http\Controllers\PaymentsController::class, 'paymentsuccess'])->name('paymentsuccess');
+    Route::get('paymentconfirmation', [App\Http\Controllers\PaymentsController::class, 'paymentconfirmation']);
+});

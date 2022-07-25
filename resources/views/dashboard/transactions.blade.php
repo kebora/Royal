@@ -19,38 +19,39 @@
 					<table class="table table-bordered table-hover">
 						<thead>
 							<tr>
-								<td class="text-center">M-PESA ID</td>
+								<td class="text-center">Tranaction ID</td>
                                 <td class="text-center">Amount</td>
 								<td class="text-left">Order Number</td>
-								<td class="text-center">Tranaction Date</td>
-								<td class="text-center">Status</td>
 								<td class="text-center">Transaction Date</td>
+								<td class="text-center">Status</td>
+								<td class="text-center">Tracking ID</td>
 								<td class="text-right">View Order</td>
 
 							</tr>
 						</thead>
+
 						<tbody>
-							<tr>
-                                <td class="text-center">MG6825XQ2624</td>
-								<td class="text-center">kes 30000</td>
-								<td class="text-center">#214521</td>
-								<td class="text-center">1</td>
-								<td class="text-success text-center">Confirmed</td>
-								<td class="text-center">21/06/2016</td>
+                            @foreach ($Transactions as $item)
+                            <tr>
+                                <td class="text-center">{{$item->transactionid}}</td>
+								<td class="text-center">{{$item->currency}} {{$item->amount}}</td>
+								<td class="text-center">#{{$item->order_id}}</td>
+								<td class="text-center">{{$item->created_at}}</td>
+                                @if($item->status == "New")
+                                <td class="text-info text-center">New</td>
+                                @elseif($item->status == "PENDING")
+                                <td class="text-warning text-center">Pending</td>
+                                @else
+                                <td class="text-success text-center">Confirmed</td>
+                                @endif
+
+								<td class="text-center">{{$item->trackingid}}</td>
 
 								<td class="text-center"><a class="btn btn-info" title="" data-toggle="tooltip" href="{{url('/')}}/dashboard/order-history/order-number" data-original-title="View"><i class="fa fa-eye"></i></a>
 								</td>
 							</tr>
-							<tr>
-								<td class="text-center">MG6925XQ2724</td>
-								<td class="text-center">kes 25600</td>
-								<td class="text-center">#1565245</td>
-								<td class="text-center">1</td>
-								<td class="text-warning text-center">Pending</td>
-								<td class="text-center">20/06/2016</td>
-								<td class="text-center"><a class="btn btn-info" title="" data-toggle="tooltip" href="{{url('/')}}/dashboard/order-history/order-number" data-original-title="View"><i class="fa fa-eye"></i></a>
-								</td>
-							</tr>
+                            @endforeach
+
 						</tbody>
 					</table>
 				</div>

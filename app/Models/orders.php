@@ -14,19 +14,19 @@ class orders extends Model
     use HasFactory;
     protected $fillable=['total', 'status'];
     public function orderFields(){
-        
+
         return $this->belongsToMany(Product::class)->withPivot('qty', 'total');
-        
+
     }
 
-    public static function createOrder(){ 
-        
+    public static function createOrder(){
+
         $user = Auth::user();
         $order = $user->orders()->create(['total'=>\Cart::getTotal(),'status'=>'pending']);
-    
+
         $cartItems = \Cart::getContent();
         foreach($cartItems as $cartItem)
-            
+
             $order->orderFields()->attach($cartItem->id,['qty'=>$cartItem->qty, 'tax' =>\Cart::getCondition('Tax'), 'total'=>\Cart::getTotal()]);
             //Insert Notification
             $Notifications = new Notifications;

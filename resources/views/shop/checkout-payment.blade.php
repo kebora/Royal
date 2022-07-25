@@ -14,65 +14,8 @@
         <div id="content" class="col-sm-12">
           <h2 class="title">Checkout</h2>
           <div class="so-onepagecheckout ">
-            <div class="col-left col-sm-3">
-            <form action="{{url('/')}}/checkout/make-payment" id="updateUser">
-              @csrf
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title"><i class="fa fa-user"></i> Your Personal Details</h4>
-                </div>
-                  <div class="panel-body">
-                        <fieldset id="account">
-                          <div class="form-group required">
-                            <label for="input-payment-firstname" class="control-label">Full Name</label>
-                            <input type="text" class="form-control" id="input-payment-firstname" placeholder="Full Name" value="{{Auth::User()->name}}" name="name">
-                          </div>
 
-                          <div class="form-group required">
-                            <label for="input-payment-email" class="control-label">E-Mail</label>
-                            <input type="text" class="form-control" id="input-payment-email" placeholder="E-Mail" value="{{Auth::User()->email}}" name="email">
-                          </div>
-                          <div class="form-group required">
-                            <label for="input-payment-telephone" class="control-label">Mobile</label>
-                            <input type="text" class="form-control" id="input-payment-telephone" placeholder="Telephone" value="{{Auth::User()->mobile}}" name="mobile">
-                          </div>
-
-                        </fieldset>
-                      </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title"><i class="fa fa-book"></i> Your Address</h4>
-                </div>
-                  <div class="panel-body">
-                        <fieldset id="address" class="required">
-                          <div class="form-group">
-                            <label for="input-payment-company" class="control-label">Company</label>
-                            <input type="text" class="form-control" id="input-payment-company" placeholder="Company" value="{{Auth::User()->company}}" name="company">
-                          </div>
-                          <div class="form-group required">
-                            <label for="input-payment-address-1" class="control-label">Address 1</label>
-                            <input type="text" class="form-control" id="input-payment-address-1" placeholder="Address 1" value="{{Auth::User()->address}}" name="address">
-                          </div>
-
-                          <div class="form-group required">
-                            <label for="input-payment-city" class="control-label">Country</label>
-                            <input type="text" class="form-control" id="input-payment-city" placeholder="City" value="{{Auth::User()->country}}" name="country">
-                          </div>
-
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked="checked" value="1" name="shipping_address">
-                              My delivery and billing addresses are the same.</label>
-                          </div>
-                        </fieldset>
-
-                      </div>
-              </div>
-
-
-            </div>
-            <div class="col-right col-sm-9">
+            <div class="col-right col-sm-12">
               <div class="row">
                 <div class="col-sm-12">
 
@@ -88,7 +31,7 @@
                 <div class="col-sm-12">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h4 class="panel-title"><i class="fa fa-shopping-cart"></i> Shopping cart</h4>
+                      <h4 class="panel-title"><i class="fa fa-shopping-cart"></i> Order Summary</h4>
                     </div>
                       <div class="panel-body">
                         <div class="table-responsive">
@@ -127,7 +70,7 @@
                               <tr>
                                 <td class="text-right" colspan="3"><strong>Sub-Total:</strong></td>
                                 <?php $Shipping = 500; $totalShipping = $Shipping*$cartitems->quantity; $Total = \Cart::getTotal(); ?>
-                                <td class="text-right" colspan="2">KES {{$Total}}</td>
+                        <td class="text-right" colspan="2">KES {{$Total}}</td>
                               </tr>
                               <tr>
                                 <td class="text-right" colspan="3"><strong>Flat Shipping Rate:</strong></td>
@@ -166,26 +109,10 @@
                 <div class="col-sm-12">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h4 class="panel-title"><i class="fa fa-pencil"></i> Add Comments About Your Order</h4>
+                      <h4 class="panel-title"><i class="fa fa-money"></i> Make Payments</h4>
                     </div>
                       <div class="panel-body">
-                        <textarea rows="4" class="form-control" id="confirm_comment" name="notes" required></textarea>
-                        <br>
-                        <label class="control-label" for="confirm_agree">
-                          <input type="checkbox" checked="checked" value="1" required="" class="validate required" id="confirm_agree" name="confirm agree">
-                          <span>I have read and agree to the <a class="agree" href="{{url('/')}}/terms-and-conditions"><b>Terms &amp; Conditions</b></a></span> </label>
-                        {{-- <div class="buttons">
-                          <div class="pull-right">
-                            <input type="button" class="btn btn-primary" id="button-confirm" value="Confirm Order">
-                          </div>
-                        </div> --}}
-                        {{--  --}}
-                        <div class="buttons">
-                            <div class="pull-right">
-                              <button type="submit" class="btn btn-primary" id="button-confirm" value="">Confirm Order <img class="loading" width="30" src="{{url('/')}}/uploads/icon/loading.gif" alt="royaltech loading"/></button>
-                            </div>
-                          </div>
-                        {{--  --}}
+                        {!!html_entity_decode($iframe)!!}
                       </div>
                   </div>
                 </div>
@@ -194,7 +121,6 @@
           </div>
         </div>
         <!--Middle Part End -->
-    </form>
 
     </div>
 </div>

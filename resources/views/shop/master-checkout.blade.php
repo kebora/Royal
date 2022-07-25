@@ -82,6 +82,20 @@
          $(document).ready(function(){
             $(".loading").hide();
             // Processs Update Details Ajax
+            $("#updateUser").submit(function(stay){
+            stay.preventDefault();
+            $(".loading").show();
+            var formdata = $(this).serialize(); // here $(this) refere to the form its submitting
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ url('/') }}/e-commerce/shopping-cart/checkout/update-data",
+                    data: formdata, // here $(this) refers to the ajax object not form
+                    success: function (data) {
+                        window.location = "{{url('/')}}/e-commerce/shopping-cart/checkout/make-payment";
+                    },
+                });
+                stay.preventDefault();
+            });
          });
       </script>
 
