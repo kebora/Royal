@@ -57,7 +57,7 @@ class PaymentsController extends Controller
 
         $payments = Payment::where('transactionid',$ref)->first();
         $payments -> trackingid = $trackingid;
-        $payments -> status = 'PENDING';
+        $payments -> status = 'Confirmed';
         $payments -> save();
         //go back home
         $payments=Payment::all();

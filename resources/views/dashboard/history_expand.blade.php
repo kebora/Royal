@@ -11,7 +11,7 @@
             <li><a href="#">Order History</a></li>
             <li><a href="#">Order ID #214521</a></li>
 		</ul>
-
+        @foreach($OrderPro as $OrderPros)
 		<div class="row">
 			<!--Middle Part Start-->
 			<div class="col-sm-9" id="content">
@@ -25,10 +25,10 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td style="width: 50%;" class="text-left"> <b>Order ID:</b> #214521
+							<td style="width: 50%;" class="text-left"> <b>Order ID:</b> #{{$OrderPros->orders_id}}
 								<br>
-								<b>Date Added:</b> 20/06/2016</td>
-							<td style="width: 50%;" class="text-left"> <b>Payment Method:</b> Cash On Delivery
+								<b>Date Added:</b> {!! date('d/m/Y', strtotime($OrderPros->created_at)) !!}</td>
+							<td style="width: 50%;" class="text-left"> <b>Payment Method:</b> Pesapal
 								<br>
 								<b>Shipping Method:</b> Flat Shipping Rate </td>
 						</tr>
@@ -43,16 +43,16 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td class="text-left">Jhone Cary
-								<br>Central Square
-								<br>22 Hoi Wing Road
-								<br>New Delhi
-								<br>India</td>
-							<td class="text-left">Jhone Cary
-								<br>Central Square
-								<br>22 Hoi Wing Road
-								<br>New Delhi
-								<br>India</td>
+							<td class="text-left">{{Auth::User()->name}}
+								<br>{{Auth::User()->address}}
+								<br>{{Auth::User()->mobile}}
+								<br>{{Auth::User()->country}}
+								<br></td>
+							<td class="text-left">{{Auth::User()->name}}
+								<br>{{Auth::User()->address}}
+								<br>{{Auth::User()->mobile}}
+								<br>{{Auth::User()->country}}
+								<br></td>
 						</tr>
 					</tbody>
 				</table>
@@ -61,7 +61,7 @@
 						<thead>
 							<tr>
 								<td class="text-left">Product Name</td>
-								<td class="text-left">Model</td>
+								{{-- <td class="text-left">Model</td> --}}
 								<td class="text-right">Quantity</td>
 								<td class="text-right">Price</td>
 								<td class="text-right">Total</td>
@@ -69,16 +69,22 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td class="text-left">iPhone5 </td>
-								<td class="text-left">product 11</td>
-								<td class="text-right">1</td>
-								<td class="text-right">kes 24900</td>
-								<td class="text-right">kes 24900</td>
-								<td style="white-space: nowrap;" class="text-right"> <a class="btn btn-primary" title="" data-toggle="tooltip" href="#" data-original-title="Reorder"><i class="fa fa-shopping-cart"></i></a>
+                            <?php $Product = DB::table('products')->where('id', $OrderPros->id)->get(); ?>
+                            @foreach ($Product as $item)
+                            <tr>
+								<td class="text-left">{{$item->name}} </td>
+								{{-- <td class="text-left">product 11</td> --}}
+								<td class="text-right">{{$OrderPros->qty}}</td>
+								<td class="text-right">kes {{$item->price}}</td>
+								<td class="text-right">kes {{$item->price+700}}</td>
+								<td style="white-space: nowrap;" class="text-right">
+                                    {{-- <a class="btn btn-primary addToCart add-to-cart" title="" data-toggle="tooltip" data-url="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" href="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}"  data-original-title="Reorder"><i class="fa fa-shopping-cart"></i></a> --}}
+                                    <a title="Reorder" href="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" data-url="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" class="btn btn-primary addToCart add-to-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('{{$item->id}}', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"></span></a>
 									<a class="btn btn-danger" title="" data-toggle="tooltip" href="return.html" data-original-title="Return"><i class="fa fa-reply"></i></a>
 								</td>
 							</tr>
+                            @endforeach
+
 
 						</tbody>
 						<tfoot>
@@ -86,7 +92,7 @@
 								<td colspan="3"></td>
 								<td class="text-right"><b>Sub-Total</b>
 								</td>
-								<td class="text-right">kes 24900</td>
+								<td class="text-right">kes {{$item->price}}</td>
 								<td></td>
 							</tr>
 							<tr>
@@ -114,39 +120,13 @@
 								<td colspan="3"></td>
 								<td class="text-right"><b>Total</b>
 								</td>
-								<td class="text-right">kes 25600</td>
+								<td class="text-right">kes  {{$item->price+700}}</td>
 								<td></td>
 							</tr>
 						</tfoot>
 					</table>
 				</div>
-				<h3>Order History</h3>
-				<table class="table table-bordered table-hover">
-					<thead>
-						<tr>
-							<td class="text-left">Date Added</td>
-							<td class="text-left">Status</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="text-left">20/06/2016</td>
-							<td class="text-left">Processing</td>
-						</tr>
-						<tr>
-							<td class="text-left">21/06/2016</td>
-							<td class="text-left">Shipped</td>
-						</tr>
-						<tr>
-							<td class="text-left">24/06/2016</td>
-							<td class="text-left">Complete</td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="buttons clearfix">
-					<div class="pull-right"><a class="btn btn-primary" href="#">Continue</a>
-					</div>
-				</div>
+
 			</div>
 			<!--Middle Part End-->
 			<!--Right Part Start -->
@@ -155,6 +135,7 @@
 			</aside>
 			<!--Right Part End -->
 		</div>
+        @endforeach
 	</div>
 	<!-- //Main Container -->
 @endsection

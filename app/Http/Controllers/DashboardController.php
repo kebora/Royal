@@ -34,7 +34,8 @@ class DashboardController extends Controller
     }
 
     public function history_expand($slung){
-        return view('dashboard.history_expand', compact('slung'));
+        $OrderPro = DB::table('orders_product')->where('id',$slung)->get();
+        return view('dashboard.history_expand', compact('OrderPro','slung'));
     }
 
     public function transaction(){

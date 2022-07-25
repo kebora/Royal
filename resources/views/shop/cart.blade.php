@@ -149,7 +149,7 @@
                         <td class="text-right">
                             <strong>Sub-Total:</strong>
                         </td>
-                        <?php $Shipping = 500; $totalShipping = $Shipping*$cartitems->quantity; $Total = \Cart::getTotal(); ?>
+                        <?php $Shipping = 700; $totalShipping = $Shipping*$cartitems->quantity; $Total = \Cart::getTotal(); ?>
                         <td class="text-right">KES {{$Total}}</td>
                     </tr>
                     <tr>

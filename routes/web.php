@@ -287,7 +287,7 @@ Route::post('admin/deleteProductAjax', [AdminsController::class, 'deleteProductA
 
 
 
-Route::post('/make-payment','PaymentsController@payment');
+// Route::post('/make-payment','PaymentsController@payment');
 Route::group(['prefix' => '/webhooks'], function () {
     //PESAPAL
     Route::get('donepayment', [App\Http\Controllers\PaymentsController::class, 'paymentsuccess'])->name('paymentsuccess');

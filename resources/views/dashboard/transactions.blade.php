@@ -47,7 +47,7 @@
 
 								<td class="text-center">{{$item->trackingid}}</td>
 
-								<td class="text-center"><a class="btn btn-info" title="" data-toggle="tooltip" href="{{url('/')}}/dashboard/order-history/order-number" data-original-title="View"><i class="fa fa-eye"></i></a>
+								<td class="text-center"><a class="btn btn-info" title="" data-toggle="tooltip" href="{{url('/')}}/dashboard/order-history/{{$item->order_id}}" data-original-title="View"><i class="fa fa-eye"></i></a>
 								</td>
 							</tr>
                             @endforeach

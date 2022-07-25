@@ -166,10 +166,10 @@ class ShopController extends Controller
         orders::createOrder();
         $latest = orders::orderBy('date','DESC')->first();
         $OrderId = $latest->id;
+        echo $OrderId;
 
 
-
-        $amount = "5";
+        $amount = "1";
         $description = Session::get('description');
         $payments = new Payment;
         $payments -> businessid = 1; //Business ID

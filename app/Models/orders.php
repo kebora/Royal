@@ -27,7 +27,7 @@ class orders extends Model
         $cartItems = \Cart::getContent();
         foreach($cartItems as $cartItem)
 
-            $order->orderFields()->attach($cartItem->id,['qty'=>$cartItem->qty, 'tax' =>\Cart::getCondition('Tax'), 'total'=>\Cart::getTotal()]);
+            $order->orderFields()->attach($cartItem->id,['qty'=>$cartItem->quantity, 'tax' =>0, 'total'=>\Cart::getTotal()]);
             //Insert Notification
             $Notifications = new Notifications;
             $Notifications->type = 'Order';
