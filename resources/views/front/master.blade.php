@@ -108,10 +108,16 @@
 						<!-- Nav Btn -->
 						<div class="nav-btn navSidebar-button"><span class="icon flaticon-menu-2"></span></div>
 
+                        @if(Auth::User())
+                        <div class="btn-box">
+							<a href="{{url('/')}}/dashboard" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-user"></span> &nbsp; {{Auth::User()->name}}</span></a>
+						</div>
+                        @else
 						<!-- Quote Btn -->
 						<div class="btn-box">
-							<a href="{{url('/')}}/contact-us" class="theme-btn btn-style-one"><span class="txt">Free Consulting</span></a>
+							<a href="{{url('/')}}/dashboard" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-user"></span> &nbsp; My Account</span></a>
 						</div>
+                        @endif
 
 					</div>
 				</div>
