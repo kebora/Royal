@@ -29,11 +29,12 @@
 								<h1>Laptops for Hire</h1>
 								<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div>
 								<div class="play-box">
-									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
+									<a href="https://www.youtube.com/watch?v=lQ4y_POCT20" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
 									Virtual Tour
 								</div>
 							</div>
 						</div>
+
 
 					</div>
 				</div>
