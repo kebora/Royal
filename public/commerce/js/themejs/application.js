@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------------- /
-	
+
 	Magentech jQuery
 	Created by Magentech
 	v1.0 - 20.9.2016
@@ -8,7 +8,7 @@
 	+----------------------------------------------------+
 		TABLE OF CONTENTS
 	+----------------------------------------------------+
-	
+
 	[1]		Language and Currency Dropdowns
 	[2]		Header Top link
 	[3]		Resonsive Header Top
@@ -27,7 +27,7 @@
 
 
 $(document).ready(function(){
-	
+
 /* ---------------------------------------------------
 	Preloading Screen
 -------------------------------------------------- */
@@ -47,7 +47,7 @@ $(window).load(function() {
 		$(this).find('ul').stop(true, true).css('display', 'none');
 	  });
 	}
-	
+
 // Hide tooltip when clicking on it
     var hasTooltip = $("[data-toggle='tooltip']").tooltip();
 	hasTooltip.on('click', function () {
@@ -71,12 +71,12 @@ $(window).load(function() {
 	$(".collapsed-block .expander").click(function (e) {
         var collapse_content_selector = $(this).attr("href");
         var expander = $(this);
-		
+
         if (!$(collapse_content_selector).hasClass("open")) {
 			expander.addClass("open").html("<i class='fa fa-angle-up'></i>") ;
 		}
 		else expander.removeClass("open").html("<i class='fa fa-angle-down'></i>");
-		
+
 		if (!$(collapse_content_selector).hasClass("open")) $(collapse_content_selector).addClass("open").slideDown("normal");
         else $(collapse_content_selector).removeClass("open").slideUp("normal");
         e.preventDefault()
@@ -92,7 +92,7 @@ $(window).load(function() {
 		else {
 			$(this).find(".accordion-heading").addClass('active');
 		}
-		
+
 		var ua = navigator.userAgent,
 		event = (ua.match(/iPad/i)) ? "touchstart" : "click";
 		$(this).children(".accordion-heading").bind(event, function() {
@@ -100,15 +100,15 @@ $(window).load(function() {
 				if($(this).hasClass("active")) return "";
 				return "active";
 			});
-	
+
 			$(this).siblings(".accordion-inner").slideDown(350);
 			$(this).parent().siblings("li").children(".accordion-inner").slideUp(350);
 			$(this).parent().siblings("li").find(".active").removeClass("active");
 		});
 	});
-	
 
-	
+
+
 /* ---------------------------------------------------
 	Magnific Popup
 -------------------------------------------------- */
@@ -136,12 +136,12 @@ $(window).load(function() {
 		}
 	  }
 	});
-	
-	
+
+
 /* ---------------------------------------------------
 	Quick View
 -------------------------------------------------- */
-	
+
 	$('.iframe-link').magnificPopup({
 		type:'iframe',
 	    fixedContentPos: true,
@@ -155,8 +155,8 @@ $(window).load(function() {
 		mainClass: 'my-mfp-zoom-in',
 		//gallery: {  enabled: true }
     });
-	
-	
+
+
 /* ---------------------------------------------------
 	Social Widgets Accounts
 -------------------------------------------------- */
@@ -202,26 +202,26 @@ jQuery(function ($) {
         e.preventDefault()
     });
     loadmap.hover(function (e) {
-		
+
         if (!$(this).parent().hasClass("load")) {
             var loadcontainer = $(this).parent().find(".loading");
             $.ajax({
                 url: $(this).attr("href"),
                 cache: false,
                 success: function (data) {
-					
+
                     setTimeout(function () {
                         loadcontainer.html(data)
                     }, 1000)
                 }
-			
+
             });
             $(this).parent().addClass("load")
         }
     })
 });
 
-				
+
 /* ---------------------------------------------------
 	Back to Top
 -------------------------------------------------- */
@@ -237,7 +237,7 @@ $(".back-to-top").addClass("hidden-top");
 $('.back-to-top').click(function () {
 	$('body,html').animate({scrollTop:0}, 1200);
 	return false;
-});	
+});
 /* ---------------------------------------------------
 	Range slider && Filter  Reset
 -------------------------------------------------- */
@@ -274,7 +274,7 @@ if($('#slider').length){
 			range.children('.min_value').val(min).next().val(max);
 
 			range.children('.min_val').text('$' + min).next().text('$' + max);
-			
+
 		}
 
 	});
@@ -305,7 +305,7 @@ if($('#slider').length){
 
 		});
 
-	
+
 
 });
 
@@ -315,7 +315,7 @@ if($('#slider').length){
 -------------------------------------------------- */
 $(function ($) {
     "use strict";
-	//Quantity plus minus 
+	//Quantity plus minus
     $.initQuantity = function ($control) {
         $control.each(function () {
             var $this = $(this),
@@ -378,7 +378,7 @@ $(function ($) {
         })
     };
     $.initSelect($(".btn-select"));
-	
+
 	if(!window.startRangeValues) return;
 	var startValues = window.startRangeValues,
 		min = startValues[0].toFixed(2),
@@ -403,8 +403,8 @@ $(function ($) {
 		range.children('.min_val').text('$' + min).next().text('$' + max);
 
 	});
-	
-	
+
+
 });
 
 /* ---------------------------------------------------
@@ -469,7 +469,7 @@ $(document).ready(function() {
 		slider.children(':not(.yt-content-slide)').remove();
 		// Apply Owl Carousel
 		slider.owlCarousel2({
-			
+
 			mouseDrag: true,
 			video: true,
 			lazyLoad: (data.lazyload == 'yes') ? true : false,
@@ -536,7 +536,7 @@ $(document).ready(function() {
 		});
 
 	});
-	
+
 	$('#ytcs579c07146456674551469843220').each(function() {
 		var slider = $(this),
 			panels = slider.children('div'),
@@ -630,7 +630,7 @@ $(document).ready(function(){
 		autoExpand: true,
 		cookie	: 'dcjq-accordion-1',
 		classExpand	 : 'button-view'
-	});  
+	});
 });
 
 $(function() {
@@ -654,7 +654,7 @@ function display(view) {
 		$('.products-list .product-layout .right-block').addClass('col-md-8');
 		$('.products-list .product-layout .item-desc').removeClass('hidden')
 		$('.list-view .' + view).addClass('active');
-		$.cookie('display', 'list'); 
+		$.cookie('display', 'list');
 	}else{
 		$('.products-list .product-layout').removeClass('col-lg-12');
 		$('.products-list .product-layout .left-block').removeClass('col-md-4');
@@ -664,23 +664,23 @@ function display(view) {
 		$.cookie('display', 'grid');
 	}
 }
-	
+
 	$(document).ready(function () {
-		
+
 		// Click Button
 		$('.list-view .btn').each(function() {
 			var ua = navigator.userAgent,
 			event = (ua.match(/iPad/i)) ? 'touchstart' : 'click';
 			$(this).bind(event, function() {
 				$(this).addClass(function() {
-					if($(this).hasClass('active')) return ''; 
+					if($(this).hasClass('active')) return '';
 					return 'active';
 				});
 				$(this).siblings('.btn').removeClass('active');
 				$catalog_mode = $(this).data('view');
 				display($catalog_mode);
 			});
-			
+
 		});
 	});
 
@@ -701,7 +701,7 @@ $(document).ready(function($) {
 		autoplayTimeout: 2500,
 		autoplayHoverPause: true,
 		autoplaySpeed: 800,
-		startPosition: 0, 
+		startPosition: 0,
 		responsive:{
 			0:{
 				items:1
@@ -719,7 +719,7 @@ $(document).ready(function($) {
 				items:4
 			}
 		}
-	});	 
+	});
 
 	//Client Say
 	/*$('.slider-clients-say').owlCarousel2({
@@ -734,7 +734,7 @@ $(document).ready(function($) {
 		autoplayTimeout: 2500,
 		autoplayHoverPause: true,
 		autoplaySpeed: 800,
-		startPosition: 0, 
+		startPosition: 0,
 		responsive:{
 			0:{
 				items:1
@@ -773,7 +773,7 @@ $(document).ready(function() {
 			}
 		});
 	})
-	
+
 	var zoomCollection = '.large-image img';
 	$( zoomCollection ).elevateZoom({
 		zoomType    : "inner",
@@ -796,7 +796,7 @@ $(document).ready(function() {
 		mainClass: 'mfp-fade',
 		callbacks: {
 			open: function() {
-				
+
 				var activeIndex = parseInt($('#thumb-slider .img.active').attr('data-index'));
 				var magnificPopup = $.magnificPopup.instance;
 				magnificPopup.goTo(activeIndex);
@@ -806,7 +806,7 @@ $(document).ready(function() {
 	$("#thumb-slider .owl2-item").each(function() {
 		$(this).find("[data-index='0']").addClass('active');
 	});
-	
+
 	$('.thumb-video').magnificPopup({
 	  type: 'iframe',
 	  iframe: {
@@ -814,7 +814,7 @@ $(document).ready(function() {
 		   youtube: {
 			  index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 			  id: 'v=', // String that splits URL in a two parts, second part should be %id%
-			  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+			  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
 				},
 			}
 		}
@@ -824,7 +824,7 @@ $(document).ready(function() {
 			if($(this).hasClass("active")) return "";
 			return "active";
 		});
-		
+
 		$(this).siblings("li").removeClass("active");
 		$(this).parent().find('.selected-option').html('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
 	});
@@ -833,7 +833,7 @@ $(document).ready(function() {
 		var tabTop = $(".producttab").offset().top;
 		$("html, body").animate({ scrollTop:tabTop }, 1000);
 	});
-	
+
 	//Client Say
 	/*$('.slider-clients-say').owlCarousel2({
 		pagination: false,
@@ -847,7 +847,7 @@ $(document).ready(function() {
 		autoplayTimeout: 2500,
 		autoplayHoverPause: true,
 		autoplaySpeed: 800,
-		startPosition: 0, 
+		startPosition: 0,
 		responsive:{
 			0:{
 				items:1
@@ -864,4 +864,3 @@ $(document).ready(function() {
 		}
 	});	 */
 });
-	

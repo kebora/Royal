@@ -11,7 +11,7 @@ function responsiveLayout(element,eclass){
 		processScroll($header, "navbar-compact", offset_top);
 	});
 	responsiveflagMenu = true;
-	
+
 }
 
 // processScroll Menu
@@ -21,7 +21,7 @@ function processScroll(element, eclass, offset_top) {
         if (scrollTop > offset_top) {
             //fix secondary navigation
             $(element).addClass(eclass);
-			
+
         } else if (scrollTop <= offset_top) {
             $(element).removeClass(eclass);
         }

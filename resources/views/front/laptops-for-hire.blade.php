@@ -87,7 +87,14 @@
 			<!-- Sec Title -->
 			<div class="sec-title centered">
 				<div class="title">Center of Excellence</div>
+                <p style="color:#000000; max-width:300px; margin:0 auto; font-weight:800">
+                    Laptop Hire/Rental is tailor made for corporates use in Training, seminars, online work and research or remote working
+                </p>
 			</div>
+            {{-- <div class="sec-title centered">
+				<div class="title">LATEST CASE STUDIES</div>
+				<h2>Reads Now Our Recent <br> Projects Studies</h2>
+			</div> --}}
 			<!--MixitUp Galery-->
             <div class="mixitup-gallery">
 
