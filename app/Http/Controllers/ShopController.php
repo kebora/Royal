@@ -40,7 +40,7 @@ class ShopController extends Controller
         JsonLd::setTitle('Laptops Shop In Kenya | RoyalTech Computers Limited | Laptops in Kenya');
         JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         JsonLd::addImage(''.$url.'/uploads/Royaltech-Original-1.png');
-        $Products = Product::all();
+        $Products = DB::table('products')->orderBy('id','DESC')->get();
         $title = "All Products";
         return view('shop.index', compact('Products','title'));
     }
