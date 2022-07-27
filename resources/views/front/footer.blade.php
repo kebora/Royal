@@ -21,10 +21,10 @@
 									{{-- <div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 10 years of experience and 1000+ of innovative achievements.</div> --}}
 									<!-- Social Box -->
 									<ul class="social-box">
-										<li><a href="#" class="fa fa-facebook-f"></a></li>
-										<li><a href="#" class="fa fa-linkedin"></a></li>
-										<li><a href="#" class="fa fa-twitter"></a></li>
-										<li><a href="#" class="fa fa-instagram"></a></li>
+										<li><a href="https://www.facebook.com/royaltechcomps" class="fa fa-facebook-f"></a></li>
+										<li><a href="https://www.linkedin.com/company/royaltech-computers-ltd/" class="fa fa-linkedin"></a></li>
+										<li><a href="https://twitter.com/RoyaltechC" class="fa fa-twitter"></a></li>
+										<li><a href="https://www.instagram.com/royaltechcomps/" class="fa fa-instagram"></a></li>
                                         <li><a href="#" class="fa fa-youtube"></a></li>
                                         <li><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 									</ul>
