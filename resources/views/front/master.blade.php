@@ -19,6 +19,9 @@
 
 @include('favicon')
 @include('tawkto')
+
+
+<meta property="og:image" content="{{url('/')}}/uploads/products/1_062eeb89-ffbf-474a-8443-1285ea8a9b41.jpg" />
 <!-- Color Themes -->
 <link id="theme-color-file" href="{{asset('corporate/css/color-themes/default-theme.css')}}" rel="stylesheet">
 
