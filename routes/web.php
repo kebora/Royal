@@ -42,7 +42,7 @@ Route::group(['prefix'=>'e-commerce'], function(){
     Route::get('/product/brand/{slung}', [App\Http\Controllers\ShopController::class, 'brand'])->name('product_brand');
     Route::get('/product/tags/{slung}', [App\Http\Controllers\ShopController::class, 'tags'])->name('product_tags');
 
-
+    Route::get('/search-results',[App\Http\Controllers\ShopController::class, 'searchsite'])->name('search-results');
 
     Route::group(['prefix'=>'shopping-cart'], function(){
         Route::get('/', [App\Http\Controllers\ShopController::class, 'cart'])->name('cart.list');

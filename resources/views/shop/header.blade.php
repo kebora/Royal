@@ -55,7 +55,8 @@
              <!-- //end Logo -->
              <!-- Search -->
              <div id="sosearchpro" class="col-sm-7 search-pro">
-                <form method="GET" action="#">
+                <form method="GET" action="{{url('/e-commerce/search-results')}}">
+
                    <div id="search0" class="search input-group">
                       <div class="select_category filter_type icon-select">
                         <?php $Categories = DB::table('categories')->get(); ?>
@@ -66,7 +67,7 @@
                             @endforeach
                          </select>
                       </div>
-                      <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Search" name="search">
+                      <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Search" name="keyword">
                       <span class="input-group-btn">
                       <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
                       </span>

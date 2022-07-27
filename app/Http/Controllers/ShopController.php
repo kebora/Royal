@@ -306,4 +306,50 @@ class ShopController extends Controller
         return redirect()->route('payment');
 
     }
+
+    public function searchsite(Request $request)
+    {
+        $url = url('/');
+        $keywords = '';
+        $category = $request->category;
+        $search = $request->keyword;
+
+
+        $Products = DB::table('products')->where('name', 'like', '%' . $request->keyword . '%')->paginate(200);
+        $page_name = $request->search;
+        $page_title = $request->search;
+        $search_results = $search;
+        $search_results_category = 'All Categories';
+
+
+            SEOMeta::setTitle(''.$search.' In Kenya | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            SEOMeta::setCanonical(''.$url.'/e-commerce/product/tags/'.$search.'');
+
+            OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            OpenGraph::setTitle(''.$search.' In Kenya | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            OpenGraph::setUrl(''.$url.'/e-commerce/product/tags/'.$search.'');
+            OpenGraph::addProperty('type', 'articles');
+
+            TwitterCard::setTitle(''.$search.' In Kenya | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            TwitterCard::setSite('@RoyaltechC');
+
+            JsonLd::setTitle(''.$search.' In Kenya | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            JsonLd::addImage(''.$url.'/uploads/Royaltech-Original-1.png');
+
+            $title = $page_title;
+
+            // Call Route
+            // return redirect()->route('search-results', ['ProductsTag'=>$ProductsTag,'ProductsBrand'=>$ProductsBrand,'ProductsCategory'=>$ProductsCategory]);
+
+            return view('shop.index', compact('title','page_title','keywords', 'Products', 'page_name', 'search_results', 'search_results_category','search'));
+
+
+
+
+
+
+
+    }
 }
