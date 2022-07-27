@@ -13,11 +13,33 @@ use Auth;
 use App\Models\Payment;
 use AmrShawky\LaravelCurrency\Facade\Currency;
 use Session;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+
 
 class ShopController extends Controller
 {
     public function index()
     {
+        Session::forget('tags');
+        $url = url('/');
+        SEOMeta::setTitle('Laptops Shop In Kenya | RoyalTech Computers Limited | Laptops in Kenya');
+        SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        SEOMeta::setCanonical(''.$url.'/e-commerce');
+
+        OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        OpenGraph::setTitle('Laptops Shop In Kenya | RoyalTech Computers Limited | Laptops in Kenya');
+        OpenGraph::setUrl(''.$url.'/e-commerce');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle('Laptops Shop In Kenya | RoyalTech Computers Limited | Laptops in Kenya');
+        TwitterCard::setSite('@RoyaltechC');
+
+        JsonLd::setTitle('Laptops Shop In Kenya | RoyalTech Computers Limited | Laptops in Kenya');
+        JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        JsonLd::addImage(''.$url.'/uploads/Royaltech-Original-1.png');
         $Products = Product::all();
         $title = "All Products";
         return view('shop.index', compact('Products','title'));
@@ -25,12 +47,50 @@ class ShopController extends Controller
 
     public function product($slung)
     {
+        Session::forget('tags');
+        $url = url('/');
         $Products = DB::table('products')->where('slung',$slung)->get();
-        return view('shop.product', compact('Products'));
+        foreach ($Products as $key => $value) {
+            SEOMeta::setTitle(''.$value->name.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            SEOMeta::setCanonical(''.$url.'/e-commerce/product/'.$slung.'');
+
+            OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            OpenGraph::setTitle(''.$value->name.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            OpenGraph::setUrl(''.$url.'/e-commerce/product/'.$slung.'');
+            OpenGraph::addProperty('type', 'articles');
+
+            TwitterCard::setTitle(''.$value->name.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            TwitterCard::setSite('@RoyaltechC');
+
+            JsonLd::setTitle(''.$value->name.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            JsonLd::addImage(''.$url.'/uploads/Royaltech-Original-1.png');
+
+            return view('shop.product', compact('Products'));
+        }
     }
 
     public function brand($slung)
     {
+        // Set Session
+        Session::forget('tags');
+        $url = url('/');
+            SEOMeta::setTitle(''.$slung.' In Kenya | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            SEOMeta::setCanonical(''.$url.'/e-commerce/product/brand/'.$slung.'');
+
+            OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            OpenGraph::setTitle(''.$slung.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            OpenGraph::setUrl(''.$url.'/e-commerce/product/brand/'.$slung.'');
+            OpenGraph::addProperty('type', 'articles');
+
+            TwitterCard::setTitle(''.$slung.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            TwitterCard::setSite('@RoyaltechC');
+
+            JsonLd::setTitle(''.$slung.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+            JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+            JsonLd::addImage(''.$url.'/uploads/Royaltech-Original-1.png');
         $Products = DB::table('products')->where('brand',$slung)->get();
         $title = $slung;
         return view('shop.index', compact('Products','title'));
@@ -40,9 +100,28 @@ class ShopController extends Controller
     {
         $Category =DB::table('categories')->where('slung',$slung)->get();
         foreach($Category as $Cat){
+        $url = url('/');
+        SEOMeta::setTitle(''.$Cat->title.' In Kenya | RoyalTech Computers Limited | Laptops Hire in Kenya');
+        SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        SEOMeta::setCanonical(''.$url.'/e-commerce/product/tags/'.$slung.'');
+
+        OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        OpenGraph::setTitle(''.$slung.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+        OpenGraph::setUrl(''.$url.'/e-commerce/product/tags/'.$slung.'');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle(''.$slung.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+        TwitterCard::setSite('@RoyaltechC');
+
+        JsonLd::setTitle(''.$slung.' | RoyalTech Computers Limited | Laptops Hire in Kenya');
+        JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        JsonLd::addImage(''.$url.'/uploads/Royaltech-Original-1.png');
+
             $Products = DB::table('products')->where('category',$Cat->id)->get();
             $title = $Cat->title;
         }
+        //set Sesion
+        Session::put('tags',$slung);
         return view('shop.index', compact('Products','title'));
     }
 

@@ -182,6 +182,14 @@ Route::get('admin/editProducts/{id}', [AdminsController::class, 'editProducts'])
 Route::post('admin/edit_Product/{id}', [AdminsController::class, 'edit_Product'])->middleware('is_admin');
 Route::get('admin/deleteProduct/{id}', [AdminsController::class, 'deleteProduct'])->middleware('is_admin');
 
+// services
+Route::get('admin/services', [AdminsController::class, 'services'])->middleware('is_admin');
+Route::get('admin/addservice', [AdminsController::class, 'addservice'])->middleware('is_admin');
+Route::post('admin/add_service', [AdminsController::class, 'add_service'])->middleware('is_admin');
+Route::get('admin/editService/{id}', [AdminsController::class, 'editservices'])->middleware('is_admin');
+Route::post('admin/edit_Service/{id}', [AdminsController::class, 'edit_service'])->middleware('is_admin');
+Route::get('admin/deleteservice/{id}', [AdminsController::class, 'deleteservice'])->middleware('is_admin');
+
 
 
 Route::post('admin/add_Variation', [AdminsController::class, 'add_Variation'])->middleware('is_admin');

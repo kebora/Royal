@@ -8,6 +8,8 @@ use App\Models\Term;
 
 use App\Models\Privacy;
 
+use App\Models\Service;
+
 use App\Models\Copyright;
 
 use App\Models\FAQ;
@@ -727,6 +729,58 @@ class AdminsController extends Controller
     public function deleteProduct($id){
         activity()->log('Deleted Product ID number '.$id.' ');
         DB::table('products')->where('id',$id)->delete();
+        return Redirect::back();
+    }
+
+    // Services
+    public function services(){
+        activity()->log('Accessed All Services');
+        $Service = Service::all();
+        $page_title = 'list';
+        $page_name = 'Services';
+        return view('admin.services',compact('page_title','Service','page_name'));
+    }
+
+
+
+
+    public function editServices($id){
+        $Category = Category::all();
+        activity()->log('Access Edit Service ID number '.$id.' ');
+        $Service = Service::find($id);
+        $page_title = 'formfiletext';
+        $page_name = 'Edit Home Page Slider';
+        return view('admin.editService',compact('page_title','Service','page_name','Category'));
+    }
+
+    public function edit_Service(Request $request, $id){
+        activity()->log('Evoked Edit Service For Service ID number '.$id.' ');
+        $path = 'uploads/services';
+            if(isset($request->image_one)){
+                $file = $request->file('image_one');
+                $filename = $file->getClientOriginalName();
+                $file->move($path, $filename);
+                $image_one = $filename;
+            }else{
+                $image_one = $request->image_cheat;
+            }
+
+
+        $updateDetails = array(
+            'title'=>$request->title,
+            'slung' => Str::slug($request->title),
+            'content'=>$request->meta,
+            'content_one'=>$request->content,
+            'image'=>$image_one,
+        );
+        DB::table('services')->where('id',$id)->update($updateDetails);
+        Session::flash('message', "Changes have been saved");
+        return Redirect::back();
+    }
+
+    public function deleteService($id){
+        activity()->log('Deleted Service ID number '.$id.' ');
+        DB::table('services')->where('id',$id)->delete();
         return Redirect::back();
     }
 

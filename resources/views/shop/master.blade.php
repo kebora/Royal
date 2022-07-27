@@ -4,11 +4,27 @@
    <head>
       <!-- Basic page needs
          ============================================ -->
-      <title>RoyalTech Market - E-commerce</title>
+
       <meta charset="utf-8">
-      <meta name="keywords" content="" />
-      <meta name="author" content="Magentech">
-      <meta name="robots" content="index, follow" />
+      {!! SEOMeta::generate() !!}
+      {!! OpenGraph::generate() !!}
+      {!! Twitter::generate() !!}
+      {!! JsonLd::generate() !!}
+
+      @if(Session::has('tags'))
+            <?php
+                $Session = Session::get('tags');
+                $Category = DB::table('categories')->where('slung',$Session)->get();
+            ?>
+            @foreach ($Category as $Cat)
+                <meta property="og:image" content="{{url('/')}}/uploads/categories/{{$Cat->image}}" />
+                <meta property="fb:app_id" content="350937289315471" />
+            @endforeach
+
+      @else
+      <meta property="og:image" content="{{url('/')}}/uploads/products/1_062eeb89-ffbf-474a-8443-1285ea8a9b41.jpg" />
+      @endif
+
       <!-- Mobile specific metas
          ============================================ -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">

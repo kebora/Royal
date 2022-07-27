@@ -4,11 +4,18 @@
    <head>
       <!-- Basic page needs
          ============================================ -->
-      <title>RoyalTech Market - E-commerce</title>
+
       <meta charset="utf-8">
-      <meta name="keywords" content="" />
-      <meta name="author" content="Magentech">
-      <meta name="robots" content="index, follow" />
+      {!! SEOMeta::generate() !!}
+      {!! OpenGraph::generate() !!}
+      {!! Twitter::generate() !!}
+      {!! JsonLd::generate() !!}
+
+      @foreach ($Products as $key => $value)
+            <meta property="og:image" content="{{url('/')}}/uploads/products/{{$value->image_one}}" />
+            <meta property="fb:app_id" content="350937289315471" />
+            <meta property=”og:id” content="{{$value->id}}" />
+      @endforeach
       <!-- Mobile specific metas
          ============================================ -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">

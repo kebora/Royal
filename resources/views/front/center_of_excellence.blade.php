@@ -73,7 +73,7 @@
 							<div class="image-two">
 								<img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/services/{{$service->image}}" alt="{{$service->title}}" />
 								<div class="play-box">
-									<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
+									<a href="https://www.youtube.com/watch?v=lQ4y_POCT20" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
 								</div>
 							</div>
 							<h3>{{$service->title}}</h3>
