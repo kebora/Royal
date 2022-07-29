@@ -1,50 +1,34 @@
 @extends('front.master')
 
 @section('content')
-	<!-- Banner Section Two -->
-    <section class="banner-section-two">
-		<div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/main-slider/pattern-4.png')}}')"></div>
-		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/main-slider/pattern-5.png')}}')"></div>
-		<div class="pattern-layer-three" style="background-image: url('{{asset('corporate/images/main-slider/pattern-6.png')}}')"></div>
-		<div class="main-slider-carousel owl-carousel owl-theme">
+<!-- Banner Section Three -->
+<section class="banner-section-three">
+    <div class="main-slider-carousel owl-carousel owl-theme">
 
-            <div class="slide">
-				<div class="auto-container">
-					<div class="row clearfix">
-
-						<!-- Image Column -->
-						<div class="image-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="image">
-									{{-- <img src="#" alt="Kigens Image 566 by 766 PNG" /> --}}
-                                    <img src="{{url('/')}}/uploads/kigen.png" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<!-- Content Column -->
-						<div class="content-column col-lg-6 col-md-12 col-sm-12">
-							<div class="inner-column">
-
-								<h1>Laptops for Hire</h1>
-								<div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div>
-								<div class="play-box">
-									<a href="https://www.youtube.com/watch?v=lQ4y_POCT20" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
-									Virtual Tour
-								</div>
-							</div>
-						</div>
-
-
-					</div>
-				</div>
-			</div>
+        <div class="slide" style="background-image: url('{{url('/')}}/uploads/pexels-hasan-albari-1229861.jpg')">
+            <div class="color-layer"></div>
+            <div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/main-slider/pattern-4.png')}}')"></div>
+            <div class="auto-container">
+                <!-- Content Column -->
+                <div class="content-column clearfix">
+                    <div class="inner-column">
+                        <h1>Laptops for Hire.</h1>
+                        <div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div>
+                        <div class="button-box">
+                            <a href="{{url('/')}}/the-company" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-info"></span> Learn More</span></a>
+                            <a href="{{url('/')}}/the-company" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-		</div>
-	</section>
-	<!-- End Banner Section Two -->
+    </div>
+</section>
+<!-- End Banner Section Two -->
+
 
 	<!-- Experiance Section -->
 	<section class="experiance-section" style="background-image: url('{{asset('corporate/images/background/pattern-9.png')}}')">

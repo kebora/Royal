@@ -67,8 +67,8 @@
 
                     </div>
 
-                    <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image theme-btn btn-style-one"><span class="txt"><i class="play-icon"><img src="{{asset('corporate/images/icons/play-icon.png')}}" alt="" /></i>&ensp; Virtual Tour </span></a>
-                    <a href="#" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
+                    <a href="https://www.youtube.com/watch?v=lQ4y_POCT20" class="lightbox-image theme-btn btn-style-one"><span class="txt"><i class="play-icon"><img src="{{asset('corporate/images/icons/play-icon.png')}}" alt="" /></i>&ensp; Virtual Tour </span></a>
+                    <a target="new" href="{{url('/')}}/e-commerce" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
                 </div>
             </div>
 
