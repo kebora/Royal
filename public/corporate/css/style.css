@@ -8096,7 +8096,7 @@ img{
 	position:relative;
 	max-width:580px;
 	width:100%;
-	float:right
+	float:none;
 }
 
 .banner-section-three .content-column h1{
