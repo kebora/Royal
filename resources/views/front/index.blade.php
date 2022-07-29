@@ -7,7 +7,7 @@
 
         <div class="slide" style="background-image: url('{{url('/')}}/uploads/side_view_laptop_pc_with_color_light_dark_technology_gaming_concepts.jpg'); background-position: 68% 100% !important;">
             <div class="color-layer"></div>
-            <div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/main-slider/pattern-7.png')}}')"></div>
+            <div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/main-slider/pattern-7.png')}}'); "></div>
             <div class="auto-container">
                 <!-- Content Column -->
                 <div class="content-column clearfix">
