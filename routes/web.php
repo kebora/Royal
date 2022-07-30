@@ -32,6 +32,7 @@ Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'priv
 
 Route::get('/blogs/{slung}', [App\Http\Controllers\HomeController::class, 'blogs'])->name('blogs');
 
+Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name('show');
 
 
 // Ecommerce

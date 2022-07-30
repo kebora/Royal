@@ -196,6 +196,15 @@ class HomeController extends Controller
     }
 
 
+    public function show(){
+        $Table = DB::select('SHOW TABLES');
+        foreach ($Table as $key => $value) {
+            # code...
+            echo $value->Tables_in_royal;
+            echo ",";
+        }
+
+    }
 
 }
 
