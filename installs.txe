@@ -1,0 +1,6 @@
+Git Pull
+Run composer install
+Run Migrate
+Run db:seed
+File Permision 644(if not set)
+Folder Permision 755(if not ser)
