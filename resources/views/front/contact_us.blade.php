@@ -103,17 +103,17 @@
 			<div class="contact-form">
 
 				<!-- Contact Form -->
-				<form method="post" action="https://expert-themes.com/html/globex/sendemail.php" id="contact-form">
+				<form method="post" action="{{url('/')}}/send-message" id="contact-form">
 					<div class="row clearfix">
 
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
 							<label>Your name *</label>
-							<input type="text" name="username" placeholder="" required>
+							<input type="text" name="name" placeholder=""  required>
 						</div>
 
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
 							<label>Email address *</label>
-							<input type="text" name="email" placeholder="" required>
+							<input type="email" name="email" placeholder="" required>
 						</div>
 
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -130,6 +130,31 @@
 							<label>Your Message *</label>
 							<textarea name="message" placeholder=""></textarea>
 						</div>
+
+                        <?php
+						$ops = array('-', '+');
+						$answer = -1;
+
+						$num1 = rand(0, 50);
+						$num2 = rand(0, 15);
+
+						$answer = $num1 + $num2;
+
+						?>
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
+                            <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Are you human? {{$num1}} + {{$num2}} =</label>
+                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br>
 
 						<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
 							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Send Now</span></button>

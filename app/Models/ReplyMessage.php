@@ -118,5 +118,26 @@ class ReplyMessage extends Model
         });
     }
 
-    
+    public static function laptopHire($name,$email,$Joiner){
+        $data = array(
+            'content'=>$Joiner
+        );
+        $subject = "Laptop Hire";
+
+
+
+        $FromVariable = "royaltechcomputersltd@gmail.com";
+        $FromVariableName = "Royaltech Company Limited";
+
+        $toVariable = "albertmuhatia@gmail.com";
+
+        $toVariableName = "Royaltech Computers Limited";
+
+
+        Mail::send('mailContact', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
+            $message->from($FromVariable , $FromVariableName);
+            $message->to($toVariable, $toVariableName)->cc('info@aste.co.ke')->subject($subject);
+        });
+    }
+
 }

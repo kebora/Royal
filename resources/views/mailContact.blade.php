@@ -82,7 +82,7 @@
 text-align:center;
       }
       .btn-primary a:hover {
-        
+
       }
     }
     </style>
@@ -107,10 +107,10 @@ text-align:center;
 
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"> {!!html_entity_decode($content)!!} </p>
                         <center>
-                          
-                        
-                          
-            
+
+
+
+
                         </center>
 <br>                      </td>
                     </tr>
@@ -127,14 +127,10 @@ text-align:center;
                 <tr>
                   <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
                     <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;"><a href="{{config('app.url')}}">{{config('app.name')}}</a></span>
-                    
+
                   </td>
                 </tr>
-                <tr>
-                  <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                    Powered by <a href="http://designekta.com" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">Designekta Studios</a>.
-                  </td>
-                </tr>
+
               </table>
             </div>
             <!-- END FOOTER -->

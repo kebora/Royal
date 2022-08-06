@@ -245,9 +245,16 @@ class ShopController extends Controller
         orders::createOrder();
         $latest = orders::orderBy('date','DESC')->first();
         $OrderId = $latest->id;
-        echo $OrderId;
+        // echo $OrderId;
+
+        $Count = \Cart::getContent()->count();
+        $Shipping = 700;
+        $Ship = ($Shipping)*$Count;
+        $Tot = \Cart::getTotal();
+        $All = $Ship+$Tot;
 
 
+        // $amount = $All;
         $amount = "1";
         $description = Session::get('description');
         $payments = new Payment;

@@ -1,0 +1,11 @@
+Update .ENV
+
+    PesaPal Consumer Key: k9UW/+glhzWivJyCf6HokJN+FX/I3pt+
+    PesaPal Consumer Secret: R1gJcGKPETN0z5q//VNK8NhxGuc=
+
+Run
+    php artisan view:clear
+    php artisan cache:clear
+    php artisan route:clear
+    php artisan config:clear
+    php artinsan config:cache

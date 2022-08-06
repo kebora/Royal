@@ -8,6 +8,7 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
+use App\Models\ReplyMessage;
 
 class HomeController extends Controller
 {
@@ -204,6 +205,29 @@ class HomeController extends Controller
             echo ",";
         }
 
+    }
+
+    public function hire(Request $request){
+        $name = $request->name;
+        $email = $request->email;
+        $date = $request->date;
+        $phone = $request->phone;
+        $number = $request->number;
+        $message = $request->message;
+
+        $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone, Has Requested $number Laptops with the specs $message";
+        ReplyMessage::laptopHire($name,$email,$Joiner);
+        return response()->json(['success' => true]);
+    }
+
+    public function message(Request $request){
+        $name = $request->name;
+        $email = $request->email;
+        $subject = $request->subject;
+        $phone = $request->phone;
+        $message = $request->message;
+
+        return response()->json(['success' => true]);
     }
 
 }
