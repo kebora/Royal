@@ -72,7 +72,7 @@
                     <div class="product-item-container">
                        <div class="left-block">
                           <div class="product-image-container lazy second_img ">
-                             <img style="min-height:234px" data-src="{{url('/')}}/uploads/products/{{$item->image_one}}" src="{{url('/')}}/uploads/products/{{$item->image_one}}"  alt="{{$item->name}}" class="img-responsive" />
+                             <img data-src="{{url('/')}}/uploads/products/{{$item->image_one}}" src="{{url('/')}}/uploads/products/{{$item->image_one}}"  alt="{{$item->name}}" class="img-responsive product-img" />
                              <img data-src="{{url('/')}}/uploads/products/{{$item->image_two}}" src="{{url('/')}}/uploads/products/{{$item->image_two}}"  alt="{{$item->name}}" class="img_0 img-responsive" />
                           </div>
                           <!--Sale Label-->

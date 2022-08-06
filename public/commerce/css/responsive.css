@@ -590,4 +590,13 @@
 }
 }
 
+.product-img{
+    min-height:234px
+}
 
+
+@media (max-width: 768px) {
+    .product-img{
+        min-height:100%;
+    }
+}
