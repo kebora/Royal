@@ -158,7 +158,7 @@
                         <br>
 
 						<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Send Now</span></button>
+							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Send Now <img class="loading" width="30" src="{{url('/')}}/uploads/icon/loading.gif" alt="royaltech loading"/></span></button>
 						</div>
 
 					</div>
@@ -171,7 +171,12 @@
 	<!-- End Contact Map Section -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        $(document).ready(function(){
+            $(".loading", this).css("visibility","hidden");
+        });
+
         $('#contact-form').submit(function(e){
+            $(".loading", this).css("visibility","visible");
 
             // Stop the form submitting
             e.preventDefault();

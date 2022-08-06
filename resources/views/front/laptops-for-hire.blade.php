@@ -95,7 +95,7 @@
                         <br>
 
 						<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Submit Request</span></button>
+							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Submit Request <img class="loading" width="30" src="{{url('/')}}/uploads/icon/loading.gif" alt="royaltech loading"/></span></button>
 						</div>
 
 					</div>
@@ -107,19 +107,24 @@
 	</section>
 	<!-- End Contact Map Section -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
+        $(document).ready(function(){
+            $(".loading", this).css("visibility","hidden");
+        });
         $('#laptop-for-hire').submit(function(e){
 
             // Stop the form submitting
             e.preventDefault();
+            $(".loading", this).css("visibility","visible");
             $.ajax({
                 url: "{{url('laptops-for-hire')}}",
                 type: "POST",
                 data: $('#laptop-for-hire').serialize(),
                 success: function( response ) {
-                    $('#submit').html('Submit');
-                    $("#submit"). attr("disabled", false);
+                    $(".loading", this).css("visibility","hidden");
                     alert('Your Request has been submitted successfully');
+
                     document.getElementById("laptop-for-hire").reset();
                 }
             });
