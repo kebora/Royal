@@ -104,6 +104,7 @@
 
 				<!-- Contact Form -->
 				<form method="post" action="{{url('/')}}/send-message" id="contact-form">
+                    @csrf
 					<div class="row clearfix">
 
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -148,7 +149,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Are you human? {{$num1}} + {{$num2}} =</label>
-                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact">
+                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
                                     </div>
                                 </div>
                             </div>
@@ -168,5 +169,24 @@
 		</div>
 	</section>
 	<!-- End Contact Map Section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#contact-form').submit(function(e){
+
+            // Stop the form submitting
+            e.preventDefault();
+            $.ajax({
+                url: "{{url('send-message')}}",
+                type: "POST",
+                data: $('#contact-form').serialize(),
+                success: function( response ) {
+                    $('#submit').html('Submit');
+                    $("#submit"). attr("disabled", false);
+                    alert('Your Request has been submitted successfully');
+                    document.getElementById("contact-form").reset();
+                }
+            });
+        });
+    </script>
 
 @endsection
