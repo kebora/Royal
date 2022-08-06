@@ -124,8 +124,6 @@ class ReplyMessage extends Model
         );
         $subject = "Laptop Hire";
 
-
-
         $FromVariable = "royaltechcomputersltd@gmail.com";
         $FromVariableName = "Royaltech Company Limited";
 
