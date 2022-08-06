@@ -1,7 +1,19 @@
 Update .ENV
 
-    PesaPal Consumer Key: k9UW/+glhzWivJyCf6HokJN+FX/I3pt+
-    PesaPal Consumer Secret: R1gJcGKPETN0z5q//VNK8NhxGuc=
+    PESAPAL_CONSUMER_KEY=k9UW/+glhzWivJyCf6HokJN+FX/I3pt+
+    PESAPAL_CONSUMER_SECRET=R1gJcGKPETN0z5q//VNK8NhxGuc=
+
+    MAIL_MAILER=smtp
+    MAIL_HOST=smtp.gmail.com
+    MAIL_PORT=587
+    MAIL_USERNAME=royaltechcomputersltd@gmail.com
+    MAIL_PASSWORD=ubvlmcdrayerlgzy
+    MAIL_ENCRYPTION=tls
+    MAIL_FROM_ADDRESS=null
+    MAIL_FROM_NAME="${APP_NAME}"
+
+
+
 
 Run
     php artisan view:clear

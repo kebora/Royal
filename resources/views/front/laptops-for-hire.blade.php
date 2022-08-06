@@ -86,7 +86,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Are you human? {{$num1}} + {{$num2}} =</label>
-                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact">
+                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                     $('#submit').html('Submit');
                     $("#submit"). attr("disabled", false);
                     alert('Your Request has been submitted successfully');
-                    document.getElementById("ajax-contact-form").reset();
+                    document.getElementById("laptop-for-hire").reset();
                 }
             });
         });

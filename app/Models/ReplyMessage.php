@@ -127,14 +127,32 @@ class ReplyMessage extends Model
         $FromVariable = "royaltechcomputersltd@gmail.com";
         $FromVariableName = "Royaltech Company Limited";
 
-        $toVariable = "albertmuhatia@gmail.com";
+        $toVariable = "support@royaltech.co.ke";
 
         $toVariableName = "Royaltech Computers Limited";
 
-
         Mail::send('mailContact', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->cc('info@aste.co.ke')->subject($subject);
+            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->subject($subject);
+        });
+    }
+
+    public static function sendMessage($name,$email,$Joiner){
+        $data = array(
+            'content'=>$Joiner
+        );
+        $subject = "New Message";
+
+        $FromVariable = "royaltechcomputersltd@gmail.com";
+        $FromVariableName = "Royaltech Company Limited";
+
+        $toVariable = "support@royaltech.co.ke";
+
+        $toVariableName = "Royaltech Computers Limited";
+
+        Mail::send('mailContact', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName,$email){
+            $message->from($FromVariable , $FromVariableName);
+            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->replyto($email)->subject($subject);
         });
     }
 

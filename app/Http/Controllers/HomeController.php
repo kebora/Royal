@@ -208,26 +208,37 @@ class HomeController extends Controller
     }
 
     public function hire(Request $request){
-        $name = $request->name;
-        $email = $request->email;
-        $date = $request->date;
-        $phone = $request->phone;
-        $number = $request->number;
-        $message = $request->message;
+        if($request->verify_contact == $request->verify_contact_input){
+            $name = $request->name;
+            $email = $request->email;
+            $date = $request->date;
+            $phone = $request->phone;
+            $number = $request->number;
+            $message = $request->message;
 
-        $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone, Has Requested $number Laptops with the specs $message";
-        ReplyMessage::laptopHire($name,$email,$Joiner);
-        return response()->json(['success' => true]);
+            $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone, Has Requested $number Laptops with the specs $message";
+            ReplyMessage::laptopHire($name,$email,$Joiner);
+            return response()->json(['success' => true]);
+        }else{
+            return response()->json(['success' => true]);
+        }
+
+
     }
 
     public function message(Request $request){
-        $name = $request->name;
-        $email = $request->email;
-        $subject = $request->subject;
-        $phone = $request->phone;
-        $message = $request->message;
-
-        return response()->json(['success' => true]);
+        if($request->verify_contact == $request->verify_contact_input){
+            $name = $request->name;
+            $email = $request->email;
+            $subject = $request->subject;
+            $phone = $request->phone;
+            $message = $request->message;
+            $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone and Website $subject : Has Sent an Enquiry as -> $message";
+            ReplyMessage::sendMessage($name,$email,$Joiner);
+            return response()->json(['success' => true]);
+        }else{
+            return response()->json(['success' => true]);
+        }
     }
 
 }
