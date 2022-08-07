@@ -255,7 +255,7 @@ class ShopController extends Controller
 
 
         // $amount = $All;
-        $amount = "1";
+        $amount = "1000";
         $description = Session::get('description');
         $payments = new Payment;
         $payments -> businessid = 1; //Business ID
@@ -277,7 +277,7 @@ class ShopController extends Controller
             'email' => Auth::User()->email,
             'phonenumber' => Auth::User()->mobile,
             'reference' => $payments -> transactionid,
-            'height'=>'380px',
+            'height'=>'400px',
             'currency' => 'KES'
         );
         // dd($details);
