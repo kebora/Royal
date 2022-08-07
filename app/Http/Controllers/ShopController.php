@@ -163,7 +163,7 @@ class ShopController extends Controller
 
         if(Auth::User()){
             if($cartItems->isEmpty()){
-                $Products = Product::all();
+                $Products = DB::table('products')->orderBy('id','DESC')->get();
                 $title = "All Products";
                 return view('shop.index', compact('Products','title'));
             }else{

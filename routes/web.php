@@ -55,9 +55,9 @@ Route::group(['prefix'=>'e-commerce'], function(){
         Route::get('/remove/{id}', [App\Http\Controllers\ShopController::class, 'removeCart'])->name('removeCart');
         Route::get('/add-to-cart/{slung}', [App\Http\Controllers\ShopController::class, 'add_to_cart'])->name('add-to-cart');
         Route::get('/add-to-wishlist/{slung}', [App\Http\Controllers\ShopController::class, 'add_to_wishlist'])->name('add-to-wishlist');
-        Route::post('/checkout/update-data', [App\Http\Controllers\ShopController::class, 'update'])->name('checkout'); //Updates Data
+        Route::post('/checkout/update-data', [App\Http\Controllers\ShopController::class, 'update'])->name('checkout-update'); //Updates Data
         Route::get('/checkout/make-payment', [App\Http\Controllers\ShopController::class, 'make_payments'])->name('payment'); //Updates Data
-        Route::post('/checkout/make-payments', [App\Http\Controllers\ShopController::class, 'make_payment'])->name('checkout');
+        Route::post('/checkout/make-payments', [App\Http\Controllers\ShopController::class, 'make_payment'])->name('checkouts');
 
 
     });

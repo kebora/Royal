@@ -49,7 +49,7 @@
                     <div class="modcontent">
                         <ul class="contact-address">
                             <li><span class="fa fa-map-marker"></span> <a style="color:#ffffff;" href="https://g.page/royaltech-computers-ltd?share">Tembo Co-op House Moi Ave Nairobi-Room 201</a></li>
-                            <li><span class="fa fa-envelope-o"></span> <a style="color:#ffffff;" href="mailto:support@royaltech.co.ke"> Email:  support@royaltech.co.ke</a></li>
+                            <li><span class="fa fa-envelope-o"></span> <a style="color:#ffffff;" href="mailto:info@royaltech.co.ke"> Email:  info@royaltech.co.ke</a></li>
                             <li><span class="fa fa-phone">&nbsp;</span> <a style="color:#ffffff;" href="tel:0724404935"> Phone 1: 0724 404935 <br>Phone 2: 0724404935</a></li>
                         </ul>
                     </div>

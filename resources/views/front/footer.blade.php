@@ -95,7 +95,7 @@
 										<li>
 											<span class="icon flaticon-email-1"></span>
 											<strong>E-Mail</strong>
-											<a href="mailto:support@royaltech.co.ke">support@royaltech.co.ke</a>
+											<a href="mailto:info@royaltech.co.ke">info@royaltech.co.ke</a>
 										</li>
 									</ul>
 								</div>

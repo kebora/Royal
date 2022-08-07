@@ -9,7 +9,7 @@
                 <div class="form-group currencies-block">
                     <span>&nbsp; <a href="tel:254724404935"><span class="fa fa-phone"> +254724404935</a></span>
 
-                    <span> | <a href="mailto:support@royaltech.co.ke"><span class="fa fa-envelope"> support@royaltech.co.ke</a></span>
+                    <span> | <a href="mailto:info@royaltech.co.ke"><span class="fa fa-envelope"> info@royaltech.co.ke</a></span>
 
                     <span class="hide-desktop"> | <a href="https://g.page/royaltech-computers-ltd?share"><span class="fa fa-map-marker"> Find Us Now</a></span>
 
