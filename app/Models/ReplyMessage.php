@@ -38,17 +38,17 @@ class ReplyMessage extends Model
         $appName = config('app.name');
         $appEmail = config('mail.username');
 
-        $FromVariable = "mail@aste.co.ke";
-        $FromVariableName = $appName;
+        $FromVariable = "royaltechcomputersltd@gmail.com";
+        $FromVariableName = "RoyalTech Computers Limited";
 
-        $toVariable = "aste.co.ke@gmail.com";
+        $toVariable = $email;
 
-        $toVariableName = 'Aste Company Limited';
+        $toVariableName = $name;
 
 
         Mail::send('mailclientInvoice', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->cc('aste.co.ke@gmail.com')->cc('info@aste.co.ke')->subject($subject);
+            $message->to($toVariable, $toVariableName)->bcc('albertmuhatia@gmail.com')->cc('info@royaltech.co.ke')->subject($subject);
         });
     }
 
@@ -64,21 +64,17 @@ class ReplyMessage extends Model
 
         );
 
-        $appName = config('app.name');
-        $appEmail = config('mail.username');
+        $FromVariable = "royaltechcomputersltd@gmail.com";
+        $FromVariableName = "RoyalTech Computers Limited Mailers";
 
+        $toVariable = "info@royaltech.co.ke";
+        $toVariableName = "Royaltech Compuers Limited Admin";
 
-        $FromVariable = "mail@aste.co.ke";
-        $FromVariableName = $appName;
-
-        $toVariable = "aste.co.ke@gmail.com";
-
-        $toVariableName = 'Aste Company Limited';
 
 
         Mail::send('mailclienttwo', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->cc('aste.co.ke@gmail.com')->cc('info@aste.co.ke')->subject($subject);
+            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->subject($subject);
         });
     }
 

@@ -11,6 +11,7 @@ use Pesapal;
 use App\Models\orders;
 use Auth;
 use App\Models\Payment;
+use App\Models\ReplyMessage;
 use AmrShawky\LaravelCurrency\Facade\Currency;
 use Session;
 use Artesaos\SEOTools\Facades\SEOMeta;
@@ -266,6 +267,11 @@ class ShopController extends Controller
         $payments -> user_id = Auth::User()->id;
         $payments -> order_id = $OrderId;
         $payments -> save();
+
+        // Email Order
+        ReplyMessage::mailclient(Auth::User()->email,Auth::User()->name,$OrderId,$Ship,$All);
+
+        ReplyMessage::mailmerchant(Auth::User()->email,Auth::User()->name,Auth::User()->mobile);
 
 
         $details = array(
