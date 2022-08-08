@@ -599,4 +599,23 @@
     .product-img{
         min-height:100%;
     }
+    .ratings{
+        display: none;
+    }
+    .products-list .product-layout .caption a{
+        font-size: 12px;
+        text-align: center !important;
+    }
+    .price .price-new{
+        font-size: 12px;
+        text-align: center !important;
+        font-weight:700;
+    }
+    .label-percent{
+        display: none;
+    }
+    .button-group{
+        margin:0 auto !important;
+    }
 }
+
