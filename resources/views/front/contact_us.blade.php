@@ -84,7 +84,7 @@
 	<!-- End Map Section -->
 
 	<!-- Contact Map Section -->
-	<section class="contact-map-section">
+	{{-- <section class="contact-map-section">
 		<div class="auto-container" style="border:6px solid #1c2c52; border-radius:10px;">
 			<!-- Sec Title -->
 			<div class="sec-title">
@@ -109,7 +109,7 @@
 
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
 							<label>Your name *</label>
-							<input type="text" name="name" placeholder=""  required>
+							<input type="text" name="name" placeholder=""  required="required">
 						</div>
 
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -117,27 +117,22 @@
 							<input type="email" name="email" placeholder="" required>
 						</div>
 
-						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+						<div class="form-group col-lg-12 col-md-6 col-sm-12">
 							<label>Phone number *</label>
 							<input type="text" name="phone" placeholder="" required>
 						</div>
 
-						<div class="form-group col-lg-6 col-md-6 col-sm-12">
-							<label>Website</label>
-							<input type="text" name="subject" placeholder="" required>
-						</div>
-
 						<div class="form-group col-lg-12 col-md-12 col-sm-12">
 							<label>Your Message *</label>
-							<textarea name="message" placeholder=""></textarea>
+							<textarea name="message" required></textarea>
 						</div>
 
                         <?php
 						$ops = array('-', '+');
 						$answer = -1;
 
-						$num1 = rand(0, 50);
-						$num2 = rand(0, 15);
+						$num1 = rand(0, 99);
+						$num2 = rand(0, 99);
 
 						$answer = $num1 + $num2;
 
@@ -149,7 +144,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Are you human? {{$num1}} + {{$num2}} =</label>
-                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
+                                        <input required class="form-control" value="0" type="text" id="verify_contact" name="verify_contact_input">
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +162,7 @@
 			<!-- End Contact Form -->
 
 		</div>
-	</section>
+	</section> --}}
 	<!-- End Contact Map Section -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
