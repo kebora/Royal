@@ -16,6 +16,7 @@
 
 @include('favicon')
 @include('tawkto')
+@include('pixels')
 <!-- Color Themes -->
 <link id="theme-color-file" href="{{asset('corporate/css/color-themes/default-theme.css')}}" rel="stylesheet">
 
@@ -43,8 +44,7 @@
 						<!-- Info List -->
 						<ul class="info-list">
 							<li>We are creative, ambitious and ready for challenges!</li>
-							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Tembo Co-op House
-                                Moi Ave Nairobi-Room 201</a></li>
+							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Old Nation House 1st floor shop A12</a></li>
 						</ul>
 					</div>
 

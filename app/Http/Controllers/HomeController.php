@@ -227,6 +227,7 @@ class HomeController extends Controller
     }
 
     public function message(Request $request){
+        // Check if message has links
         if($request->verify_contact == $request->verify_contact_input){
             $name = $request->name;
             $email = $request->email;

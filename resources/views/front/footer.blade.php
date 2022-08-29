@@ -84,8 +84,7 @@
 										<li>
 											<span class="icon flaticon-placeholder-2"></span>
 											<strong>Address</strong>
-											Tembo Co-op House
-                                Moi Ave Nairobi-Room 201
+											Old Nation House 1st floor shop A12
 										</li>
 										<li>
 											<span class="icon flaticon-phone-call"></span>

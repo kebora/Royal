@@ -23,6 +23,7 @@
 
 @include('favicon')
 @include('tawkto')
+@include('pixels')
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="{{asset('corporate/js/respond.js')}}"></script><![endif]-->
@@ -48,8 +49,7 @@
 						<!-- Info List -->
 						<ul class="info-list">
 							<li>We are creative, ambitious and ready for challenges!<strong><a href="#">Hire Us</a></strong></li>
-							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Tembo Co-op House
-                                Moi Ave Nairobi-Room 201</a></li>
+							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Old Nation House 1st floor shop A12</a></li>
 						</ul>
 					</div>
 
