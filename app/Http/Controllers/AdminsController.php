@@ -2124,6 +2124,7 @@ class AdminsController extends Controller
                 $ProExcel->availability = $ProAdd->stock;
                 $ProExcel->condition = "new";
                 $ProExcel->price = $ProAdd->price;
+                // $ProExcel->price = $ProAdd->price.".00 KES";
                 $ProExcel->link = $ProductUrl;
                 $ProExcel->image_link = $ImageURL;
                 $ProExcel->brand = $ProAdd->brand;

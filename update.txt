@@ -2,4 +2,6 @@ Update:
 
 Run Migration
 
-Composer Update
+Run Composer Update
+
+Run php artisan config:cache

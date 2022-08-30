@@ -14,7 +14,7 @@ class DemoController extends Controller
 
     public function importExportView()
     {
-    //    Import Excell Documents to DB
+       //Import Excell Documents to DB
        return view('front.import');
     }
 
