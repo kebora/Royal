@@ -12,6 +12,8 @@ use App\Models\Service;
 
 use App\Models\Copyright;
 
+use App\Models\ProExcel;
+
 use App\Models\FAQ;
 
 use App\Models\How;
@@ -2105,6 +2107,37 @@ class AdminsController extends Controller
         return "Done";
     }
 
+    public function addProductToFacebookPixel(){
+        ProExcel::truncate();
+        // $Products = Product::whereNotNull('fb_pixels');
+        $Products = DB::table('products')->whereNotNull('sku')->whereNotNull('image_one')->get();
+   
+        foreach($Products as $ProAdd){
+          
+                $ProductUrl = "https://royaltech.co.ke/e-commerce/product/$ProAdd->slung";
+                $ImageURL = "https://royaltech.co.ke/uploads/products/$ProAdd->image_one";
+                $ProExcel  = new ProExcel;
+                $ProExcel->code = $ProAdd->sku;
+                $ProExcel->google_product_category = $ProAdd->google_product_category;
+                $ProExcel->title = $ProAdd->name;
+                $ProExcel->description = $ProAdd->meta;
+                $ProExcel->availability = $ProAdd->stock;
+                $ProExcel->condition = "new";
+                $ProExcel->price = $ProAdd->price;
+                $ProExcel->link = $ProductUrl;
+                $ProExcel->image_link = $ImageURL;
+                $ProExcel->brand = $ProAdd->brand;
+                $ProExcel->save();   
+        }
+        return redirect()->route('exporting');
+    }
+    
+
+    public function emptyProductToFacebookPixel(){
+        DB::table('_pro_excel')->delete();
+        Session::flash('message', "Table Has been cleared");
+        return Redirect::back();
+    }
 
 }
 

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
 use App\Http\Controllers\PaymentsController;
-
+use App\Http\Controllers\DemoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -265,6 +265,11 @@ Route::get('admin/switchStatus/{id}', [AdminsController::class, 'switchStatus'])
 
 Route::get('admin/updateSlung', [AdminsController::class, 'updateSlung'])->middleware('is_admin');
 
+Route::get('admin/addProductToFacebookPixel', [AdminsController::class, 'addProductToFacebookPixel'])->middleware('is_admin');
+Route::get('admin/emptyProductToFacebookPixel', [AdminsController::class, 'emptyProductToFacebookPixel'])->middleware('is_admin');
+
+
+
 
 
 
@@ -306,3 +311,8 @@ Route::group(['prefix' => '/webhooks'], function () {
     Route::get('donepayment', [App\Http\Controllers\PaymentsController::class, 'paymentsuccess'])->name('paymentsuccess');
     Route::get('paymentconfirmation', [App\Http\Controllers\PaymentsController::class, 'paymentconfirmation']);
 });
+
+
+Route::get('export', [DemoController::class, 'export'])->name('exporting');
+Route::get('importExportView', [DemoController::class, 'importExportView']);
+Route::get('import', [DemoController::class, 'import']);

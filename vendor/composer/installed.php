@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '75a9cc69639f5203575cb2609f581263d2d961f6',
+    'reference' => '97aed46d7e7dfb74179380bc3c8088fc0fcb0801',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -159,6 +159,15 @@
       array (
       ),
       'reference' => '0dbf5d78455d4d6a41d186da50adc1122ec066f4',
+    ),
+    'ezyang/htmlpurifier' => 
+    array (
+      'pretty_version' => 'v4.14.0',
+      'version' => '4.14.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '12ab42bd6e742c70c0a52f7b82477fcd44e64b75',
     ),
     'facade/flare-client-php' => 
     array (
@@ -478,12 +487,12 @@
     ),
     'kitloong/laravel-migrations-generator' => 
     array (
-      'pretty_version' => 'v6.3.2',
-      'version' => '6.3.2.0',
+      'pretty_version' => 'v6.4.0',
+      'version' => '6.4.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c5b447ea33c9cce9a46391aac12ae60baa639ed2',
+      'reference' => '5bfa5f2c3bba1713574e8eb84fa825ce72b81616',
     ),
     'knox/pesapal' => 
     array (
@@ -526,7 +535,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '75a9cc69639f5203575cb2609f581263d2d961f6',
+      'reference' => '97aed46d7e7dfb74179380bc3c8088fc0fcb0801',
     ),
     'laravel/sail' => 
     array (
@@ -608,6 +617,42 @@
       array (
       ),
       'reference' => 'ff6248ea87a9f116e78edd6002e39e5128a0d4dd',
+    ),
+    'maatwebsite/excel' => 
+    array (
+      'pretty_version' => '3.1.40',
+      'version' => '3.1.40.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8a54972e3d616c74687c3cbff15765555761885c',
+    ),
+    'maennchen/zipstream-php' => 
+    array (
+      'pretty_version' => '2.2.1',
+      'version' => '2.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '211e9ba1530ea5260b45d90c9ea252f56ec52729',
+    ),
+    'markbaker/complex' => 
+    array (
+      'pretty_version' => '3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ab8bc271e404909db09ff2d5ffa1e538085c0f22',
+    ),
+    'markbaker/matrix' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c66aefcafb4f6c269510e9ac46b82619a904c576',
     ),
     'mockery/mockery' => 
     array (
@@ -759,6 +804,15 @@
       array (
       ),
       'reference' => '77a32518733312af16a44300404e945338981de3',
+    ),
+    'phpoffice/phpspreadsheet' => 
+    array (
+      'pretty_version' => '1.24.1',
+      'version' => '1.24.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '69991111e05fca3ff7398e1e7fca9ebed33efec6',
     ),
     'phpoption/phpoption' => 
     array (
