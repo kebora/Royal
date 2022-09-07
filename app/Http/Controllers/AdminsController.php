@@ -2111,9 +2111,9 @@ class AdminsController extends Controller
         ProExcel::truncate();
         // $Products = Product::whereNotNull('fb_pixels');
         $Products = DB::table('products')->whereNotNull('sku')->whereNotNull('image_one')->get();
-   
+
         foreach($Products as $ProAdd){
-          
+
                 $ProductUrl = "https://royaltech.co.ke/e-commerce/product/$ProAdd->slung";
                 $ImageURL = "https://royaltech.co.ke/uploads/products/$ProAdd->image_one";
                 $ProExcel  = new ProExcel;
@@ -2123,16 +2123,16 @@ class AdminsController extends Controller
                 $ProExcel->description = $ProAdd->meta;
                 $ProExcel->availability = $ProAdd->stock;
                 $ProExcel->condition = "new";
-                $ProExcel->price = $ProAdd->price;
+                $ProExcel->price = "$ProAdd->price KES";
                 // $ProExcel->price = $ProAdd->price.".00 KES";
                 $ProExcel->link = $ProductUrl;
                 $ProExcel->image_link = $ImageURL;
                 $ProExcel->brand = $ProAdd->brand;
-                $ProExcel->save();   
+                $ProExcel->save();
         }
         return redirect()->route('exporting');
     }
-    
+
 
     public function emptyProductToFacebookPixel(){
         DB::table('_pro_excel')->delete();

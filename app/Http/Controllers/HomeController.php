@@ -208,17 +208,22 @@ class HomeController extends Controller
     }
 
     public function hire(Request $request){
-        if($request->verify_contact == $request->verify_contact_input){
-            $name = $request->name;
-            $email = $request->email;
-            $date = $request->date;
-            $phone = $request->phone;
-            $number = $request->number;
-            $message = $request->message;
+        $check = $this->has_url($request->message);
+        if($check == 1){
+            if($request->verify_contact == $request->verify_contact_input){
+                $name = $request->name;
+                $email = $request->email;
+                $date = $request->date;
+                $phone = $request->phone;
+                $number = $request->number;
+                $message = $request->message;
 
-            $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone, Has Requested $number Laptops with the specs $message";
-            ReplyMessage::laptopHire($name,$email,$Joiner);
-            return response()->json(['success' => true]);
+                $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone, Has Requested $number Laptops with the specs $message";
+                ReplyMessage::laptopHire($name,$email,$Joiner);
+                return response()->json(['success' => true]);
+            }else{
+                return response()->json(['success' => true]);
+            }
         }else{
             return response()->json(['success' => true]);
         }
@@ -227,19 +232,43 @@ class HomeController extends Controller
     }
 
     public function message(Request $request){
-        // Check if message has links
-        if($request->verify_contact == $request->verify_contact_input){
-            $name = $request->name;
-            $email = $request->email;
-            $subject = $request->subject;
-            $phone = $request->phone;
-            $message = $request->message;
-            $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone and Website $subject : Has Sent an Enquiry as -> $message";
-            ReplyMessage::sendMessage($name,$email,$Joiner);
-            return response()->json(['success' => true]);
+        $check = $this->has_url($request->message);
+        if($check == 1){
+            // Check if message has links
+            if($request->verify_contact == $request->verify_contact_input){
+                $name = $request->name;
+                $email = $request->email;
+                $subject = $request->subject;
+                $phone = $request->phone;
+                $message = $request->message;
+                $Joiner = "Hello Admin, User with name $name, and email $email, Phone Number $phone and Website $subject : Has Sent an Enquiry as -> $message";
+                ReplyMessage::sendMessage($name,$email,$Joiner);
+                return response()->json(['success' => true]);
+            }else{
+                return response()->json(['success' => true]);
+            }
         }else{
             return response()->json(['success' => true]);
         }
+
+    }
+
+    public function has_url($string){
+        $url = "http";
+
+        if (preg_match('/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/si', $string)){
+            // die("Contains an email");
+            $results = 0;
+        }else{
+            if( strpos($string , $url) == true) {
+                // die("Contains an url");
+                $results = 0;
+            }else{
+                $results = 1;
+            }
+        }
+        return $results;
+
     }
 
 }

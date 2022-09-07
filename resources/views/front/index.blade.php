@@ -406,10 +406,11 @@
 							<h4>You Don't Hesitate To Contact <br> With Us, Now Say Hello......</h4>
 							<!-- Appointment Form -->
 							<div class="appointment-form">
-								<form method="post" action="https://expert-themes.com/html/globex/appointment.html">
+								<form method="post" action="{{url('/')}}/send-message">
+                                    @csrf
 									<div class="row clearfix">
 										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
-											<input type="text" name="username" placeholder="Name" required="">
+											<input type="text" name="name" placeholder="Name" required="">
 											<span class="icon fa fa-user"></span>
 										</div>
 
@@ -431,6 +432,31 @@
 										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 											<textarea name="message" placeholder="Message"></textarea>
 										</div>
+
+                                        <?php
+                                        $ops = array('-', '+');
+                                        $answer = -1;
+
+                                        $num1 = rand(0, 50);
+                                        $num2 = rand(0, 15);
+
+                                        $answer = $num1 + $num2;
+
+                                        ?>
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
+                                            <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Are you human? {{$num1}} + {{$num2}} =</label>
+                                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <br>
 
 										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 											<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Send Massage</span></button>

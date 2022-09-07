@@ -36,6 +36,8 @@ Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name(
 Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name('show');
 Route::post('/laptops-for-hire', [App\Http\Controllers\HomeController::class, 'hire'])->name('hire');
 Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'message'])->name('message');
+Route::get('/url', [App\Http\Controllers\HomeController::class, 'has_url'])->name('has_url');
+
 
 
 
