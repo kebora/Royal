@@ -15,3 +15,14 @@
     src="https://www.facebook.com/tr?id=1268253524005189&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+  <meta name="google-site-verification" content="41K1zjtb97ueR8rL3jtf4OPudn7RtlKeLEyme0eJO5k" />
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-24B3E0923W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-24B3E0923W');
+</script>
