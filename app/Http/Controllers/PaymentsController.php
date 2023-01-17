@@ -33,7 +33,7 @@ class PaymentsController extends Controller
 
         $details = array(
             'amount' => $payments -> amount,
-            'description' => 'Secret-Trek-Africa'.$request->first_name,
+            'description' => 'Royal-Tech-Computers'.$request->first_name,
             'type' => 'MERCHANT',
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,

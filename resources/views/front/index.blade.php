@@ -354,7 +354,7 @@
 				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<div class="image">
-							<a href="#"><img src="{{url('/')}}/uploads/kigen.png" alt="" /></a>
+							<a href="#"><img src="{{url('/')}}/uploads/kenkigen.jpeg" alt="" /></a>
 						</div>
 						<div class="lower-box">
 							<!-- Social Box -->
