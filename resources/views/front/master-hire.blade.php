@@ -3,7 +3,10 @@
 
 <head>
 <meta charset="utf-8">
-<title>Royal Tech Template | IT Solutions in Nairobi</title>
+{!! SEOMeta::generate() !!}
+{!! OpenGraph::generate() !!}
+{!! Twitter::generate() !!}
+{!! JsonLd::generate() !!}
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -59,9 +62,9 @@
 						</ul>
 						<!-- Social Box -->
 						<ul class="social-box">
-							<li><a href="#" class="fa fa-facebook-f"></a></li>
-							<li><a href="#" class="fa fa-twitter"></a></li>
-							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="https://www.facebook.com/royaltechcomps" class="fa fa-facebook-f"></a></li>
+							<li><a href="https://twitter.com/RoyaltechC" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.instagram.com/royaltechcomps/" class="fa fa-instagram"></a></li>
 							<li><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 						</ul>
                     </div>
@@ -158,7 +161,7 @@
             <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="{{url('/')}}"><img src="{{asset('corporate/images/logo.png')}}" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="{{url('/')}}"><img src="{{url('/')}}/uploads/Royaltech-Original-1.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div><!-- End Mobile Menu -->

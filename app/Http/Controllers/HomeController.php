@@ -95,19 +95,19 @@ class HomeController extends Controller
     }
 
     public function laptops_for_hire(){
-        SEOMeta::setTitle('Laptops For Hire in Nairobi Kenya | RoyalTech Computers Limited');
+        SEOMeta::setTitle('Laptops For Hire in Nairobi Kenya | Leasing | RoyalTech Computers Limited');
         SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         SEOMeta::setCanonical(''.url('/').'/laptops-for-hire');
 
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
-        OpenGraph::setTitle('Laptops For Hire in Nairobi Kenya | RoyalTech Computers Limited');
+        OpenGraph::setTitle('Laptops For Hire in Nairobi Kenya | Leasing | RoyalTech Computers Limited');
         OpenGraph::setUrl(''.url('/').'/laptops-for-hire');
         OpenGraph::addProperty('type', 'articles');
 
-        TwitterCard::setTitle('Laptops For Hire in Nairobi Kenya | RoyalTech Computers Limited');
+        TwitterCard::setTitle('Laptops For Hire in Nairobi Kenya | Leasing | RoyalTech Computers Limited');
         TwitterCard::setSite('@RoyaltechC');
 
-        JsonLd::setTitle('Laptops For Hire in Nairobi Kenya | RoyalTech Computers Limited');
+        JsonLd::setTitle('Laptops For Hire in Nairobi Kenya | Leasing | RoyalTech Computers Limited');
         JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         JsonLd::addImage(''.url('/').'/uploads/Royaltech-Original-1.png');
         return view('front.laptops-for-hire');

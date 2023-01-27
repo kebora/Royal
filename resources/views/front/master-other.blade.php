@@ -62,9 +62,9 @@
 						</ul>
 						<!-- Social Box -->
 						<ul class="social-box">
-							<li><a href="#" class="fa fa-facebook-f"></a></li>
-							<li><a href="#" class="fa fa-twitter"></a></li>
-							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="https://www.facebook.com/royaltechcomps" class="fa fa-facebook-f"></a></li>
+							<li><a href="https://twitter.com/RoyaltechC" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.instagram.com/royaltechcomps/" class="fa fa-instagram"></a></li>
 							<li><a href="https://api.whatsapp.com/send?phone=254724404935&text=Hello there, i am texing from Royal Tech Website" class="fa fa-whatsapp"></a></li>
 						</ul>
                     </div>

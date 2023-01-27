@@ -25,10 +25,15 @@
 
         </ul> --}}
     </li>
-    <li><a href="#">Blog</a>
+    <li><a href="{{url('/')}}/blogs/laptops-for-rent-in-nairobi">Blog</a>
 
     </li>
-    <li><a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire </a>
+    <li class="dropdown"><a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire </a>
+        <ul>
+
+            <li><a download href="{{url('/')}}/uploads/Laptops-Hire-Brochure.pdf">Laptop Hire Profile</a></li>
+
+        </ul>
 
     </li>
     <li><a href="{{url('/')}}/contact-us"><span class="fa fa-phone"></span> Contact us</a></li>
