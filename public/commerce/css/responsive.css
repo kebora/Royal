@@ -555,7 +555,7 @@
       }
     /*  */
 
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
 .header-bottom{
     display:none;
 }
@@ -617,5 +617,8 @@
     .button-group{
         margin:0 auto !important;
     }
+    .hide-mobile{
+        display: none !important;
+     }
 }
 
