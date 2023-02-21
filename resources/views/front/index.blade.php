@@ -238,7 +238,7 @@
 	<!-- End Counter Section -->
 
 	<!-- About Section Two -->
-	<section class="about-section-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
+	{{-- <section class="about-section-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
 		<div class="auto-container">
 			<div class="row clearfix">
 
@@ -310,8 +310,13 @@
 
 			</div>
 		</div>
-	</section>
+	</section> --}}
 	<!-- End About Section Two -->
+
+
+    <section class="sponsors-section style-two">
+       <img style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
+    </section>
 
 	<!--Sponsors Section-->
 	<section class="sponsors-section style-two">

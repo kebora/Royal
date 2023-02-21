@@ -79,7 +79,7 @@ breaking your savings account.
     <style>
         .border-gradient img{
               border-width: 5px 5px 5px 5px;
-              border-image: linear-gradient(90deg, rgba(102,102,102,1) 0%, rgba(29,51,92,1) 35%, rgba(43,101,236,1) 100%);
+              /* border-image: linear-gradient(90deg, rgba(102,102,102,1) 0%, rgba(29,51,92,1) 35%, rgba(43,101,236,1) 100%); */
               border-image-slice: 9;
               border-style: solid;
               border-radius:10px !important;
@@ -101,27 +101,27 @@ breaking your savings account.
     flex-wrap: wrap;
 }
 .ours-left >h1 {
-    font-size: 100px;
+    font-size: 70px;
     margin-top: 50px;
     margin-left: 50px;
     line-height: 0.5;
     font-weight: 600;
 }
 .ours-left >h1 >span {
-    color: #F6C501;
+    color: #1c2c52;
 }
 
 
 .ours-right {
-    flex: 2;
+    /* flex: 2; */
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px 20px 20px 20px;
 }
 .ours-right > div {
-    min-width: 25%;
+    min-width: 33%;
     height: 25%;
-    flex: 1;
+    /* flex: 1; */
     padding: 30px 30px;
 }
 .ours-right > div > img {
@@ -267,15 +267,14 @@ breaking your savings account.
         </div>
       </section> --}}
     <!--Sponsors Section-->
-	<section class="sponsors-section style-two">
+	{{-- <section class="sponsors-section style-two">
 
 		<div class="auto-container">
             <div class="sec-title centered">
-                {{-- <div class="title">Our Clients</div> --}}
-                {{-- <h2>What We Actually Do</h2> --}}
+
             </div>
 			<div class="carousel-outer">
-                <!--Sponsors Slider-->
+
                 <ul class="sponsors-carousel owl-carousel owl-theme">
 
                     <li>
@@ -312,227 +311,77 @@ breaking your savings account.
             </div>
 
 		</div>
-	</section>
+	</section> --}}
 	<!--End Sponsors Section-->
+
+    <style>
+        .border-gradient img{
+              border-width: 5px 5px 5px 5px;
+              border-image: linear-gradient(90deg, rgba(102,102,102,1) 0%, rgba(29,51,92,1) 35%, rgba(43,101,236,1) 100%);
+              border-image-slice: 9;
+              border-style: solid;
+              border-radius:10px !important;
+              background-color:#ffffff;
+        }
+    </style>
+
+    <section class="ours sponsors-section style-two">
+        <div class="ours-left">
+          <h1>Our<span> <br>Clients</span></h1>
+        </div>
+        <div class="ours-right border-gradient">
+          <div class="ours-right-fourteen">
+                <img src="{{url('/')}}/uploads/clients/cic.jpg" alt="Royaltech Clients">
+          </div>
+          <div class="ours-right-four">
+            <img src="{{url('/')}}/uploads/clients/dalberg.jpg" alt="Royaltech Clients">
+          </div>
+          <div class="ours-right-eight">
+            <img src="{{url('/')}}/uploads/clients/sapro.jpg" alt="Royaltech Clients">
+          </div>
+          <div class="ours-right-eleven">
+            <img src="{{url('/')}}/uploads/clients/timcon.jpg" alt="Royaltech Clients">
+          </div>
+          <div class="ours-right-ten">
+            <img src="{{url('/')}}/uploads/clients/xeon.jpg" alt="Royaltech Clients">
+          </div>
+          <div class="ours-right-eleven">
+            <img src="{{url('/')}}/uploads/clients/196-1967871_leaked-iebc-form-shows-voting-has-already-happened.png" alt="Royaltech Clients">
+          </div>
+          {{-- <div style="visibility: hidden !important" class="ours-right-ten">
+            <img src="{{url('/')}}/uploads/clients/xeon.jpg" alt="Royaltech Clients">
+          </div>
+          <div style="visibility: hidden !important" class="ours-right-eleven">
+            <img src="{{url('/')}}/uploads/clients/logo-wide-IEBC.png" alt="Royaltech Clients">
+          </div>
+          <div  style="visibility: hidden !important" class="ours-right-fourteen">
+            <img src="{{url('/')}}/uploads/clients/cic.jpg" alt="Royaltech Clients">
+            </div>
+            <div style="visibility: hidden !important" class="ours-right-four">
+                <img src="{{url('/')}}/uploads/clients/dalberg.jpg" alt="Royaltech Clients">
+            </div>
+            <div style="visibility: hidden !important" class="ours-right-eight">
+                <img src="{{url('/')}}/uploads/clients/sapro.jpg" alt="Royaltech Clients">
+            </div>
+            <div style="visibility: hidden !important" class="ours-right-eleven">
+                <img src="{{url('/')}}/uploads/clients/timcon.jpg" alt="Royaltech Clients">
+              </div> --}}
+
+
+
+          {{-- <div class="ours-right-six">
+            <img src="https://stagepass.co.ke/theme/images/EWquity-01.jpg" alt="Royaltech Clients">
+          </div>
+          <div class="ours-right-seven">
+            <img src="https://stagepass.co.ke/theme/images/Huawei-01.jpg" alt="Royaltech Clients">
+          </div> --}}
+        </div>
+      </section>
 
 
 
     <!-- Gallery Section -->
-	<section class="gallery-section cases-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<div class="title">Center of Excellence</div>
-                <p style="color:#000000; max-width:300px; margin:0 auto; font-weight:800">
-                    Laptop Hire/Rental is tailor made for corporates use in Training, seminars, online work and research or remote working
-                </p>
-			</div>
-            {{-- <div class="sec-title centered">
-				<div class="title">LATEST CASE STUDIES</div>
-				<h2>Reads Now Our Recent <br> Projects Studies</h2>
-			</div> --}}
-			<!--MixitUp Galery-->
-            <div class="mixitup-gallery">
 
-
-
-                <div class="filter-list row clearfix">
-
-					<!-- Case Block -->
-					<div class="case-block mix all ideas technology development col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p1.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p1.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all development ideas col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p2.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p2.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all ideas design col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p3.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p3.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all ideas development col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p4.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p4.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all technology design ideas col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p5.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p5.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all design development col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p6.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p6.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all design technology development col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p7.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p7.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/p8.jpg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/p8.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/index1.jpeg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/index1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-                                        <div class="category">IEBC Tallying Center 2022 General Elections</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/index2.jpeg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/index2.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-                                        <div class="category">IEBC Tallying Center 2022 General Elections</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Case Block -->
-					<div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="{{url('/')}}/uploads/portfolio/index.jpeg" alt="" />
-								<div class="overlay-box">
-									<a href="{{url('/')}}/uploads/portfolio/index.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-									<div class="content">
-										<h4><a href="#">RoyalTech Computers LTD</a></h4>
-										<div class="category">Custom High Performance Laptops</div>
-                                        <div class="category">IEBC Tallying Center 2022 General Elections</div>
-									</div>
-									<a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</section>
 
     <br><br>
     	<!-- Contact Map Section -->
@@ -651,5 +500,221 @@ breaking your savings account.
             });
         });
     </script>
+
+<section class="gallery-section cases-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <div class="title">Center of Excellence</div>
+            <p style="color:#000000; max-width:300px; margin:0 auto; font-weight:800">
+                Laptop Hire/Rental is tailor made for corporates use in Training, seminars, online work and research or remote working
+            </p>
+        </div>
+        {{-- <div class="sec-title centered">
+            <div class="title">LATEST CASE STUDIES</div>
+            <h2>Reads Now Our Recent <br> Projects Studies</h2>
+        </div> --}}
+        <!--MixitUp Galery-->
+        <div class="mixitup-gallery">
+
+
+
+            <div class="filter-list row clearfix">
+
+                <!-- Case Block -->
+                <div class="case-block mix all ideas technology development col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p1.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p1.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all development ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p2.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p2.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all ideas design col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p3.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p3.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all ideas development col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p4.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p4.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all technology design ideas col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p5.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p5.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design development col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p6.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p6.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology development col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p7.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p7.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/p8.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/p8.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/index1.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/index2.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index2.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/index.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
 @endsection

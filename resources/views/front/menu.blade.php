@@ -29,11 +29,11 @@
 
     </li>
     <li class="dropdown"><a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire </a>
-        <ul>
+        {{-- <ul>
 
             <li><a download href="{{url('/')}}/uploads/Laptops-Hire-Brochure.pdf">Download Profile <span class="fa fa-download"></span></a></li>
 
-        </ul>
+        </ul> --}}
 
     </li>
     <li><a href="{{url('/')}}/contact-us"><span class="fa fa-phone"></span> Contact us</a></li>
