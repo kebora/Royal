@@ -13,7 +13,12 @@
                 <div class="content-column clearfix">
                     <div class="inner-column">
                         <h1>Laptops for Hire.</h1>
-                        <div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div>
+                        {{-- <div class="text">We are Kenya's best Information Technology Company. Providing the highest quality in hardware & Network solutions. About more than 8 years of experience and 1000+ of innovative achievements.</div> --}}
+						<div class="text">
+							We are Kenya's best Information Tech Company. We offer the best deals where You can lease a laptop from Royaltech for as long or as little as you need.
+							We lend out a variety of computers that may be needed for work, projects, seminars, and other purposes.
+
+						</div>
                         <div class="button-box">
                             <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-laptop"></span> Laptop Hire</span></a>
                             <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-one"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
@@ -44,11 +49,11 @@
                 <!-- Column -->
                 <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
                     <div class="lower-section">
-                        <h3>Why Hire</h3>
+                        <h3>Why Rent?</h3>
                         <p>
                             In certain circumstances, it may be more affordable and convenient to hire laptops instead of purchasing.
                             Such circumstances may include:<br>
-                            - expatriates setting up temporary offices locally<br>
+                            - Expatriates setting up temporary offices locally<br>
                             - Organizations conducting seminars, trainings or meetings that require a large quantity of laptops for a
                             short period of time<br>
                             - Researchers or students requiring high specs laptops for a short period of time<br>
@@ -210,9 +215,9 @@
 							<div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 								<div class="content">
 									<div class="count-outer count-box alternate">
-										<span class="count-text" data-speed="5000" data-stop="850">0</span>+
+										<span class="count-text" data-speed="5000" data-stop="8500">0</span>+
 									</div>
-									<h4 class="counter-title">Support Clients</h4>
+									<h4 class="counter-title">Laptops Leased </h4>
 								</div>
 							</div>
 						</div>
@@ -336,6 +341,48 @@
 	</section>
 	<!--End Sponsors Section-->
 
+	    <!-- End Banner Section Two -->
+		<section class="project-detail-section" style="background-color: #e7f0ff;">
+			<div class="auto-container">
+				<div class="row clearfix">
+					<!-- Column -->
+
+					<div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
+						<div class="inner-column  hide-mobile">
+							<div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+								<div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+									<img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index2.jpeg')}}" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+						<div class="lower-section">
+							<h3>Benefits of Renting Laptops</h3>
+							<p>
+								We provide high-end, i.e. Core i7, and mid-range, i5. We also provide the required operating system for renting laptops, including Windows, Linux, and Apple OS.
+							</p>
+
+							<p>1.Immediate availability</p>
+							<p>2.Efficiency because we offer full-time support, service, and maintenance.</p>
+							<p>3.Affordable</p>
+							<p>4.The ability to choose between short-term and long-term options.</p>
+
+
+							<div class="btn-box ">
+								<a href="http://localhost:8000/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
+								{{-- <a href="http://localhost:8000/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+								<a href="http://localhost:8000/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 
 	<!-- Technology Section -->
@@ -453,7 +500,7 @@
 					<div class="image-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="image">
-								<img src="{{asset('corporate/images/portrait.jpg')}}" alt="" />
+								<img src="{{asset('uploads/pexels-jep-gambardella-7689646.jpg')}}" alt="" />
 							</div>
 						</div>
 					</div>
