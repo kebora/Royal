@@ -84,163 +84,51 @@
             </div>
         </div>
     </section>
+    <!-- End Banner Section Two -->
+    <section class="project-detail-section" style="background-color: #ffffff;">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!-- Column -->
+
+                <div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
+                    <div class="inner-column  hide-mobile">
+                        <div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                            <div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                                <img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index2.jpeg')}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+                    <div class="lower-section">
+                        <h3>Benefits of Renting Laptops</h3>
+                        <p>
+                            We provide high-end, i.e. Core i7, and mid-range, i5. We also provide the required operating system for renting laptops, including Windows, Linux, and Apple OS.
+                        </p>
+
+                        <p>1.Immediate availability</p>
+                        <p>2.Efficiency because we offer full-time support, service, and maintenance.</p>
+                        <p>3.Affordable</p>
+                        <p>4.The ability to choose between short-term and long-term options.</p>
+
+
+                        <div class="btn-box ">
+                            <a href="http://localhost:8000/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
+                            {{-- <a href="http://localhost:8000/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                            <a href="http://localhost:8000/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-	<!-- Experiance Section -->
-	<section class="experiance-section" style="background-image: url('{{asset('corporate/images/background/pattern-9.png')}}')">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<div class="title">EXPERIENCE. EXECUTION. EXCELLENCE.</div>
-				<h2>What We Actually Do</h2>
-			</div>
 
-
-			<!-- Experiance Info Tabs -->
-			<div class="experiance-info-tabs">
-				<!-- Experiance Tabs -->
-				<div class="experiance-tabs tabs-box">
-
-					<!-- Tab Btns-->
-					<ul class="tab-btns tab-buttons clearfix">
-						<li data-tab="#" class="tab-btn"><span class="icon fa fa-laptop"></span>Laptops</li>
-						<li data-tab="#" class="tab-btn"><span class="icon flaticon-computer"></span>Desktops</li>
-						<li data-tab="#prod-css" class="tab-btn active-btn"><span class="icon flaticon-network"></span>Networking</li>
-						<li data-tab="#" class="tab-btn"><span class="icon flaticon-headphones"></span>Accessories</li>
-						<li data-tab="#" class="tab-btn"><span class="icon fa fa-wrench"></span>IT Services</li>
-					</ul>
-
-					<!--Tabs Container-->
-					<div class="tabs-content">
-
-						<!--Tab / Active Tab-->
-						<div class="tab" id="prod-html">
-							<div class="content">
-								<h4>Royaltech Computers Limited</h4>
-								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
-								<br><br>
-                                <div class="btn-box text-center">
-									<a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                                    <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Tab -->
-						<div class="tab" id="prod-bootstrap">
-							<div class="content">
-								<h4>Royaltech Computers Limited</h4>
-								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
-								<br><br>
-                                <div class="btn-box text-center">
-									<a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                                    <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Tab -->
-						<div class="tab active-tab" id="prod-css">
-							<div class="content">
-								<h4>Royaltech Computers Limited</h4>
-								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
-								<br><br>
-                                <div class="btn-box text-center">
-                                    <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Laptop Hire</span></a>
-									<a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                                    <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Tab -->
-						<div class="tab" id="prod-php">
-							<div class="content">
-								<h4>Royaltech Computers Limited</h4>
-								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
-								<br><br>
-                                <div class="btn-box text-center">
-									<a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                                    <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Tab -->
-						<div class="tab" id="prod-java">
-							<div class="content">
-								<h4>Royaltech Computers Limited</h4>
-								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
-								<br><br>
-                                <div class="btn-box text-center">
-									<a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                                    <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-
-
-			</div>
-		</div>
-	</section>
-	<!-- End Experiance Section -->
-
-	<!-- Counter Section -->
-	<section class="counter-section">
-		<div class="auto-container">
-			<div class="inner-container">
-				<!-- Fact Counter -->
-				<div class="fact-counter">
-					<div class="row clearfix">
-
-						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
-							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="3000" data-stop="3330">0</span>+
-									</div>
-									<h4 class="counter-title">Sales</h4>
-								</div>
-							</div>
-						</div>
-
-						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
-							<div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="count-outer count-box alternate">
-										<span class="count-text" data-speed="5000" data-stop="8500">0</span>+
-									</div>
-									<h4 class="counter-title">Laptops Leased </h4>
-								</div>
-							</div>
-						</div>
-
-
-						<!-- Column -->
-						<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
-							<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
-								<div class="content">
-									<div class="count-outer count-box">
-										<span class="count-text" data-speed="3500" data-stop="8">0</span>+
-									</div>
-									<h4 class="counter-title">GLORIOUS YEARS</h4>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Counter Section -->
 
 	<!-- About Section Two -->
 	{{-- <section class="about-section-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
@@ -323,65 +211,12 @@
        <img style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
     </section>
 
-	<!--Sponsors Section-->
-	<section class="sponsors-section style-two">
-		<div class="auto-container">
 
-			<div class="carousel-outer">
-                <!--Sponsors Slider-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <?php $Brands = DB::table('brands')->get(); ?>
-                    @foreach ($Brands as $brands)
-                    <li><div class="image-box"><a href="#"><img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/brands/{{$brands->image}}" alt="{{$brands->title}}"></a></div></li>
-                    @endforeach
-                </ul>
-            </div>
-
-		</div>
-	</section>
 	<!--End Sponsors Section-->
+    @include('front.intro')
 
-	    <!-- End Banner Section Two -->
-		<section class="project-detail-section" style="background-color: #e7f0ff;">
-			<div class="auto-container">
-				<div class="row clearfix">
-					<!-- Column -->
+    {{-- @include('front.clients') --}}
 
-					<div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
-						<div class="inner-column  hide-mobile">
-							<div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-								<div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-									<img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index2.jpeg')}}" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-						<div class="lower-section">
-							<h3>Benefits of Renting Laptops</h3>
-							<p>
-								We provide high-end, i.e. Core i7, and mid-range, i5. We also provide the required operating system for renting laptops, including Windows, Linux, and Apple OS.
-							</p>
-
-							<p>1.Immediate availability</p>
-							<p>2.Efficiency because we offer full-time support, service, and maintenance.</p>
-							<p>3.Affordable</p>
-							<p>4.The ability to choose between short-term and long-term options.</p>
-
-
-							<div class="btn-box ">
-								<a href="http://localhost:8000/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
-								{{-- <a href="http://localhost:8000/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-								<a href="http://localhost:8000/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 
 
@@ -578,5 +413,9 @@
 		</div>
 	</section>
 
+    @include('front.clients')
+
     @include('front.news')
+
+    @include('front.brand')
 @endsection
