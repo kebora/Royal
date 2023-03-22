@@ -207,5 +207,9 @@
       <div class="ours-right-eleven wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
         <img src="{{url('/')}}/uploads/clients/196-1967871_leaked-iebc-form-shows-voting-has-already-happened.png" alt="Royaltech Clients">
       </div>
+      <div class="ours-right-eleven wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
+        <img src="{{url('/')}}/uploads/clients/golf.png" alt="Muthaiga Golf Club">
+      </div>
+
     </div>
 </section>
