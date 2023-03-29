@@ -226,6 +226,60 @@ breaking your savings account.
 
             <div class="filter-list row clearfix">
 
+                 <!-- Case Block -->
+                 <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/g3.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/g3.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">Muthaiga Golf Club</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/g1.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/g1.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">Muthaiga Golf Club</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/g2.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/g2.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">Muthaiga Golf Club</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Case Block -->
                 <div class="case-block mix all ideas technology development col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
