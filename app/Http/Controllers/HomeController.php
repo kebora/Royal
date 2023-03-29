@@ -15,10 +15,10 @@ class HomeController extends Controller
     public function index()
     {
         SEOMeta::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
-        SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        SEOMeta::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
         SEOMeta::setCanonical(''.url('/').'');
 
-        OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        OpenGraph::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
         OpenGraph::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
         OpenGraph::setUrl(''.url('/').'');
         OpenGraph::addProperty('type', 'articles');
@@ -27,11 +27,11 @@ class HomeController extends Controller
         TwitterCard::setSite('@RoyaltechC');
 
         JsonLd::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
-        JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
+        JsonLd::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
         JsonLd::addImage(''.url('/').'/uploads/Royaltech-Original-1.png');
-
         return view('front.index');
     }
+
     public function center_of_excellence($slung){
         $Service = DB::table('services')->where('slung',$slung)->get();
         foreach ($Service as $key => $value) {
@@ -51,7 +51,6 @@ class HomeController extends Controller
             JsonLd::setTitle(''.$value->title.' In Kenya | RoyalTech Computers Limited | Laptops For Hire');
             JsonLd::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
             JsonLd::addImage(''.url('/').'/uploads/Royaltech-Original-1.png');
-
             return view('front.center_of_excellence' ,compact('Service'));
         }
     }

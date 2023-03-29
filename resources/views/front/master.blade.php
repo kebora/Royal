@@ -270,6 +270,37 @@
 <script src="{{asset('corporate/js/script.js')}}"></script>
 <script src="{{asset('corporate/js/color-settings.js')}}"></script>
 
+{{--  --}}
+<script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "@type": "ProfessionalService",
+      "name": "Royaltech Computers Limited",
+      "url": "http://royaltech.co.ke/",
+      "logo": "https://royaltech.co.ke/uploads/Royaltech-Original-1.png",
+      "sameAs": [
+        "https://www.facebook.com/royaltechcomps/",
+        "https://www.instagram.com/royaltechcomps/",
+        "https://www.linkedin.com/company/royaltech-computers-ltd/",
+        "https://twitter.com/RoyaltechC"
+      ],
+      "priceRange": "$$$$",
+      "image": "https://royaltech.co.ke/uploads/Royaltech-Original-1.png",
+      "description": "Laptops for Hire, Rent Laptops, Lease Laptops, Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya",
+      "address": {
+         "@type": "PostalAddress",
+         "streetAddress": " Tom Mboya St, Nairobi",
+         "addressLocality": "Nairobi",
+         "addressRegion": "Kenya",
+         "postalCode": "00100",
+         "addressCountry": "Kenya"
+      },
+       "openingHours": "Mo 01:00-01:00 Tu 01:00-01:00 We 01:00-01:00 Th 01:00-01:00 Fr 01:00-01:00 Sa 01:00-01:00 Su 01:00-01:00",
+       "telephone": "+254724404935"
+    }
+</script>
+{{--  --}}
+
 </body>
 
 </html>

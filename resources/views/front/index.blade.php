@@ -42,6 +42,46 @@
 
 
 </style>
+<section class="project-detail-section" style="background-color: #ffffff;">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!-- Column -->
+
+            <div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
+                <div class="inner-column  hide-mobile">
+                    <div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                        <div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                            <img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index2.jpeg')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+                <div class="lower-section">
+                    <h3>Benefits of Renting Laptops</h3>
+                    <p>
+                        We provide high-end, i.e. Core i7, and mid-range, i5. We also provide the required operating system for renting laptops, including Windows, Linux, and Apple OS.
+                    </p>
+
+                    <p>1.Immediate availability</p>
+                    <p>2.Efficiency because we offer full-time support, service, and maintenance.</p>
+                    <p>3.Affordable</p>
+                    <p>4.The ability to choose between short-term and long-term options.</p>
+
+
+                    <div class="btn-box ">
+                        <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
+                        {{-- <a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                        <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- End Banner Section Two -->
     <section class="project-detail-section" style="background-color: #e7f0ff;">
         <div class="auto-container">
@@ -85,46 +125,7 @@
         </div>
     </section>
     <!-- End Banner Section Two -->
-    <section class="project-detail-section" style="background-color: #ffffff;">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!-- Column -->
 
-                <div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
-                    <div class="inner-column  hide-mobile">
-                        <div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-                            <div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-                                <img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index2.jpeg')}}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-                    <div class="lower-section">
-                        <h3>Benefits of Renting Laptops</h3>
-                        <p>
-                            We provide high-end, i.e. Core i7, and mid-range, i5. We also provide the required operating system for renting laptops, including Windows, Linux, and Apple OS.
-                        </p>
-
-                        <p>1.Immediate availability</p>
-                        <p>2.Efficiency because we offer full-time support, service, and maintenance.</p>
-                        <p>3.Affordable</p>
-                        <p>4.The ability to choose between short-term and long-term options.</p>
-
-
-                        <div class="btn-box ">
-                            <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
-                            {{-- <a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                            <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -206,12 +207,6 @@
 	</section> --}}
 	<!-- End About Section Two -->
 
-
-    <section class="sponsors-section style-two">
-       <img style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
-    </section>
-
-
 	<!--End Sponsors Section-->
     @include('front.intro')
 
@@ -221,9 +216,9 @@
 
 
 	<!-- Technology Section -->
-	<section class="technology-section style-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
-		<div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-5.png')}}')"></div>
-		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/background/pattern-6.png')}}')"></div>
+	<section class="technology-section style-two" style="background-image: url('{{asset('uploads/portfolio/g2.jpg')}}'); background-position:center center;">
+		{{-- <div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-5.png')}}')"></div>
+		<div class="pattern-layer-two" style="background-image: url('{{asset('corporate/images/background/pattern-6.png')}}')"></div> --}}
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
@@ -318,104 +313,15 @@
 		</div>
 	</section>
 	<!-- End Team Section Two -->
+    @include('front.news')
 
-	<!-- Appointment Section -->
-	<section class="appointment-section">
-		<div class="image-layer" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')"></div>
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title light centered">
-				<div class="title">CONTACT US</div>
-				<h2>Join Us To Get IT Free <br> Consultations</h2>
-			</div>
-			<div class="inner-container">
-				<div class="row clearfix">
 
-					<!-- Image Column -->
-					<div class="image-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<div class="image">
-								<img src="{{asset('uploads/pexels-jep-gambardella-7689646.jpg')}}" alt="" />
-							</div>
-						</div>
-					</div>
-
-					<!-- Form Column -->
-					<div class="form-column col-lg-6 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<h4>You Don't Hesitate To Contact <br> With Us, Now Say Hello......</h4>
-							<!-- Appointment Form -->
-							<div class="appointment-form">
-								<form method="post" action="{{url('/')}}/send-message">
-                                    @csrf
-									<div class="row clearfix">
-										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
-											<input type="text" name="name" placeholder="Name" required="">
-											<span class="icon fa fa-user"></span>
-										</div>
-
-										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
-											<input type="email" name="email" placeholder="Email" required="">
-											<span class="icon fa fa-envelope"></span>
-										</div>
-
-										<div class="col-lg-12 col-md-6 col-sm-12 form-group">
-											<input type="tel" name="phone" placeholder="Phone No" required="">
-											<span class="icon fa fa-phone"></span>
-										</div>
-
-                                        <div class="col-lg-12 col-md-6 col-sm-12 form-group">
-											<input type="text" name="subject" placeholder="Subject" required="">
-											<span class="icon fa fa-info"></span>
-										</div>
-
-										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-											<textarea name="message" placeholder="Message"></textarea>
-										</div>
-
-                                        <?php
-                                        $ops = array('-', '+');
-                                        $answer = -1;
-
-                                        $num1 = rand(0, 50);
-                                        $num2 = rand(0, 15);
-
-                                        $answer = $num1 + $num2;
-
-                                        ?>
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
-                                            <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Are you human? {{$num1}} + {{$num2}} =</label>
-                                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <br>
-
-										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-											<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Send Massage</span></button>
-										</div>
-									</div>
-								</form>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
 
     @include('front.clients')
 
-    @include('front.news')
-
     @include('front.brand')
+
+    <section class="sponsors-section style-two">
+        <img style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
+     </section>
 @endsection
