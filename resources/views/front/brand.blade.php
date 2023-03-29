@@ -9,6 +9,7 @@
                     @foreach ($Brands as $brands)
                     <li><div class="image-box"><a href="#"><img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/brands/{{$brands->image}}" alt="{{$brands->title}}"></a></div></li>
                     @endforeach
+                    {{-- <li><div class="image-box"><a href="#"><img style="border:6px solid #1c2c52; border-radius:10px;" src="{{url('/')}}/uploads/clients/golf.png" alt="Royaltech Computers Limited"></a></div></li> --}}
                 </ul>
             </div>
 

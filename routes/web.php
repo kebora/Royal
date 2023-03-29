@@ -181,6 +181,14 @@ Route::get('admin/editCategories/{id}', [AdminsController::class, 'editCategorie
 Route::post('admin/edit_Category/{id}', [AdminsController::class, 'edit_Category'])->middleware('is_admin');
 Route::get('admin/deleteCategory/{id}', [AdminsController::class, 'deleteCategory'])->middleware('is_admin');
 
+// Brands
+Route::get('admin/brands', [AdminsController::class, 'brands'])->middleware('is_admin');
+Route::get('admin/addBrand', [AdminsController::class, 'addBrand'])->middleware('is_admin');
+Route::post('admin/add_Brand', [AdminsController::class, 'add_Brand'])->middleware('is_admin');
+Route::get('admin/editBrands/{id}', [AdminsController::class, 'editBrands'])->middleware('is_admin');
+Route::post('admin/edit_Brand/{id}', [AdminsController::class, 'edit_Brand'])->middleware('is_admin');
+Route::get('admin/deleteBrand/{id}', [AdminsController::class, 'deleteBrand'])->middleware('is_admin');
+
 // Products
 Route::get('admin/products', [AdminsController::class, 'products'])->middleware('is_admin');
 Route::get('admin/addProduct', [AdminsController::class, 'addProduct'])->middleware('is_admin');

@@ -8,6 +8,8 @@ use App\Models\Term;
 
 use App\Models\Privacy;
 
+use App\Models\Brand;
+
 use App\Models\Service;
 
 use App\Models\Copyright;
@@ -584,6 +586,80 @@ class AdminsController extends Controller
     public function deleteCategory($id){
         activity()->log('Deleted Category ID number '.$id.' ');
         DB::table('categories')->where('id',$id)->delete();
+        return Redirect::back();
+    }
+
+      // Brands Here
+    public function brands(){
+        activity()->log('Accessed All Brands');
+        $Brand = Brand::all();
+        $page_title = 'list';
+        $page_name = 'Brands';
+        return view('admin.brands',compact('page_title','Brand','page_name'));
+    }
+
+    public function addBrand(){
+        activity()->log('Accessed Add Brand Page');
+        $page_title = 'formfiletext';
+        $page_name = 'Add Brand';
+        return view('admin.addBrand',compact('page_title','page_name'));
+    }
+
+    public function add_Brand(Request $request){
+        activity()->log('Evoked add Brand Operation');
+        $path = 'uploads/brands';
+        if(isset($request->image)){
+            $file = $request->file('image');
+            $filename = $file->getClientOriginalName();
+            $file->move($path, $filename);
+            $image = $filename;
+        }else{
+            $image = "0";
+        }
+        $Brand = new Brand;
+        $Brand->title = $request->title;
+        $Brand->slung = Str::slug($request->title);
+        $Brand->content = $request->content;
+        $Brand->image = $image;
+        $Brand->save();
+        Session::flash('message', "Brand Has Been Added");
+        return Redirect::back();
+    }
+
+    public function editBrands($id){
+        activity()->log('Access Edit Brand ID number '.$id.' ');
+        $Brand = Brand::find($id);
+        $page_title = 'formfiletext';
+        $page_name = 'Edit Home Page Slider';
+        return view('admin.editBrand',compact('page_title','Brand','page_name'));
+    }
+
+    public function edit_Brand(Request $request, $id){
+        activity()->log('Evoked Edit Brand For Brand ID number '.$id.' ');
+        $path = 'uploads/brands';
+            if(isset($request->image)){
+                $file = $request->file('image');
+                $filename = $file->getClientOriginalName();
+                $file->move($path, $filename);
+                $image = $filename;
+            }else{
+                $image = $request->image_cheat;
+            }
+
+        $updateDetails = array(
+            'title'=>$request->title,
+
+            'image'=>$image
+
+        );
+        DB::table('brands')->where('id',$id)->update($updateDetails);
+        Session::flash('message', "Changes have been saved");
+        return Redirect::back();
+    }
+
+    public function deleteBrand($id){
+        activity()->log('Deleted Brand ID number '.$id.' ');
+        DB::table('brands')->where('id',$id)->delete();
         return Redirect::back();
     }
 

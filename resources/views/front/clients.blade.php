@@ -12,7 +12,7 @@
         /*Ours*/
 .ours {
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: #f3f3f3;
     position: relative;
     display: flex;
@@ -45,7 +45,7 @@
     min-width: 25%;
     height: auto;
     /* flex: 1; */
-    padding: 30px 30px;
+    padding: 20px 20px;
     text-align: center;
     margin: 0px auto;
 }
@@ -179,6 +179,13 @@
               border-radius:10px !important;
               background-color:#ffffff;
         }
+        .clientale{
+
+        }
+        .clientale img{
+            width:331px !important;
+            height:171px !important;
+        }
     </style>
 <section class="ours sponsors-section style-two">
     <div class="sec-title centered">
@@ -189,27 +196,29 @@
       <h1>Our<span> <br>Clients</span></h1>
     </div> --}}
     <div class="ours-right border-gradient">
-      <div class="ours-right-fourteen wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+      <div class="clientale ours-right-fourteen wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
             <img src="{{url('/')}}/uploads/clients/cic.jpg" alt="Royaltech Clients">
       </div>
-      <div class="ours-right-four wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
         <img src="{{url('/')}}/uploads/clients/dalberg.jpg" alt="Royaltech Clients">
       </div>
-      <div class="ours-right-eight wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+      <div class="clientale ours-right-eight wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
         <img src="{{url('/')}}/uploads/clients/sapro.jpg" alt="Royaltech Clients">
       </div>
-      <div class="ours-right-eleven wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+      <div class="clientale ours-right-eleven wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
         <img src="{{url('/')}}/uploads/clients/timcon.jpg" alt="Royaltech Clients">
       </div>
-      <div class="ours-right-ten wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="1500ms">
+      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="1500ms">
         <img src="{{url('/')}}/uploads/clients/xeon.jpg" alt="Royaltech Clients">
       </div>
-      <div class="ours-right-eleven wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/196-1967871_leaked-iebc-form-shows-voting-has-already-happened.png" alt="Royaltech Clients">
+      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
+        <img src="{{url('/')}}/uploads/clients/iebc.jpg" alt="Royaltech Clients">
       </div>
-      <div class="ours-right-eleven wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
+      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
         <img src="{{url('/')}}/uploads/clients/golf.png" alt="Muthaiga Golf Club">
       </div>
+
+
 
     </div>
 </section>
