@@ -30,8 +30,7 @@
 							<div class="icon-box"><span class="flaticon-pin"></span></div>
 							<ul>
 								<li><strong>Address</strong></li>
-								<li>Tembo Co-op House
-                                    Moi Ave Nairobi-Room 201</li>
+								<li>Old Nation House 1st floor shop A12</li>
 							</ul>
 						</div>
 					</div>
