@@ -196,33 +196,32 @@
       <h1>Our<span> <br>Clients</span></h1>
     </div> --}}
     <div class="ours-right border-gradient">
-      <div class="clientale ours-right-fourteen wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-            <img src="{{url('/')}}/uploads/clients/cic.jpg" alt="Royaltech Clients">
-      </div>
-      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/dalberg.jpg" alt="Royaltech Clients">
-      </div>
-      <div class="clientale ours-right-eight wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/sapro.jpg" alt="Royaltech Clients">
-      </div>
-      <div class="clientale ours-right-eleven wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/timcon.jpg" alt="Royaltech Clients">
-      </div>
-      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/xeon.jpg" alt="Royaltech Clients">
-      </div>
-      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/iebc.jpg" alt="Royaltech Clients">
-      </div>
-      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/golf.png" alt="Muthaiga Golf Club">
-      </div>
-      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/logo-prialto.jpg" alt="Prialto">
-      </div>
-      <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
-        <img src="{{url('/')}}/uploads/clients/1648019306229.jpg" alt="5X">
-      </div>
-
+        <div class="clientale ours-right-fourteen wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <img src="{{url('/')}}/uploads/clients/cic.jpg" alt="CIC">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/dalberg.jpg" alt="dalberg">
+        </div>
+        <div class="clientale ours-right-eight wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/sapro.jpg" alt="Sapro">
+        </div>
+        <div class="clientale ours-right-eleven wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/timcon.jpg" alt="Timcon Associates">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="800ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/xeon.jpg" alt="Xeon Technologies">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/iebc.jpg" alt="IEBC">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/golf.png" alt="Muthaiga Golf Club">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/logo-prialto.jpg" alt="Prialto">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/1648019306229.jpg" alt="5X">
+        </div>
     </div>
 </section>
