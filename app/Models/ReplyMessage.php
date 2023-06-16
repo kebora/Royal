@@ -123,7 +123,7 @@ class ReplyMessage extends Model
         $FromVariable = "royaltechcomputersltd@gmail.com";
         $FromVariableName = "Royaltech Company Limited";
 
-        $toVariable = "support@royaltech.co.ke";
+        $toVariable = "info@royaltech.co.ke";
 
         $toVariableName = "Royaltech Computers Limited";
 
@@ -142,7 +142,7 @@ class ReplyMessage extends Model
         $FromVariable = "royaltechcomputersltd@gmail.com";
         $FromVariableName = "Royaltech Company Limited";
 
-        $toVariable = "support@royaltech.co.ke";
+        $toVariable = "info@royaltech.co.ke";
 
         $toVariableName = "Royaltech Computers Limited";
 
