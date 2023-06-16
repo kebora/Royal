@@ -55,7 +55,18 @@ breaking your savings account.
 						<div class="tab active-tab" id="prod-css">
 							<div class="content">
 								{{-- <h4>Royaltech Computers Limited</h4> --}}
-								<div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div>
+								{{-- <div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div> --}}
+                                <div style='max-width:800px; margin:0px auto; color:#000000'>
+                                    <p>If you're looking for a reliable and cost-effective solution for short-term computer needs, laptop hire is an excellent choice. Whether you're a small business, a conference organizer, or an individual, renting laptops can provide you with the technology you need, when you need it.</p>
+
+                                    <p>Laptop hire offers a range of benefits over purchasing laptops outright. For starters, it can save you money in the long run, as you won't have to pay for the cost of buying new laptops every time your needs change. Additionally, you can rent the latest models and technology, without having to worry about maintenance, repairs or upgrades.</p>
+
+                                    <p>At the same time, laptop hire is a flexible option, allowing you to rent the equipment for the specific duration you need, from just a few days to several months. You can choose the number of laptops required, the software and specifications that best suit your needs, and even have them delivered and collected from your location.</p>
+
+                                    <p>With laptop hire, you can enjoy a hassle-free, fast and efficient service, with dedicated technical support available to ensure your rental runs smoothly. It is an ideal solution for businesses, students, freelancers, and anyone who needs a temporary solution to their computing needs.</p>
+
+                                    <p>Overall, if you're looking for an affordable, flexible and convenient way to access the latest technology, laptop hire is the perfect option for you.</p>
+                                </div>
 								<br><br>
                                 <div class="btn-box text-center">
                                     <a download href="{{url('/')}}/uploads/Laptops-Hire-Brochure.pdf" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-download"></span> Download Profile</span></a>
