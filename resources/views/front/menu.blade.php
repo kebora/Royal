@@ -28,7 +28,7 @@
     <li><a href="{{url('/')}}/blogs/laptops-for-rent-in-nairobi">Blog</a>
 
     </li>
-    <li class="dropdown"><a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire </a>
+    <li><a href="{{url('/')}}/laptops-for-hire"><span class="fa fa-laptop"></span> Hire </a>
         {{-- <ul>
 
             <li><a download href="{{url('/')}}/uploads/Laptops-Hire-Brochure.pdf">Download Profile <span class="fa fa-download"></span></a></li>

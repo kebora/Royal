@@ -152,7 +152,7 @@ breaking your savings account.
 
 						<div class="form-group col-lg-12 col-md-12 col-sm-12">
 							<label>Desired Specs/Model *</label>
-							<textarea name="message" placeholder="HP Folio 1080s 8Gb Ram, 512 GB SSD, 2GB Graphics"></textarea>
+							<textarea name="message" placeholder="HP Folio 1080s 8Gb Ram, 512 GB SSD, 2GB Graphics" required></textarea>
 						</div>
 
                         <?php
