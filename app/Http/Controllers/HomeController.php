@@ -21,7 +21,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
         OpenGraph::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
         OpenGraph::setUrl(''.url('/').'');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
         TwitterCard::setSite('@RoyaltechC');
@@ -43,7 +43,7 @@ class HomeController extends Controller
             OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
             OpenGraph::setTitle(''.$value->title.' In Kenya | RoyalTech Computers Limited | Laptops For Hire');
             OpenGraph::setUrl(''.url('/').'/center-of-excellence/'.$slung.'');
-            OpenGraph::addProperty('type', 'articles');
+            OpenGraph::addProperty('type', 'website');
 
             TwitterCard::setTitle(''.$value->title.' In Kenya | RoyalTech Computers Limited | Laptops For Hire');
             TwitterCard::setSite('@RoyaltechC');
@@ -64,7 +64,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         OpenGraph::setTitle('Contact Us | RoyalTech Computers Limited | Laptops For Hire');
         OpenGraph::setUrl(''.url('/').'/contact-us');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Contact Us | RoyalTech Computers Limited | Laptops For Hire');
         TwitterCard::setSite('@RoyaltechC');
@@ -82,7 +82,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         OpenGraph::setTitle('The Company | RoyalTech Computers Limited | Laptops For Hire');
         OpenGraph::setUrl(''.url('/').'/the-company');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('The Company | RoyalTech Computers Limited | Laptops For Hire');
         TwitterCard::setSite('@RoyaltechC');
@@ -101,7 +101,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         OpenGraph::setTitle('Laptops For Hire in Nairobi Kenya | Leasing | RoyalTech Computers Limited');
         OpenGraph::setUrl(''.url('/').'/laptops-for-hire');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Laptops For Hire in Nairobi Kenya | Leasing | RoyalTech Computers Limited');
         TwitterCard::setSite('@RoyaltechC');
@@ -120,7 +120,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         OpenGraph::setTitle('Terms and Conditions | RoyalTech Computers Limited');
         OpenGraph::setUrl(''.url('/').'/terms-and-conditions');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Terms and Conditions | RoyalTech Computers Limited');
         TwitterCard::setSite('@RoyaltechC');
@@ -140,7 +140,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         OpenGraph::setTitle('Copyright | RoyalTech Computers Limited');
         OpenGraph::setUrl(''.url('/').'/copyright');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Copyright | RoyalTech Computers Limited');
         TwitterCard::setSite('@RoyaltechC');
@@ -159,7 +159,7 @@ class HomeController extends Controller
         OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
         OpenGraph::setTitle('Privacy Policy | RoyalTech Computers Limited');
         OpenGraph::setUrl(''.url('/').'/privacy-policy');
-        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Terms and Conditions | RoyalTech Computers Limited');
         TwitterCard::setSite('@RoyaltechC');
@@ -182,7 +182,7 @@ class HomeController extends Controller
             OpenGraph::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');
             OpenGraph::setTitle(''.$value->title.' In Kenya | RoyalTech Computers Limited | Laptops For Hire');
             OpenGraph::setUrl(''.url('/').'/blogs/'.$slung.'');
-            OpenGraph::addProperty('type', 'articles');
+            OpenGraph::addProperty('type', 'website');
 
             TwitterCard::setTitle(''.$value->title.' In Kenya | RoyalTech Computers Limited | Laptops For Hire');
             TwitterCard::setSite('@RoyaltechC');

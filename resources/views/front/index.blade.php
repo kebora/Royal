@@ -102,7 +102,7 @@
                 <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
                     <div class="lower-section">
                         <h3>Why Rent?</h3>
-                        <p>
+                        <p style="color:#000000">
                             In certain circumstances, it may be more affordable and convenient to hire laptops instead of purchasing.
                             Such circumstances may include:<br>
                             - Expatriates setting up temporary offices locally<br>

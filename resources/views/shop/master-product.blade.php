@@ -6,15 +6,26 @@
          ============================================ -->
 
       <meta charset="utf-8">
-      {!! SEOMeta::generate() !!}
-      {!! OpenGraph::generate() !!}
-      {!! Twitter::generate() !!}
-      {!! JsonLd::generate() !!}
-
       @foreach ($Products as $key => $value)
+            <meta name="subject" content="{{$value->name}}">
+            <meta name="rating" content="General">
+            <meta name="referrer" content="no-referrer">
+            <meta name="theme-color" content="#1c2c52">
+
+            {!! SEOMeta::generate() !!}
+            {!! OpenGraph::generate() !!}
+            <meta property="og:site_name" content="{{$value->name}} - Royaltech Computers Limited">
+            <meta property="og:locale" content="en_US">
             <meta property="og:image" content="{{url('/')}}/uploads/products/{{$value->image_one}}" />
             <meta property="fb:app_id" content="350937289315471" />
             <meta property=”og:id” content="{{$value->id}}" />
+            {!! Twitter::generate() !!}
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@RoyaltechC">
+            <meta name="twitter:url" content="{{url('/')}}">
+            <meta name="twitter:description" content="Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya">
+            <meta name="twitter:image" content="{{url('/')}}/uploads/products/{{$value->image_one}}">
+            {!! JsonLd::generate() !!}
       @endforeach
       <!-- Mobile specific metas
          ============================================ -->

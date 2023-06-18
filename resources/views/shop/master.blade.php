@@ -8,6 +8,8 @@
       <meta charset="utf-8">
       {!! SEOMeta::generate() !!}
       {!! OpenGraph::generate() !!}
+      <meta property="og:site_name" content="Royaltech Computers Limited">
+      <meta property="og:locale" content="en_US">
       {!! Twitter::generate() !!}
       {!! JsonLd::generate() !!}
 
