@@ -128,7 +128,7 @@
                     <div class="inner-column  hide-mobile">
 						<div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
 							<div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-								<img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index.jpeg')}}" alt="">
+								<img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index.jpeg')}}" alt="Royaltech Computers Limited">
 							</div>
 						</div>
 					</div>
@@ -301,7 +301,7 @@
 				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<div class="image">
-							<a href="#"><img src="{{url('/')}}/uploads/kenkigen.jpeg" alt="" /></a>
+							<a href="#"><img src="{{url('/')}}/uploads/kenkigen.jpeg" alt="Ken Kigen" /></a>
 						</div>
 						<div class="lower-box">
 							<!-- Social Box -->
@@ -334,6 +334,6 @@
     @include('front.brand')
 
     <section class="sponsors-section style-two">
-        <img style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
+        <img alt="Royaltech Computers Limited" style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
      </section>
 @endsection
