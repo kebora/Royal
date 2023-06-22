@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="utf-8">
-{!! SEOMeta::generate() !!}
-{!! OpenGraph::generate() !!}
-{!! Twitter::generate() !!}
-{!! JsonLd::generate() !!}
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<meta name="subject" content="Laptops For Leasing in Nairobi Kenya | RoyalTech Computers Limited">
+<meta name="rating" content="General">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#1c2c52">
+
+{{--  --}}
+<title>Laptops For Leasing in Nairobi Kenya | RoyalTech Computers Limited</title>
+<meta name="description" content="Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories">
+<link rel="canonical" href="https://royaltech.co.ke/laptops-for-hire"/>
+<meta name="description" content="Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories">
+
+<meta property="og:description" content="Leasing Laptops in Nairobi,Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories" />
+<meta property="og:title" content="Laptops For Leasing in Nairobi Kenya | RoyalTech Computers Limited" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://royaltech.co.ke/laptops-for-hire" />
+<meta property="og:image" content="{{url('/')}}/uploads/products/1_062eeb89-ffbf-474a-8443-1285ea8a9b41.jpg" />
+<meta property="og:site_name" content="Royaltech Computers Limited">
+<meta property="og:locale" content="en_US">
+
+{!! Twitter::generate() !!}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RoyaltechC">
+<meta name="twitter:url" content="{{url('/')}}">
+<meta name="twitter:description" content="Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya">
+<meta name="twitter:image" content="{{url('/')}}/uploads/products/1_062eeb89-ffbf-474a-8443-1285ea8a9b41.jpg">
+{{-- JSON --}}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Laptops For Leasing in Nairobi Kenya | RoyalTech Computers Limited","description":"Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories","image":"https://royaltech.co.ke/uploads/Royaltech-Original-1.png"}</script>
+
 <!-- Stylesheets -->
 <link href="{{asset('corporate/css/bootstrap.css')}}" rel="stylesheet">
 <link href="{{asset('corporate/css/style.css')}}" rel="stylesheet">
 <link href="{{asset('corporate/css/responsive.css')}}" rel="stylesheet">
-
 <link href="{{asset('fonts.googleapis.com/css26778.css?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Nunito+Sans:wght@300;600;700;800;900&amp;display=swap')}}" rel="stylesheet">
-
 
 <!-- Color Themes -->
 <link id="theme-color-file" href="{{asset('corporate/css/color-themes/default-theme.css')}}" rel="stylesheet">

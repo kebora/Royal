@@ -279,10 +279,6 @@ Route::get('admin/addProductToFacebookPixel', [AdminsController::class, 'addProd
 Route::get('admin/emptyProductToFacebookPixel', [AdminsController::class, 'emptyProductToFacebookPixel'])->middleware('is_admin');
 
 
-
-
-
-
 Route::get('admin/activitylogs', [AdminsController::class, 'activitylogs'])->middleware('is_admin');
 
 
