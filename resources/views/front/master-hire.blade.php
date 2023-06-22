@@ -23,7 +23,7 @@
 <meta property="og:title" content="Laptops For Leasing in Nairobi Kenya | RoyalTech Computers Limited" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://royaltech.co.ke/laptops-for-hire" />
-<meta property="og:image" content="{{url('/')}}/uploads/products/1_062eeb89-ffbf-474a-8443-1285ea8a9b41.jpg" />
+<meta property="og:image" content="{{url('/')}}/uploads/hire.jpg" />
 <meta property="og:site_name" content="Royaltech Computers Limited">
 <meta property="og:locale" content="en_US">
 
