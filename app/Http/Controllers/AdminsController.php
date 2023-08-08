@@ -682,7 +682,7 @@ class AdminsController extends Controller
 
     public function add_Product(Request $request){
         activity()->log('Evoked add Product Operation');
-        $path = 'uploads/products';
+        $path = 'public/uploads/products';
         if(isset($request->image_one)){
             $file = $request->file('image_one');
             $filename = $file->getClientOriginalName();
@@ -716,7 +716,6 @@ class AdminsController extends Controller
         $Product->meta = $request->meta;
         $Product->category = $request->category;
         $Product->pro_condition = $request->condition;
-
         $Product->brand = $request->brand;
         $Product->stock = $request->stock;
         $Product->price_raw = $request->price;
