@@ -57,19 +57,63 @@ breaking your savings account.
 								{{-- <h4>Royaltech Computers Limited</h4> --}}
 								{{-- <div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div> --}}
                                 <div style='max-width:800px; margin:0px auto; color:#000000'>
-                                    <p>If you're looking for a reliable and cost-effective solution for short-term computer needs, laptop hire is an excellent choice. Whether you're a small business, a conference organizer, or an individual, renting laptops can provide you with the technology you need, when you need it.</p>
-
-                                    <p>Laptop hire offers a range of benefits over purchasing laptops outright. For starters, it can save you money in the long run, as you won't have to pay for the cost of buying new laptops every time your needs change. Additionally, you can rent the latest models and technology, without having to worry about maintenance, repairs or upgrades.</p>
-
-                                    <p>At the same time, laptop hire is a flexible option, allowing you to rent the equipment for the specific duration you need, from just a few days to several months. You can choose the number of laptops required, the software and specifications that best suit your needs, and even have them delivered and collected from your location.</p>
-
-                                    <p>With laptop hire, you can enjoy a hassle-free, fast and efficient service, with dedicated technical support available to ensure your rental runs smoothly. It is an ideal solution for businesses, students, freelancers, and anyone who needs a temporary solution to their computing needs.</p>
-
-                                    <p>Overall, if you're looking for an affordable, flexible and convenient way to access the latest technology, laptop hire is the perfect option for you.</p>
+                                    {{--  --}}
+                                    <ul>
+                                        <li>Royaltech Computers Limited is a reputable company that offers a wide range of technology solutions, including the option to rent the latest MacBook Air M2. With the MacBook Air M2 being one of the most sought-after laptops on the market, renting it from a trusted company like Royaltech Computers Limited can provide numerous benefits and convenience.<p><strong>Key Features and Benefits:</strong></p>
+                                            <ol>
+                                                <li>
+                                                    <p><strong>Access to Latest Technology:</strong> The MacBook Air M2 is equipped with cutting-edge features, including the latest M2 chip that delivers exceptional performance and energy efficiency. Renting from Royaltech Computers Limited allows you to have access to this advanced technology without the need for a long-term commitment.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Cost-Effective Solution:</strong> Renting a MacBook Air M2 can be a cost-effective option, especially for short-term projects or temporary needs. It eliminates the upfront cost of purchasing the laptop, making it a budget-friendly choice for individuals and businesses.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Flexibility:</strong> Renting provides you with the flexibility to choose the rental duration that suits your needs. Whether you require the MacBook Air M2 for a few days, weeks, or months, Royaltech Computers Limited can tailor their rental plans to accommodate your specific timeframe.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Maintenance and Support:</strong> Reputable rental companies like Royaltech Computers Limited typically offer maintenance and technical support for the duration of the rental period. This ensures that you have a smooth experience and that any technical issues are promptly addressed.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Try Before You Buy:</strong> If you&apos;re considering purchasing a MacBook Air M2 but want to test it out first, renting from Royaltech Computers Limited allows you to try the laptop before making a final decision. This hands-on experience can help you determine if the laptop meets your requirements.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Business Solutions:</strong> For businesses, renting MacBook Air M2 laptops can be a practical solution for training sessions, workshops, conferences, or temporary staff. It ensures that employees have access to reliable and consistent technology during important events.</p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p><strong>Renting Process:</strong></p>
+                                            <ol>
+                                                <li>
+                                                    <p><strong>Inquiry:</strong> Contact Royaltech Computers Limited through their website, phone, or in-person to inquire about the availability of MacBook Air M2 rentals.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Customization:</strong> Discuss your rental requirements with their team. This includes the number of laptops needed, rental duration, and any additional services you may require.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Agreement:</strong> Once the details are confirmed, you&apos;ll receive a rental agreement outlining the terms and conditions of the rental. Make sure to review this document carefully.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Pickup/Delivery:</strong> You can choose to pick up the laptops from their location or opt for delivery to your preferred address.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Usage and Support:</strong> Use the MacBook Air M2 laptops during the rental period. If you encounter any issues, reach out to Royaltech Computers Limited&apos;s support team for assistance.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Return:</strong> At the end of the rental period, return the laptops as per the agreed-upon terms.</p>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p>Renting a MacBook Air M2 from Royaltech Computers Limited can be an excellent solution for individuals, students, professionals, and businesses looking for temporary access to high-quality technology. It combines the benefits of the latest MacBook Air model with the convenience of a flexible and cost-effective rental arrangement.</p>
+                                            <p><br></p>
+                                        </li>
+                                    </ul>
+                                    {{--  --}}
                                 </div>
 								<br><br>
                                 <div class="btn-box text-center">
-                                    <a download href="{{url('/')}}/uploads/Laptops-Hire-Brochure.pdf" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-download"></span> Download Profile</span></a>
+                                    <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-computer"></span> Rent PC instead?</span></a>
 
                                     <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
