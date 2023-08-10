@@ -59,25 +59,25 @@ breaking your savings account.
                                 <div style='max-width:800px; margin:0px auto; color:#000000'>
                                     {{--  --}}
                                     <ul>
-                                        <li>Royaltech Computers Limited is a reputable company that offers a wide range of technology solutions, including the option to rent the latest MacBook Air M2. With the MacBook Air M2 being one of the most sought-after laptops on the market, renting it from a trusted company like Royaltech Computers Limited can provide numerous benefits and convenience.<p><strong>Key Features and Benefits:</strong></p>
+                                        <li>Royaltech Computers Limited is a reputable company that offers a wide range of technology solutions, including the option to rent the latest MacBook Pro M2. With the MacBook Pro M2 being one of the most sought-after laptops on the market, renting it from a trusted company like Royaltech Computers Limited can provide numerous benefits and convenience.<p><strong>Key Features and Benefits:</strong></p>
                                             <ol>
                                                 <li>
-                                                    <p><strong>Access to Latest Technology:</strong> The MacBook Air M2 is equipped with cutting-edge features, including the latest M2 chip that delivers exceptional performance and energy efficiency. Renting from Royaltech Computers Limited allows you to have access to this advanced technology without the need for a long-term commitment.</p>
+                                                    <p><strong>Access to Latest Technology:</strong> The MacBook Pro M2 is equipped with cutting-edge features, including the latest M2 chip that delivers exceptional performance and energy efficiency. Renting from Royaltech Computers Limited allows you to have access to this advanced technology without the need for a long-term commitment.</p>
                                                 </li>
                                                 <li>
-                                                    <p><strong>Cost-Effective Solution:</strong> Renting a MacBook Air M2 can be a cost-effective option, especially for short-term projects or temporary needs. It eliminates the upfront cost of purchasing the laptop, making it a budget-friendly choice for individuals and businesses.</p>
+                                                    <p><strong>Cost-Effective Solution:</strong> Renting a MacBook Pro M2 can be a cost-effective option, especially for short-term projects or temporary needs. It eliminates the upfront cost of purchasing the laptop, making it a budget-friendly choice for individuals and businesses.</p>
                                                 </li>
                                                 <li>
-                                                    <p><strong>Flexibility:</strong> Renting provides you with the flexibility to choose the rental duration that suits your needs. Whether you require the MacBook Air M2 for a few days, weeks, or months, Royaltech Computers Limited can tailor their rental plans to accommodate your specific timeframe.</p>
+                                                    <p><strong>Flexibility:</strong> Renting provides you with the flexibility to choose the rental duration that suits your needs. Whether you require the MacBook Pro M2 for a few days, weeks, or months, Royaltech Computers Limited can tailor their rental plans to accommodate your specific timeframe.</p>
                                                 </li>
                                                 <li>
                                                     <p><strong>Maintenance and Support:</strong> Reputable rental companies like Royaltech Computers Limited typically offer maintenance and technical support for the duration of the rental period. This ensures that you have a smooth experience and that any technical issues are promptly addressed.</p>
                                                 </li>
                                                 <li>
-                                                    <p><strong>Try Before You Buy:</strong> If you&apos;re considering purchasing a MacBook Air M2 but want to test it out first, renting from Royaltech Computers Limited allows you to try the laptop before making a final decision. This hands-on experience can help you determine if the laptop meets your requirements.</p>
+                                                    <p><strong>Try Before You Buy:</strong> If you&apos;re considering purchasing a MacBook Pro M2 but want to test it out first, renting from Royaltech Computers Limited allows you to try the laptop before making a final decision. This hands-on experience can help you determine if the laptop meets your requirements.</p>
                                                 </li>
                                                 <li>
-                                                    <p><strong>Business Solutions:</strong> For businesses, renting MacBook Air M2 laptops can be a practical solution for training sessions, workshops, conferences, or temporary staff. It ensures that employees have access to reliable and consistent technology during important events.</p>
+                                                    <p><strong>Business Solutions:</strong> For businesses, renting MacBook Pro M2 laptops can be a practical solution for training sessions, workshops, conferences, or temporary staff. It ensures that employees have access to reliable and consistent technology during important events.</p>
                                                 </li>
                                             </ol>
                                         </li>
@@ -85,7 +85,7 @@ breaking your savings account.
                                             <p><strong>Renting Process:</strong></p>
                                             <ol>
                                                 <li>
-                                                    <p><strong>Inquiry:</strong> Contact Royaltech Computers Limited through their website, phone, or in-person to inquire about the availability of MacBook Air M2 rentals.</p>
+                                                    <p><strong>Inquiry:</strong> Contact Royaltech Computers Limited through their website, phone, or in-person to inquire about the availability of MacBook Pro M2 rentals.</p>
                                                 </li>
                                                 <li>
                                                     <p><strong>Customization:</strong> Discuss your rental requirements with their team. This includes the number of laptops needed, rental duration, and any additional services you may require.</p>
@@ -97,7 +97,7 @@ breaking your savings account.
                                                     <p><strong>Pickup/Delivery:</strong> You can choose to pick up the laptops from their location or opt for delivery to your preferred address.</p>
                                                 </li>
                                                 <li>
-                                                    <p><strong>Usage and Support:</strong> Use the MacBook Air M2 laptops during the rental period. If you encounter any issues, reach out to Royaltech Computers Limited&apos;s support team for assistance.</p>
+                                                    <p><strong>Usage and Support:</strong> Use the MacBook Pro M2 laptops during the rental period. If you encounter any issues, reach out to Royaltech Computers Limited&apos;s support team for assistance.</p>
                                                 </li>
                                                 <li>
                                                     <p><strong>Return:</strong> At the end of the rental period, return the laptops as per the agreed-upon terms.</p>
@@ -105,7 +105,7 @@ breaking your savings account.
                                             </ol>
                                         </li>
                                         <li>
-                                            <p>Renting a MacBook Air M2 from Royaltech Computers Limited can be an excellent solution for individuals, students, professionals, and businesses looking for temporary access to high-quality technology. It combines the benefits of the latest MacBook Air model with the convenience of a flexible and cost-effective rental arrangement.</p>
+                                            <p>Renting a MacBook Pro M2 from Royaltech Computers Limited can be an excellent solution for individuals, students, professionals, and businesses looking for temporary access to high-quality technology. It combines the benefits of the latest MacBook Air model with the convenience of a flexible and cost-effective rental arrangement.</p>
                                             <p><br></p>
                                         </li>
                                     </ul>
@@ -469,7 +469,7 @@ breaking your savings account.
 
 						<div class="form-group col-lg-12 col-md-12 col-sm-12">
 							<label>Desired Specs/Model *</label>
-							<textarea name="message" placeholder="Macbook Air M2 8gb Ram" required></textarea>
+							<textarea name="message" placeholder="MacBook Pro M2 8gb Ram" required></textarea>
 						</div>
 
                         <?php
