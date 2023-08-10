@@ -112,6 +112,25 @@ class HomeController extends Controller
         return view('front.laptops-for-hire');
     }
 
+    public function macbooks_for_hire(){
+        SEOMeta::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
+        SEOMeta::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today');
+        SEOMeta::setCanonical(''.url('/').'/laptops-for-hire');
+
+        OpenGraph::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today');
+        OpenGraph::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
+        OpenGraph::setUrl(''.url('/').'/laptops-for-hire');
+        OpenGraph::addProperty('type', 'website');
+
+        TwitterCard::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
+        TwitterCard::setSite('@RoyaltechC');
+
+        JsonLd::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
+        JsonLd::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today');
+        JsonLd::addImage(''.url('/').'/uploads/m2-macbook-air-hero-4.webp');
+        return view('front.macbook-for-hire');
+    }
+
     public function terms_and_conditions(){
         SEOMeta::setTitle('Terms and Conditions | RoyalTech Computers Limited');
         SEOMeta::setDescription('Desktop Computers in Nairobi,Laptops,Audio and Video,Accessories,Bag Collection,Cameras and Accessories affordable computer accessories');

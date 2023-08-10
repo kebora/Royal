@@ -35,6 +35,7 @@ Route::get('/blogs/{slung}', [App\Http\Controllers\HomeController::class, 'blogs
 Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name('show');
 Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name('show');
 Route::post('/laptops-for-hire', [App\Http\Controllers\HomeController::class, 'hire'])->name('hire');
+Route::get('/macbook-for-hire', [App\Http\Controllers\HomeController::class, 'macbooks_for_hire'])->name('macbook');
 Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'message'])->name('message');
 Route::get('/url', [App\Http\Controllers\HomeController::class, 'has_url'])->name('has_url');
 Route::get('/recommended', [App\Http\Controllers\HomeController::class, 'hire'])->name('hire-secondary');
