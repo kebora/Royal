@@ -92,130 +92,14 @@ breaking your savings account.
 
 
 
-@include('front.clients')
+
 
 
 
     <!-- Gallery Section -->
 
 
-    <br><br>
-    	<!-- Contact Map Section -->
-	<section class="contact-map-section">
-		<div class="auto-container" style="border:6px solid #1c2c52; border-radius:10px;">
-			<!-- Sec Title -->
-			<div class="sec-title">
-				<div class="clearfix">
-					<div class="pull-left">
-						<div class="title">&nbsp;</div>
-						<h2>Request a Laptop Here</h2>
-					</div>
-					<div class="pull-right">
-						<div class="text">Fill up this form with your required details <br> We will get back to you as soon as we can</div>
-					</div>
-				</div>
-			</div>
-
-
-			<!-- Contact Form -->
-			<div class="contact-form">
-
-				<!-- Contact Form -->
-				<form method="post" action="{{url('/')}}/laptops-for-hire" id="laptop-for-hire" >
-                    @csrf
-					<div class="row clearfix">
-
-						<div class="form-group col-lg-12 col-md-6 col-sm-12">
-							<label>Your name *</label>
-							<input type="text" name="name" placeholder="" required>
-						</div>
-
-						<div class="form-group col-lg-6 col-md-6 col-sm-12">
-							<label>Email address *</label>
-							<input type="email" name="email" placeholder="" required>
-						</div>
-
-						<div class="form-group col-lg-6 col-md-6 col-sm-12">
-							<label>Phone number *</label>
-							<input type="text" name="phone" placeholder="" required>
-						</div>
-
-						<div class="form-group col-lg-6 col-md-6 col-sm-12">
-							<label>Pick-Up/Delivery Date</label>
-							<input type="date" name="date" placeholder="" required>
-						</div>
-
-                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
-							<label>Number of Laptops *</label>
-							<input type="number" name="number" placeholder="" required>
-						</div>
-
-						<div class="form-group col-lg-12 col-md-12 col-sm-12">
-							<label>Desired Specs/Model *</label>
-							<textarea name="message" placeholder="HP Folio 1080s 8Gb Ram, 512 GB SSD, 2GB Graphics" required></textarea>
-						</div>
-
-                        <?php
-						$ops = array('-', '+');
-						$answer = -1;
-
-						$num1 = rand(0, 50);
-						$num2 = rand(0, 15);
-
-						$answer = $num1 + $num2;
-
-						?>
-                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                            <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
-                            <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Are you human? {{$num1}} + {{$num2}} =</label>
-                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <br>
-
-						<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
-							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Submit Request <img class="loading" width="30" src="{{url('/')}}/uploads/icon/loading.gif" alt="royaltech loading"/></span></button>
-						</div>
-
-					</div>
-				</form>
-			</div>
-			<!-- End Contact Form -->
-
-		</div>
-	</section>
-	<!-- End Contact Map Section -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $(".loading", this).css("visibility","hidden");
-        });
-        $('#laptop-for-hire').submit(function(e){
-
-            // Stop the form submitting
-            e.preventDefault();
-            $(".loading", this).css("visibility","visible");
-            $.ajax({
-                url: "{{url('laptops-for-hire')}}",
-                type: "POST",
-                data: $('#laptop-for-hire').serialize(),
-                success: function( response ) {
-                    $(".loading", this).css("visibility","hidden");
-                    alert('Your Request has been submitted successfully');
-
-                    document.getElementById("laptop-for-hire").reset();
-                }
-            });
-        });
-    </script>
+    <br>
 
 <section class="gallery-section cases-section">
     <div class="auto-container">
@@ -487,4 +371,122 @@ breaking your savings account.
     </div>
 </section>
 
+
+<br>
+    	<!-- Contact Map Section -->
+	<section class="contact-map-section">
+		<div class="auto-container" style="border:6px solid #1c2c52; border-radius:10px;">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<div class="clearfix">
+					<div class="pull-left">
+						<div class="title">&nbsp;</div>
+						<h2>Request a MacBook Here</h2>
+					</div>
+					<div class="pull-right">
+						<div class="text">Fill up this form with your required details <br> We will get back to you as soon as we can</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Contact Form -->
+			<div class="contact-form">
+
+				<!-- Contact Form -->
+				<form method="post" action="{{url('/')}}/laptops-for-hire" id="laptop-for-hire" >
+                    @csrf
+					<div class="row clearfix">
+
+						<div class="form-group col-lg-12 col-md-6 col-sm-12">
+							<label>Your name *</label>
+							<input type="text" name="name" placeholder="" required>
+						</div>
+
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<label>Email address *</label>
+							<input type="email" name="email" placeholder="" required>
+						</div>
+
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<label>Phone number *</label>
+							<input type="text" name="phone" placeholder="" required>
+						</div>
+
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<label>Pick-Up/Delivery Date</label>
+							<input type="date" name="date" placeholder="" required>
+						</div>
+
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<label>Number of Laptops *</label>
+							<input type="number" name="number" placeholder="" required>
+						</div>
+
+						<div class="form-group col-lg-12 col-md-12 col-sm-12">
+							<label>Desired Specs/Model *</label>
+							<textarea name="message" placeholder="Macbook Air M2 8gb Ram" required></textarea>
+						</div>
+
+                        <?php
+						$ops = array('-', '+');
+						$answer = -1;
+
+						$num1 = rand(0, 50);
+						$num2 = rand(0, 15);
+
+						$answer = $num1 + $num2;
+
+						?>
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                            <input type="hidden" name="correct_answer" id="correct_answer" value="{{$answer}}">
+                            <input required class="form-control" value="{{$answer}}" type="hidden" id="verify_contact" name="verify_contact">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Are you human? {{$num1}} + {{$num2}} =</label>
+                                        <input required class="form-control" value="" type="text" id="verify_contact" name="verify_contact_input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br>
+
+						<div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
+							<button class="theme-btn btn-style-three" type="submit" name="submit-form"><span class="txt">Submit Request <img class="loading" width="30" src="{{url('/')}}/uploads/icon/loading.gif" alt="royaltech loading"/></span></button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<!-- End Contact Form -->
+
+		</div>
+	</section>
+	<!-- End Contact Map Section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".loading", this).css("visibility","hidden");
+        });
+        $('#laptop-for-hire').submit(function(e){
+
+            // Stop the form submitting
+            e.preventDefault();
+            $(".loading", this).css("visibility","visible");
+            $.ajax({
+                url: "{{url('laptops-for-hire')}}",
+                type: "POST",
+                data: $('#laptop-for-hire').serialize(),
+                success: function( response ) {
+                    $(".loading", this).css("visibility","hidden");
+                    alert('Your Request has been submitted successfully');
+
+                    document.getElementById("laptop-for-hire").reset();
+                }
+            });
+        });
+    </script>
 @endsection
