@@ -148,7 +148,7 @@ class ReplyMessage extends Model
 
         Mail::send('mailContact', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName,$email){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->replyto($email)->subject($subject);
+            $message->to($toVariable, $toVariableName)->cc('sales@royaltech.co.ke')->bcc('albertmuhatia@gmail.com')->replyto($email)->subject($subject);
         });
     }
 
