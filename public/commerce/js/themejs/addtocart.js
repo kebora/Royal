@@ -38,7 +38,7 @@
                 .fail(function(){
                     alert('Error Occured')
                 });
-                //Prevent Firing Twice
+                //Firing Twice - Hapana Jaribu!!!
                 e.stopImmediatePropagation();
                 return false;
             });
