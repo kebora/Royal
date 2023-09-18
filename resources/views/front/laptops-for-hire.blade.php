@@ -237,6 +237,60 @@ breaking your savings account.
 
             <div class="filter-list row clearfix">
 
+
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/GT-1.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/GT-1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">Guaranty Trust Bank</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/GT-2.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/GT-2.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">Guaranty Trust Bank</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/GT-3.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/GT-3.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">Guaranty Trust Bank</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                  <!-- Case Block -->
                  <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
@@ -292,6 +346,60 @@ breaking your savings account.
                 </div>
 
                 <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/index1.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/index2.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index2.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img src="{{url('/')}}/uploads/portfolio/index.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <!-- Case Block -->
                 <div class="case-block mix all ideas technology development col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image">
@@ -425,61 +533,9 @@ breaking your savings account.
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <!-- Case Block -->
-                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="{{url('/')}}/uploads/portfolio/index1.jpeg" alt="" />
-                            <div class="overlay-box">
-                                <a href="{{url('/')}}/uploads/portfolio/index1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-                                <div class="content">
-                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
-                                    <div class="category">Custom High Performance Laptops</div>
-                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
-                                </div>
-                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Case Block -->
-                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="{{url('/')}}/uploads/portfolio/index2.jpeg" alt="" />
-                            <div class="overlay-box">
-                                <a href="{{url('/')}}/uploads/portfolio/index2.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-                                <div class="content">
-                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
-                                    <div class="category">Custom High Performance Laptops</div>
-                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
-                                </div>
-                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Block -->
-                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <img src="{{url('/')}}/uploads/portfolio/index.jpeg" alt="" />
-                            <div class="overlay-box">
-                                <a href="{{url('/')}}/uploads/portfolio/index.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
-                                <div class="content">
-                                    <h4><a href="#">RoyalTech Computers LTD</a></h4>
-                                    <div class="category">Custom High Performance Laptops</div>
-                                    <div class="category">IEBC Tallying Center 2022 General Elections</div>
-                                </div>
-                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 

@@ -45,7 +45,7 @@
     min-width: 25%;
     height: auto;
     /* flex: 1; */
-    padding: 20px 20px;
+    padding: 10px 10px;
     text-align: center;
     margin: 0px auto;
 }
@@ -222,6 +222,12 @@
         </div>
         <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
             <img src="{{url('/')}}/uploads/clients/1648019306229.jpg" alt="5X">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/gtbank-logo.jpeg" alt="5X">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/1_2QQEZmuXPiUUfAT1SI4KpA@2x.png" alt="5X">
         </div>
     </div>
 </section>
