@@ -134,4 +134,51 @@
 	</section>
 	<!-- End Technology Section -->
     @include('front.news')
+
+    	<!-- Team Section Two -->
+	<section class="team-section-two" style="background-image: url('{{asset('corporate/images/background/2.jpg')}}')">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<div class="clearfix">
+					<div class="pull-left">
+						<div class="title">OUR DEDICATED TEAM</div>
+						<h2>We have a good team <br> of Expert </h2>
+					</div>
+					<div class="pull-right">
+						<div class="text">Our goal is to help our companies maintain or achieve best- in-class <br> positions in their respective industries and our team works.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row clearfix">
+
+				<!-- Team Block -->
+				<div class="team-block-two col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="#"><img src="{{url('/')}}/uploads/kenkigen.jpeg" alt="Ken Kigen" /></a>
+						</div>
+						<div class="lower-box">
+							<!-- Social Box -->
+							<ul class="social-box">
+								<li><a href="#" class="fa fa-facebook-f"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+							</ul>
+							<div class="content">
+								<h5><a href="#">Kennedy Kigen</a></h5>
+								<div class="designation">Chief Consultant</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</section>
+	<!-- End Team Section Two -->
 @endsection
+

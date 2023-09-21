@@ -48,7 +48,7 @@ class ReplyMessage extends Model
 
         Mail::send('mailclientInvoice', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->bcc('albertmuhatia@gmail.com')->cc('info@royaltech.co.ke')->subject($subject);
+            $message->to($toVariable, $toVariableName)->bcc('albertmuhatia@gmail.com')->cc('info@royaltech.co.ke')->cc('sales@royaltech.co.ke')->subject($subject);
         });
     }
 
@@ -74,7 +74,7 @@ class ReplyMessage extends Model
 
         Mail::send('mailclienttwo', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->subject($subject);
+            $message->to($toVariable, $toVariableName)->cc('sales@royaltech.co.ke')->cc('albertmuhatia@gmail.com')->subject($subject);
         });
     }
 
@@ -110,7 +110,7 @@ class ReplyMessage extends Model
 
         Mail::send('mailContact', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
             $message->from($FromVariable , $FromVariableName);
-            $message->to($toVariable, $toVariableName)->cc('info@aste.co.ke')->subject($subject);
+            $message->to($toVariable, $toVariableName)->cc('sales@royaltech.co.ke')->cc('info@aste.co.ke')->subject($subject);
         });
     }
 

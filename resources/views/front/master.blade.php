@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow"><!-- Google Specific -->
-<meta name="subject" content="Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya">
+<meta name="subject" content="Laptops For Hire | RoyalTech Computers Limited | Laptops for Leasing kenya">
 <meta name="rating" content="General">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#1c2c52">

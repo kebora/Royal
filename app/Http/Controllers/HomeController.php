@@ -14,19 +14,19 @@ class HomeController extends Controller
 {
     public function index()
     {
-        SEOMeta::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
+        SEOMeta::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops for Leasing kenya');
         SEOMeta::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
         SEOMeta::setCanonical(''.url('/').'');
 
         OpenGraph::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
-        OpenGraph::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
+        OpenGraph::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops for Leasing kenya');
         OpenGraph::setUrl(''.url('/').'');
         OpenGraph::addProperty('type', 'website');
 
-        TwitterCard::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
+        TwitterCard::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops for Leasing kenya');
         TwitterCard::setSite('@RoyaltechC');
 
-        JsonLd::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops in Kenya');
+        JsonLd::setTitle('Laptops For Hire | RoyalTech Computers Limited | Laptops for Leasing kenya');
         JsonLd::setDescription('Rent Laptops, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya');
         JsonLd::addImage(''.url('/').'/uploads/Royaltech-Original-1.png');
         return view('front.index');
