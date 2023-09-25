@@ -17,6 +17,11 @@ abstract class DBALIndex implements Index
     protected $columns;
 
     /**
+     * @var array<int|null>
+     */
+    protected $lengths;
+
+    /**
      * @var string
      */
     protected $name;
@@ -33,9 +38,6 @@ abstract class DBALIndex implements Index
 
     /**
      * Create an index instance.
-     *
-     * @param  string  $table
-     * @param  \Doctrine\DBAL\Schema\Index  $index
      */
     public function __construct(string $table, DoctrineDBALIndex $index)
     {
@@ -43,14 +45,13 @@ abstract class DBALIndex implements Index
         $this->name      = $index->getName();
         $this->columns   = $index->getUnquotedColumns();
         $this->type      = $this->getIndexType($index);
+        $this->lengths   = $index->getOptions()['lengths'] ?? array_fill(0, count($this->columns), null);
 
         $this->handle();
     }
 
     /**
      * Instance extend this abstract may run special handling.
-     *
-     * @return void
      */
     abstract protected function handle(): void;
 
@@ -79,7 +80,15 @@ abstract class DBALIndex implements Index
     }
 
     /**
-     * @return \KitLoong\MigrationsGenerator\Enum\Migrations\Method\IndexType
+     * @inheritDoc
+     */
+    public function getLengths(): array
+    {
+        return $this->lengths;
+    }
+
+    /**
+     * @inheritDoc
      */
     public function getType(): IndexType
     {
@@ -88,9 +97,6 @@ abstract class DBALIndex implements Index
 
     /**
      * Get the index type.
-     *
-     * @param  \Doctrine\DBAL\Schema\Index  $index
-     * @return \KitLoong\MigrationsGenerator\Enum\Migrations\Method\IndexType
      */
     private function getIndexType(DoctrineDBALIndex $index): IndexType
     {

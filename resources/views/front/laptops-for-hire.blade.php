@@ -99,9 +99,9 @@ breaking your savings account.
     <!-- Gallery Section -->
 
 
-    <br><br>
+    <p id="hire"><br><br></p>
     	<!-- Contact Map Section -->
-	<section class="contact-map-section">
+	<section class="contact-map-section" id="hire">
 		<div class="auto-container" style="border:6px solid #1c2c52; border-radius:10px;">
 			<!-- Sec Title -->
 			<div class="sec-title">

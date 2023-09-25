@@ -20,8 +20,6 @@ use KitLoong\MigrationsGenerator\Migration\Generator\Columns\OmitNameColumn;
 use KitLoong\MigrationsGenerator\Migration\Generator\Columns\PresetValuesColumn;
 use KitLoong\MigrationsGenerator\Migration\Generator\Columns\SoftDeleteColumn;
 use KitLoong\MigrationsGenerator\Migration\Generator\Columns\StringColumn;
-use KitLoong\MigrationsGenerator\Migration\Migration;
-use KitLoong\MigrationsGenerator\Migration\MigrationInterface;
 use KitLoong\MigrationsGenerator\Repositories\MariaDBRepository;
 use KitLoong\MigrationsGenerator\Repositories\MySQLRepository;
 use KitLoong\MigrationsGenerator\Repositories\PgSQLRepository;
@@ -37,31 +35,37 @@ class MigrationsGeneratorServiceProvider extends ServiceProvider
     /**
      * Register the service provider.
      *
-     * @return void
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
-    public function register()
+    public function register(): void
     {
         $this->registerConfig();
 
-        // All of the container singletons that should be registered.
+        // All the container singletons that should be registered.
         // Use $this->app->singleton instead of $singletons property to support lumen.
         foreach (
             [
                 Setting::class           => Setting::class,
                 MySQLRepository::class   => MySQLRepository::class,
-                MySQLSchema::class       => DBALMySQLSchema::class,
                 PgSQLRepository::class   => PgSQLRepository::class,
-                PgSQLSchema::class       => DBALPgSQLSchema::class,
                 SQLiteRepository::class  => SQLiteRepository::class,
-                SQLiteSchema::class      => DBALSQLiteSchema::class,
                 SQLSrvRepository::class  => SQLSrvRepository::class,
-                SQLSrvSchema::class      => DBALSQLSrvSchema::class,
                 MariaDBRepository::class => MariaDBRepository::class,
             ] as $abstract => $concrete
         ) {
             $this->app->singleton($abstract, $concrete);
+        }
+
+        foreach (
+            [
+                MySQLSchema::class  => DBALMySQLSchema::class,
+                PgSQLSchema::class  => DBALPgSQLSchema::class,
+                SQLiteSchema::class => DBALSQLiteSchema::class,
+                SQLSrvSchema::class => DBALSQLSrvSchema::class,
+            ] as $abstract => $concrete
+        ) {
+            $this->app->bind($abstract, $concrete);
         }
 
         // Bind the Repository Interface to $app['migrations.repository']
@@ -72,18 +76,18 @@ class MigrationsGeneratorServiceProvider extends ServiceProvider
             }
         );
 
-        $this->app->bind(MigrationInterface::class, Migration::class);
-
         $this->registerColumnTypeGenerator();
     }
 
-    public function boot()
+    public function boot(): void
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                MigrateGenerateCommand::class,
-            ]);
+        if (!$this->app->runningInConsole()) {
+            return;
         }
+
+        $this->commands([
+            MigrateGenerateCommand::class,
+        ]);
     }
 
     /**
@@ -92,20 +96,15 @@ class MigrationsGeneratorServiceProvider extends ServiceProvider
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
-    protected function registerConfig()
+    protected function registerConfig(): void
     {
-        $packageConfigFile = __DIR__ . '/../config/config.php';
-        $this->app->make('config')->set(
-            'generators.config',
-            $this->app->make('files')->getRequire($packageConfigFile)
-        );
+        $this->mergeConfigFrom(__DIR__ . '/../config/migrations-generator.php', 'migrations-generator');
     }
 
     /**
      * Make column generator singleton by type.
      *
-     * @param  \KitLoong\MigrationsGenerator\Enum\Migrations\Method\ColumnType  $type
-     * @param  string  $columnTypeGenerator
+     * @param  class-string<\KitLoong\MigrationsGenerator\Migration\Generator\Columns\ColumnTypeGenerator>  $columnTypeGenerator
      */
     protected function columnTypeSingleton(ColumnType $type, string $columnTypeGenerator): void
     {
@@ -114,8 +113,6 @@ class MigrationsGeneratorServiceProvider extends ServiceProvider
 
     /**
      * Register column type generators.
-     *
-     * @return void
      */
     protected function registerColumnTypeGenerator(): void
     {

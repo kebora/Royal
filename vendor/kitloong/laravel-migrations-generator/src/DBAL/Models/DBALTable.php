@@ -35,6 +35,11 @@ abstract class DBALTable implements Table
     protected $name;
 
     /**
+     * @var string
+     */
+    protected $comment;
+
+    /**
      * @var \Illuminate\Support\Collection<\KitLoong\MigrationsGenerator\Schema\Models\Index>
      */
     protected $indexes;
@@ -42,19 +47,20 @@ abstract class DBALTable implements Table
     /**
      * Create a new instance.
      *
-     * @param  \Doctrine\DBAL\Schema\Table  $table
      * @param  array<string, \Doctrine\DBAL\Schema\Column>  $columns  Key is quoted name.
      * @param  array<string, \Doctrine\DBAL\Schema\Index>  $indexes  Key is name.
      */
     public function __construct(DoctrineDBALTable $table, array $columns, array $indexes)
     {
         $this->name      = $table->getName();
+        $this->comment   = $table->getComment();
         $this->collation = $table->getOptions()['collation'] ?? null;
 
         $this->columns = (new Collection($columns))->reduce(function (Collection $columns, DoctrineDBALColumn $column) use ($table) {
             if (!$column->getType() instanceof CustomType) {
                 $columns->push($this->makeColumn($table->getName(), $column));
             }
+
             return $columns;
         }, new Collection())->values();
 
@@ -62,6 +68,7 @@ abstract class DBALTable implements Table
             if ($column->getType() instanceof CustomType) {
                 $columns->push($this->makeCustomColumn($table->getName(), $column));
             }
+
             return $columns;
         }, new Collection())->values();
 
@@ -74,35 +81,21 @@ abstract class DBALTable implements Table
 
     /**
      * Instance extend this abstract may run special handling.
-     *
-     * @return void
      */
     abstract protected function handle(): void;
 
     /**
      * Make a Column instance.
-     *
-     * @param  string  $table
-     * @param  \Doctrine\DBAL\Schema\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Schema\Models\Column
      */
     abstract protected function makeColumn(string $table, DoctrineDBALColumn $column): Column;
 
     /**
      * Make a CustomColumn instance.
-     *
-     * @param  string  $table
-     * @param  \Doctrine\DBAL\Schema\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Schema\Models\CustomColumn
      */
     abstract protected function makeCustomColumn(string $table, DoctrineDBALColumn $column): CustomColumn;
 
     /**
      * Make an Index instance.
-     *
-     * @param  string  $table
-     * @param  \Doctrine\DBAL\Schema\Index  $index
-     * @return \KitLoong\MigrationsGenerator\Schema\Models\Index
      */
     abstract protected function makeIndex(string $table, DoctrineDBALIndex $index): Index;
 
@@ -112,6 +105,14 @@ abstract class DBALTable implements Table
     public function getName(): string
     {
         return $this->name;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getComment(): ?string
+    {
+        return $this->comment;
     }
 
     /**

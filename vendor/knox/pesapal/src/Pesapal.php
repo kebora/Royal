@@ -76,18 +76,18 @@ class Pesapal implements PesapalContract
         $callback_url = url('/') . '/pesapal-callback'; //redirect url, the page that will handle the response from pesapal.
 
         $post_xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?>
-                        <PesapalDirectOrderInfo
-                            xmlns:xsi=\"http://www.w3.org/2001/XMLSchemainstance\"
-                            xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
-                            Amount=\"" . $params['amount'] . "\"
-                            Description=\"" . $params['description'] . "\"
-                            Type=\"" . $params['type'] . "\"
-                            Reference=\"" . $params['reference'] . "\"
-                            FirstName=\"" . $params['first_name'] . "\"
-                            LastName=\"" . $params['last_name'] . "\"
-                            Currency=\"" . $params['currency'] . "\"
-                            Email=\"" . $params['email'] . "\"
-                            PhoneNumber=\"" . $params['phonenumber'] . "\"
+                        <PesapalDirectOrderInfo 
+                            xmlns:xsi=\"http://www.w3.org/2001/XMLSchemainstance\" 
+                            xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" 
+                            Amount=\"" . $params['amount'] . "\" 
+                            Description=\"" . $params['description'] . "\" 
+                            Type=\"" . $params['type'] . "\" 
+                            Reference=\"" . $params['reference'] . "\" 
+                            FirstName=\"" . $params['first_name'] . "\" 
+                            LastName=\"" . $params['last_name'] . "\" 
+                            Currency=\"" . $params['currency'] . "\" 
+                            Email=\"" . $params['email'] . "\" 
+                            PhoneNumber=\"" . $params['phonenumber'] . "\" 
                             xmlns=\"http://www.pesapal.com\" />";
 
         $post_xml = htmlentities($post_xml);

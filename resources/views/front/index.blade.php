@@ -43,6 +43,66 @@
 
 
 </style>
+<!-- About Section -->
+<section class="about-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title">
+            <div class="title">Laptop Leasing Services</div>
+            {{-- <h2>You Can never go wrong with <br> Computers.</h2> --}}
+        </div>
+        <div class="row clearfix">
+
+            <!-- Content Column -->
+            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    {{--  --}}
+                    <div class="content">
+
+
+                        <div style="max-width:800px; margin:0px auto; color:#000000">
+                            <p>If you're looking for a reliable and cost-effective solution for short-term computer needs, laptop hire is an excellent choice. Whether you're a small business, a conference organizer, or an individual, renting laptops can provide you with the technology you need, when you need it.</p>
+
+                            <p>Laptop hire offers a range of benefits over purchasing laptops outright. For starters, it can save you money in the long run, as you won't have to pay for the cost of buying new laptops every time your needs change. Additionally, you can rent the latest models and technology, without having to worry about maintenance, repairs or upgrades.</p>
+
+                            <p>At the same time, laptop hire is a flexible option, allowing you to rent the equipment for the specific duration you need, from just a few days to several months. You can choose the number of laptops required, the software and specifications that best suit your needs, and even have them delivered and collected from your location.</p>
+
+
+                        </div>
+                        <br><br>
+                        <div class="btn-box text-center">
+                            <a href="{{url('/')}}/laptops-for-hire#hire" class="theme-btn btn-style-three">
+                                <span class="txt"> Start Now <span class="fa fa-arrow-right"></span></span>
+                            </a>
+                            {{-- <a href="http://localhost:8000/macbook-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-desktop"></span> Rent Macbook Instead</span></a>
+                            <a href="http://localhost:8000/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
+                        </div>
+                    </div>
+                    {{--  --}}
+                </div>
+            </div>
+
+            <!-- Images Column -->
+            <div class="images-column col-lg-6 col-md-12 col-sm-12">
+                {{-- <div class="inner-column" style="background-image: url('{{asset('corporate/images/icons/globe.png')}}')"> --}}
+                    <div class="pattern-layer" style="background-image: url('{{asset('corporate/images/background/pattern-1.png')}}')"></div>
+                    <div class="images-outer parallax-scene-1">
+                        <div style="border-radius:10%" class="image" data-depth="0.10">
+                            <img style="border-radius:10%" src="{{url('/')}}/uploads/portfolio/GT-2.jpeg" alt="" />
+                        </div>
+
+                    </div>
+                </div>
+                {{-- <a href="{{url('/')}}/laptops-for-hire" class="learn"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Learn More About Our Story</a> --}}
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+<hr>
 <section class="project-detail-section" style="background-color: #ffffff; color:#000000">
     <div class="auto-container">
         <div class="row clearfix">

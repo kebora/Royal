@@ -8,10 +8,13 @@ interface Table extends Model
 {
     /**
      * Get the table name.
-     *
-     * @return string
      */
     public function getName(): string;
+
+    /**
+     * Get the table comment.
+     */
+    public function getComment(): ?string;
 
     /**
      * Get a list of columns.
@@ -36,8 +39,6 @@ interface Table extends Model
 
     /**
      * Get the table collation.
-     *
-     * @return string|null
      */
     public function getCollation(): ?string;
 }

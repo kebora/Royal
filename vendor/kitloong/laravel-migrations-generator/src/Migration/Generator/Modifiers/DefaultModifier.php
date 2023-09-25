@@ -91,10 +91,6 @@ class DefaultModifier implements Modifier
 
     /**
      * Set default value to method for integer column.
-     *
-     * @param  \KitLoong\MigrationsGenerator\Migration\Blueprint\Method  $method
-     * @param  \KitLoong\MigrationsGenerator\Schema\Models\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Migration\Blueprint\Method
      */
     protected function chainDefaultForInteger(Method $method, Column $column): Method
     {
@@ -104,10 +100,6 @@ class DefaultModifier implements Modifier
 
     /**
      * Set default value to method for decimal column.
-     *
-     * @param  \KitLoong\MigrationsGenerator\Migration\Blueprint\Method  $method
-     * @param  \KitLoong\MigrationsGenerator\Schema\Models\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Migration\Blueprint\Method
      */
     protected function chainDefaultForDecimal(Method $method, Column $column): Method
     {
@@ -117,23 +109,15 @@ class DefaultModifier implements Modifier
 
     /**
      * Set default value to method for boolean column.
-     *
-     * @param  \KitLoong\MigrationsGenerator\Migration\Blueprint\Method  $method
-     * @param  \KitLoong\MigrationsGenerator\Schema\Models\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Migration\Blueprint\Method
      */
     protected function chainDefaultForBoolean(Method $method, Column $column): Method
     {
-        $method->chain(ColumnModifier::DEFAULT(), ((int) $column->getDefault()) === 1);
+        $method->chain(ColumnModifier::DEFAULT(), (int) $column->getDefault() === 1);
         return $method;
     }
 
     /**
      * Set default value to method for datetime column.
-     *
-     * @param  \KitLoong\MigrationsGenerator\Migration\Blueprint\Method  $method
-     * @param  \KitLoong\MigrationsGenerator\Schema\Models\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Migration\Blueprint\Method
      */
     protected function chainDefaultForDatetime(Method $method, Column $column): Method
     {
@@ -150,18 +134,22 @@ class DefaultModifier implements Modifier
                     if (!$column->isOnUpdateCurrentTimestamp()) {
                         $method->chain(ColumnModifier::USE_CURRENT());
                     }
+
                     break;
                 }
 
                 $method->chain(ColumnModifier::USE_CURRENT());
                 break;
+
             default:
                 $default = $column->getDefault();
+
                 if ($column->isRawDefault()) {
                     // Set default with DB::raw(), which will return an instance of \Illuminate\Database\Query\Expression.
                     // Writer will check for Expression instance and generate as DB::raw().
                     $default = DB::raw($default);
                 }
+
                 $method->chain(ColumnModifier::DEFAULT(), $default);
         }
 
@@ -170,17 +158,10 @@ class DefaultModifier implements Modifier
 
     /**
      * Set default value to method, which support string.
-     *
-     * @param  \KitLoong\MigrationsGenerator\Migration\Blueprint\Method  $method
-     * @param  \KitLoong\MigrationsGenerator\Schema\Models\Column  $column
-     * @return \KitLoong\MigrationsGenerator\Migration\Blueprint\Method
      */
     protected function chainDefaultForString(Method $method, Column $column): Method
     {
-        $quotes  = '\'';
-        $default = $column->getDefault();
-        // To replace from ' to \\\'
-        $method->chain(ColumnModifier::DEFAULT(), str_replace($quotes, '\\\\' . $quotes, $default));
+        $method->chain(ColumnModifier::DEFAULT(), $column->getDefault());
 
         return $method;
     }

@@ -2,16 +2,17 @@
 
 namespace KitLoong\MigrationsGenerator\Enum\Migrations\Method;
 
+use Doctrine\DBAL\Types\Type;
+use KitLoong\MigrationsGenerator\DBAL\Types\Types;
 use MyCLabs\Enum\Enum;
 
 /**
- * Preserved column types of the framework.
+ * Define column types of the framework.
+ * Keep const as public to allow used by:
+ * {@see \KitLoong\MigrationsGenerator\DBAL\RegisterColumnType::registerLaravelColumnType()}
+ * {@see \KitLoong\MigrationsGenerator\DBAL\Types\Types}
  *
  * @link https://laravel.com/docs/master/migrations#available-column-types
- *
- * Keep cons as public to allow value assign in const property.
- * @see \KitLoong\MigrationsGenerator\DBAL\Types\Types
- *
  * @method static self BIG_INTEGER()
  * @method static self BIG_INCREMENTS()
  * @method static self BINARY()
@@ -58,6 +59,7 @@ use MyCLabs\Enum\Enum;
  * @method static self TIMESTAMPS_TZ()
  * @method static self TINY_INCREMENTS()
  * @method static self TINY_INTEGER()
+ * @method static self TINY_TEXT()
  * @method static self UNSIGNED_BIG_INTEGER()
  * @method static self UNSIGNED_DECIMAL()
  * @method static self UNSIGNED_INTEGER()
@@ -115,6 +117,7 @@ final class ColumnType extends Enum
     public const TIMESTAMPS_TZ           = 'timestampsTz';
     public const TINY_INCREMENTS         = 'tinyIncrements';
     public const TINY_INTEGER            = 'tinyInteger';
+    public const TINY_TEXT               = 'tinyText';
     public const UNSIGNED_BIG_INTEGER    = 'unsignedBigInteger';
     public const UNSIGNED_DECIMAL        = 'unsignedDecimal';
     public const UNSIGNED_INTEGER        = 'unsignedInteger';
@@ -123,4 +126,30 @@ final class ColumnType extends Enum
     public const UNSIGNED_TINY_INTEGER   = 'unsignedTinyInteger';
     public const UUID                    = 'uuid';
     public const YEAR                    = 'year';
+
+    /**
+     * Create instance from {@see \Doctrine\DBAL\Types\Type}.
+     *
+     * @return static
+     */
+    public static function fromDBALType(Type $dbalType): self
+    {
+        $map = Types::BUILTIN_TYPES_MAP + Types::ADDITIONAL_TYPES_MAP;
+        return self::fromValue($map[get_class($dbalType)]);
+    }
+
+    /**
+     * Initiate an instance from value.
+     *
+     * @return static
+     */
+    public static function fromValue(string $value): self
+    {
+        if (method_exists(Enum::class, 'from')) {
+            return parent::from($value);
+        }
+
+        $key = self::search($value);
+        return self::__callStatic($key, []);
+    }
 }

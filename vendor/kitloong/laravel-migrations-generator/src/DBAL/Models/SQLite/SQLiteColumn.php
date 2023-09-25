@@ -31,20 +31,27 @@ class SQLiteColumn extends DBALColumn
         switch ($this->type) {
             case ColumnType::STRING():
                 $this->presetValues = $this->getEnumPresetValues();
+
                 if (count($this->presetValues) > 0) {
                     $this->type = ColumnType::ENUM();
                 }
+
                 break;
+
             case ColumnType::DATETIME():
                 if ($this->default === 'CURRENT_TIMESTAMP') {
                     $this->type = ColumnType::TIMESTAMP();
                 }
+
                 break;
+
             case ColumnType::DATETIME_TZ():
                 if ($this->default === 'CURRENT_TIMESTAMP') {
                     $this->type = ColumnType::TIMESTAMP_TZ();
                 }
+
                 break;
+
             default:
         }
     }
@@ -53,8 +60,6 @@ class SQLiteColumn extends DBALColumn
      * If column is integer and primary key,
      * doctrine/dbal assume the column is autoincrement, but it could be wrong.
      * Should check full sql statement from sqlite_master to ensure autoincrement is written corretly.
-     *
-     * @return void
      */
     private function setAutoincrement(): void
     {
@@ -68,16 +73,19 @@ class SQLiteColumn extends DBALColumn
         $this->autoincrement = false;
 
         $sql = $this->repository->getSql($this->tableName);
+
         if (!Str::contains($sql, 'autoincrement')) {
             return;
         }
 
         $sqlColumn = Regex::getTextBetween($sql);
+
         if ($sqlColumn === null) {
             return;
         }
 
         $columns = explode(',', $sqlColumn);
+
         foreach ($columns as $column) {
             if (!Str::startsWith(trim($column), '"' . $this->name . '"')) {
                 continue;
@@ -86,6 +94,7 @@ class SQLiteColumn extends DBALColumn
             if (Str::contains($column, 'autoincrement')) {
                 $this->autoincrement = true;
             }
+
             break;
         }
     }
@@ -106,9 +115,11 @@ class SQLiteColumn extends DBALColumn
         // Get content from (.*?) from index 1
         $explodes = explode(',', $matched[1]);
         $values   = [];
+
         foreach ($explodes as $value) {
             $values[] = trim(trim($value), "'");
         }
+
         return $values;
     }
 }

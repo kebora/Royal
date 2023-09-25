@@ -33,35 +33,43 @@ class PgSQLColumn extends DBALColumn
                 $this->length = $this->getDataTypeLength();
                 $this->setRawDefault();
                 break;
+
             case ColumnType::FLOAT():
                 $this->fixFloatLength();
                 break;
+
             case ColumnType::GEOMETRY():
                 $this->type = $this->setGeometryType();
                 break;
+
             case ColumnType::STRING():
                 $this->presetValues = $this->getEnumPresetValues();
+
                 if (count($this->presetValues) > 0) {
                     $this->type = ColumnType::ENUM();
                 }
+
                 break;
+
             default:
         }
+
+        $this->setStoredDefinition();
     }
 
     /**
      * Get the column length from DB.
-     *
-     * @return int|null
      */
     private function getDataTypeLength(): ?int
     {
         $dataType = $this->repository->getTypeByColumnName($this->tableName, $this->name);
+
         if ($dataType === null) {
             return null;
         }
 
         $length = Regex::getTextBetweenFirst($dataType);
+
         if ($length === null) {
             return null;
         }
@@ -72,8 +80,6 @@ class PgSQLColumn extends DBALColumn
     /**
      * Check and set to use raw default.
      * Raw default will be generated with DB::raw().
-     *
-     * @return void
      */
     private function setRawDefault(): void
     {
@@ -83,15 +89,18 @@ class PgSQLColumn extends DBALColumn
         }
 
         $default = $this->repository->getDefaultByColumnName($this->tableName, $this->name);
-        if ($default == null) {
+
+        if ($default === null) {
             return;
         }
 
         // If default value is expression, eg: timezone('Europe/Rome'::text, now())
-        if (preg_match('/\((.?)\)/', $default)) {
-            $this->default    = $default;
-            $this->rawDefault = true;
+        if (!preg_match('/\((.?)\)/', $default)) {
+            return;
         }
+
+        $this->default    = $default;
+        $this->rawDefault = true;
     }
 
     /**
@@ -109,18 +118,17 @@ class PgSQLColumn extends DBALColumn
             'geography(multipoint,4326)'         => ColumnType::MULTI_POINT(),
             'geography(multipolygon,4326)'       => ColumnType::MULTI_POLYGON(),
             'geography(point,4326)'              => ColumnType::POINT(),
-            'geography(polygon,4326)'            => ColumnType::POLYGON()
+            'geography(polygon,4326)'            => ColumnType::POLYGON(),
         ];
     }
 
     /**
      * Set to geometry type base on geography map.
-     *
-     * @return \KitLoong\MigrationsGenerator\Enum\Migrations\Method\ColumnType
      */
     private function setGeometryType(): ColumnType
     {
         $dataType = $this->repository->getTypeByColumnName($this->tableName, $this->name);
+
         if ($dataType === null) {
             return $this->type;
         }
@@ -129,6 +137,7 @@ class PgSQLColumn extends DBALColumn
         $dataType = preg_replace('/\s+/', '', $dataType);
 
         $map = $this->getGeographyMap();
+
         if (!isset($map[$dataType])) {
             return $this->type;
         }
@@ -154,6 +163,7 @@ class PgSQLColumn extends DBALColumn
         }
 
         $presetValues = Regex::getTextBetweenAll($definition, "'", "'::");
+
         if ($presetValues === null) {
             return [];
         }
@@ -165,14 +175,29 @@ class PgSQLColumn extends DBALColumn
      * The framework always create float without precision.
      * However, Doctrine DBAL always return precisions 10 and scale 0.
      * Reset precisions and scale to 0 here.
-     *
-     * @return void
      */
     private function fixFloatLength(): void
     {
-        if ($this->precision === 10 && $this->scale === 0) {
-            $this->precision = 0;
-            $this->scale     = 0;
+        if ($this->precision !== 10 || $this->scale !== 0) {
+            return;
         }
+
+        $this->precision = 0;
+        $this->scale     = 0;
+    }
+
+    /**
+     * Set stored definition if the column is stored.
+     */
+    private function setStoredDefinition(): void
+    {
+        $this->storedDefinition = $this->repository->getStoredDefinition($this->tableName, $this->name);
+
+        // A generated column cannot have a column default or an identity definition.
+        if ($this->storedDefinition === null) {
+            return;
+        }
+
+        $this->default = null;
     }
 }

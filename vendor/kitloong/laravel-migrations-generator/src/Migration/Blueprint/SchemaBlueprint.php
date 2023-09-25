@@ -6,8 +6,31 @@ use KitLoong\MigrationsGenerator\Enum\Migrations\Method\SchemaBuilder;
 use KitLoong\MigrationsGenerator\Migration\Blueprint\Support\MethodStringHelper;
 use KitLoong\MigrationsGenerator\Migration\Blueprint\Support\Stringable;
 use KitLoong\MigrationsGenerator\Migration\Enum\Space;
+use KitLoong\MigrationsGenerator\Setting;
 use KitLoong\MigrationsGenerator\Support\TableName;
 
+/**
+ * Create migration lines with `Schema`.
+ *
+ * eg 1:
+ * ```
+ * Schema::table('users', function (Blueprint $table) {
+ *     // ...
+ * });
+ * ```
+ *
+ * eg 2:
+ * ```
+ * Schema::connection('sqlite')->table('users', function (Blueprint $table) {
+ *     // ...
+ * });
+ * ```
+ *
+ * eg 3:
+ * ```
+ * Schema::dropIfExists('users);
+ * ```
+ */
 class SchemaBlueprint implements WritableBlueprint
 {
     use Stringable;
@@ -15,6 +38,8 @@ class SchemaBlueprint implements WritableBlueprint
     use TableName;
 
     /**
+     * The table name without prefix. {@see \Illuminate\Support\Facades\DB::getTablePrefix()}
+     *
      * @var string
      */
     private $table;
@@ -35,14 +60,11 @@ class SchemaBlueprint implements WritableBlueprint
      */
     public function __construct(string $table, SchemaBuilder $schemaBuilder)
     {
-        $this->table         = $table;
+        $this->table         = $this->stripTablePrefix($table);
         $this->schemaBuilder = $schemaBuilder;
         $this->blueprint     = null;
     }
 
-    /**
-     * @param  \KitLoong\MigrationsGenerator\Migration\Blueprint\TableBlueprint  $blueprint
-     */
     public function setBlueprint(TableBlueprint $blueprint): void
     {
         $this->blueprint = $blueprint;
@@ -64,18 +86,78 @@ class SchemaBlueprint implements WritableBlueprint
     {
         $schema = $this->connection('Schema', $this->schemaBuilder);
 
-        $tableWithoutPrefix = $this->stripPrefix($this->table);
-
-        $lines = [];
-        if ($this->blueprint !== null) {
-            $lines[] = "$schema('$tableWithoutPrefix', function (Blueprint \$table) {";
-            // Add 1 tabulation to indent(prettify) blueprint definition.
-            $lines[] = Space::TAB() . $this->blueprint->toString();
-            $lines[] = "});";
-            return $lines;
+        if ($this->schemaBuilder->equals(SchemaBuilder::DROP_IF_EXISTS())) {
+            return $this->getDropLines($schema);
         }
 
-        $lines[] = "$schema('$tableWithoutPrefix');";
+        $tableLines = $this->getTableLines($schema);
+
+        if (!app(Setting::class)->isWithHasTable()) {
+            return $tableLines;
+        }
+
+        $schemaHasTable = $this->connection('Schema', SchemaBuilder::HAS_TABLE());
+
+        $lines = [];
+
+        $lines[] = $this->getIfCondition($schemaHasTable, $this->table);
+
+        foreach ($tableLines as $tableLine) {
+            // Add another tabulation to indent(prettify) blueprint definition.
+            $lines[] = Space::TAB() . $tableLine;
+        }
+
+        $lines[] = "}";
+
         return $lines;
+    }
+
+    /**
+     * Get drop commands in array.
+     *
+     * @param  string  $schema  The stringify `Schema::something` or `Schema::connection('db')->something`.
+     * @return string[]
+     */
+    private function getDropLines(string $schema): array
+    {
+        return [
+            "$schema('$this->table');",
+        ];
+    }
+
+    /**
+     * Get table commands in array.
+     *
+     * @param  string  $schema  The stringify `Schema::something` or `Schema::connection('db')->something`.
+     * @return string[]
+     */
+    private function getTableLines(string $schema): array
+    {
+        $lines   = [];
+        $lines[] = "$schema('$this->table', function (Blueprint \$table) {";
+
+        if (app(Setting::class)->isWithHasTable()) {
+            $this->blueprint->increaseNumberOfPrefixTab();
+        }
+
+        // Add 1 tabulation to indent(prettify) blueprint definition.
+        $lines[] = Space::TAB() . $this->blueprint->toString();
+        $lines[] = "});";
+
+        return $lines;
+    }
+
+    /**
+     * Generate `if` condition string.
+     *
+     * @param  string  $schemaHasTable  The stringify `Schema::hasTable` or `Schema::connection('db')->hasTable`.
+     */
+    private function getIfCondition(string $schemaHasTable, string $tableWithoutPrefix): string
+    {
+        if ($this->schemaBuilder->equals(SchemaBuilder::TABLE())) {
+            return "if ($schemaHasTable('$tableWithoutPrefix')) {";
+        }
+
+        return "if (!$schemaHasTable('$tableWithoutPrefix')) {";
     }
 }
