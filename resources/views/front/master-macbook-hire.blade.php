@@ -8,19 +8,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow"><!-- Google Specific -->
-<meta name="subject" content="Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited">
+<meta name="subject" content="Macbooks for Hire | Apple Rentals | Laptop Rentals">
 <meta name="rating" content="General">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#1c2c52">
 
 {{--  --}}
-<title>Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited</title>
+<title>Macbooks for Hire | Apple Rentals | Laptop Rentals</title>
 <meta name="description" content="Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
 <link rel="canonical" href="https://royaltech.co.ke/macbook-for-hire"/>
 <meta name="description" content="Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
 
 <meta property="og:description" content="Leasing Laptops in Nairobi,Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today" />
-<meta property="og:title" content="Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited" />
+<meta property="og:title" content="Macbooks for Hire | Apple Rentals | Laptop Rentals" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://royaltech.co.ke/macbook-for-hire" />
 <meta property="og:image" content="{{url('/')}}/uploads/m2-macbook-air-hero-4.webp" />
@@ -34,7 +34,7 @@
 <meta name="twitter:description" content="Rent Laptops, Rent Macbooks, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya">
 <meta name="twitter:image" content="{{url('/')}}/uploads/m2-macbook-air-hero-4.webp">
 {{-- JSON --}}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited","description":"Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today","image":"https://royaltech.co.ke/uploads/Royaltech-Original-1.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Macbooks for Hire | Apple Rentals | Laptop Rentals","description":"Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today","image":"https://royaltech.co.ke/uploads/Royaltech-Original-1.png"}</script>
 
 <!-- Stylesheets -->
 <link href="{{asset('corporate/css/bootstrap.css')}}" rel="stylesheet">

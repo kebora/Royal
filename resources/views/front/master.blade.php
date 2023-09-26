@@ -35,6 +35,8 @@
 @include('tawkto')
 @include('pixels')
 
+@include('whatsApp')
+
 
 
 <!-- Color Themes -->
@@ -274,6 +276,7 @@
 <script src="{{asset('corporate/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
 <script src="{{asset('corporate/js/jquery.fancybox.js')}}"></script>
 <script src="{{asset('corporate/js/appear.js')}}"></script>
+<script src="{{asset('corporate/js/mixitup.js')}}"></script>
 <script src="{{asset('corporate/js/parallax.min.js')}}"></script>
 <script src="{{asset('corporate/js/tilt.jquery.min.js')}}"></script>
 <script src="{{asset('corporate/js/jquery.paroller.min.js')}}"></script>
@@ -283,6 +286,7 @@
 <script src="{{asset('corporate/js/jquery-ui.js')}}"></script>
 <script src="{{asset('corporate/js/script.js')}}"></script>
 <script src="{{asset('corporate/js/color-settings.js')}}"></script>
+
 
 {{--  --}}
 <script type='application/ld+json'>

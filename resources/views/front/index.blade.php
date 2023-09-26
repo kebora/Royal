@@ -102,102 +102,98 @@
     </div>
 </section>
 <!-- End About Section -->
-<hr>
-<section class="project-detail-section" style="background-color: #ffffff; color:#000000">
-    <div class="auto-container">
-        <div class="row clearfix">
-            <!-- Column -->
 
-            {{-- <div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
-                <div class="inner-column  hide-mobile">
-                    <div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-                        <div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-                            <img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index2.jpeg')}}" alt="">
+
+<section class="gallery-section cases-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <div class="title">Center of Excellence</div>
+            <p style="color:#000000; max-width:300px; margin:0 auto; font-weight:800">
+                Laptop Hire/Rental is tailor made for corporates use in Training, seminars, online work and research or remote working
+            </p>
+        </div>
+        {{-- <div class="sec-title centered">
+            <div class="title">LATEST CASE STUDIES</div>
+            <h2>Reads Now Our Recent <br> Projects Studies</h2>
+        </div> --}}
+        <!--MixitUp Galery-->
+        <div class="mixitup-gallery">
+
+
+
+            <div class="filter-list row clearfix">
+
+
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img style="min-height:370px" src="{{url('/')}}/uploads/portfolio/GT-1.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/GT-1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">Guaranty Trust Bank</a></h4>
+                                    <div class="category">RoyalTech Computers LTD</div>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> --}}
-
-            <div class="column counter-column col-lg-12 col-md-6 col-sm-12">
-                <div class="lower-section" style="background-color: #ffffff; color:#000000">
-                    <h3>Benefits of Renting Laptops</h3>
-                    <p style="background-color: #ffffff; color:#000000">
-                        There are numerous benefits to hiring a laptop instead of purchasing one outright. Here are some of the key advantages:
-                    </p>
 
 
-
-                    <p style="background-color: #ffffff; color:#000000">Cost savings: One of the most significant benefits of hiring a laptop is the cost savings. Purchasing a laptop can be expensive, especially if you need a high-end model. Hiring a laptop allows you to access the latest technology without having to spend a lot of money upfront.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">Flexibility: Hiring a laptop offers flexibility in terms of duration and quantity. You can rent a laptop for a short period or longer, depending on your needs. You can also rent multiple laptops if required.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">No maintenance or repair costs: When you hire a laptop, you don't have to worry about maintenance or repair costs. The rental company will take care of these tasks, saving you time and money.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">Access to the latest technology: When you hire a laptop, you can access the latest technology without having to make a long-term investment. This is especially beneficial if you need access to cutting-edge technology for a specific project or event.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">Convenient delivery and pickup: Laptop rental companies typically offer delivery and pickup services, making it easy to get the equipment you need without having to leave your home or office.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">Dedicated technical support: Many laptop rental companies offer dedicated technical support, providing you with peace of mind and ensuring that any issues are quickly resolved.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">Try before you buy: If you're considering purchasing a laptop, hiring one first can be a great way to test it out and see if it's the right fit for you.</p>
-
-                    <p style="background-color: #ffffff; color:#000000">Overall, hiring a laptop offers a cost-effective, flexible, and convenient solution for accessing the technology you need, when you need it.</p>
-
-                    <div class="btn-box ">
-                        <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
-                        {{-- <a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                        <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
+                 <!-- Case Block -->
+                 <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img style="min-height:370px" src="{{url('/')}}/uploads/portfolio/g3.jpg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/g3.jpg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">Muthaiga Golf Club</a></h4>
+                                    <div class="category">RoyalTech Computers LTD</div>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
+
+
+
+                <!-- Case Block -->
+                <div class="case-block mix all design technology ideas col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <img style="min-height:370px" src="{{url('/')}}/uploads/portfolio/index1.jpeg" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{url('/')}}/uploads/portfolio/index1.jpeg" data-fancybox="gallery" data-caption="" class="search-icon"><span class="icon flaticon-search"></span></a>
+                                <div class="content">
+                                    <h4><a href="#">IEBC Tallying Center 2022 General Elections</a></h4>
+                                    <div class="category">RoyalTech Computers LTD</div>
+                                    <div class="category">Custom High Performance Laptops</div>
+                                </div>
+                                <a href="#" class="arrow flaticon-long-arrow-pointing-to-the-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <center>
+                <div class="btn-box ">
+                    <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Learn More </span></a>
+                    {{-- <a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
+                    <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
+                </div>
+            </center>
         </div>
     </div>
 </section>
-    <!-- End Banner Section Two -->
-    <section class="project-detail-section" style="background-color: #e7f0ff;">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!-- Column -->
-                <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-                    <div class="lower-section">
-                        <h3>Why Rent?</h3>
-                        <p style="color:#000000">
-                            In certain circumstances, it may be more affordable and convenient to hire laptops instead of purchasing.
-                            Such circumstances may include:<br>
-                            - Expatriates setting up temporary offices locally<br>
-                            - Organizations conducting seminars, trainings or meetings that require a large quantity of laptops for a
-                            short period of time<br>
-                            - Researchers or students requiring high specs laptops for a short period of time<br>
-                            - Students requring laptops for online exams.<br>
-                            In such scenarios, it makes financial sense to hire/rent a laptop as opposed to purchasing one. It will be
-                            way cheaper to hire and the hustle of disposing the laptops after the short period required is also
-                            eliminated.
-                        </p>
 
-                        <div class="btn-box ">
-                            <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Request Laptop </span></a>
-                            {{-- <a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
-                            <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="column counter-column col-lg-6 col-md-6 col-sm-12 hide-mobile">
-                    <div class="inner-column  hide-mobile">
-						<div class="images-outer parallax-scene-1  hide-mobile" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-							<div class="image hide-mobile" data-depth="0.10" style="transform: translate3d(-2.6px, -1.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-								<img class="hide-mobile"  style="border-radius:10px; border:5px solid #1c2c52" src="{{asset('uploads/portfolio/index.jpeg')}}" alt="Royaltech Computers Limited">
-							</div>
-						</div>
-					</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Banner Section Two -->
 
 
 
@@ -353,4 +349,5 @@
     <section class="sponsors-section style-two">
         <img alt="Royaltech Computers Limited" style="width:100%" src="{{url('/')}}/uploads/banner.jpeg">
      </section>
+     @include('front.benefits')
 @endsection
