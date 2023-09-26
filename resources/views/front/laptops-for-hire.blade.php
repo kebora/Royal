@@ -217,7 +217,7 @@ breaking your savings account.
         });
     </script>
 
-<section class="gallery-section cases-section">
+<section class="gallery-section cases-section" id="portfolio">
     <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title centered">

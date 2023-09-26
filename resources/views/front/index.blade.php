@@ -185,7 +185,7 @@
 
             <center>
                 <div class="btn-box ">
-                    <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Learn More </span></a>
+                    <a href="{{url('/')}}/laptops-for-hire#portfolio" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-laptop"></span> Learn More </span></a>
                     {{-- <a href="{{url('/')}}/the-company" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-lightbulb-o"></span> Learn More</span></a>
                     <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a> --}}
                 </div>
