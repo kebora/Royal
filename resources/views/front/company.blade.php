@@ -74,24 +74,16 @@
 
             <!-- Images Column -->
             <div class="images-column col-lg-6 col-md-12 col-sm-12">
-                <div class="inner-column" style="background-image: url('{{asset('corporate/images/icons/globe.png')}}')">
+                {{-- <div class="inner-column" style="background-image: url('{{asset('corporate/images/icons/globe.png')}}')"> --}}
                     <div class="pattern-layer" style="background-image: url('{{asset('corporate/images/background/pattern-1.png')}}')"></div>
                     <div class="images-outer parallax-scene-1">
-                        <div class="image" data-depth="0.10">
-                            <img style="border-radius:20%" src="{{asset('corporate/images/portraits.jpg')}}" alt="" />
+                        <div style="border-radius:10%" class="image" data-depth="0.10">
+                            <img style="border-radius:10%" src="{{url('/')}}/uploads/portfolio/GT-2.jpeg" alt="" />
                         </div>
-                        <div class="image-two" data-depth="0.30">
-                            <img style="border-radius:20%" src="{{asset('corporate/images/resource/pexels-ketut-subiyanto-4560153.jpg')}}" alt="" />
-                        </div>
-                        <div class="image-three" data-depth="0.20">
-                            <img style="border-radius:20%" src="{{asset('corporate/images/resource/pexels-rfstudio-3825582.jpg')}}" alt="" />
-                        </div>
-                        <div class="image-four" data-depth="0.30">
-                            <img src="{{asset('corporate/images/resource/s-pdpxl.png')}}" alt="" />
-                        </div>
+
                     </div>
                 </div>
-                <a href="#story" class="learn"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Learn More About Our Story</a>
+                {{-- <a href="{{url('/')}}/laptops-for-hire" class="learn"><span class="arrow flaticon-long-arrow-pointing-to-the-right"></span>Learn More About Our Story</a> --}}
 
 
             </div>
