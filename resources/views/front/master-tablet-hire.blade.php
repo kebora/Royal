@@ -15,14 +15,14 @@
 
 {{--  --}}
 <title>Tablets for Hire | Samsung Tablets  | Tablet Rentals</title>
-<meta name="description" content="Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
-<link rel="canonical" href="https://royaltech.co.ke/macbook-for-hire"/>
-<meta name="description" content="Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
+<meta name="description" content="Experience the power of innovation with our Tablets for hire service. Rent the latest Tablets models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
+<link rel="canonical" href="https://royaltech.co.ke/Tablets-for-hire"/>
+<meta name="description" content="Experience the power of innovation with our Tablets for hire service. Rent the latest Tablets models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
 
-<meta property="og:description" content="Leasing Tablets in Kenya,Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today" />
+<meta property="og:description" content="Leasing Tablets in Kenya,Experience the power of innovation with our Tablets for hire service. Rent the latest Tablets models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today" />
 <meta property="og:title" content="Tablets for Hire | Samsung Tablets  | Tablet Rentals" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://royaltech.co.ke/macbook-for-hire" />
+<meta property="og:url" content="https://royaltech.co.ke/Tablets-for-hire" />
 <meta property="og:image" content="{{url('/')}}/uploads/71CZ14Ul0dL.jpg" />
 <meta property="og:site_name" content="Royaltech Computers Limited">
 <meta property="og:locale" content="en_US">
@@ -31,10 +31,10 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@RoyaltechC">
 <meta name="twitter:url" content="{{url('/')}}">
-<meta name="twitter:description" content="Rent Tablets, Rent Macbooks, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya">
+<meta name="twitter:description" content="Rent Tablets, Rent Tabletss, Lease Laptops, Laptops for Hire,  Laptops in Kenya, Laptop Rentals in Kenya, Laptops Leasing in Kenya">
 <meta name="twitter:image" content="{{url('/')}}/uploads/71CZ14Ul0dL.jpg">
 {{-- JSON --}}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Tablets for Hire | Samsung Tablets  | Tablet Rentals","description":"Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today","image":"https://royaltech.co.ke/uploads/Royaltech-Original-1.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Tablets for Hire | Samsung Tablets  | Tablet Rentals","description":"Experience the power of innovation with our Tablets for hire service. Rent the latest Tablets models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today","image":"https://royaltech.co.ke/uploads/Royaltech-Original-1.png"}</script>
 
 <!-- Stylesheets -->
 <link href="{{asset('corporate/css/bootstrap.css')}}" rel="stylesheet">
