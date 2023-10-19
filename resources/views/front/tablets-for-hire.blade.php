@@ -1,13 +1,13 @@
-@extends('front.master-macbook-hire')
+@extends('front.master-tablet-hire')
 
 @section('content')
     <section class="page-title">
         <div class="pattern-layer-one" style="background-image: url('{{asset('corporate/images/background/pattern-16.png')}}')"></div>
         <div class="auto-container">
-            <h2>Macbooks for Hire?</h2>
+            <h2>Tablets for Hire?</h2>
             <ul class="page-breadcrumb">
                 <li><a href="{{url('/')}}">home</a></li>
-                <li>Macbooks for Hire</li>
+                <li>Tablets for Hire</li>
             </ul>
         </div>
     </section>
@@ -58,63 +58,27 @@ breaking your savings account.
 								{{-- <div class="text" style='max-width:600px; margin:0px auto;'>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</div> --}}
                                 <div style='max-width:800px; margin:0px auto; color:#000000'>
                                     {{--  --}}
-                                    <ul>
-                                        <li>Royaltech Computers Limited is a reputable company that offers a wide range of technology solutions, including the option to rent the latest MacBook Pro M2. With the MacBook Pro M2 being one of the most sought-after laptops on the market, renting it from a trusted company like Royaltech Computers Limited can provide numerous benefits and convenience.<p><strong>Key Features and Benefits:</strong></p>
-                                            <ol>
-                                                <li>
-                                                    <p><strong>Access to Latest Technology:</strong> The MacBook Pro M2 is equipped with cutting-edge features, including the latest M2 chip that delivers exceptional performance and energy efficiency. Renting from Royaltech Computers Limited allows you to have access to this advanced technology without the need for a long-term commitment.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Cost-Effective Solution:</strong> Renting a MacBook Pro M2 can be a cost-effective option, especially for short-term projects or temporary needs. It eliminates the upfront cost of purchasing the laptop, making it a budget-friendly choice for individuals and businesses.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Flexibility:</strong> Renting provides you with the flexibility to choose the rental duration that suits your needs. Whether you require the MacBook Pro M2 for a few days, weeks, or months, Royaltech Computers Limited can tailor their rental plans to accommodate your specific timeframe.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Maintenance and Support:</strong> Reputable rental companies like Royaltech Computers Limited typically offer maintenance and technical support for the duration of the rental period. This ensures that you have a smooth experience and that any technical issues are promptly addressed.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Try Before You Buy:</strong> If you&apos;re considering purchasing a MacBook Pro M2 but want to test it out first, renting from Royaltech Computers Limited allows you to try the laptop before making a final decision. This hands-on experience can help you determine if the laptop meets your requirements.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Business Solutions:</strong> For businesses, renting MacBook Pro M2 laptops can be a practical solution for training sessions, workshops, conferences, or temporary staff. It ensures that employees have access to reliable and consistent technology during important events.</p>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li>
-                                            <p><strong>Renting Process:</strong></p>
-                                            <ol>
-                                                <li>
-                                                    <p><strong>Inquiry:</strong> Contact Royaltech Computers Limited through their website, phone, or in-person to inquire about the availability of MacBook Pro M2 rentals.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Customization:</strong> Discuss your rental requirements with their team. This includes the number of laptops needed, rental duration, and any additional services you may require.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Agreement:</strong> Once the details are confirmed, you&apos;ll receive a rental agreement outlining the terms and conditions of the rental. Make sure to review this document carefully.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Pickup/Delivery:</strong> You can choose to pick up the laptops from their location or opt for delivery to your preferred address.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Usage and Support:</strong> Use the MacBook Pro M2 laptops during the rental period. If you encounter any issues, reach out to Royaltech Computers Limited&apos;s support team for assistance.</p>
-                                                </li>
-                                                <li>
-                                                    <p><strong>Return:</strong> At the end of the rental period, return the laptops as per the agreed-upon terms.</p>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li>
-                                            <p>Renting a MacBook Pro M2 from Royaltech Computers Limited can be an excellent solution for individuals, students, professionals, and businesses looking for temporary access to high-quality technology. It combines the benefits of the latest MacBook Air model with the convenience of a flexible and cost-effective rental arrangement.</p>
-                                            <p><br></p>
-                                        </li>
-                                    </ul>
+                                    Welcome to Royaltech Computers Limited, your trusted partner for all your short-term tech rental needs. In today's fast-paced world, staying connected and equipped with the latest technology is crucial. If you're in need of high-quality tablets for a conference, event, training session, or any other temporary project, you've come to the right place. Our Tablet Hire services are designed to provide you with a seamless and cost-effective solution.
+                                    <br><br>
+                                    Why Choose Royaltech Computers Limited for Tablet Hire:<br>
+                                    1. <strong>Cutting-Edge Technology:</strong> At Royaltech Computers Limited, we understand the importance of having up-to-date technology at your fingertips. That's why we offer a wide range of top-of-the-line tablets from leading brands like Apple, Samsung, and Microsoft. Our tablets are equipped with the latest features, ensuring optimal performance and user satisfaction.<br>
+                                    2. <strong>Extensive Tablet Selection:</strong> We offer a diverse selection of tablets to suit your specific requirements. Whether you need iPads for an interactive trade show booth, Android tablets for training sessions, or Windows tablets for business presentations, we have you covered. Our inventory includes a variety of models and sizes to match your preferences.<br>
+                                    3. <strong>Flexible Rental Options:</strong> At Royaltech Computers Limited, we understand that every project has its unique demands. That's why we provide flexible rental options, including daily, weekly, and monthly packages. This allows you to rent tablets for the duration that suits your needs, without any unnecessary commitments.<br>
+                                    4. <strong>Impeccable Service:</strong> Our commitment to customer satisfaction is unwavering. We ensure that all our tablets are well-maintained, cleaned, and updated, so you receive a product in pristine condition. Our dedicated support team is available to assist you throughout your rental period, making your experience hassle-free.<br>
+                                    5. <strong>Cost-Effective Solution:</strong> Choosing our Tablet Hire services is not only convenient but also cost-effective. Renting tablets instead of making a substantial investment in purchasing them saves you money and ensures you have access to the latest technology without the long-term commitment.<br>
+                                    Who Can Benefit from Our Tablet Hire Services:<br>
+                                    • <strong>Businesses:</strong> Enhance your presentations, seminars, and training sessions with our tablets. They're perfect for showcasing your products and services, providing interactive content, and collecting valuable data.<br>
+                                    • <strong>Event Planners:</strong> Make your events memorable and engaging with our tablets. They can be used for check-ins, surveys, interactive maps, and more.<br>
+                                    • <strong>Educational Institutions:</strong> Facilitate effective learning with our tablets. Whether you're conducting a short-term workshop or an extended training program, our tablets are a valuable educational tool.<br>
+                                    • <strong>Trade Show Exhibitors:</strong> Stand out at trade shows and expos by incorporating tablets into your booth. Engage with visitors, showcase your digital content, and collect leads effortlessly.<br>
+
+
                                     {{--  --}}
                                 </div>
 								<br><br>
                                 <div class="btn-box text-center">
                                     <a href="{{url('/')}}/laptops-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-computer"></span> Rent PC instead?</span></a>
-
+                                    <a href="{{url('/')}}/macbook-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-desktop"></span> Rent Macbook Instead</span></a>
                                     <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>
@@ -481,7 +445,7 @@ breaking your savings account.
 				<div class="clearfix">
 					<div class="pull-left">
 						<div class="title">&nbsp;</div>
-						<h2>Request a MacBook Here</h2>
+						<h2>Request a Tablet Here</h2>
 					</div>
 					<div class="pull-right">
 						<div class="text">Fill up this form with your required details <br> We will get back to you as soon as we can</div>

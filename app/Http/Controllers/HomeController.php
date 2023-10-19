@@ -115,11 +115,11 @@ class HomeController extends Controller
     public function macbooks_for_hire(){
         SEOMeta::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
         SEOMeta::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today');
-        SEOMeta::setCanonical(''.url('/').'/laptops-for-hire');
+        SEOMeta::setCanonical(''.url('/').'/macbooks-for-hire');
 
         OpenGraph::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today');
         OpenGraph::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
-        OpenGraph::setUrl(''.url('/').'/laptops-for-hire');
+        OpenGraph::setUrl(''.url('/').'/macbooks-for-hire');
         OpenGraph::addProperty('type', 'website');
 
         TwitterCard::setTitle('Macbooks for Hire | Apple Rentals | RoyalTech Computers Limited');
@@ -130,6 +130,27 @@ class HomeController extends Controller
         JsonLd::addImage(''.url('/').'/uploads/m2-macbook-air-hero-4.webp');
         return view('front.macbook-for-hire');
     }
+
+    public function tablets_for_hire(){
+        SEOMeta::setTitle('Tablets for Hire | Tablets Rentals | RoyalTech Computers Limited');
+        SEOMeta::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Tablets technology without the commitment of ownership. Contact us today');
+        SEOMeta::setCanonical(''.url('/').'/tablets-for-hire');
+
+        OpenGraph::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Tablets technology without the commitment of ownership. Contact us today');
+        OpenGraph::setTitle('Tablets for Hire | Tablets Rentals | RoyalTech Computers Limited');
+        OpenGraph::setUrl(''.url('/').'/tablets-for-hire');
+        OpenGraph::addProperty('type', 'website');
+
+        TwitterCard::setTitle('Tablets for Hire | Tablets Rentals | RoyalTech Computers Limited');
+        TwitterCard::setSite('@RoyaltechC');
+
+        JsonLd::setTitle('Tablets for Hire | Tablets Rentals | RoyalTech Computers Limited');
+        JsonLd::setDescription('Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Tablets technology without the commitment of ownership. Contact us today');
+        JsonLd::addImage(''.url('/').'/uploads/m2-macbook-air-hero-4.webp');
+        return view('front.tablets-for-hire');
+    }
+
+
 
     public function terms_and_conditions(){
         SEOMeta::setTitle('Terms and Conditions | RoyalTech Computers Limited');

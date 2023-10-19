@@ -71,6 +71,7 @@ breaking your savings account.
                                 <div class="btn-box text-center">
                                     <a download href="{{url('/')}}/uploads/Laptops-Hire-Brochure.pdf" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-download"></span> Download Profile</span></a>
                                     <a href="{{url('/')}}/macbook-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-desktop"></span> Rent Macbook Instead</span></a>
+                                    <a href="{{url('/')}}/tablets-for-hire" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-tablet"></span> Rent Tablet</span></a>
                                     <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-three"><span class="txt"><span class="fa fa-shopping-cart"></span> Shop Online</span></a>
 								</div>
 							</div>

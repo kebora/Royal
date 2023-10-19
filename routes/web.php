@@ -36,6 +36,7 @@ Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name(
 Route::get('/show', [App\Http\Controllers\HomeController::class, 'show'])->name('show');
 Route::post('/laptops-for-hire', [App\Http\Controllers\HomeController::class, 'hire'])->name('hire');
 Route::get('/macbook-for-hire', [App\Http\Controllers\HomeController::class, 'macbooks_for_hire'])->name('macbook');
+Route::get('/tablets-for-hire', [App\Http\Controllers\HomeController::class, 'tablets_for_hire'])->name('tablets');
 Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'message'])->name('message');
 Route::get('/url', [App\Http\Controllers\HomeController::class, 'has_url'])->name('has_url');
 Route::get('/recommended', [App\Http\Controllers\HomeController::class, 'hire'])->name('hire-secondary');
