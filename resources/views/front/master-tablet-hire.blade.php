@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://royaltech.co.ke/macbook-for-hire"/>
 <meta name="description" content="Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
 
-<meta property="og:description" content="Leasing Tablets in Tablets,Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today" />
+<meta property="og:description" content="Leasing Tablets in Kenya,Experience the power of innovation with our MacBook for hire service. Rent the latest MacBook models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today" />
 <meta property="og:title" content="Tablets for Hire | Samsung Tablets  | Tablet Rentals" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://royaltech.co.ke/macbook-for-hire" />
