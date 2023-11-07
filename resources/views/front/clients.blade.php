@@ -230,7 +230,10 @@
             <img src="{{url('/')}}/uploads/clients/1648019306229.jpg" alt="5X">
         </div>
         <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
-            <img src="{{url('/')}}/uploads/clients/golf.png" alt="Muthaiga Golf Club">
+            <img src="{{url('/')}}/uploads/clients/Dimension_Data_logo.jpg" alt="Muthaiga Golf Club">
+        </div>
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/brightermonday.webp" alt="Muthaiga Golf Club">
         </div>
     </div>
 </section>
