@@ -84,7 +84,7 @@
 										<li>
 											<span class="icon flaticon-placeholder-2"></span>
 											<strong>Address</strong>
-											Old Nation House 1st floor shop A12
+											Bishara Street, Revlon Profesional Plaza, 2nd Floor, Suite 1
 										</li>
 										<li>
 											<span class="icon flaticon-phone-call"></span>

@@ -44,7 +44,7 @@
 						<!-- Info List -->
 						<ul class="info-list">
 							<li>We are creative, ambitious and ready for challenges!</li>
-							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Old Nation House 1st floor shop A12</a></li>
+							<li><a href="https://g.page/royaltech-computers-ltd?share"><span class="icon fa fa-location-arrow"></span> Bishara Street, Revlon Profesional Plaza 2nd Floor Suite 1</a></li>
 						</ul>
 					</div>
 
