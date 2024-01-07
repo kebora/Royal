@@ -13,7 +13,7 @@
 
                     <span class="hide-desktop"> | <a href="https://g.page/royaltech-computers-ltd?share"><span class="fa fa-map-marker"> Find Us Now</a></span>
 
-                    <span class="hide-mobile"> | <a target="new" href="https://g.page/royaltech-computers-ltd?share"><span class="fa fa-map-marker"> Old Nation House 1st floor shop A12</a></span>
+                    <span class="hide-mobile"> | <a target="new" href="https://g.page/royaltech-computers-ltd?share"><span class="fa fa-map-marker"> Biashara Street, Revlon Profesional Plaza</a></span>
 
                 </div>
              </div>

@@ -30,7 +30,7 @@
 							<div class="icon-box"><span class="flaticon-pin"></span></div>
 							<ul>
 								<li><strong>Address</strong></li>
-								<li>Bishara Street, Revlon Profesional Plaza, 2nd Floor, Suite 1</li>
+								<li>Biashara Street, Revlon Profesional Plaza, 2nd Floor, Suite 1</li>
 							</ul>
 						</div>
 					</div>
