@@ -84,7 +84,7 @@
 										<li>
 											<span class="icon flaticon-placeholder-2"></span>
 											<strong>Address</strong>
-											Bishara Street, Revlon Profesional Plaza, 2nd Floor, Suite 1
+											Biashara Street, Revlon Profesional Plaza, 2nd Floor, Suite 1
 										</li>
 										<li>
 											<span class="icon flaticon-phone-call"></span>
