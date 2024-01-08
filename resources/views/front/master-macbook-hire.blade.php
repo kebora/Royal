@@ -221,7 +221,7 @@
 							<div class="contact-info">
 								<h2>Contact Info</h2>
 								<ul class="list-style-one">
-									<li><span class="icon fa fa-location-arrow"></span>Tom Mboya Street Nairobi, Kenya 49939-00100</li>
+									<li><span class="icon fa fa-location-arrow"></span>Biashara Street, Revlon Profesional Plaza, 2nd Floor, Suite 1,</li>
 									<li><span class="icon fa fa-phone"></span>(254) 0724 404935</li>
 									<li><span class="icon fa fa-envelope"></span>support@royaltech.co.ke</li>
 									<li><span class="icon fa fa-clock-o"></span>Week Days: 09.00 to 18.00 Sunday: Closed</li>
