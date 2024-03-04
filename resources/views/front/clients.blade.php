@@ -235,5 +235,13 @@
         <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
             <img src="{{url('/')}}/uploads/clients/brightermonday.webp" alt="Muthaiga Golf Club">
         </div>
+
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/mydawa.jpg" alt="Muthaiga Golf Club">
+        </div>
+
+        <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1200ms" data-wow-duration="1500ms">
+            <img src="{{url('/')}}/uploads/clients/Ledrad.jpg" alt="Muthaiga Golf Club">
+        </div>
     </div>
 </section>
