@@ -67,7 +67,7 @@
 										<div class="post">
 											<div class="thumb" style="border:6px solid #1c2c52; border-radius:10px;"><a style="height:100%" href="{{url('/')}}/blogs/{{$blog->slung}}"><img style="height:100%" src="{{url('/')}}/uploads/blog/{{$blog->image}}" alt="{{$blog->title}}"></a></div>
 											<h6><a href="{{url('/')}}/blogs/{{$blog->slung}}">{{$blog->title}}</a></h6>
-											<span class="date">{{date('M', $blog->created_at)}} {{date('d', $blog->created_at)}}, {{date('Y', $blog->created_at)}}</span>
+											<span class="date">{{date("M", strtotime($blog->created_at))}} {{date("d", strtotime($blog->created_at))}}, {{date("Y", strtotime($blog->created_at))}}</span>
 										</div>
                                         @endforeach
 

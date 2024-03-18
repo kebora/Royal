@@ -20,19 +20,19 @@
         	<div class="row clearfix">
 
 				<!-- Content Side -->
-                <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
+                <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto    ">
                 	<div class="news-detail">
 						<div class="inner-box">
 							<div class="upper-box">
 								<h3>{{$blog->title}}</h3>
 								<ul class="post-meta">
-									<li><span class="icon flaticon-comment"></span>3 comments</li>
+									<li><span class="icon flaticon-comment"></span>0 comments</li>
 									<li><span class="icon flaticon-user"></span>Admin</li>
 								</ul>
 							</div>
 							<div class="image">
 								<img src="{{url('/')}}/uploads/blog/{{$blog->image}}" alt="" />
-								<div class="post-date">22 <span>DEC</span></div>
+								<div class="post-date"> {{date("d", strtotime($blog->created_at))}} <span>{{date("M", strtotime($blog->created_at))}}</span></div>
 							</div>
 
 							<div class="lower-content">
