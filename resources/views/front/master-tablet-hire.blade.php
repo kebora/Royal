@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#1c2c52">
 
 {{--  --}}
-<title>Tablets for Hire | Samsung Tablets  | Tablet Rentals</title>
+<title>Tablets for Hire | Samsung Tablets  | Tablet Rentals | RentPC</title>
 <meta name="description" content="Experience the power of innovation with our Tablets for hire service. Rent the latest Tablets models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">
 <link rel="canonical" href="https://royaltech.co.ke/Tablets-for-hire"/>
 <meta name="description" content="Experience the power of innovation with our Tablets for hire service. Rent the latest Tablets models for short-term needs. Discover the convenience and performance of Apple technology without the commitment of ownership. Contact us today">

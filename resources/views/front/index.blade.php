@@ -195,94 +195,8 @@
 </section>
 
 
-
-
-
-
-
-	<!-- About Section Two -->
-	{{-- <section class="about-section-two" style="background-image: url('{{asset('corporate/images/background/bg.jpg')}}')">
-		<div class="auto-container">
-			<div class="row clearfix">
-
-				<!-- Image Column -->
-				<div class="image-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<div class="circle-layer" style="background-image: url('{{asset('corporate/images/background/pattern-10.png')}}')"></div>
-						<div class="image">
-							<img src="{{asset('corporate/images/portrait.jpg')}}" alt="" />
-						</div>
-					</div>
-				</div>
-
-				<!-- Skill Column -->
-				<div class="skill-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column">
-
-						<!-- Sec Title -->
-						<div class="sec-title light">
-							<div class="title">About RoyalTech Computers Limited</div>
-							<h2>Transform Your Business With The Leading IT Solution Provider.</h2>
-							<div class="text">We listen. We advise. We design, together. Happy customers and ongoing relationships are what we strive for. Success is measured by results, the most important being how our clients feel about their experience with us.</div>
-						</div>
-
-						<!-- Skills -->
-						<div class="skills">
-
-							<!-- Skill Item -->
-							<div class="skill-item">
-								<div class="skill-header clearfix">
-									<div class="skill-title">Laptop & Desktops & Accessories</div>
-									<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="99">0</span>%</div></div>
-								</div>
-								<div class="skill-bar">
-									<div class="bar-inner"><div class="bar progress-line" data-width="99"></div></div>
-								</div>
-							</div>
-
-							<!-- Skill Item -->
-							<div class="skill-item">
-								<div class="skill-header clearfix">
-									<div class="skill-title">Networking Systems</div>
-									<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="95">0</span>%</div></div>
-								</div>
-								<div class="skill-bar">
-									<div class="bar-inner"><div class="bar progress-line" data-width="95"></div></div>
-								</div>
-							</div>
-
-							<!-- Skill Item -->
-							<div class="skill-item">
-								<div class="skill-header clearfix">
-									<div class="skill-title">Embeded Systems</div>
-									<div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="90">0</span>%</div></div>
-								</div>
-								<div class="skill-bar">
-									<div class="bar-inner"><div class="bar progress-line" data-width="90"></div></div>
-								</div>
-							</div>
-
-						</div>
-
-						<a href="{{url('/')}}/the-company" class="theme-btn btn-style-two"><span class="txt"><span class="icon fa fa-info"></span> The Company </span></a>
-                        &nbsp;
-                        <a href="{{url('/')}}/e-commerce" class="theme-btn btn-style-two"><span class="txt"><span class="icon fa fa-shopping-cart"></span>  Shop Online</span></a>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section> --}}
-	<!-- End About Section Two -->
-
 	<!--End Sponsors Section-->
     @include('front.intro')
-
-    {{-- @include('front.clients') --}}
-
-
-
 
 	<!-- Technology Section -->
 	<section class="technology-section style-two" style="background-image: url('{{asset('uploads/portfolio/g2.jpg')}}'); background-position:center center;">
@@ -335,12 +249,7 @@
 	</section>
 	<!-- End Technology Section -->
 
-
-
-
     @include('front.news')
-
-
 
     @include('front.clients')
 

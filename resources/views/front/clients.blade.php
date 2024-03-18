@@ -192,9 +192,7 @@
         <div class="title" style="visibility: hidden !important;">EXPERIENCE. EXECUTION. EXCELLENCE.</div>
         <h2>Our Clientale</h2>
     </div>
-    {{-- <div class="ours-left">
-      <h1>Our<span> <br>Clients</span></h1>
-    </div> --}}
+
     <div class="ours-right border-gradient">
         <div class="clientale ours-right-four wow fadeInLeft" data-wow-delay="1000ms" data-wow-duration="1500ms">
             <img src="{{url('/')}}/uploads/clients/iebc.jpg" alt="IEBC">
