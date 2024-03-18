@@ -101,7 +101,7 @@
                                 @endif
                             </div>
 
-                            <pre><code style="max-width:300px">{{$Pro->meta}}</code></pre>
+                            {{-- <pre><code style="max-width:300px">{{$Pro->meta}}</code></pre> --}}
 
                             <div class="product-box-desc">
                                 <div class="inner-box-desc">
@@ -239,6 +239,7 @@
 
 
         </div>
+        {{-- Leave that one there, It will work its magic --Hapana Guza --}}
         <div id="tab-5" class="tab-pane fade">
             <p>Royal Tech is the partner of choice for many of the world’s leading Brands, Such as HP, Toshiba, Lenovo, Acer among others. We help Individuals, SMEs and Corporates elevate their value through custom hardware options, product delivery, QA and consultancy services.</p>
         </div>
@@ -302,8 +303,8 @@
                            <div class="button-group">
                               <a href="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" data-url="{{url('/')}}/e-commerce/shopping-cart/add-to-cart/{{$item->id}}" class="addToCart add-to-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('{{$item->id}}', '1');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Add to Cart</span></a>
 
-                              <button data-product="{{url('/')}}/e-commerce/shopping-cart/add-to-wishlist/{{$item->id}}" class="wishlist add-to-wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');" style="min-height:38px !important; borders:3px solid #000;"><i class="fa fa-heart" ></i></button>
-                              <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button>
+                              {{-- <button data-product="{{url('/')}}/e-commerce/shopping-cart/add-to-wishlist/{{$item->id}}" class="wishlist add-to-wishlist" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('42');" style="min-height:38px !important; borders:3px solid #000;"><i class="fa fa-heart" ></i></button> --}}
+                              {{-- <button class="compare" type="button" data-toggle="tooltip" title="Compare this Product" onclick="compare.add('42');"><i class="fa fa-exchange"></i></button> --}}
                            </div>
                         </div>
                         <!-- right block -->

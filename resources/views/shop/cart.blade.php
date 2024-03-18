@@ -50,7 +50,7 @@
             </tbody>
           </table>
         </div>
-      <h3 class="subtitle no-margin">What would you like to do next?</h3>
+      {{-- <h3 class="subtitle no-margin">What would you like to do next?</h3>
       <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row">
         <div class="col-sm-4 col-sm-offset-8">

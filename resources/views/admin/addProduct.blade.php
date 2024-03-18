@@ -68,7 +68,7 @@
                                             <input required name="image_one" type="file">
                                         </div>
                                         <div class="file-path-wrapper">
-                                            <input  class="file-path validate" type="text" placeholder="Upload Product Main Image, Size 390 by 480">
+                                            <input  class="file-path validate" type="text" placeholder="Upload Product Main Image, Size 600px by 600px">
                                         </div>
                                     </div>
                                 </div>

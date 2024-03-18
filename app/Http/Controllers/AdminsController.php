@@ -618,8 +618,7 @@ class AdminsController extends Controller
         }
         $Brand = new Brand;
         $Brand->title = $request->title;
-        $Brand->slung = Str::slug($request->title);
-        $Brand->content = $request->content;
+
         $Brand->image = $image;
         $Brand->save();
         Session::flash('message', "Brand Has Been Added");

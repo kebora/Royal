@@ -18,7 +18,7 @@
         @include('admin.sidebar')
 
         <!--== BODY INNER CONTAINER ==-->
-        
+
         <div class="sb2-2">
             <div class="sb2-2-2">
                 <ul>
@@ -29,7 +29,7 @@
                     <li class="page-back"><a href="{{url('/')}}/admin/categories"><i class="fa fa-backward" aria-hidden="true"></i> All Categories</a>
                     </li>
                 </ul>
-               
+
             </div>
             <div class="sb2-2-add-blog sb2-2-1">
                 <h2>Edit {{$Category->title}}</h2>
@@ -38,7 +38,7 @@
                     @if(Session::has('message'))
                                   <div class="alert alert-success">{{ Session::get('message') }}</div>
                    @endif
-   
+
                    @if(Session::has('messageError'))
                                   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
                    @endif
@@ -57,68 +57,63 @@
                             {{-- <label for="textarea1">Blog Descriptions:</label> --}}
                         </div>
                     </div><br><br>
-                    <script src="https://amanivehiclesounds.co.ke/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-                    <script>
-                        CKEDITOR.replace( 'article_ckeditor' );
-                    </script>
-                     {{-- Images --}}
-                                 {{-- Preview --}}
-                            {{-- Style --}}
-                            <style>
-                                .btn-file {
-                                    position: relative;
-                                    overflow: hidden;
-                                }
-                                .btn-file input[type=file] {
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                    min-width: 100%;
-                                    min-height: 100%;
-                                    font-size: 100px;
-                                    text-align: right;
-                                    filter: alpha(opacity=0);
-                                    opacity: 0;
-                                    outline: none;
-                                    background: white;
-                                    cursor: inherit;
-                                    display: block;
-                                }
 
-                                #img-upload{
-                                    width: 100%;
-                                }
-                            </style>
-                            {{-- Style --}}
-                            <div class="row">
-                                <div class="">
-                                    <div class="input-field col s12">
-                                        <div class="form-group">
-                                            <label>Add Category Featured Image</label>
-                                            <div class="input-group">
-                                                <span class="input-group-btn">
-                                                    <span class="btn btn-default btn-file">
-                                                        Size: 440 by 550 Browse… <input name="image" type="file" id="imgInp">
-                                                    </span>
-                                                </span>
-                                                <input type="text" class="form-control" readonly>
-                                            </div>
-                                            <img class="image-preview" style="width:auto;" src="{{url('/')}}/uploads/categories/{{$Category->image}}" id='img-upload'/>
-                                        </div>
+                    <style>
+                        .btn-file {
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        .btn-file input[type=file] {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            font-size: 100px;
+                            text-align: right;
+                            filter: alpha(opacity=0);
+                            opacity: 0;
+                            outline: none;
+                            background: white;
+                            cursor: inherit;
+                            display: block;
+                        }
+
+                        #img-upload{
+                            width: 100%;
+                        }
+                    </style>
+                    {{-- Style --}}
+                    <div class="row">
+                        <div class="">
+                            <div class="input-field col s12">
+                                <div class="form-group">
+                                    <label>Add Brand Featured Image</label>
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <span class="btn btn-default btn-file">
+                                                Size: 440 by 550 Browse… <input name="image" type="file" id="imgInp">
+                                            </span>
+                                        </span>
+                                        <input type="text" class="form-control" readonly>
                                     </div>
+                                    <img class="image-preview" style="width:auto;" src="{{url('/')}}/uploads/categories/{{$Category->image}}" id='img-upload'/>
                                 </div>
                             </div>
-                            {{-- Preview --}}
+                        </div>
+                    </div>
+                    {{-- Preview --}}
+
 
                             {{-- Images --}}
                             <br><br>
                             <div class="clearfix"></div>
                             <input type="hidden" name="image_cheat" value="{{$Category->image}}">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input type="submit" class="waves-effect waves-light btn-large" value="Save Changes">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="submit" class="waves-effect waves-light btn-large" value="Save Changes">
+                            </div>
                         </div>
-                    </div>
                 </form>
             </div>
         </div>
