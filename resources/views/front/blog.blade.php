@@ -20,7 +20,7 @@
         	<div class="row clearfix">
 
 				<!-- Content Side -->
-                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
                 	<div class="news-detail">
 						<div class="inner-box">
 							<div class="upper-box">
@@ -67,7 +67,7 @@
 				</div>
 
 				<!-- Sidebar Side -->
-                <div class="sidebar-side left-sidebar col-lg-4 col-md-12 col-sm-12">
+                {{-- <div class="sidebar-side left-sidebar col-lg-4 col-md-12 col-sm-12">
                 	<aside class="sidebar sticky-top">
 						<div class="sidebar-inner">
 
@@ -91,13 +91,13 @@
 								</div>
 								<div class="widget-content">
 									<ul class="blog-cat">
-										<li><a href="#">Consulting <span>( 05 )</span></a></li>
-										<li><a href="#">Cyber Data <span>( 23 )</span></a></li>
-										<li><a href="#">Design <span>( 22 )</span></a></li>
-										<li><a href="#">Digital <span>( 15 )</span></a></li>
-										<li><a href="#">Marketing <span>( 36 )</span></a></li>
-										<li><a href="#">Security <span>( 48 )</span></a></li>
-										<li><a href="#">UI/UX Designrch <span>( 06 )</span></a></li>
+                                        <?php
+                                           $Categories = DB::table('categories')->get();
+                                        ?>
+                                        @foreach ($Categories as $categories)
+                                          <li><a href="#">{{$categories->title}} <span>( <?php $Blogz = DB::table('blogs')->where('category',$categories->id)->get(); ?> 0{{count($Blogz)}} )</span></a></li>
+                                        @endforeach
+
 									</ul>
 								</div>
 							</div>
@@ -134,7 +134,7 @@
 
 						</div>
 					</aside>
-				</div>
+				</div> --}}
 
 			</div>
 		</div>
